@@ -7,5 +7,4 @@ public abstract class APIResource {
     public String getUrl(){
         return url;
     }
-
 }
