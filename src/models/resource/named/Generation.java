@@ -38,17 +38,6 @@ example JSON:
     }]
 }
 
-
-id	The identifier for this generation resource	integer
-name	The name for this generation resource	string
-abilities	A list of abilities that were introduced in this generation	list NamedAPIResource (Ability)
-names	The name of this generation listed in different languages	list Name
-main_region	The main region travelled in this generation	NamedAPIResource (Region)
-moves	A list of moves that were introduced in this generation	list NamedAPIResource (Move)
-pokemon_species	A list of Pokémon species that were introduced in this generation	list NamedAPIResource (PokemonSpecies)
-types	A list of types that were introduced in this generation	list NamedAPIResource (Type)
-version_groups	A list of version groups that were introduced in this generation	list NamedAPIResource (VersionGroup)
-
 */
 
 import models.Name;
@@ -56,13 +45,28 @@ import models.Name;
 import java.util.ArrayList;
 
 public class Generation extends NamedAPIResource {
+    // The identifier for this generation resource
     private int id;
+
+    // A list of abilities that were introduced in this generation
     private ArrayList<Ability> abilities;
+
+    // The name of this generation listed in different languages
     private ArrayList<Name> names;
+
+    // The main region travelled in this generation
     private Region main_region;
+
+    // A list of moves that were introduced in this generation
     private ArrayList<Move> moves;
+
+    // A list of Pokémon species that were introduced in this generation
     private ArrayList<PokemonSpecies> pokemon_species;
+
+    // A list of types that were introduced in this generation
     private ArrayList<Type> types;
+
+    // A list of version groups that were introduced in this generation
     private ArrayList<VersionGroup> version_groups;
 
     public Generation(String url, String name, int id, ArrayList<Ability> abilities, ArrayList<Name> names,
