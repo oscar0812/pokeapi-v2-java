@@ -1,4 +1,4 @@
-package models.Encounter;
+package models.encounter;
 
 import models.Name;
 import models.resource.NamedAPIResource;

@@ -1,4 +1,4 @@
-package models.Encounter;
+package models.encounter;
 
 import java.util.ArrayList;
 
