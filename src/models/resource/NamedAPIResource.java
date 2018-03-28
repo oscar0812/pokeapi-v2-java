@@ -1,6 +1,4 @@
-package models.Resource;
-
-import org.jetbrains.annotations.Contract;
+package models.resource;
 
 public abstract class NamedAPIResource extends APIResource {
     //The name of the referenced resource
