@@ -26,6 +26,7 @@ package models.encounter;
  */
 
 import models.Name;
+import models.resource.named.EncounterConditionValue;
 
 import java.util.ArrayList;
 

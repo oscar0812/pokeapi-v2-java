@@ -1,4 +1,4 @@
-package models.encounter;
+package models.resource.named;
 
 /*
     example JSON:
@@ -22,7 +22,8 @@ package models.encounter;
  */
 
 import models.Name;
-import models.resource.NamedAPIResource;
+import models.encounter.EncounterCondition;
+import models.resource.named.NamedAPIResource;
 
 import java.util.ArrayList;
 

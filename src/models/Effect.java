@@ -1,5 +1,7 @@
 package models;
 
+import models.resource.named.Language;
+
 public class Effect {
     // The localized effect text for an API resource in a specific language
     private String effect;

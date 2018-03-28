@@ -1,5 +1,7 @@
 package models;
 
+import models.resource.named.Language;
+
 public class Name {
     // The localized name for an API resource in a specific language
     private String name;

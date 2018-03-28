@@ -1,5 +1,7 @@
 package models;
 
+import models.resource.named.Language;
+
 public class Description {
     // The localized description for an API resource in a specific language
     private String description = "";

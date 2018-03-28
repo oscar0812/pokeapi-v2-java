@@ -1,4 +1,4 @@
-package models;
+package models.resource.named;
 
 
 /*
@@ -21,8 +21,6 @@ package models;
     }
 
  */
-
-import models.resource.NamedAPIResource;
 
 import java.util.ArrayList;
 

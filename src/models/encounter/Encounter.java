@@ -1,5 +1,8 @@
 package models.encounter;
 
+import models.resource.named.EncounterConditionValue;
+import models.resource.named.EncounterMethod;
+
 import java.util.ArrayList;
 
 public class Encounter {

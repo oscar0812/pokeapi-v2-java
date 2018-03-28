@@ -1,5 +1,7 @@
 package models;
 
+import models.resource.named.Language;
+
 public class FlavorText {
     // The localized flavor text for an API resource in a specific language
     private String flavor_text;

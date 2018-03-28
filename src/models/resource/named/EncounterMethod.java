@@ -1,7 +1,7 @@
-package models.encounter;
+package models.resource.named;
 
 import models.Name;
-import models.resource.NamedAPIResource;
+import models.resource.named.NamedAPIResource;
 
 import java.util.ArrayList;
 
