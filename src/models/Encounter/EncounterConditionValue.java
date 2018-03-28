@@ -31,10 +31,10 @@ public class EncounterConditionValue extends NamedAPIResource {
     private int id;
 
     // The condition this encounter condition value pertains to
-    public EncounterCondition condition;
+    private EncounterCondition condition;
 
     // The name of this encounter condition value listed in different languages
-    public ArrayList<Name> names;
+    private ArrayList<Name> names;
 
 
     public EncounterConditionValue(String url, String name, int id, EncounterCondition condition){
