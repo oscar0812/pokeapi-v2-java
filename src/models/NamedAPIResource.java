@@ -1,5 +1,7 @@
 package models;
 
+import org.jetbrains.annotations.Contract;
+
 public class NamedAPIResource {
     //The name of the referenced resource
     private String name = "";
@@ -12,10 +14,12 @@ public class NamedAPIResource {
         this.url = url;
     }
 
+    @Contract(pure = true)
     private String getName(){
         return name;
     }
 
+    @Contract(pure = true)
     private String getUrl(){
         return url;
     }
