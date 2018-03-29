@@ -1,8 +1,6 @@
 package models.resource.named;
 
 /*
-    example JSON:
-
     {
         "id": 1,
         "name": "swarm-yes",
@@ -22,8 +20,6 @@ package models.resource.named;
  */
 
 import models.Name;
-import models.encounter.EncounterCondition;
-import models.resource.named.NamedAPIResource;
 
 import java.util.ArrayList;
 
@@ -38,11 +34,12 @@ public class EncounterConditionValue extends NamedAPIResource {
     private ArrayList<Name> names;
 
 
-    public EncounterConditionValue(String url, String name, int id, EncounterCondition condition){
+    public EncounterConditionValue(String url, String name, int id, EncounterCondition condition, ArrayList<Name> names){
         this.url = url;
         this.name = name;
         this.id = id;
         this.condition = condition;
+        this.names = names;
     }
 
     public int getId() {
@@ -55,9 +52,5 @@ public class EncounterConditionValue extends NamedAPIResource {
 
     public ArrayList<Name> getNames() {
         return names;
-    }
-
-    public void setNames(ArrayList<Name> names) {
-        this.names = names;
     }
 }
