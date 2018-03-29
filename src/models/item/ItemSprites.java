@@ -1,8 +1,5 @@
 package models.item;
-/*
-default		string
 
- */
 public class ItemSprites {
 
     // The default depiction of this item
