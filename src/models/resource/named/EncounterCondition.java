@@ -31,8 +31,13 @@ import models.resource.named.EncounterConditionValue;
 import java.util.ArrayList;
 
 public class EncounterCondition extends NamedAPIResource{
+    // The identifier for this encounter condition resource
     private int id;
+
+    // The name of this encounter method listed in different languages
     private ArrayList<Name> names;
+
+    // A list of possible values for this encounter condition
     private ArrayList<EncounterConditionValue> values;
 
     public EncounterCondition(String url, String name, int id, ArrayList<Name> names,
