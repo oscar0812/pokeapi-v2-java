@@ -1,7 +1,6 @@
 package models.resource.named;
 
 import models.Name;
-import models.resource.named.NamedAPIResource;
 
 import java.util.ArrayList;
 
@@ -33,11 +32,12 @@ public class EncounterMethod extends NamedAPIResource{
     // The name of this encounter method listed in different languages
     private ArrayList<Name> names;
 
-    public EncounterMethod(String url, String name, int id, int order){
+    public EncounterMethod(String url, String name, int id, int order, ArrayList<Name> names){
         this.url = url;
         this.name = name;
         this.id = id;
         this.order = order;
+        this.names = names;
     }
 
     public int getId() {
@@ -50,9 +50,5 @@ public class EncounterMethod extends NamedAPIResource{
 
     public ArrayList<Name> getNames() {
         return names;
-    }
-
-    public void setNames(ArrayList<Name> names) {
-        this.names = names;
     }
 }
