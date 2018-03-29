@@ -1,4 +1,4 @@
-package models.encounter;
+package models.resource.named;
 
 /*
 
@@ -30,13 +30,18 @@ import models.resource.named.EncounterConditionValue;
 
 import java.util.ArrayList;
 
-public class EncounterCondition {
+public class EncounterCondition extends NamedAPIResource{
     private int id;
     private ArrayList<Name> names;
     private ArrayList<EncounterConditionValue> values;
 
-    public EncounterCondition(int id){
+    public EncounterCondition(String url, String name, int id, ArrayList<Name> names,
+                              ArrayList<EncounterConditionValue> values){
+        this.url = url;
+        this.name = name;
         this.id = id;
+        this.names=  names;
+        this.values = values;
     }
 
     public int getId() {
@@ -51,11 +56,4 @@ public class EncounterCondition {
         return values;
     }
 
-    public void setNames(ArrayList<Name> names) {
-        this.names = names;
-    }
-
-    public void setValues(ArrayList<EncounterConditionValue> values) {
-        this.values = values;
-    }
 }
