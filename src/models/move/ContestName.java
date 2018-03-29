@@ -1,4 +1,4 @@
-package models.contest;
+package models.move;
 
 import models.resource.named.Language;
 
