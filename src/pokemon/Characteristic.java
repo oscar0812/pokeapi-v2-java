@@ -1,0 +1,81 @@
+package pokemon;
+/*
+{
+    "id": 1,
+    "gene_modulo": 0,
+    "possible_values": [0, 5, 10, 15, 20, 25, 30],
+    "highest_stat": {
+        "name": "hp",
+        "url": "http://pokeapi.co/api/v2/stat/1/"
+    },
+    "descriptions": [{
+        "description": "Loves to eat",
+        "language": {
+            "name": "en",
+            "url": "http://pokeapi.co/api/v2/language/9/"
+        }
+    }]
+}
+*/
+
+public class Characteristic extends common.APIResource {
+	// The identifier for this characteristic resource
+	private int id;
+
+	// The remainder of the highest stat/IV divided by 5
+	private int gene_modulo;
+
+	// The possible values of the highest stat that would result in a Pokémon recieving this characteristic when divided by 5
+	private java.util.ArrayList<Integer> possible_values;
+
+	// The descriptions of this characteristic listed in different languages
+	private java.util.ArrayList<common.Description> descriptions;
+
+	public static Characteristic getById(int id) {
+		String url = "https://pokeapi.co/api/v2/characteristic/" + id;
+		String json = tools.Internet.get(url);
+		Characteristic obj = new com.google.gson.Gson().fromJson(json, Characteristic.class);
+		return obj;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public Characteristic setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getGeneModulo() {
+		return gene_modulo;
+	}
+
+	public Characteristic setGeneModulo(int gene_modulo) {
+		this.gene_modulo = gene_modulo;
+		return this;
+	}
+
+	public java.util.ArrayList<Integer> getPossibleValues() {
+		return possible_values;
+	}
+
+	public Characteristic setPossibleValues(java.util.ArrayList<Integer> possible_values) {
+		this.possible_values = possible_values;
+		return this;
+	}
+
+	public java.util.ArrayList<common.Description> getDescriptions() {
+		return descriptions;
+	}
+
+	public Characteristic setDescriptions(java.util.ArrayList<common.Description> descriptions) {
+		this.descriptions = descriptions;
+		return this;
+	}
+
+	@Override
+	public String toString() {
+		return new com.google.gson.Gson().toJson(this);
+	}
+}
