@@ -1,6 +1,6 @@
 package models.common;
 public class Name {
-	// The localized name for an API models.resource in a specific language
+	// The localized name for an API resource in a specific language
 	private String name;
 
 	// The language this name is in

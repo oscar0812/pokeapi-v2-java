@@ -19,7 +19,7 @@ package models.contests;
 */
 
 public class ContestType extends models.common.NamedAPIResource {
-	// The identifier for this contest type models.resource
+	// The identifier for this contest type resource
 	private int id;
 
 	// The berry flavor that correlates with this contest type

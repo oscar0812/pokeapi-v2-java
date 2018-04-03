@@ -84,7 +84,7 @@ package models.moves;
         "url": "http://pokeapi.co/api/v2/super-contest-effect/5/"
     },
     "target": {
-        "name": "selected-models.pokemon",
+        "name": "selected-pokemon",
         "url": "http://pokeapi.co/api/v2/move-target/10/"
     },
     "type": {
@@ -108,19 +108,19 @@ package models.moves;
 */
 
 public class Move extends models.common.NamedAPIResource {
-	// The identifier for this move models.resource
+	// The identifier for this move resource
 	private int id;
 
 	// The percent value of how likely this move is to be successful
 	private int accuracy;
 
-	// The percent value of how likely it is this models.moves effect will happen
+	// The percent value of how likely it is this moves effect will happen
 	private int effect_chance;
 
 	// Power points. The number of times this move can be used
 	private int pp;
 
-	// A value between -8 and 8. Sets the order in which models.moves are executed during battle. See Bulbapedia for greater detail.
+	// A value between -8 and 8. Sets the order in which moves are executed during battle. See Bulbapedia for greater detail.
 	private int priority;
 
 	// The base power of this move with a value of 0 if it does not have a base power
@@ -141,7 +141,7 @@ public class Move extends models.common.NamedAPIResource {
 	// The effect of this move listed in different languages
 	private java.util.ArrayList<models.common.VerboseEffect> effect_entries;
 
-	// The list of previous effects this move has had across version groups of the models.games
+	// The list of previous effects this move has had across version groups of the games
 	private java.util.ArrayList<models.pokemon.AbilityEffectChange> effect_changes;
 
 	// The flavor text of this move listed in different languages
@@ -150,7 +150,7 @@ public class Move extends models.common.NamedAPIResource {
 	// The generation in which this move was introduced
 	private models.games.Generation generation;
 
-	// A list of the models.machines that teach this move
+	// A list of the machines that teach this move
 	private java.util.ArrayList<models.common.MachineVersionDetail> machines;
 
 	// Metadata about this move
@@ -159,10 +159,10 @@ public class Move extends models.common.NamedAPIResource {
 	// The name of this move listed in different languages
 	private java.util.ArrayList<models.common.Name> names;
 
-	// A list of move models.resource value changes across version groups of the game
+	// A list of move resource value changes across version groups of the game
 	private java.util.ArrayList<models.moves.PastMoveStatValues> past_values;
 
-	// A list of stats this models.moves effects and how much it effects them
+	// A list of stats this moves effects and how much it effects them
 	private java.util.ArrayList<models.moves.MoveStatChange> stat_changes;
 
 	// The effect the move has when used in a super contest

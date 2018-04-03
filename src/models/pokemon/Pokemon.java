@@ -66,7 +66,7 @@ package models.pokemon;
             }
         }]
     }],
-    "models.moves": [{
+    "moves": [{
         "move": {
             "name": "flash",
             "url": "http://pokeapi.co/api/v2/move/148/"
@@ -116,7 +116,7 @@ package models.pokemon;
 */
 
 public class Pokemon extends models.common.NamedAPIResource {
-	// The identifier for this Pokémon models.resource
+	// The identifier for this Pokémon resource
 	private int id;
 
 	// The base experience gained for defeating this Pokémon
@@ -143,13 +143,13 @@ public class Pokemon extends models.common.NamedAPIResource {
 	// A list of game indices relevent to Pokémon item by generation
 	private java.util.ArrayList<models.common.VersionGameIndex> game_indices;
 
-	// A list of models.items this Pokémon may be holding when encountered
+	// A list of items this Pokémon may be holding when encountered
 	private java.util.ArrayList<models.pokemon.PokemonHeldItem> held_items;
 
 	// A link to a list of location areas as well as encounter details pertaining to specific versions
 	private String location_area_encounters;
 
-	// A list of models.moves along with learn methods and level details pertaining to specific version groups
+	// A list of moves along with learn methods and level details pertaining to specific version groups
 	private java.util.ArrayList<models.pokemon.PokemonMove> moves;
 
 	// A set of sprites used to depict this Pokémon in the game
@@ -176,11 +176,11 @@ public class Pokemon extends models.common.NamedAPIResource {
 	}
 
 	public static Pokemon getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.pokemon/" + id);
+		return get("https://pokeapi.co/api/v2/pokemon/" + id);
 	}
 
 	public static Pokemon getByName(String name) {
-		return get("https://pokeapi.co/api/v2/models.pokemon/" + name);
+		return get("https://pokeapi.co/api/v2/pokemon/" + name);
 	}
 
 	public int getId() {

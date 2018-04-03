@@ -17,10 +17,10 @@ package models.utility;
 */
 
 public class Language extends models.common.NamedAPIResource {
-	// The identifier for this language models.resource
+	// The identifier for this language resource
 	private int id;
 
-	// Whether or not the models.games are published in this language
+	// Whether or not the games are published in this language
 	private boolean official;
 
 	// The two-letter code of the country where this language is spoken. Note that it is not unique.

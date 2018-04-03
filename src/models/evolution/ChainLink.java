@@ -3,10 +3,10 @@ public class ChainLink {
 	// Whether or not this link is for a baby Pokémon. This would only ever be true on the base link.
 	private boolean is_baby;
 
-	// The Pokémon species at this point in the models.evolution chain
+	// The Pokémon species at this point in the evolution chain
 	private models.pokemon.PokemonSpecies species;
 
-	// All details regarding the specific details of the referenced Pokémon species models.evolution
+	// All details regarding the specific details of the referenced Pokémon species evolution
 	private java.util.ArrayList<models.evolution.EvolutionDetail> evolution_details;
 
 	// A List of chain objects.

@@ -21,7 +21,7 @@ package models.encounters;
 */
 
 public class EncounterCondition extends models.common.NamedAPIResource {
-	// The identifier for this encounter condition models.resource
+	// The identifier for this encounter condition resource
 	private int id;
 
 	// The name of this encounter method listed in different languages

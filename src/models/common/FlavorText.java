@@ -1,6 +1,6 @@
 package models.common;
 public class FlavorText {
-	// The localized flavor text for an API models.resource in a specific language
+	// The localized flavor text for an API resource in a specific language
 	private String flavor_text;
 
 	// The language this name is in

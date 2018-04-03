@@ -3,7 +3,7 @@ public class PokemonEncounter {
 	// The Pokémon being encountered
 	private models.pokemon.Pokemon pokemon;
 
-	// A list of versions and models.encounters with Pokémon that might happen in the referenced location area
+	// A list of versions and encounters with Pokémon that might happen in the referenced location area
 	private java.util.ArrayList<models.common.VersionEncounterDetail> version_details;
 
 	public models.pokemon.Pokemon getPokemon() {

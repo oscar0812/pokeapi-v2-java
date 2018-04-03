@@ -23,7 +23,7 @@ package models.pokemon;
 */
 
 public class GrowthRate extends models.common.NamedAPIResource {
-	// The identifier for this gender models.resource
+	// The identifier for this gender resource
 	private int id;
 
 	// The formula used to calculate the rate at which the Pokémon species gains level

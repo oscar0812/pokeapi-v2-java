@@ -3,7 +3,7 @@ package models.moves;
 {
     "id": 1,
     "name": "paralysis",
-    "models.moves": [{
+    "moves": [{
         "name": "thunder-punch",
         "url": "http://pokeapi.co/api/v2/move/9/"
     }],
@@ -18,10 +18,10 @@ package models.moves;
 */
 
 public class MoveAilment extends models.common.NamedAPIResource {
-	// The identifier for this move ailment models.resource
+	// The identifier for this move ailment resource
 	private int id;
 
-	// A list of models.moves that cause this ailment
+	// A list of moves that cause this ailment
 	private java.util.ArrayList<models.moves.Move> moves;
 
 	// The name of this move ailment listed in different languages

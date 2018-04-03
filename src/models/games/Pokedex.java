@@ -37,10 +37,10 @@ package models.games;
 */
 
 public class Pokedex extends models.common.NamedAPIResource {
-	// The identifier for this Pokédex models.resource
+	// The identifier for this Pokédex resource
 	private int id;
 
-	// Whether or not this Pokédex originated in the main series of the video models.games
+	// Whether or not this Pokédex originated in the main series of the video games
 	private boolean is_main_series;
 
 	// The description of this Pokédex listed in different languages

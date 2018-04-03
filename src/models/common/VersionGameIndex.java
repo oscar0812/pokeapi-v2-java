@@ -1,6 +1,6 @@
 package models.common;
 public class VersionGameIndex {
-	// The internal id of an API models.resource within game data
+	// The internal id of an API resource within game data
 	private int game_index;
 
 	// The version relevent to this game index

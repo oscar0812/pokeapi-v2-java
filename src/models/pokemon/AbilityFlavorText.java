@@ -1,6 +1,6 @@
 package models.pokemon;
 public class AbilityFlavorText {
-	// The localized name for an API models.resource in a specific language
+	// The localized name for an API resource in a specific language
 	private String flavor_text;
 
 	// The language this name is in

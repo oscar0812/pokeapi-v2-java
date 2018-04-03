@@ -28,7 +28,7 @@ package models.games;
 */
 
 public class VersionGroup extends models.common.NamedAPIResource {
-	// The identifier for this version group models.resource
+	// The identifier for this version group resource
 	private int id;
 
 	// Order for sorting. Almost by date of release, except similar versions are grouped together.
@@ -37,7 +37,7 @@ public class VersionGroup extends models.common.NamedAPIResource {
 	// The generation this version was introduced in
 	private models.games.Generation generation;
 
-	// A list of methods in which Pokémon can learn models.moves in this version group
+	// A list of methods in which Pokémon can learn moves in this version group
 	private java.util.ArrayList<models.moves.MoveLearnMethod> move_learn_methods;
 
 	// A list of Pokédexes introduces in this version group

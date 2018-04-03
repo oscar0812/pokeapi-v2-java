@@ -49,16 +49,16 @@ package models.pokemon;
 */
 
 public class Stat extends models.common.NamedAPIResource {
-	// The identifier for this stat models.resource
+	// The identifier for this stat resource
 	private int id;
 
-	// ID the models.games use for this stat
+	// ID the games use for this stat
 	private int game_index;
 
 	// Whether this stat only exists within a battle
 	private boolean is_battle_only;
 
-	// A detail of models.moves which affect this stat positively or negatively
+	// A detail of moves which affect this stat positively or negatively
 	private models.pokemon.MoveStatAffectSets affecting_moves;
 
 	// A detail of natures which affect this stat positively or negatively

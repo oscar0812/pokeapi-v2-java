@@ -31,7 +31,7 @@ package models.pokemon;
 */
 
 public class PokemonShape extends models.common.NamedAPIResource {
-	// The identifier for this Pokémon shape models.resource
+	// The identifier for this Pokémon shape resource
 	private int id;
 
 	// The "scientific" name of this Pokémon shape listed in different languages
@@ -55,11 +55,11 @@ public class PokemonShape extends models.common.NamedAPIResource {
 	}
 
 	public static PokemonShape getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-shape/" + id);
+		return get("https://pokeapi.co/api/v2/pokemon-shape/" + id);
 	}
 
 	public static PokemonShape getByName(String name) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-shape/" + name);
+		return get("https://pokeapi.co/api/v2/pokemon-shape/" + name);
 	}
 
 	public int getId() {

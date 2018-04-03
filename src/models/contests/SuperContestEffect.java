@@ -10,7 +10,7 @@ package models.contests;
             "url": "http://pokeapi.co/api/v2/language/9/"
         }
     }],
-    "models.moves": [{
+    "moves": [{
         "name": "agility",
         "url": "http://pokeapi.co/api/v2/move/97/"
     }]
@@ -18,7 +18,7 @@ package models.contests;
 */
 
 public class SuperContestEffect extends models.common.APIResource {
-	// The identifier for this super contest effect models.resource
+	// The identifier for this super contest effect resource
 	private int id;
 
 	// The level of appeal this super contest effect has
@@ -27,7 +27,7 @@ public class SuperContestEffect extends models.common.APIResource {
 	// The flavor text of this super contest effect listed in different languages
 	private java.util.ArrayList<models.common.FlavorText> flavor_text_entries;
 
-	// A list of models.moves that have the effect when used in super models.contests
+	// A list of moves that have the effect when used in super contests
 	private java.util.ArrayList<models.moves.Move> moves;
 
 	private static SuperContestEffect get(String url) {

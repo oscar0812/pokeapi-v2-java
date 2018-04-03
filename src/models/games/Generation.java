@@ -8,7 +8,7 @@ package models.games;
         "name": "kanto",
         "url": "http://pokeapi.co/api/v2/region/1/"
     },
-    "models.moves": [{
+    "moves": [{
         "name": "pound",
         "url": "http://pokeapi.co/api/v2/move/1/"
     }],
@@ -35,7 +35,7 @@ package models.games;
 */
 
 public class Generation extends models.common.NamedAPIResource {
-	// The identifier for this generation models.resource
+	// The identifier for this generation resource
 	private int id;
 
 	// A list of abilities that were introduced in this generation
@@ -47,7 +47,7 @@ public class Generation extends models.common.NamedAPIResource {
 	// The main region travelled in this generation
 	private models.locations.Region main_region;
 
-	// A list of models.moves that were introduced in this generation
+	// A list of moves that were introduced in this generation
 	private java.util.ArrayList<models.moves.Move> moves;
 
 	// A list of Pokémon species that were introduced in this generation

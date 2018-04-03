@@ -30,7 +30,7 @@ package models.pokemon;
 */
 
 public class PokeathlonStat extends models.common.NamedAPIResource {
-	// The identifier for this Pokéathlon stat models.resource
+	// The identifier for this Pokéathlon stat resource
 	private int id;
 
 	// The name of this Pokéathlon stat listed in different languages

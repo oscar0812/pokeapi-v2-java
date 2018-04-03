@@ -1,6 +1,6 @@
 package models.common;
 public class APIResource {
-	// The URL of the referenced models.resource
+	// The URL of the referenced resource
 	private String url;
 
 	public String getUrl() {

@@ -22,7 +22,7 @@ package models.contests;
 */
 
 public class ContestEffect extends models.common.APIResource {
-	// The identifier for this contest type models.resource
+	// The identifier for this contest type resource
 	private int id;
 
 	// The base number of hearts the user of this move gets

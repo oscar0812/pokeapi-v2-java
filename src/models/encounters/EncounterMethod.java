@@ -15,7 +15,7 @@ package models.encounters;
 */
 
 public class EncounterMethod extends models.common.NamedAPIResource {
-	// The identifier for this encounter method models.resource
+	// The identifier for this encounter method resource
 	private int id;
 
 	// A good value for sorting

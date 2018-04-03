@@ -1,9 +1,9 @@
 package models.moves;
 public class ContestComboSets {
-	// A detail of models.moves this move can be used before or after, granting additional appeal points in models.contests
+	// A detail of moves this move can be used before or after, granting additional appeal points in contests
 	private models.moves.ContestComboDetail normal;
 
-	// A detail of models.moves this move can be used before or after, granting additional appeal points in super models.contests
+	// A detail of moves this move can be used before or after, granting additional appeal points in super contests
 	@com.fasterxml.jackson.annotation.JsonProperty("super")
 	private models.moves.ContestComboDetail super_val;
 

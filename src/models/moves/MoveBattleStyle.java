@@ -14,7 +14,7 @@ package models.moves;
 */
 
 public class MoveBattleStyle extends models.common.NamedAPIResource {
-	// The identifier for this move battle style models.resource
+	// The identifier for this move battle style resource
 	private int id;
 
 	// The name of this move battle style listed in different languages

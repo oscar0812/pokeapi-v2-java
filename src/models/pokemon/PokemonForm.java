@@ -9,7 +9,7 @@ package models.pokemon;
     "is_battle_only": false,
     "is_mega": false,
     "form_name": "plant",
-    "models.pokemon": {
+    "pokemon": {
         "name": "wormadam-plant",
         "url": "http://pokeapi.co/api/v2/pokemon/413/"
     },
@@ -27,7 +27,7 @@ package models.pokemon;
 */
 
 public class PokemonForm extends models.common.NamedAPIResource {
-	// The identifier for this Pokémon form models.resource
+	// The identifier for this Pokémon form resource
 	private int id;
 
 	// The order in which forms should be sorted within all forms. Multiple forms may have equal order, in which case they should fall back on sorting by name.
@@ -42,7 +42,7 @@ public class PokemonForm extends models.common.NamedAPIResource {
 	// Whether or not this form can only happen during battle
 	private boolean is_battle_only;
 
-	// Whether or not this form requires mega models.evolution
+	// Whether or not this form requires mega evolution
 	private boolean is_mega;
 
 	// The name of this form
@@ -75,11 +75,11 @@ public class PokemonForm extends models.common.NamedAPIResource {
 	}
 
 	public static PokemonForm getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-form/" + id);
+		return get("https://pokeapi.co/api/v2/pokemon-form/" + id);
 	}
 
 	public static PokemonForm getByName(String name) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-form/" + name);
+		return get("https://pokeapi.co/api/v2/pokemon-form/" + name);
 	}
 
 	public int getId() {

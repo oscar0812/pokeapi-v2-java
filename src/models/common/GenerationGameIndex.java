@@ -1,6 +1,6 @@
 package models.common;
 public class GenerationGameIndex {
-	// The internal id of an API models.resource within game data
+	// The internal id of an API resource within game data
 	private int game_index;
 
 	// The generation relevent to this game index

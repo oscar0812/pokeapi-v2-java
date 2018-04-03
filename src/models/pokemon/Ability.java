@@ -16,7 +16,7 @@ package models.pokemon;
         }
     }],
     "effect_entries": [{
-        "effect": "This Pokémon's damaging models.moves have a 10% chance to make the target [flinch]{mechanic:flinch} with each hit if they do not already cause flinching as a secondary effect.\n\nThis ability does not stack with a held item.\n\nOverworld: The wild encounter rate is halved while this Pokémon is first in the party.",
+        "effect": "This Pokémon's damaging moves have a 10% chance to make the target [flinch]{mechanic:flinch} with each hit if they do not already cause flinching as a secondary effect.\n\nThis ability does not stack with a held item.\n\nOverworld: The wild encounter rate is halved while this Pokémon is first in the party.",
         "short_effect": "Has a 10% chance of making target Pokémon [flinch]{mechanic:flinch} with each hit.",
         "language": {
             "name": "en",
@@ -47,10 +47,10 @@ package models.pokemon;
             "url": "http://pokeapi.co/api/v2/version-group/15/"
         }
     }],
-    "models.pokemon": [{
+    "pokemon": [{
         "is_hidden": true,
         "slot": 3,
-        "models.pokemon": {
+        "pokemon": {
             "name": "gloom",
             "url": "http://pokeapi.co/api/v2/pokemon/44/"
         }
@@ -59,10 +59,10 @@ package models.pokemon;
 */
 
 public class Ability extends models.common.NamedAPIResource {
-	// The identifier for this ability models.resource
+	// The identifier for this ability resource
 	private int id;
 
-	// Whether or not this ability originated in the main series of the video models.games
+	// Whether or not this ability originated in the main series of the video games
 	private boolean is_main_series;
 
 	// The generation this ability originated in

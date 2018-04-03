@@ -1,6 +1,6 @@
 package models.common;
 public class VerboseEffect {
-	// The localized effect text for an API models.resource in a specific language
+	// The localized effect text for an API resource in a specific language
 	private String effect;
 
 	// The localized effect text in brief

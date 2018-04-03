@@ -22,7 +22,7 @@ package models.pokemon;
 */
 
 public class PokemonHabitat extends models.common.NamedAPIResource {
-	// The identifier for this Pokémon habitat models.resource
+	// The identifier for this Pokémon habitat resource
 	private int id;
 
 	// The name of this Pokémon habitat listed in different languages
@@ -43,11 +43,11 @@ public class PokemonHabitat extends models.common.NamedAPIResource {
 	}
 
 	public static PokemonHabitat getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-habitat/" + id);
+		return get("https://pokeapi.co/api/v2/pokemon-habitat/" + id);
 	}
 
 	public static PokemonHabitat getByName(String name) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-habitat/" + name);
+		return get("https://pokeapi.co/api/v2/pokemon-habitat/" + name);
 	}
 
 	public int getId() {

@@ -10,7 +10,7 @@ package models.moves;
             "url": "http://pokeapi.co/api/v2/language/6/"
         }
     }],
-    "models.moves": [{
+    "moves": [{
         "name": "counter",
         "url": "http://pokeapi.co/api/v2/move/68/"
     }],
@@ -25,13 +25,13 @@ package models.moves;
 */
 
 public class MoveTarget extends models.common.NamedAPIResource {
-	// The identifier for this move target models.resource
+	// The identifier for this move target resource
 	private int id;
 
 	// The description of this move target listed in different languages
 	private java.util.ArrayList<models.common.Description> descriptions;
 
-	// A list of models.moves that that are directed at this target
+	// A list of moves that that are directed at this target
 	private java.util.ArrayList<models.moves.Move> moves;
 
 	// The name of this move target listed in different languages

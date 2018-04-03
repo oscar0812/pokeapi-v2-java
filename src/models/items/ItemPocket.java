@@ -18,7 +18,7 @@ package models.items;
 */
 
 public class ItemPocket extends models.common.NamedAPIResource {
-	// The identifier for this item pocket models.resource
+	// The identifier for this item pocket resource
 	private int id;
 
 	// A list of item categories that are relevant to this item pocket

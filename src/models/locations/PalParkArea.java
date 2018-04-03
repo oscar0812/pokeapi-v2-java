@@ -22,7 +22,7 @@ package models.locations;
 */
 
 public class PalParkArea extends models.common.NamedAPIResource {
-	// The identifier for this pal park area models.resource
+	// The identifier for this pal park area resource
 	private int id;
 
 	// The name of this pal park area listed in different languages

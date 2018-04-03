@@ -19,7 +19,7 @@ package models.pokemon;
 */
 
 public class Characteristic extends models.common.APIResource {
-	// The identifier for this characteristic models.resource
+	// The identifier for this characteristic resource
 	private int id;
 
 	// The remainder of the highest stat/IV divided by 5

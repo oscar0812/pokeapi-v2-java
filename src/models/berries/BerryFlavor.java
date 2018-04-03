@@ -3,7 +3,7 @@ package models.berries;
 {
     "id": 1,
     "name": "spicy",
-    "models.berries": [{
+    "berries": [{
         "potency": 10,
         "berry": {
             "name": "rowap",
@@ -25,10 +25,10 @@ package models.berries;
 */
 
 public class BerryFlavor extends models.common.NamedAPIResource {
-	// The identifier for this berry flavor models.resource
+	// The identifier for this berry flavor resource
 	private int id;
 
-	// A list of the models.berries with this flavor
+	// A list of the berries with this flavor
 	private java.util.ArrayList<models.berries.FlavorBerryMap> berries;
 
 	// The contest type that correlates with this berry flavor

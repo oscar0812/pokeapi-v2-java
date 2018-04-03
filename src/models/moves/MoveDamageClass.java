@@ -10,7 +10,7 @@ package models.moves;
             "url": "http://pokeapi.co/api/v2/language/1/"
         }
     }],
-    "models.moves": [{
+    "moves": [{
         "name": "swords-dance",
         "url": "http://pokeapi.co/api/v2/move/14/"
     }]
@@ -18,13 +18,13 @@ package models.moves;
 */
 
 public class MoveDamageClass extends models.common.NamedAPIResource {
-	// The identifier for this move damage class models.resource
+	// The identifier for this move damage class resource
 	private int id;
 
 	// The description of this move damage class listed in different languages
 	private java.util.ArrayList<models.common.Description> descriptions;
 
-	// A list of models.moves that fall into this damage class
+	// A list of moves that fall into this damage class
 	private java.util.ArrayList<models.moves.Move> moves;
 
 	// The name of this move damage class listed in different languages

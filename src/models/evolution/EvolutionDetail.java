@@ -1,24 +1,24 @@
 package models.evolution;
 public class EvolutionDetail {
-	// The item required to cause models.evolution this into Pokémon species
+	// The item required to cause evolution this into Pokémon species
 	private models.items.Item item;
 
-	// The type of event that triggers models.evolution into this Pokémon species
+	// The type of event that triggers evolution into this Pokémon species
 	private models.evolution.EvolutionTrigger trigger;
 
 	// The id of the gender of the evolving Pokémon species must be in order to evolve into this Pokémon species
 	private int gender;
 
-	// The item the evolving Pokémon species must be holding during the models.evolution trigger event to evolve into this Pokémon species
+	// The item the evolving Pokémon species must be holding during the evolution trigger event to evolve into this Pokémon species
 	private models.items.Item held_item;
 
-	// The move that must be known by the evolving Pokémon species during the models.evolution trigger event in order to evolve into this Pokémon species
+	// The move that must be known by the evolving Pokémon species during the evolution trigger event in order to evolve into this Pokémon species
 	private models.moves.Move known_move;
 
-	// The evolving Pokémon species must know a move with this type during the models.evolution trigger event in order to evolve into this Pokémon species
+	// The evolving Pokémon species must know a move with this type during the evolution trigger event in order to evolve into this Pokémon species
 	private models.pokemon.Type known_move_type;
 
-	// The location the models.evolution must be triggered at.
+	// The location the evolution must be triggered at.
 	private models.locations.Location location;
 
 	// The minimum required level of the evolving Pokémon species to evolve into this Pokémon species
@@ -33,13 +33,13 @@ public class EvolutionDetail {
 	// The minimum required level of affection the evolving Pokémon species to evolve into this Pokémon species
 	private int min_affection;
 
-	// Whether or not it must be raining in the overworld to cause models.evolution this Pokémon species
+	// Whether or not it must be raining in the overworld to cause evolution this Pokémon species
 	private boolean needs_overworld_rain;
 
 	// The Pokémon species that must be in the players party in order for the evolving Pokémon species to evolve into this Pokémon species
 	private models.pokemon.PokemonSpecies party_species;
 
-	// The player must have a Pokémon of this type in their party during the models.evolution trigger event in order for the evolving Pokémon species to evolve into this Pokémon species
+	// The player must have a Pokémon of this type in their party during the evolution trigger event in order for the evolving Pokémon species to evolve into this Pokémon species
 	private models.pokemon.Type party_type;
 
 	// The required relation between the Pokémon's Attack and Defense stats. 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.

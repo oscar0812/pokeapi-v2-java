@@ -54,7 +54,7 @@ package models.items;
         "default": "http://pokeapi.co/media/sprites/items/master-ball.png"
     },
     "held_by_pokemon": [{
-        "models.pokemon": {
+        "pokemon": {
             "name": "chansey",
             "url": "http://pokeapi.co/api/v2/pokemon/113/"
         },
@@ -73,7 +73,7 @@ package models.items;
 */
 
 public class Item extends models.common.NamedAPIResource {
-	// The identifier for this item models.resource
+	// The identifier for this item resource
 	private int id;
 
 	// The price of this item in stores
@@ -88,7 +88,7 @@ public class Item extends models.common.NamedAPIResource {
 	// A list of attributes this item has
 	private java.util.ArrayList<models.items.ItemAttribute> attributes;
 
-	// The category of models.items this item falls into
+	// The category of items this item falls into
 	private models.items.ItemCategory category;
 
 	// The effect of this ability listed in different languages
@@ -109,10 +109,10 @@ public class Item extends models.common.NamedAPIResource {
 	// A list of Pokémon that might be found in the wild holding this item
 	private java.util.ArrayList<models.items.ItemHolderPokemon> held_by_pokemon;
 
-	// An models.evolution chain this item requires to produce a bay during mating
+	// An evolution chain this item requires to produce a bay during mating
 	private models.evolution.EvolutionChain baby_trigger_for;
 
-	// A list of the models.machines related to this item
+	// A list of the machines related to this item
 	private java.util.ArrayList<models.common.MachineVersionDetail> machines;
 
 	private static Item get(String url) {

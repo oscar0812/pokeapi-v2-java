@@ -18,7 +18,7 @@ package models.pokemon;
 */
 
 public class PokemonColor extends models.common.NamedAPIResource {
-	// The identifier for this Pokémon color models.resource
+	// The identifier for this Pokémon color resource
 	private int id;
 
 	// The name of this Pokémon color listed in different languages
@@ -39,11 +39,11 @@ public class PokemonColor extends models.common.NamedAPIResource {
 	}
 
 	public static PokemonColor getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-color/" + id);
+		return get("https://pokeapi.co/api/v2/pokemon-color/" + id);
 	}
 
 	public static PokemonColor getByName(String name) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-color/" + name);
+		return get("https://pokeapi.co/api/v2/pokemon-color/" + name);
 	}
 
 	public int getId() {

@@ -1,6 +1,6 @@
 package models.common;
 public class Effect {
-	// The localized effect text for an API models.resource in a specific language
+	// The localized effect text for an API resource in a specific language
 	private String effect;
 
 	// The language this effect is in

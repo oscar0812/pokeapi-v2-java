@@ -29,7 +29,7 @@ package models.locations;
         }
     }],
     "pokemon_encounters": [{
-        "models.pokemon": {
+        "pokemon": {
             "name": "tentacool",
             "url": "http://pokeapi.co/api/v2/pokemon/72/"
         },
@@ -55,10 +55,10 @@ package models.locations;
 */
 
 public class LocationArea extends models.common.NamedAPIResource {
-	// The identifier for this location models.resource
+	// The identifier for this location resource
 	private int id;
 
-	// The internal id of an API models.resource within game data
+	// The internal id of an API resource within game data
 	private int game_index;
 
 	// A list of methods in which Pokémon may be encountered in this area and how likely the method will occur depending on the version of the game

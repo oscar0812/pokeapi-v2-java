@@ -3,7 +3,7 @@ package models.berries;
 {
     "id": 1,
     "name": "very-soft",
-    "models.berries": [{
+    "berries": [{
         "name": "pecha",
         "url": "http://pokeapi.co/api/v2/berry/3/"
     }],
@@ -18,10 +18,10 @@ package models.berries;
 */
 
 public class BerryFirmness extends models.common.NamedAPIResource {
-	// The identifier for this berry firmness models.resource
+	// The identifier for this berry firmness resource
 	private int id;
 
-	// A list of the models.berries with this firmness
+	// A list of the berries with this firmness
 	private java.util.ArrayList<models.berries.Berry> berries;
 
 	// The name of this berry firmness listed in different languages

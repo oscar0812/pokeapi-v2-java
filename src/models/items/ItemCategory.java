@@ -3,7 +3,7 @@ package models.items;
 {
     "id": 1,
     "name": "stat-boosts",
-    "models.items": [{
+    "items": [{
         "name": "guard-spec",
         "url": "http://pokeapi.co/api/v2/item/55/"
     }],
@@ -22,16 +22,16 @@ package models.items;
 */
 
 public class ItemCategory extends models.common.NamedAPIResource {
-	// The identifier for this item category models.resource
+	// The identifier for this item category resource
 	private int id;
 
-	// A list of models.items that are a part of this category
+	// A list of items that are a part of this category
 	private java.util.ArrayList<models.items.Item> items;
 
 	// The name of this item category listed in different languages
 	private java.util.ArrayList<models.common.Name> names;
 
-	// The pocket models.items in this category would be put in
+	// The pocket items in this category would be put in
 	private models.items.ItemPocket pocket;
 
 	private static ItemCategory get(String url) {

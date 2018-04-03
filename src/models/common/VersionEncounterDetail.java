@@ -6,7 +6,7 @@ public class VersionEncounterDetail {
 	// The total percentage of all encounter potential
 	private int max_chance;
 
-	// A list of models.encounters and their specifics
+	// A list of encounters and their specifics
 	private java.util.ArrayList<models.common.Encounter> encounter_details;
 
 	public models.games.Version getVersion() {

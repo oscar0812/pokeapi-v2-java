@@ -10,7 +10,7 @@ package models.items;
             "url": "http://pokeapi.co/api/v2/language/9/"
         }
     }],
-    "models.items": [{
+    "items": [{
         "name": "toxic-orb",
         "url": "http://pokeapi.co/api/v2/item/249/"
     }]
@@ -18,13 +18,13 @@ package models.items;
 */
 
 public class ItemFlingEffect extends models.common.NamedAPIResource {
-	// The identifier for this fling effect models.resource
+	// The identifier for this fling effect resource
 	private int id;
 
 	// The result of this fling effect listed in different languages
 	private java.util.ArrayList<models.common.Effect> effect_entries;
 
-	// A list of models.items that have this fling effect
+	// A list of items that have this fling effect
 	private java.util.ArrayList<models.items.Item> items;
 
 	private static ItemFlingEffect get(String url) {

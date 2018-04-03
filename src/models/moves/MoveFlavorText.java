@@ -1,6 +1,6 @@
 package models.moves;
 public class MoveFlavorText {
-	// The localized flavor text for an api models.resource in a specific language
+	// The localized flavor text for an api resource in a specific language
 	private String flavor_text;
 
 	// The language this name is in

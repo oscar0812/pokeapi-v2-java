@@ -18,7 +18,7 @@ package models.games;
 */
 
 public class Version extends models.common.NamedAPIResource {
-	// The identifier for this version models.resource
+	// The identifier for this version resource
 	private int id;
 
 	// The name of this version listed in different languages

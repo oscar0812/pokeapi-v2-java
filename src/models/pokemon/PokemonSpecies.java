@@ -66,7 +66,7 @@ package models.pokemon;
         }
     }],
     "form_descriptions": [{
-        "description": "Forms have different stats and movepools.  During models.evolution, Burmy's current cloak becomes Wormadam's form, and can no longer be changed.",
+        "description": "Forms have different stats and movepools.  During evolution, Burmy's current cloak becomes Wormadam's form, and can no longer be changed.",
         "language": {
             "name": "en",
             "url": "http://pokeapi.co/api/v2/language/9/"
@@ -81,7 +81,7 @@ package models.pokemon;
     }],
     "varieties": [{
         "is_default": true,
-        "models.pokemon": {
+        "pokemon": {
             "name": "wormadam-plant",
             "url": "http://pokeapi.co/api/v2/pokemon/413/"
         }
@@ -90,7 +90,7 @@ package models.pokemon;
 */
 
 public class PokemonSpecies extends models.common.NamedAPIResource {
-	// The identifier for this Pokémon species models.resource
+	// The identifier for this Pokémon species resource
 	private int id;
 
 	// The order in which species should be sorted. Based on National Dex order, except families are grouped together and sorted by stage.
@@ -135,7 +135,7 @@ public class PokemonSpecies extends models.common.NamedAPIResource {
 	// The Pokémon species that evolves into this Pokemon_species
 	private models.pokemon.PokemonSpecies evolves_from_species;
 
-	// The models.evolution chain this Pokémon species is a member of
+	// The evolution chain this Pokémon species is a member of
 	private models.evolution.EvolutionChain evolution_chain;
 
 	// The habitat this Pokémon species can be encountered in
@@ -147,7 +147,7 @@ public class PokemonSpecies extends models.common.NamedAPIResource {
 	// The name of this Pokémon species listed in different languages
 	private java.util.ArrayList<models.common.Name> names;
 
-	// A list of models.encounters that can be had with this Pokémon species in pal park
+	// A list of encounters that can be had with this Pokémon species in pal park
 	private java.util.ArrayList<models.pokemon.PalParkEncounterArea> pal_park_encounters;
 
 	// A list of flavor text entries for this Pokémon species
@@ -174,11 +174,11 @@ public class PokemonSpecies extends models.common.NamedAPIResource {
 	}
 
 	public static PokemonSpecies getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-species/" + id);
+		return get("https://pokeapi.co/api/v2/pokemon-species/" + id);
 	}
 
 	public static PokemonSpecies getByName(String name) {
-		return get("https://pokeapi.co/api/v2/models.pokemon-species/" + name);
+		return get("https://pokeapi.co/api/v2/pokemon-species/" + name);
 	}
 
 	public int getId() {

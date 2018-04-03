@@ -3,7 +3,7 @@ package models.locations;
 {
     "id": 1,
     "name": "kanto",
-    "models.locations": [{
+    "locations": [{
         "name": "celadon-city",
         "url": "http://pokeapi.co/api/v2/location/67/"
     }],
@@ -30,10 +30,10 @@ package models.locations;
 */
 
 public class Region extends models.common.NamedAPIResource {
-	// The identifier for this region models.resource
+	// The identifier for this region resource
 	private int id;
 
-	// A list of models.locations that can be found in this region
+	// A list of locations that can be found in this region
 	private java.util.ArrayList<models.locations.Location> locations;
 
 	// The generation this region was introduced in

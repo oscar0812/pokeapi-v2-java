@@ -18,10 +18,10 @@ package models.pokemon;
 */
 
 public class Gender {
-	// The identifier for this gender models.resource
+	// The identifier for this gender resource
 	private int id;
 
-	// The name for this gender models.resource
+	// The name for this gender resource
 	private String name;
 
 	// A list of Pokémon species that can be this gender and how likely it is that they will be

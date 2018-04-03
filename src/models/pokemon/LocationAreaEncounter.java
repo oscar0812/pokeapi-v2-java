@@ -3,7 +3,7 @@ public class LocationAreaEncounter {
 	// The location area the referenced Pokémon can be encountered in
 	private models.locations.LocationArea location_area;
 
-	// A list of versions and models.encounters with the referenced Pokémon that might happen
+	// A list of versions and encounters with the referenced Pokémon that might happen
 	private java.util.ArrayList<models.common.VersionEncounterDetail> version_details;
 
 	public models.locations.LocationArea getLocationArea() {

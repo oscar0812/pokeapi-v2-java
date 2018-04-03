@@ -51,14 +51,14 @@ package models.pokemon;
             "url": "http://pokeapi.co/api/v2/language/1/"
         }
     }],
-    "models.pokemon": [{
+    "pokemon": [{
         "slot": 1,
-        "models.pokemon": {
+        "pokemon": {
             "name": "sandshrew",
             "url": "http://pokeapi.co/api/v2/pokemon/27/"
         }
     }],
-    "models.moves": [{
+    "moves": [{
         "name": "sand-attack",
         "url": "http://pokeapi.co/api/v2/move/28/"
     }]
@@ -66,7 +66,7 @@ package models.pokemon;
 */
 
 public class Type extends models.common.NamedAPIResource {
-	// The identifier for this type models.resource
+	// The identifier for this type resource
 	private int id;
 
 	// A detail of how effective this type is toward others and vice versa
@@ -87,7 +87,7 @@ public class Type extends models.common.NamedAPIResource {
 	// A list of details of Pokémon that have this type
 	private java.util.ArrayList<models.pokemon.TypePokemon> pokemon;
 
-	// A list of models.moves that have this type
+	// A list of moves that have this type
 	private java.util.ArrayList<models.moves.Move> moves;
 
 	private static Type get(String url) {

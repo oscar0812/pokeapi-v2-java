@@ -45,7 +45,7 @@ package models.pokemon;
 */
 
 public class Nature extends models.common.NamedAPIResource {
-	// The identifier for this nature models.resource
+	// The identifier for this nature resource
 	private int id;
 
 	// The stat decreased by 10% in Pokémon with this nature

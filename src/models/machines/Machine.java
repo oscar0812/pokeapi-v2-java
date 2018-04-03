@@ -18,7 +18,7 @@ package models.machines;
 */
 
 public class Machine extends models.common.APIResource {
-	// The identifier for this machine models.resource
+	// The identifier for this machine resource
 	private int id;
 
 	// The TM or HM item that corresponds to this machine

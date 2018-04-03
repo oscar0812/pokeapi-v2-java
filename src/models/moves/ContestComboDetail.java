@@ -1,9 +1,9 @@
 package models.moves;
 public class ContestComboDetail {
-	// A list of models.moves to use before this move
+	// A list of moves to use before this move
 	private java.util.ArrayList<models.moves.Move> use_before;
 
-	// A list of models.moves to use after this move
+	// A list of moves to use after this move
 	private java.util.ArrayList<models.moves.Move> use_after;
 
 	public java.util.ArrayList<models.moves.Move> getUseBefore() {

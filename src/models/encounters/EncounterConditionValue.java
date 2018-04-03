@@ -18,7 +18,7 @@ package models.encounters;
 */
 
 public class EncounterConditionValue extends models.common.NamedAPIResource {
-	// The identifier for this encounter condition value models.resource
+	// The identifier for this encounter condition value resource
 	private int id;
 
 	// The condition this encounter condition value pertains to

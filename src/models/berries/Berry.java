@@ -32,13 +32,13 @@ package models.berries;
 */
 
 public class Berry extends models.common.NamedAPIResource {
-	// The identifier for this berry models.resource
+	// The identifier for this berry resource
 	private int id;
 
 	// Time it takes the tree to grow one stage, in hours. Berry trees go through four of these growth stages before they can be picked.
 	private int growth_time;
 
-	// The maximum number of these models.berries that can grow on one tree in Generation IV
+	// The maximum number of these berries that can grow on one tree in Generation IV
 	private int max_harvest;
 
 	// The power of the move "Natural Gift" when used with this Berry
@@ -59,7 +59,7 @@ public class Berry extends models.common.NamedAPIResource {
 	// A list of references to each flavor a berry can have and the potency of each of those flavors in regard to this berry
 	private java.util.ArrayList<models.berries.BerryFlavorMap> flavors;
 
-	// Berries are actually models.items. This is a reference to the item specific data for this berry.
+	// Berries are actually items. This is a reference to the item specific data for this berry.
 	private models.items.Item item;
 
 	// The type inherited by "Natural Gift" when used with this Berry

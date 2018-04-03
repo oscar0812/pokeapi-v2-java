@@ -10,7 +10,7 @@ package models.items;
             "url": "http://pokeapi.co/api/v2/language/9/"
         }
     }],
-    "models.items": [{
+    "items": [{
         "name": "master-ball",
         "url": "http://pokeapi.co/api/v2/item/1/"
     }],
@@ -25,10 +25,10 @@ package models.items;
 */
 
 public class ItemAttribute extends models.common.NamedAPIResource {
-	// The identifier for this item attribute models.resource
+	// The identifier for this item attribute resource
 	private int id;
 
-	// A list of models.items that have this attribute
+	// A list of items that have this attribute
 	private java.util.ArrayList<models.items.Item> items;
 
 	// The name of this item attribute listed in different languages

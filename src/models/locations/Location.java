@@ -29,7 +29,7 @@ package models.locations;
 */
 
 public class Location extends models.common.NamedAPIResource {
-	// The identifier for this location models.resource
+	// The identifier for this location resource
 	private int id;
 
 	// The region this location can be found in

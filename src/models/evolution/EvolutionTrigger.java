@@ -18,13 +18,13 @@ package models.evolution;
 */
 
 public class EvolutionTrigger extends models.common.NamedAPIResource {
-	// The identifier for this models.evolution trigger models.resource
+	// The identifier for this evolution trigger resource
 	private int id;
 
-	// The name of this models.evolution trigger listed in different languages
+	// The name of this evolution trigger listed in different languages
 	private java.util.ArrayList<models.common.Name> names;
 
-	// A list of models.pokemon species that result from this models.evolution trigger
+	// A list of pokemon species that result from this evolution trigger
 	private java.util.ArrayList<models.pokemon.PokemonSpecies> pokemon_species;
 
 	private static EvolutionTrigger get(String url) {
@@ -39,11 +39,11 @@ public class EvolutionTrigger extends models.common.NamedAPIResource {
 	}
 
 	public static EvolutionTrigger getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.evolution-trigger/" + id);
+		return get("https://pokeapi.co/api/v2/evolution-trigger/" + id);
 	}
 
 	public static EvolutionTrigger getByName(String name) {
-		return get("https://pokeapi.co/api/v2/models.evolution-trigger/" + name);
+		return get("https://pokeapi.co/api/v2/evolution-trigger/" + name);
 	}
 
 	public int getId() {

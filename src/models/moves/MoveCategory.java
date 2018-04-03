@@ -10,7 +10,7 @@ package models.moves;
             "url": "http://pokeapi.co/api/v2/language/9/"
         }
     }],
-    "models.moves": [{
+    "moves": [{
         "name": "sing",
         "url": "http://pokeapi.co/api/v2/move/47/"
     }]
@@ -18,13 +18,13 @@ package models.moves;
 */
 
 public class MoveCategory {
-	// The identifier for this move category models.resource
+	// The identifier for this move category resource
 	private int id;
 
-	// The name for this move category models.resource
+	// The name for this move category resource
 	private String name;
 
-	// A list of models.moves that fall into this category
+	// A list of moves that fall into this category
 	private java.util.ArrayList<models.moves.Move> moves;
 
 	// The description of this move ailment listed in different languages

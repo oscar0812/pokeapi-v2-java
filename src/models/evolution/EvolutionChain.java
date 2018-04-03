@@ -46,13 +46,13 @@ package models.evolution;
 */
 
 public class EvolutionChain extends models.common.APIResource {
-	// The identifier for this models.evolution chain models.resource
+	// The identifier for this evolution chain resource
 	private int id;
 
 	// The item that a Pokémon would be holding when mating that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon
 	private models.items.Item baby_trigger_item;
 
-	// The base chain link object. Each link contains models.evolution details for a Pokémon in the chain. Each link references the next Pokémon in the natural models.evolution order.
+	// The base chain link object. Each link contains evolution details for a Pokémon in the chain. Each link references the next Pokémon in the natural evolution order.
 	private models.evolution.ChainLink chain;
 
 	private static EvolutionChain get(String url) {
@@ -67,7 +67,7 @@ public class EvolutionChain extends models.common.APIResource {
 	}
 
 	public static EvolutionChain getById(int id) {
-		return get("https://pokeapi.co/api/v2/models.evolution-chain/" + id);
+		return get("https://pokeapi.co/api/v2/evolution-chain/" + id);
 	}
 
 	public int getId() {

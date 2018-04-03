@@ -1,9 +1,9 @@
 package models.common;
 public class NamedAPIResource {
-	// The name of the referenced models.resource
+	// The name of the referenced resource
 	private String name;
 
-	// The URL of the referenced models.resource
+	// The URL of the referenced resource
 	private String url;
 
 	public String getName() {

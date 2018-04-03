@@ -25,7 +25,7 @@ package models.moves;
 */
 
 public class MoveLearnMethod extends models.common.NamedAPIResource {
-	// The identifier for this move learn method models.resource
+	// The identifier for this move learn method resource
 	private int id;
 
 	// The description of this move learn method listed in different languages
@@ -34,7 +34,7 @@ public class MoveLearnMethod extends models.common.NamedAPIResource {
 	// The name of this move learn method listed in different languages
 	private java.util.ArrayList<models.common.Name> names;
 
-	// A list of version groups where models.moves can be learned through this method
+	// A list of version groups where moves can be learned through this method
 	private java.util.ArrayList<models.games.VersionGroup> version_groups;
 
 	private static MoveLearnMethod get(String url) {

@@ -1,6 +1,6 @@
 package models.common;
 public class Description {
-	// The localized description for an API models.resource in a specific language
+	// The localized description for an API resource in a specific language
 	private String description;
 
 	// The language this name is in

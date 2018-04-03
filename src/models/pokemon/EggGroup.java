@@ -18,7 +18,7 @@ package models.pokemon;
 */
 
 public class EggGroup extends models.common.NamedAPIResource {
-	// The identifier for this egg group models.resource
+	// The identifier for this egg group resource
 	private int id;
 
 	// The name of this egg group listed in different languages

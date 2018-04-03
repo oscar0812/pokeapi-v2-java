@@ -1,9 +1,9 @@
 package models.pokemon;
 public class MoveStatAffectSets {
-	// A list of models.moves and how they change the referenced stat
+	// A list of moves and how they change the referenced stat
 	private java.util.ArrayList<models.pokemon.MoveStatAffect> increase;
 
-	// A list of models.moves and how they change the referenced stat
+	// A list of moves and how they change the referenced stat
 	private java.util.ArrayList<models.pokemon.MoveStatAffect> decrease;
 
 	public java.util.ArrayList<models.pokemon.MoveStatAffect> getIncrease() {
