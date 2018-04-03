@@ -2,6 +2,7 @@ package api;
 
 import java.sql.*;
 
+// responsible for cache responses from online API, and therefore helping with speeds and limit api calls (300 per day)
 class Database {
 
     private static Database db = null;

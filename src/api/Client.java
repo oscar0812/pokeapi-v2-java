@@ -1,5 +1,6 @@
 package api;
 
+// the heart of the project, has calls to all available objects
 public class Client {
     // get a Gender instance by the id
     public models.pokemon.Gender getGenderById(int id) {

@@ -3,6 +3,7 @@ package api;
 import java.io.*;
 import java.net.URL;
 
+// responsible for grabbing the information from either the online api or the local db (cache)
 public class Information {
     // allow for api responses to be stored in db
     public static boolean CACHE = true;
