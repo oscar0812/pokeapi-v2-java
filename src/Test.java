@@ -1,11 +1,10 @@
-import pokemon.Pokemon;
+import api.Client;
+import models.pokemon.Pokemon;
 
 public class Test {
-
-    public static void main(String[] args){
-        System.setProperty("http.agent", "Chrome");
-        Pokemon pokemon = Pokemon.getByName("charizard");
-
-        System.out.println(pokemon);
+    public static void main(String[] args) {
+        Client client = new Client();
+        Pokemon pokemon = client.getPokemonById(1);
+        System.out.println(pokemon.getHeight());
     }
 }

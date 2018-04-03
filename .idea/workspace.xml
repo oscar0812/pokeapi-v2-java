@@ -1,7 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8e9624a-e42c-4aed-8d58-2673af7c441a" name="Default" comment="" />
+    <list default="true" id="f8e9624a-e42c-4aed-8d58-2673af7c441a" name="Default" comment="package lowercase">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PokeApi-V2-Wrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PokeApi-V2-Wrapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/berries/Berry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/Berry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/berries/BerryFirmness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/BerryFirmness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/berries/BerryFlavor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/BerryFlavor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/berries/BerryFlavorMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/BerryFlavorMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/berries/FlavorBerryMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/FlavorBerryMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/APIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/APIResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Description.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Effect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Encounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/FlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/FlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/GenerationGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/GenerationGameIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/MachineVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/MachineVersionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/NamedAPIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/NamedAPIResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/VerboseEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VerboseEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/VersionEncounterDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VersionEncounterDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/VersionGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VersionGameIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/VersionGroupFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VersionGroupFlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contests/ContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/ContestEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contests/ContestName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/ContestName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contests/ContestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/ContestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contests/SuperContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/SuperContestEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encounters/EncounterCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/encounters/EncounterCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encounters/EncounterConditionValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/encounters/EncounterConditionValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encounters/EncounterMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/encounters/EncounterMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evolution/ChainLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/ChainLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evolution/EvolutionChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/EvolutionChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evolution/EvolutionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/EvolutionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evolution/EvolutionTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/EvolutionTrigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/Generation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/Generation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/Pokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/PokemonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/PokemonEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/Version.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/VersionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/VersionGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemFlingEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemFlingEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemHolderPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemHolderPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemHolderPokemonVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemHolderPokemonVersionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemPocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemPocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemSprites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/EncounterMethodRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/EncounterMethodRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/EncounterVersionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/EncounterVersionDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/LocationArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/LocationArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/PalParkArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/PalParkArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/PalParkEncounterSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/PalParkEncounterSpecies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/PokemonEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/PokemonEncounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locations/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/machines/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/machines/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/ContestComboDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/ContestComboDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/ContestComboSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/ContestComboSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveAilment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveAilment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveBattleStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveBattleStyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveDamageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveDamageClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveFlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveLearnMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveLearnMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveMetaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveStatChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/MoveTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/moves/PastMoveStatValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/PastMoveStatValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Ability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Ability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/AbilityEffectChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AbilityEffectChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/AbilityFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AbilityFlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/AbilityPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AbilityPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/AwesomeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AwesomeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Characteristic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Characteristic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/EggGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/EggGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Genus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Genus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/GrowthRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/GrowthRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/GrowthRateExperienceLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/GrowthRateExperienceLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/LocationAreaEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/LocationAreaEncounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/MoveBattleStylePreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/MoveBattleStylePreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/MoveStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/MoveStatAffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/MoveStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/MoveStatAffectSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Nature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Nature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/NaturePokeathlonStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NaturePokeathlonStatAffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/NaturePokeathlonStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NaturePokeathlonStatAffectSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/NatureStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NatureStatAffectSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/NatureStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NatureStatChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PalParkEncounterArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PalParkEncounterArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokeathlonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokeathlonStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonAbility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonAbility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonFormSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonFormSprites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonHabitat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonHabitat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonHeldItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonHeldItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonHeldItemVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonHeldItemVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonMoveVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonMoveVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpecies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpeciesDexEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpeciesDexEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpeciesGender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpeciesGender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpeciesVariety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpeciesVariety.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSprites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/TypePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/TypePokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokemon/TypeRelations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/TypeRelations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/APIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/resource/APIResourceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/NamedAPIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/resource/NamedAPIResourceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools/Internet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utility/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/utility/Language.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,28 +126,79 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APIResource.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/models/APIResource.java">
+      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Information.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/api/Information.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4905">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Berry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/berries/Berry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1215">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pokemon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/pokemon/Pokemon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
               <folding>
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#5605#5606#0" expanded="true" />
+                <element signature="e#5785#5786#0" expanded="true" />
+                <element signature="e#5847#5848#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,39 +213,112 @@
       </list>
     </option>
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>extends NamedAPIResource</find>
+      <find>NamedAPIResource</find>
+      <find>list</find>
+      <find>effect_changes</find>
+      <find>;</find>
+      <find>[A-Z]+ [a-z&lt;&gt;]+</find>
+      <find>super</find>
+      <find>_val</find>
+      <find>import tools.Reader;</find>
+      <find>Reader.Internet.get</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>this.</replace>
+      <replace />
+      <replace>tools.Information.fromInternet</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/models/APIResource.java" />
+        <option value="$PROJECT_DIR$/src/items/ItemHolderPokemonVersionDetail.java" />
+        <option value="$PROJECT_DIR$/src/locations/EncounterMethodRate.java" />
+        <option value="$PROJECT_DIR$/src/locations/EncounterVersionDetails.java" />
+        <option value="$PROJECT_DIR$/src/locations/Location.java" />
+        <option value="$PROJECT_DIR$/src/locations/LocationArea.java" />
+        <option value="$PROJECT_DIR$/src/locations/PalParkArea.java" />
+        <option value="$PROJECT_DIR$/src/locations/PalParkEncounterSpecies.java" />
+        <option value="$PROJECT_DIR$/src/locations/PokemonEncounter.java" />
+        <option value="$PROJECT_DIR$/src/locations/Region.java" />
+        <option value="$PROJECT_DIR$/src/machines/Machine.java" />
+        <option value="$PROJECT_DIR$/src/moves/ContestComboDetail.java" />
+        <option value="$PROJECT_DIR$/src/moves/Move.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveAilment.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveBattleStyle.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveCategory.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveDamageClass.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveFlavorText.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveLearnMethod.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveStatChange.java" />
+        <option value="$PROJECT_DIR$/src/moves/PastMoveStatValues.java" />
+        <option value="$PROJECT_DIR$/src/items/Item.java" />
+        <option value="$PROJECT_DIR$/src/items/ItemSprites.java" />
+        <option value="$PROJECT_DIR$/src/pokemon/Characteristic.java" />
+        <option value="$PROJECT_DIR$/src/moves/MoveTarget.java" />
+        <option value="$PROJECT_DIR$/src/berries/BerryFirmness.java" />
+        <option value="$PROJECT_DIR$/src/contests/ContestType.java" />
+        <option value="$PROJECT_DIR$/src/berries/BerryFlavor.java" />
+        <option value="$PROJECT_DIR$/src/items/ItemFlingEffect.java" />
+        <option value="$PROJECT_DIR$/src/items/ItemAttribute.java" />
+        <option value="$PROJECT_DIR$/src/items/ItemPocket.java" />
+        <option value="$PROJECT_DIR$/src/items/ItemCategory.java" />
+        <option value="$PROJECT_DIR$/src/Tool.java" />
+        <option value="$PROJECT_DIR$/src/common/NamedAPIResource.java" />
+        <option value="$PROJECT_DIR$/src/resource/NamedAPIResourceList.java" />
+        <option value="$PROJECT_DIR$/src/resource/APIResourceList.java" />
+        <option value="$PROJECT_DIR$/src/contests/SuperContestEffect.java" />
+        <option value="$PROJECT_DIR$/src/moves/ContestComboSets.java" />
+        <option value="$PROJECT_DIR$/src/tools/Cache.java" />
+        <option value="$PROJECT_DIR$/src/tools/File.java" />
+        <option value="$PROJECT_DIR$/src/tools/Internet.java" />
+        <option value="$PROJECT_DIR$/src/tools/Reader.java" />
+        <option value="$PROJECT_DIR$/src/games/Version.java" />
+        <option value="$PROJECT_DIR$/src/games/VersionGroup.java" />
+        <option value="$PROJECT_DIR$/src/utility/Language.java" />
+        <option value="$PROJECT_DIR$/src/tools/Information.java" />
+        <option value="$PROJECT_DIR$/src/pokemon/Pokemon.java" />
+        <option value="$PROJECT_DIR$/src/berries/Berry.java" />
+        <option value="$PROJECT_DIR$/src/api/Information.java" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/api/Client.java" />
+        <option value="$PROJECT_DIR$/src/api/Database.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="721" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,14 +331,35 @@
               <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,28 +375,17 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <module />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="PokeApi-V2-Wrapper" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -145,30 +395,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -181,21 +414,36 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -204,75 +452,861 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522250477178</updated>
+      <workItem from="1522337482031" duration="18714000" />
+      <workItem from="1522519250513" duration="330000" />
+      <workItem from="1522562974627" duration="2865000" />
+      <workItem from="1522618821478" duration="1656000" />
+      <workItem from="1522620589220" duration="8089000" />
+      <workItem from="1522682440132" duration="6037000" />
+      <workItem from="1522715703811" duration="3191000" />
+      <workItem from="1522723604313" duration="2040000" />
+      <workItem from="1522765673967" duration="126000" />
+      <workItem from="1522771074504" duration="262000" />
+      <workItem from="1522774422481" duration="3640000" />
     </task>
+    <task id="LOCAL-00043" summary="EvolutionDetail Model complete">
+      <created>1522343928428</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1522343928428</updated>
+    </task>
+    <task id="LOCAL-00044" summary="EvolutionTrigger Model complete">
+      <created>1522344306466</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1522344306466</updated>
+    </task>
+    <task id="LOCAL-00045" summary="PokemonEntry Model complete">
+      <created>1522345032017</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1522345032017</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Pokedex Model complete">
+      <created>1522345426574</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1522345426574</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Version Model complete">
+      <created>1522345600754</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1522345600754</updated>
+    </task>
+    <task id="LOCAL-00048" summary="VersionGroup Model complete">
+      <created>1522345970087</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1522345970087</updated>
+    </task>
+    <task id="LOCAL-00049" summary="VersionGroupFlavorText Model complete">
+      <created>1522346389197</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1522346389197</updated>
+    </task>
+    <task id="LOCAL-00050" summary="MachineVersionDetail Model complete">
+      <created>1522346731796</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1522346731797</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Item Model complete">
+      <created>1522347280320</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1522347280320</updated>
+    </task>
+    <task id="LOCAL-00052" summary="ItemSprites Model complete">
+      <created>1522352406585</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1522352406585</updated>
+    </task>
+    <task id="LOCAL-00053" summary="remove un-needed comments">
+      <created>1522352429067</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1522352429067</updated>
+    </task>
+    <task id="LOCAL-00054" summary="ItemHolderPokemon Model complete">
+      <created>1522352639654</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1522352639654</updated>
+    </task>
+    <task id="LOCAL-00055" summary="ItemHolderPokemonVersionDetail Model complete">
+      <created>1522352743951</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1522352743951</updated>
+    </task>
+    <task id="LOCAL-00056" summary="ItemAttribute Model complete">
+      <created>1522353003396</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1522353003396</updated>
+    </task>
+    <task id="LOCAL-00057" summary="ItemCategory Model complete">
+      <created>1522353254923</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1522353254923</updated>
+    </task>
+    <task id="LOCAL-00058" summary="ItemFlingEffect Model complete">
+      <created>1522353425967</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1522353425967</updated>
+    </task>
+    <task id="LOCAL-00059" summary="ItemPocket Model complete">
+      <created>1522354538101</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1522354538101</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Machine Model complete">
+      <created>1522354839104</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1522354839104</updated>
+    </task>
+    <task id="LOCAL-00061" summary="MoveFlavorText Model complete">
+      <created>1522355218297</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1522355218297</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Move Model complete (FINALLY!)">
+      <created>1522356992658</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1522356992659</updated>
+    </task>
+    <task id="LOCAL-00063" summary="moved to move package">
+      <created>1522357077590</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1522357077590</updated>
+    </task>
+    <task id="LOCAL-00064" summary="ContestComboDetail Model complete">
+      <created>1522357282384</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1522357282384</updated>
+    </task>
+    <task id="LOCAL-00065" summary="ContestComboSets Model complete">
+      <created>1522357398788</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1522357398788</updated>
+    </task>
+    <task id="LOCAL-00066" summary="MoveMetaData Model complete">
+      <created>1522358162804</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1522358162804</updated>
+    </task>
+    <task id="LOCAL-00067" summary="MoveStatChange Model complete">
+      <created>1522358471778</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1522358471778</updated>
+    </task>
+    <task id="LOCAL-00068" summary="PastMoveStatValues Model complete">
+      <created>1522470844565</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1522470844565</updated>
+    </task>
+    <task id="LOCAL-00069" summary="MoveAilment Model complete">
+      <created>1522470885798</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1522470885799</updated>
+    </task>
+    <task id="LOCAL-00070" summary="MoveBattleStyle Model complete">
+      <created>1522471019638</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1522471019638</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Move Category Model complete?">
+      <created>1522471442786</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1522471442786</updated>
+    </task>
+    <task id="LOCAL-00072" summary="MoveDamageClass Model complete?">
+      <created>1522471591926</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1522471591926</updated>
+    </task>
+    <task id="LOCAL-00073" summary="MoveLearnMethod Model complete">
+      <created>1522471745338</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1522471745339</updated>
+    </task>
+    <task id="LOCAL-00074" summary="MoveTarget Model complete">
+      <created>1522471825933</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1522471825933</updated>
+    </task>
+    <task id="LOCAL-00075" summary="EncounterMethodRate Model complete">
+      <created>1522472179064</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1522472179064</updated>
+    </task>
+    <task id="LOCAL-00076" summary="EncounterVersionDetails Method complete">
+      <created>1522472198666</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1522472198666</updated>
+    </task>
+    <task id="LOCAL-00077" summary="LocationArea Model complete">
+      <created>1522472325629</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1522472325629</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Location Model complete">
+      <created>1522472342692</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1522472342692</updated>
+    </task>
+    <task id="LOCAL-00079" summary="PalParkArea Model complete">
+      <created>1522472651977</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1522472651977</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Characteristic Model complete">
+      <created>1522473191092</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1522473191092</updated>
+    </task>
+    <task id="LOCAL-00081" summary="EggGroup Model complete">
+      <created>1522473402263</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1522473402263</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Gender Model complete (there's only 2)">
+      <created>1522473917561</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1522473917561</updated>
+    </task>
+    <task id="LOCAL-00083" summary="PokemonSpeciesGender Model complete">
+      <created>1522473935494</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1522473935494</updated>
+    </task>
+    <task id="LOCAL-00084" summary="PalParkEncounterSpecies Model complete">
+      <created>1522473954430</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1522473954430</updated>
+    </task>
+    <task id="LOCAL-00085" summary="GrowthRate Model complete">
+      <created>1522474207511</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1522474207511</updated>
+    </task>
+    <task id="LOCAL-00086" summary="added gson library">
+      <created>1522634391065</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1522634391066</updated>
+    </task>
+    <task id="LOCAL-00087" summary="added jackson library for annotations">
+      <created>1522634409164</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1522634409164</updated>
+    </task>
+    <task id="LOCAL-00088" summary="iml with imported libraries">
+      <created>1522634449329</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1522634449329</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Model automatic generation update">
+      <created>1522634655080</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1522634655080</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Model generation update! Now has setters and toString() methods">
+      <created>1522687233673</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1522687233673</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Rest of Models updated">
+      <created>1522687289177</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1522687289177</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="46950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32766616" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3296875" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32921174" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32921174" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.253125" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32766616" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39876354" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32921174" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MoveStatChange Model complete" />
+    <MESSAGE value="PastMoveStatValues Model complete" />
+    <MESSAGE value="MoveAilment Model complete" />
+    <MESSAGE value="MoveBattleStyle Model complete" />
+    <MESSAGE value="Move Category Model complete?" />
+    <MESSAGE value="MoveDamageClass Model complete?" />
+    <MESSAGE value="MoveLearnMethod Model complete" />
+    <MESSAGE value="MoveTarget Model complete" />
+    <MESSAGE value="EncounterMethodRate Model complete" />
+    <MESSAGE value="EncounterVersionDetails Method complete" />
+    <MESSAGE value="LocationArea Model complete" />
+    <MESSAGE value="Location Model complete" />
+    <MESSAGE value="PalParkArea Model complete" />
+    <MESSAGE value="Characteristic Model complete" />
+    <MESSAGE value="EggGroup Model complete" />
+    <MESSAGE value="Gender Model complete (there's only 2)" />
+    <MESSAGE value="PokemonSpeciesGender Model complete" />
+    <MESSAGE value="PalParkEncounterSpecies Model complete" />
+    <MESSAGE value="GrowthRate Model complete" />
+    <MESSAGE value="added gson library" />
+    <MESSAGE value="added jackson library for annotations" />
+    <MESSAGE value="iml with imported libraries" />
+    <MESSAGE value="Model automatic generation update" />
+    <MESSAGE value="Model generation update! Now has setters and toString() methods" />
+    <MESSAGE value="Rest of Models updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rest of Models updated" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/models/locations/Region.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="507">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/APIResource.java">
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveAilment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveBattleStyle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveDamageClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveFlavorText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveLearnMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveMetaData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveStatChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/PokemonSpeciesDexEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/AbilityEffectChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/Ability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/PastMoveStatValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/ItemSprites.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/ContestComboDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1268">
+          <caret line="179" column="1" lean-forward="true" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/machines/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/Characteristic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/GrowthRate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/berries/BerryFlavorMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/berries/FlavorBerryMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/PokemonHeldItemVersion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/contests/ContestType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/ItemFlingEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/ItemAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/ItemPocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/ItemCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/resource/APIResourceList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/contests/SuperContestEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/berries/BerryFlavor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/encounters/EncounterCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2013">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/common/APIResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/moves/ContestComboSets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/berries/BerryFirmness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/Internet.java" />
+    <entry file="file://$PROJECT_DIR$/src/tools/File.java" />
+    <entry file="file://$PROJECT_DIR$/src/models/games/VersionGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/utility/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/games/Version.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/https:_pokeapi_co_api_v2_pokemon_1.json" />
+    <entry file="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.21.0.jar!/org/sqlite/JDBC.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/common/NamedAPIResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/resource/NamedAPIResourceList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/Pokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
           <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#5605#5606#0" expanded="true" />
+            <element signature="e#5785#5786#0" expanded="true" />
+            <element signature="e#5847#5848#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/berries/Berry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4905">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Information.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PokeApi-V2-Wrapper</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>gson-2.8.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
