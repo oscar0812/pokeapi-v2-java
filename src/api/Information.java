@@ -5,8 +5,6 @@ import java.net.URL;
 
 // responsible for grabbing the information from either the online api or the local db (cache)
 public class Information {
-    // allow for api responses to be stored in db
-    public static boolean CACHE = true;
 
     private static String get(BufferedReader bufferedReader) {
         try {
@@ -29,7 +27,7 @@ public class Information {
     public static String fromInternet(String targetURL) {
         String str;
         // if CACHE is on, and exists in db, get it from db
-        if (CACHE && ((str = Database.getInstance().getByUrl(targetURL)) != null)) {
+        if (Client.CACHE && ((str = Database.getInstance().getByUrl(targetURL)) != null)) {
             return str;
         }
 
@@ -41,7 +39,7 @@ public class Information {
 
             str = Information.get(bufferedReader);
 
-            if (CACHE) {
+            if (Client.CACHE) {
                 if (Database.getInstance().insert(targetURL, str)) {
                     System.out.println("SAVED TO DB");
                 } else {
