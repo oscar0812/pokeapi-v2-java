@@ -1,4 +1,4 @@
-# PokéApi V2 Java Wrapper <img heigth=50 width=50 src="http://imgur.com/2E5yZzQ.png">
+# PokéApi V2 Java Wrapper <img heigth=50 width=50 src="https://cdn.bulbagarden.net/upload/thumb/3/36/350Milotic.png/250px-350Milotic.png">
 The most robust [PokéApi](https://www.pokeapi.co/) client. Written in Java with caching 🤖 and love 😍.
 
 ## Examples
