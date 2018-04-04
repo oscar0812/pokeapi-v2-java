@@ -180,6 +180,4 @@ getVersionGroupList(int limit, int offset);
 getLocationById(int id);
 getLocationList(int limit, int offset);
 ```
-
-## Disclaimer
-This software is for educational purposes, and is not to be held responsible for the violation of pokeapi.co guidelines. This software is distributed as-is, and has no warranty. Reply speeds depend on internet connection and server load. [Documentation here](https://pokeapi.co/docsv2/).
+[Documentation here](https://pokeapi.co/docsv2/).
