@@ -1,122 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PokeApi-V2-Wrapper:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e9624a-e42c-4aed-8d58-2673af7c441a" name="Default" comment="package lowercase">
+    <list default="true" id="f8e9624a-e42c-4aed-8d58-2673af7c441a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PokeApi-V2-Wrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PokeApi-V2-Wrapper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/berries/Berry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/Berry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/berries/BerryFirmness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/BerryFirmness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/berries/BerryFlavor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/BerryFlavor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/berries/BerryFlavorMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/BerryFlavorMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/berries/FlavorBerryMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/berries/FlavorBerryMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/APIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/APIResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Description.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Effect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Encounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/FlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/FlavorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/GenerationGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/GenerationGameIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/MachineVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/MachineVersionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/NamedAPIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/NamedAPIResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/VerboseEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VerboseEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/VersionEncounterDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VersionEncounterDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/VersionGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VersionGameIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/VersionGroupFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common/VersionGroupFlavorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contests/ContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/ContestEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contests/ContestName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/ContestName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contests/ContestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/ContestType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contests/SuperContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contests/SuperContestEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encounters/EncounterCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/encounters/EncounterCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encounters/EncounterConditionValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/encounters/EncounterConditionValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/encounters/EncounterMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/encounters/EncounterMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evolution/ChainLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/ChainLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evolution/EvolutionChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/EvolutionChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evolution/EvolutionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/EvolutionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/evolution/EvolutionTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/evolution/EvolutionTrigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/Generation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/Generation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/Pokedex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/PokemonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/PokemonEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/Version.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/games/VersionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/games/VersionGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/ItemAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/ItemFlingEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemFlingEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/ItemHolderPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemHolderPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/ItemHolderPokemonVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemHolderPokemonVersionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/ItemPocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemPocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/ItemSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemSprites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/EncounterMethodRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/EncounterMethodRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/EncounterVersionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/EncounterVersionDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/LocationArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/LocationArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/PalParkArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/PalParkArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/PalParkEncounterSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/PalParkEncounterSpecies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/PokemonEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/PokemonEncounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locations/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/locations/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/machines/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/machines/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/ContestComboDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/ContestComboDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/ContestComboSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/ContestComboSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveAilment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveAilment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveBattleStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveBattleStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveDamageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveDamageClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveFlavorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveLearnMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveLearnMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveMetaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveStatChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/MoveTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/MoveTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/moves/PastMoveStatValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moves/PastMoveStatValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Ability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Ability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/AbilityEffectChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AbilityEffectChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/AbilityFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AbilityFlavorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/AbilityPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AbilityPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/AwesomeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/AwesomeName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Characteristic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Characteristic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/EggGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/EggGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Genus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Genus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/GrowthRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/GrowthRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/GrowthRateExperienceLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/GrowthRateExperienceLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/LocationAreaEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/LocationAreaEncounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/MoveBattleStylePreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/MoveBattleStylePreference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/MoveStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/MoveStatAffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/MoveStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/MoveStatAffectSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Nature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Nature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/NaturePokeathlonStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NaturePokeathlonStatAffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/NaturePokeathlonStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NaturePokeathlonStatAffectSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/NatureStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NatureStatAffectSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/NatureStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/NatureStatChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PalParkEncounterArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PalParkEncounterArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokeathlonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokeathlonStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonAbility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonAbility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonFormSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonFormSprites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonHabitat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonHabitat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonHeldItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonHeldItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonHeldItemVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonHeldItemVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonMoveVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonMoveVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpecies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpeciesDexEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpeciesDexEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpeciesGender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpeciesGender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSpeciesVariety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSpeciesVariety.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonSprites.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/PokemonType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/PokemonType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/TypePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/TypePokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokemon/TypeRelations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/pokemon/TypeRelations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resource/APIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/resource/APIResourceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resource/NamedAPIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/resource/NamedAPIResourceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tools/Internet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/utility/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Information.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Information.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/Berry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/BerryFirmness.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/BerryFlavor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/BerryFlavorMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/FlavorBerryMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/APIResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Description.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Effect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Encounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/FlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/GenerationGameIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/MachineVersionDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Name.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/NamedAPIResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VerboseEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VersionEncounterDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VersionGameIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VersionGroupFlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/ContestEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/ContestName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/ContestType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/SuperContestEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/encounters/EncounterCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/encounters/EncounterConditionValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/encounters/EncounterMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/ChainLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/EvolutionChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/EvolutionDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/EvolutionTrigger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/Generation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/Pokedex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/PokemonEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/Version.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/VersionGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemAttribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemFlingEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemHolderPokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemHolderPokemonVersionDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemPocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemSprites.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/EncounterMethodRate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/EncounterVersionDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/LocationArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/PalParkArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/PalParkEncounterSpecies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/PokemonEncounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/Region.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/machines/Machine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/ContestComboDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/ContestComboSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveAilment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveBattleStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveDamageClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveFlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveLearnMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveStatChange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/PastMoveStatValues.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Ability.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AbilityEffectChange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AbilityFlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AbilityPokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AwesomeName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Characteristic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/EggGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Genus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/GrowthRate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/GrowthRateExperienceLevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/LocationAreaEncounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/MoveBattleStylePreference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/MoveStatAffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/MoveStatAffectSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Nature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NaturePokeathlonStatAffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NaturePokeathlonStatAffectSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NatureStatAffectSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NatureStatChange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PalParkEncounterArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokeathlonStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Pokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonAbility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonFormSprites.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonHabitat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonHeldItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonHeldItemVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonMove.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonMoveVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonShape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpecies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpeciesDexEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpeciesGender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpeciesVariety.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSprites.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Stat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/TypePokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/TypeRelations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/resource/APIResourceList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/resource/NamedAPIResourceList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/utility/Language.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,64 +149,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Information.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/api/Information.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4905">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Berry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/berries/Berry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pokemon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/pokemon/Pokemon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
-              <folding>
-                <element signature="e#5605#5606#0" expanded="true" />
-                <element signature="e#5785#5786#0" expanded="true" />
-                <element signature="e#5847#5848#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="375">
+                <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -225,6 +182,7 @@
       <find>_val</find>
       <find>import tools.Reader;</find>
       <find>Reader.Internet.get</find>
+      <find>String end</find>
     </findStrings>
     <replaceStrings>
       <replace>this.</replace>
@@ -238,9 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/items/ItemHolderPokemonVersionDetail.java" />
-        <option value="$PROJECT_DIR$/src/locations/EncounterMethodRate.java" />
-        <option value="$PROJECT_DIR$/src/locations/EncounterVersionDetails.java" />
         <option value="$PROJECT_DIR$/src/locations/Location.java" />
         <option value="$PROJECT_DIR$/src/locations/LocationArea.java" />
         <option value="$PROJECT_DIR$/src/locations/PalParkArea.java" />
@@ -285,10 +240,13 @@
         <option value="$PROJECT_DIR$/src/tools/Information.java" />
         <option value="$PROJECT_DIR$/src/pokemon/Pokemon.java" />
         <option value="$PROJECT_DIR$/src/berries/Berry.java" />
-        <option value="$PROJECT_DIR$/src/api/Information.java" />
-        <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/src/api/Client.java" />
         <option value="$PROJECT_DIR$/src/api/Database.java" />
+        <option value="$PROJECT_DIR$/src/api/Information.java" />
+        <option value="$PROJECT_DIR$/src/models/berries/Berry.java" />
+        <option value="$PROJECT_DIR$/src/api/Client.java" />
+        <option value="$PROJECT_DIR$/README2.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Test.java" />
       </list>
     </option>
   </component>
@@ -337,6 +295,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="berries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -351,12 +329,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
     </key>
@@ -462,42 +443,7 @@
       <workItem from="1522723604313" duration="2040000" />
       <workItem from="1522765673967" duration="126000" />
       <workItem from="1522771074504" duration="262000" />
-      <workItem from="1522774422481" duration="3640000" />
-    </task>
-    <task id="LOCAL-00043" summary="EvolutionDetail Model complete">
-      <created>1522343928428</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1522343928428</updated>
-    </task>
-    <task id="LOCAL-00044" summary="EvolutionTrigger Model complete">
-      <created>1522344306466</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1522344306466</updated>
-    </task>
-    <task id="LOCAL-00045" summary="PokemonEntry Model complete">
-      <created>1522345032017</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1522345032017</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Pokedex Model complete">
-      <created>1522345426574</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1522345426574</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Version Model complete">
-      <created>1522345600754</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1522345600754</updated>
+      <workItem from="1522774422481" duration="9768000" />
     </task>
     <task id="LOCAL-00048" summary="VersionGroup Model complete">
       <created>1522345970087</created>
@@ -807,11 +753,46 @@
       <option name="project" value="LOCAL" />
       <updated>1522687289177</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="SQLITE lib">
+      <created>1522780507369</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1522780507370</updated>
+    </task>
+    <task id="LOCAL-00093" summary="added comments">
+      <created>1522780714619</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1522780714620</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Client class update with list methods">
+      <created>1522789870995</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1522789870995</updated>
+    </task>
+    <task id="LOCAL-00095" summary="moved CACHE var to Client">
+      <created>1522789889967</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1522789889967</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Models auto generation update">
+      <created>1522789951466</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1522789951466</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46950000" />
+    <option name="totallyTimeSpent" value="53078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
@@ -855,11 +836,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MoveStatChange Model complete" />
-    <MESSAGE value="PastMoveStatValues Model complete" />
-    <MESSAGE value="MoveAilment Model complete" />
-    <MESSAGE value="MoveBattleStyle Model complete" />
-    <MESSAGE value="Move Category Model complete?" />
     <MESSAGE value="MoveDamageClass Model complete?" />
     <MESSAGE value="MoveLearnMethod Model complete" />
     <MESSAGE value="MoveTarget Model complete" />
@@ -880,23 +856,14 @@
     <MESSAGE value="Model automatic generation update" />
     <MESSAGE value="Model generation update! Now has setters and toString() methods" />
     <MESSAGE value="Rest of Models updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rest of Models updated" />
+    <MESSAGE value="SQLITE lib" />
+    <MESSAGE value="added comments" />
+    <MESSAGE value="Client class update with list methods" />
+    <MESSAGE value="moved CACHE var to Client" />
+    <MESSAGE value="Models auto generation update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Models auto generation update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/models/locations/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/moves/MoveAilment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/moves/MoveBattleStyle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -971,13 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/items/ItemSprites.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1128,26 +1088,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/berries/BerryFirmness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/Internet.java" />
     <entry file="file://$PROJECT_DIR$/src/tools/File.java" />
     <entry file="file://$PROJECT_DIR$/src/models/games/VersionGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/utility/Language.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -1180,53 +1126,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/pokemon/Pokemon.java">
+    <entry file="file://$PROJECT_DIR$/src/models/items/ItemSprites.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
-          <folding>
-            <element signature="e#5605#5606#0" expanded="true" />
-            <element signature="e#5785#5786#0" expanded="true" />
-            <element signature="e#5847#5848#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/api/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        <state relative-caret-position="-960">
+          <caret line="4" column="119" selection-start-line="4" selection-start-column="119" selection-end-line="4" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Information.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/pokemon/Pokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="177" column="43" selection-start-line="177" selection-start-column="43" selection-end-line="177" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5980#5981#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/berries/Berry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="-1410">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/berries/BerryFirmness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4905">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="6195">
+          <caret line="469" column="92" selection-start-line="469" selection-start-column="82" selection-end-line="469" selection-end-column="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/models/utility/Language.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/Information.java">
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="6" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="566">
+            <caret line="697" selection-start-line="697" selection-end-line="697" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="375">
+            <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1236,10 +1221,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>PokeApi-V2-Wrapper:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
