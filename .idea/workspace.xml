@@ -6,125 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e9624a-e42c-4aed-8d58-2673af7c441a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Information.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Information.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/Berry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/BerryFirmness.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/BerryFlavor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/BerryFlavorMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/berries/FlavorBerryMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/APIResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Description.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Effect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Encounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/FlavorText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/GenerationGameIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/MachineVersionDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/NamedAPIResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VerboseEffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VersionEncounterDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VersionGameIndex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/common/VersionGroupFlavorText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/ContestEffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/ContestName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/ContestType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/contests/SuperContestEffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/encounters/EncounterCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/encounters/EncounterConditionValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/encounters/EncounterMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/ChainLink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/EvolutionChain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/EvolutionDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/evolution/EvolutionTrigger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/Generation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/Pokedex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/PokemonEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/Version.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/games/VersionGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemAttribute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemFlingEffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemHolderPokemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemHolderPokemonVersionDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemPocket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/items/ItemSprites.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/EncounterMethodRate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/EncounterVersionDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/LocationArea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/PalParkArea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/PalParkEncounterSpecies.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/PokemonEncounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/locations/Region.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/machines/Machine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/ContestComboDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/ContestComboSets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveAilment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveBattleStyle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveDamageClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveFlavorText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveLearnMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveMetaData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveStatChange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/MoveTarget.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/moves/PastMoveStatValues.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Ability.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AbilityEffectChange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AbilityFlavorText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AbilityPokemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/AwesomeName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Characteristic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/EggGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Genus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/GrowthRate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/GrowthRateExperienceLevel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/LocationAreaEncounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/MoveBattleStylePreference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/MoveStatAffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/MoveStatAffectSets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Nature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NaturePokeathlonStatAffect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NaturePokeathlonStatAffectSets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NatureStatAffectSets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/NatureStatChange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PalParkEncounterArea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokeathlonStat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Pokemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonAbility.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonFormSprites.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonHabitat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonHeldItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonHeldItemVersion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonMove.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonMoveVersion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonShape.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpecies.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpeciesDexEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpeciesGender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSpeciesVariety.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonSprites.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonStat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/PokemonType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Stat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/TypePokemon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokemon/TypeRelations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/resource/APIResourceList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/resource/NamedAPIResourceList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/utility/Language.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
-    </list>
+    <list default="true" id="f8e9624a-e42c-4aed-8d58-2673af7c441a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -148,20 +30,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="375">
-                <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -283,37 +152,6 @@
             <path>
               <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
               <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="berries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PokeApi-V2-Wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PokeApi-V2-Wrapper" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -443,7 +281,7 @@
       <workItem from="1522723604313" duration="2040000" />
       <workItem from="1522765673967" duration="126000" />
       <workItem from="1522771074504" duration="262000" />
-      <workItem from="1522774422481" duration="9768000" />
+      <workItem from="1522774422481" duration="10149000" />
     </task>
     <task id="LOCAL-00048" summary="VersionGroup Model complete">
       <created>1522345970087</created>
@@ -792,11 +630,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53078000" />
+    <option name="totallyTimeSpent" value="53459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
