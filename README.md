@@ -28,7 +28,7 @@ Client.CACHE = false;
 ```
 **Cache can be set (or unset) even when using direct objects, and not the Client class**
 
-All method calls return the object which is being referenced, allowing chaining of method calls
+All method calls return the referenced object, allowing the chaining of method calls
 
 ```java
 Pokemon milotic = Pokemon.getByName("milotic");
