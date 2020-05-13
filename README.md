@@ -36,14 +36,22 @@ Client.CACHE = false;
 **Cache can be set (or unset) even when using direct objects, and not the Client class**
 
 ## API List Limitations
-All list methods return **NamedAPIResourceList** or a **APIResourceList** 
+All list methods (getXlist) return **NamedAPIResourceList** or a **APIResourceList** 
 instances by design. They do not return the information of each element in 
 the list, just the name and the url. To overcome this you can fetch the 
 API for each object.
 ```java
-NamedAPIResourceList list = Client.getPokemonList(10, 0);
-for (NamedAPIResource nar: list.getResults()) {
-    Pokemon pkm = Pokemon.getByName(nar.getName());
+NamedAPIResourceList list = Client.getMoveCategoryList(10, 0);
+for (NamedAPIResource nar:list.getResults()) {
+    // get the oject information from API
+    MoveCategory mc = MoveCategory.getByName(nar.getName());
+    
+    // getMoves() returns an ArrayList the api does not return the complete 
+    // information per object, but does set the url. The get will use this
+    // url and fetch its information
+    for(Move move: mc.getMoves()) {
+        System.out.println(move.get());
+    }
 }
 ```
 
