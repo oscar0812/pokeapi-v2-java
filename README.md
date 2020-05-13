@@ -18,6 +18,15 @@ Pokemon milotic = Client.getPokemonByName("milotic");
 Pokemon milotic = Pokemon.getByName("milotic");
 ```
 
+All method calls return the referenced object, allowing the chaining of method calls
+
+```java
+Pokemon milotic = Pokemon.getByName("milotic");
+System.out.println(milotic.getSpecies().getColor().setId(2).getId());
+```
+
+## Cache
+
 To speed up calls to online resources a local sqlite database is created to cache the responses. If a local copy of the API responses is not wanted, the feature can be disabled
 
 ```java
@@ -26,12 +35,18 @@ Client.CACHE = false;
 ```
 **Cache can be set (or unset) even when using direct objects, and not the Client class**
 
-All method calls return the referenced object, allowing the chaining of method calls
-
+## API List Limitations
+All list methods return **NamedAPIResourceList** or a **APIResourceList** 
+instances by design. They do not return the information of each element in 
+the list, just the name and the url. To overcome this you can fetch the 
+API for each object.
 ```java
-Pokemon milotic = Pokemon.getByName("milotic");
-System.out.println(milotic.getSpecies().getColor().setId(2).getId());
+NamedAPIResourceList list = Client.getPokemonList(10, 0);
+for (NamedAPIResource nar: list.getResults()) {
+    Pokemon pkm = Pokemon.getByName(nar.getName());
+}
 ```
+
 ## Client methods
 Below are all possible Client methods
 
@@ -178,4 +193,9 @@ getMoveCategoryById(int id);
 getMoveCategoryByName(String name);
 getMoveCategoryList(int limit, int offset);
 ```
+
+This project gets the information directly from the documentation. 
+If there is a documentation update, or you encounter a bug/error please
+contact me by email or open an issue.
+
 [Documentation here](https://pokeapi.co/docsv2/).
