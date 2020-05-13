@@ -9,16 +9,8 @@ public class Client {
 		return pokeapi.bittle.models.resources.APIResourceList.getByEndpoint(endpoint);
 	}
 
-	public static pokeapi.bittle.models.resources.APIResourceList getAPIResourceListList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.APIResourceList.getList("", limit, offset);
-	}
-
 	public static pokeapi.bittle.models.resources.NamedAPIResourceList getNamedAPIResourceListByEndpoint(String endpoint) {
 		return pokeapi.bittle.models.resources.NamedAPIResourceList.getByEndpoint(endpoint);
-	}
-
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getNamedAPIResourceListList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("", limit, offset);
 	}
 
 	public static pokeapi.bittle.models.berries.Berry getBerryById(int id) {
