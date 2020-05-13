@@ -36,7 +36,7 @@ Client.CACHE = false;
 **Cache can be set (or unset) even when using direct objects, and not the Client class**
 
 ## API List Limitations
-All list methods (getXlist) return **NamedAPIResourceList** or a **APIResourceList** 
+All list methods (getXlist) return **NamedAPIResourceList** or **APIResourceList** 
 instances by design. They do not return the information of each element in 
 the list, just the name and the url. To overcome this you can fetch the 
 API for each object.
