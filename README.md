@@ -5,22 +5,20 @@ The most robust [PokéApi](https://www.pokeapi.co/) client. Written in Java with
 A simple example to get information on beautiful milotic
 
 ```java
-Client client = new Client();
-Pokemon milotic = client.getPokemonByName("milotic");
+Pokemon milotic = Client.getPokemonByName("milotic");
 ```
 
 Any client call can be converted to a call to the direct object, for example
 
 ```java
 // using client to call methods
-Client client = new Client();
-Pokemon milotic = client.getPokemonByName("milotic");
+Pokemon milotic = Client.getPokemonByName("milotic");
 
 // using the Pokemon class directly
 Pokemon milotic = Pokemon.getByName("milotic");
 ```
 
-In order to speed up calls to online resources a local sqlite database is created to cache the responses. If a local copy of the API responses is not wanted, the feature can be disabled
+To speed up calls to online resources a local sqlite database is created to cache the responses. If a local copy of the API responses is not wanted, the feature can be disabled
 
 ```java
 Client.CACHE = false;
