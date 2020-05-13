@@ -7,6 +7,9 @@ public class MoveCategory extends pokeapi.bittle.models.utility.NamedAPIResource
 	// 
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
 
+	// 
+	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+
 	public int getId() {
 		return id;
 	}
@@ -22,6 +25,15 @@ public class MoveCategory extends pokeapi.bittle.models.utility.NamedAPIResource
 
 	public MoveCategory setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
 		this.descriptions = descriptions;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+		return moves;
+	}
+
+	public MoveCategory setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+		this.moves = moves;
 		return this;
 	}
 
