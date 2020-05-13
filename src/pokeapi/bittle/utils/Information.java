@@ -1,4 +1,4 @@
-package api;
+package pokeapi.bittle.utils;
 
 import java.io.*;
 import java.net.URL;

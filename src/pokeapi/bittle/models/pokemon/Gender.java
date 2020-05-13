@@ -1,0 +1,84 @@
+/* Genders were introduced in Generation II for the purposes of breeding Pokémon but can also result in visual differences or even different evolutionary lines. Check out Bulbapedia for greater detail. */
+
+package pokeapi.bittle.models.pokemon;
+/*
+{
+  "id": 1,
+  "name": "female",
+  "pokemon_species_details": [
+    {
+      "rate": 1,
+      "pokemon_species": {
+        "name": "bulbasaur",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
+      }
+    }
+  ],
+  "required_for_evolution": [
+    {
+      "name": "wormadam",
+      "url": "https://pokeapi.co/api/v2/pokemon-species/413/"
+    }
+  ]
+}
+*/
+
+public class Gender extends pokeapi.bittle.models.utility.NamedAPIResource {
+	public int getId() {
+				return id;
+	}
+
+	public Gender setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> getPokemonSpeciesDetails() {
+				return pokemon_species_details;
+	}
+
+	public Gender setPokemonSpeciesDetails(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> pokemon_species_details) {
+		this.pokemon_species_details = pokemon_species_details;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getRequiredForEvolution() {
+				return required_for_evolution;
+	}
+
+	public Gender setRequiredForEvolution(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> required_for_evolution) {
+		this.required_for_evolution = required_for_evolution;
+		return this;
+	}
+
+	// The identifier for this resource.
+	private int id;
+
+	// A list of Pokémon species that can be this gender and how likely it is that they will be.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> pokemon_species_details;
+
+	// A list of Pokémon species that required this gender in order for a Pokémon to evolve into them.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> required_for_evolution;
+
+	private static Gender get(String url) {
+		Gender obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Gender.class);
+		obj.setIsFetched(true);
+		return obj;
+	}
+
+	public Gender get() {
+		return Gender.get(this.getUrl());
+	}
+
+	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
+		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("gender", limit, offset);
+	}
+
+	public static Gender getById(int id) {
+		return get("https://pokeapi.co/api/v2/gender/" + id);
+	}
+
+	public static Gender getByName(String name) {
+		return get("https://pokeapi.co/api/v2/gender/" + name);
+	}
+}
