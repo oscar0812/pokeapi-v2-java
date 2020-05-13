@@ -46,9 +46,9 @@ for (NamedAPIResource nar:list.getResults()) {
     // get the oject information from API
     MoveCategory mc = MoveCategory.getByName(nar.getName());
     
-    // getMoves() returns an ArrayList the api does not return the complete 
-    // information per object, but does set the url. The get will use this
-    // url and fetch its information
+    // getMoves() returns an ArrayList. The api does not return the complete 
+    // information per object, but does set the url. The get function 
+    // uses the url and fetches its information
     for(Move move: mc.getMoves()) {
         System.out.println(move.get());
     }
