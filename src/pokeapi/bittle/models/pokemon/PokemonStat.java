@@ -144,11 +144,19 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonStat {
+	// The stat the Pokémon has.
+	private pokeapi.bittle.models.pokemon.Stat stat;
+
+	// The effort points (EV) the Pokémon has in the stat.
+	private int effort;
+
+	// The base value of the stat.
+	private int base_stat;
+
 	public pokeapi.bittle.models.pokemon.Stat getStat() {
 		if(!stat.getIsFetched()) {
 			stat = stat.get();
 		}
-
 		return stat;
 	}
 
@@ -158,7 +166,7 @@ public class PokemonStat {
 	}
 
 	public int getEffort() {
-				return effort;
+		return effort;
 	}
 
 	public PokemonStat setEffort(int effort) {
@@ -167,22 +175,13 @@ public class PokemonStat {
 	}
 
 	public int getBaseStat() {
-				return base_stat;
+		return base_stat;
 	}
 
 	public PokemonStat setBaseStat(int base_stat) {
 		this.base_stat = base_stat;
 		return this;
 	}
-
-	// The stat the Pokémon has.
-	private pokeapi.bittle.models.pokemon.Stat stat;
-
-	// The effort points (EV) the Pokémon has in the stat.
-	private int effort;
-
-	// The base value of the stat.
-	private int base_stat;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

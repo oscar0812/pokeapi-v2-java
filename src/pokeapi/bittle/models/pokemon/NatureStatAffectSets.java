@@ -63,8 +63,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class NatureStatAffectSets {
+	// A list of natures and how they change the referenced stat.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> increase;
+
+	// A list of nature sand how they change the referenced stat.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> decrease;
+
 	public java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> getIncrease() {
-				return increase;
+		return increase;
 	}
 
 	public NatureStatAffectSets setIncrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> increase) {
@@ -73,19 +79,13 @@ public class NatureStatAffectSets {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> getDecrease() {
-				return decrease;
+		return decrease;
 	}
 
 	public NatureStatAffectSets setDecrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> decrease) {
 		this.decrease = decrease;
 		return this;
 	}
-
-	// A list of natures and how they change the referenced stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> increase;
-
-	// A list of nature sand how they change the referenced stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.Nature> decrease;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

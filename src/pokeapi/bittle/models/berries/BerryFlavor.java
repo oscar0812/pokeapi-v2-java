@@ -31,46 +31,6 @@ package pokeapi.bittle.models.berries;
 */
 
 public class BerryFlavor extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public BerryFlavor setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.berries.FlavorBerryMap> getBerries() {
-				return berries;
-	}
-
-	public BerryFlavor setBerries(java.util.ArrayList<pokeapi.bittle.models.berries.FlavorBerryMap> berries) {
-		this.berries = berries;
-		return this;
-	}
-
-	public pokeapi.bittle.models.contests.ContestType getContestType() {
-		if(!contest_type.getIsFetched()) {
-			contest_type = contest_type.get();
-		}
-
-		return contest_type;
-	}
-
-	public BerryFlavor setContestType(pokeapi.bittle.models.contests.ContestType contest_type) {
-		this.contest_type = contest_type;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public BerryFlavor setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -82,6 +42,45 @@ public class BerryFlavor extends pokeapi.bittle.models.utility.NamedAPIResource 
 
 	// The name of this resource listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
+	public int getId() {
+		return id;
+	}
+
+	public BerryFlavor setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.berries.FlavorBerryMap> getBerries() {
+		return berries;
+	}
+
+	public BerryFlavor setBerries(java.util.ArrayList<pokeapi.bittle.models.berries.FlavorBerryMap> berries) {
+		this.berries = berries;
+		return this;
+	}
+
+	public pokeapi.bittle.models.contests.ContestType getContestType() {
+		if(!contest_type.getIsFetched()) {
+			contest_type = contest_type.get();
+		}
+		return contest_type;
+	}
+
+	public BerryFlavor setContestType(pokeapi.bittle.models.contests.ContestType contest_type) {
+		this.contest_type = contest_type;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public BerryFlavor setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
 
 	private static BerryFlavor get(String url) {
 		BerryFlavor obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), BerryFlavor.class);

@@ -1,8 +1,14 @@
 package pokeapi.bittle.models.moves;
 
 public class MoveCategory extends pokeapi.bittle.models.utility.NamedAPIResource {
+	// 
+	private int id;
+
+	// 
+	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+
 	public int getId() {
-				return id;
+		return id;
 	}
 
 	public MoveCategory setId(int id) {
@@ -11,19 +17,13 @@ public class MoveCategory extends pokeapi.bittle.models.utility.NamedAPIResource
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
-				return descriptions;
+		return descriptions;
 	}
 
 	public MoveCategory setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
 		this.descriptions = descriptions;
 		return this;
 	}
-
-	// 
-	private int id;
-
-	// 
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
 
 	private static MoveCategory get(String url) {
 		MoveCategory obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveCategory.class);

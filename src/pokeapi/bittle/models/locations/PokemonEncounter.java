@@ -69,11 +69,16 @@ package pokeapi.bittle.models.locations;
 */
 
 public class PokemonEncounter {
+	// The Pokémon being encountered.
+	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
+
+	// A list of versions and encounters with Pokémon that might happen in the referenced location area.
+	private java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details;
+
 	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
 		if(!pokemon.getIsFetched()) {
 			pokemon = pokemon.get();
 		}
-
 		return pokemon;
 	}
 
@@ -83,19 +88,13 @@ public class PokemonEncounter {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> getVersionDetails() {
-				return version_details;
+		return version_details;
 	}
 
 	public PokemonEncounter setVersionDetails(java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details) {
 		this.version_details = version_details;
 		return this;
 	}
-
-	// The Pokémon being encountered.
-	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
-
-	// A list of versions and encounters with Pokémon that might happen in the referenced location area.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

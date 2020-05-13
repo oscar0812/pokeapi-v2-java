@@ -69,8 +69,14 @@ package pokeapi.bittle.models.locations;
 */
 
 public class EncounterVersionDetails {
+	// The chance of an encounter to occur.
+	private int rate;
+
+	// The version of the game in which the encounter can occur with the given chance.
+	private pokeapi.bittle.models.games.Version version;
+
 	public int getRate() {
-				return rate;
+		return rate;
 	}
 
 	public EncounterVersionDetails setRate(int rate) {
@@ -82,7 +88,6 @@ public class EncounterVersionDetails {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
-
 		return version;
 	}
 
@@ -90,12 +95,6 @@ public class EncounterVersionDetails {
 		this.version = version;
 		return this;
 	}
-
-	// The chance of an encounter to occur.
-	private int rate;
-
-	// The version of the game in which the encounter can occur with the given chance.
-	private pokeapi.bittle.models.games.Version version;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

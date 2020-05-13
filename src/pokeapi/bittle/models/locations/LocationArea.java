@@ -69,64 +69,6 @@ package pokeapi.bittle.models.locations;
 */
 
 public class LocationArea extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public LocationArea setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getGameIndex() {
-				return game_index;
-	}
-
-	public LocationArea setGameIndex(int game_index) {
-		this.game_index = game_index;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.locations.EncounterMethodRate> getEncounterMethodRates() {
-				return encounter_method_rates;
-	}
-
-	public LocationArea setEncounterMethodRates(java.util.ArrayList<pokeapi.bittle.models.locations.EncounterMethodRate> encounter_method_rates) {
-		this.encounter_method_rates = encounter_method_rates;
-		return this;
-	}
-
-	public pokeapi.bittle.models.locations.Location getLocation() {
-		if(!location.getIsFetched()) {
-			location = location.get();
-		}
-
-		return location;
-	}
-
-	public LocationArea setLocation(pokeapi.bittle.models.locations.Location location) {
-		this.location = location;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public LocationArea setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.locations.PokemonEncounter> getPokemonEncounters() {
-				return pokemon_encounters;
-	}
-
-	public LocationArea setPokemonEncounters(java.util.ArrayList<pokeapi.bittle.models.locations.PokemonEncounter> pokemon_encounters) {
-		this.pokemon_encounters = pokemon_encounters;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -144,6 +86,63 @@ public class LocationArea extends pokeapi.bittle.models.utility.NamedAPIResource
 
 	// A list of Pokémon that can be encountered in this area along with version specific details about the encounter.
 	private java.util.ArrayList<pokeapi.bittle.models.locations.PokemonEncounter> pokemon_encounters;
+
+	public int getId() {
+		return id;
+	}
+
+	public LocationArea setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getGameIndex() {
+		return game_index;
+	}
+
+	public LocationArea setGameIndex(int game_index) {
+		this.game_index = game_index;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.locations.EncounterMethodRate> getEncounterMethodRates() {
+		return encounter_method_rates;
+	}
+
+	public LocationArea setEncounterMethodRates(java.util.ArrayList<pokeapi.bittle.models.locations.EncounterMethodRate> encounter_method_rates) {
+		this.encounter_method_rates = encounter_method_rates;
+		return this;
+	}
+
+	public pokeapi.bittle.models.locations.Location getLocation() {
+		if(!location.getIsFetched()) {
+			location = location.get();
+		}
+		return location;
+	}
+
+	public LocationArea setLocation(pokeapi.bittle.models.locations.Location location) {
+		this.location = location;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public LocationArea setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.locations.PokemonEncounter> getPokemonEncounters() {
+		return pokemon_encounters;
+	}
+
+	public LocationArea setPokemonEncounters(java.util.ArrayList<pokeapi.bittle.models.locations.PokemonEncounter> pokemon_encounters) {
+		this.pokemon_encounters = pokemon_encounters;
+		return this;
+	}
 
 	private static LocationArea get(String url) {
 		LocationArea obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), LocationArea.class);

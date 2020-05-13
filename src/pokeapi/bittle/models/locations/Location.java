@@ -37,55 +37,6 @@ package pokeapi.bittle.models.locations;
 */
 
 public class Location extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Location setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public pokeapi.bittle.models.locations.Region getRegion() {
-		if(!region.getIsFetched()) {
-			region = region.get();
-		}
-
-		return region;
-	}
-
-	public Location setRegion(pokeapi.bittle.models.locations.Region region) {
-		this.region = region;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public Location setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> getGameIndices() {
-				return game_indices;
-	}
-
-	public Location setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices) {
-		this.game_indices = game_indices;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.locations.LocationArea> getAreas() {
-				return areas;
-	}
-
-	public Location setAreas(java.util.ArrayList<pokeapi.bittle.models.locations.LocationArea> areas) {
-		this.areas = areas;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -100,6 +51,54 @@ public class Location extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// Areas that can be found within this location.
 	private java.util.ArrayList<pokeapi.bittle.models.locations.LocationArea> areas;
+
+	public int getId() {
+		return id;
+	}
+
+	public Location setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public pokeapi.bittle.models.locations.Region getRegion() {
+		if(!region.getIsFetched()) {
+			region = region.get();
+		}
+		return region;
+	}
+
+	public Location setRegion(pokeapi.bittle.models.locations.Region region) {
+		this.region = region;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public Location setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> getGameIndices() {
+		return game_indices;
+	}
+
+	public Location setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices) {
+		this.game_indices = game_indices;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.locations.LocationArea> getAreas() {
+		return areas;
+	}
+
+	public Location setAreas(java.util.ArrayList<pokeapi.bittle.models.locations.LocationArea> areas) {
+		this.areas = areas;
+		return this;
+	}
 
 	private static Location get(String url) {
 		Location obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Location.class);

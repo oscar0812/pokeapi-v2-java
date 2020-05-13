@@ -28,33 +28,6 @@ package pokeapi.bittle.models.encounters;
 */
 
 public class EncounterCondition extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public EncounterCondition setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public EncounterCondition setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> getValues() {
-				return values;
-	}
-
-	public EncounterCondition setValues(java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> values) {
-		this.values = values;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -63,6 +36,33 @@ public class EncounterCondition extends pokeapi.bittle.models.utility.NamedAPIRe
 
 	// A list of possible values for this encounter condition.
 	private java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> values;
+
+	public int getId() {
+		return id;
+	}
+
+	public EncounterCondition setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public EncounterCondition setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> getValues() {
+		return values;
+	}
+
+	public EncounterCondition setValues(java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> values) {
+		this.values = values;
+		return this;
+	}
 
 	private static EncounterCondition get(String url) {
 		EncounterCondition obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EncounterCondition.class);

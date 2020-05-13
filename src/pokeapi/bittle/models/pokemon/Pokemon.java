@@ -144,154 +144,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class Pokemon extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Pokemon setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getBaseExperience() {
-				return base_experience;
-	}
-
-	public Pokemon setBaseExperience(int base_experience) {
-		this.base_experience = base_experience;
-		return this;
-	}
-
-	public int getHeight() {
-				return height;
-	}
-
-	public Pokemon setHeight(int height) {
-		this.height = height;
-		return this;
-	}
-
-	public boolean getIsDefault() {
-				return is_default;
-	}
-
-	public Pokemon setIsDefault(boolean is_default) {
-		this.is_default = is_default;
-		return this;
-	}
-
-	public int getOrder() {
-				return order;
-	}
-
-	public Pokemon setOrder(int order) {
-		this.order = order;
-		return this;
-	}
-
-	public int getWeight() {
-				return weight;
-	}
-
-	public Pokemon setWeight(int weight) {
-		this.weight = weight;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonAbility> getAbilities() {
-				return abilities;
-	}
-
-	public Pokemon setAbilities(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonAbility> abilities) {
-		this.abilities = abilities;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonForm> getForms() {
-				return forms;
-	}
-
-	public Pokemon setForms(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonForm> forms) {
-		this.forms = forms;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionGameIndex> getGameIndices() {
-				return game_indices;
-	}
-
-	public Pokemon setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.VersionGameIndex> game_indices) {
-		this.game_indices = game_indices;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItem> getHeldItems() {
-				return held_items;
-	}
-
-	public Pokemon setHeldItems(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItem> held_items) {
-		this.held_items = held_items;
-		return this;
-	}
-
-	public String getLocationAreaEncounters() {
-				return location_area_encounters;
-	}
-
-	public Pokemon setLocationAreaEncounters(String location_area_encounters) {
-		this.location_area_encounters = location_area_encounters;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMove> getMoves() {
-				return moves;
-	}
-
-	public Pokemon setMoves(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMove> moves) {
-		this.moves = moves;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.PokemonSprites getSprites() {
-				return sprites;
-	}
-
-	public Pokemon setSprites(pokeapi.bittle.models.pokemon.PokemonSprites sprites) {
-		this.sprites = sprites;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getSpecies() {
-		if(!species.getIsFetched()) {
-			species = species.get();
-		}
-
-		return species;
-	}
-
-	public Pokemon setSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies species) {
-		this.species = species;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonStat> getStats() {
-				return stats;
-	}
-
-	public Pokemon setStats(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonStat> stats) {
-		this.stats = stats;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> getTypes() {
-				return types;
-	}
-
-	public Pokemon setTypes(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> types) {
-		this.types = types;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -339,6 +191,153 @@ public class Pokemon extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// A list of details showing types this Pokémon has.
 	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> types;
+
+	public int getId() {
+		return id;
+	}
+
+	public Pokemon setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getBaseExperience() {
+		return base_experience;
+	}
+
+	public Pokemon setBaseExperience(int base_experience) {
+		this.base_experience = base_experience;
+		return this;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public Pokemon setHeight(int height) {
+		this.height = height;
+		return this;
+	}
+
+	public boolean getIsDefault() {
+		return is_default;
+	}
+
+	public Pokemon setIsDefault(boolean is_default) {
+		this.is_default = is_default;
+		return this;
+	}
+
+	public int getOrder() {
+		return order;
+	}
+
+	public Pokemon setOrder(int order) {
+		this.order = order;
+		return this;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public Pokemon setWeight(int weight) {
+		this.weight = weight;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonAbility> getAbilities() {
+		return abilities;
+	}
+
+	public Pokemon setAbilities(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonAbility> abilities) {
+		this.abilities = abilities;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonForm> getForms() {
+		return forms;
+	}
+
+	public Pokemon setForms(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonForm> forms) {
+		this.forms = forms;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionGameIndex> getGameIndices() {
+		return game_indices;
+	}
+
+	public Pokemon setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.VersionGameIndex> game_indices) {
+		this.game_indices = game_indices;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItem> getHeldItems() {
+		return held_items;
+	}
+
+	public Pokemon setHeldItems(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItem> held_items) {
+		this.held_items = held_items;
+		return this;
+	}
+
+	public String getLocationAreaEncounters() {
+		return location_area_encounters;
+	}
+
+	public Pokemon setLocationAreaEncounters(String location_area_encounters) {
+		this.location_area_encounters = location_area_encounters;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMove> getMoves() {
+		return moves;
+	}
+
+	public Pokemon setMoves(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMove> moves) {
+		this.moves = moves;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.PokemonSprites getSprites() {
+		return sprites;
+	}
+
+	public Pokemon setSprites(pokeapi.bittle.models.pokemon.PokemonSprites sprites) {
+		this.sprites = sprites;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.PokemonSpecies getSpecies() {
+		if(!species.getIsFetched()) {
+			species = species.get();
+		}
+		return species;
+	}
+
+	public Pokemon setSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies species) {
+		this.species = species;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonStat> getStats() {
+		return stats;
+	}
+
+	public Pokemon setStats(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonStat> stats) {
+		this.stats = stats;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> getTypes() {
+		return types;
+	}
+
+	public Pokemon setTypes(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> types) {
+		this.types = types;
+		return this;
+	}
 
 	private static Pokemon get(String url) {
 		Pokemon obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Pokemon.class);

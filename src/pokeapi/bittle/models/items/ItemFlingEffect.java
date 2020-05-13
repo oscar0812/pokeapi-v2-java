@@ -24,33 +24,6 @@ package pokeapi.bittle.models.items;
 */
 
 public class ItemFlingEffect extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public ItemFlingEffect setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Effect> getEffectEntries() {
-				return effect_entries;
-	}
-
-	public ItemFlingEffect setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries) {
-		this.effect_entries = effect_entries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.items.Item> getItems() {
-				return items;
-	}
-
-	public ItemFlingEffect setItems(java.util.ArrayList<pokeapi.bittle.models.items.Item> items) {
-		this.items = items;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -59,6 +32,33 @@ public class ItemFlingEffect extends pokeapi.bittle.models.utility.NamedAPIResou
 
 	// A list of items that have this fling effect.
 	private java.util.ArrayList<pokeapi.bittle.models.items.Item> items;
+
+	public int getId() {
+		return id;
+	}
+
+	public ItemFlingEffect setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Effect> getEffectEntries() {
+		return effect_entries;
+	}
+
+	public ItemFlingEffect setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries) {
+		this.effect_entries = effect_entries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.items.Item> getItems() {
+		return items;
+	}
+
+	public ItemFlingEffect setItems(java.util.ArrayList<pokeapi.bittle.models.items.Item> items) {
+		this.items = items;
+		return this;
+	}
 
 	private static ItemFlingEffect get(String url) {
 		ItemFlingEffect obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), ItemFlingEffect.class);

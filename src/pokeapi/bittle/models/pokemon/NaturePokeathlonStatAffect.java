@@ -38,8 +38,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class NaturePokeathlonStatAffect {
+	// The maximum amount of change to the referenced Pokéathlon stat.
+	private int max_change;
+
+	// The nature causing the change.
+	private pokeapi.bittle.models.pokemon.Nature nature;
+
 	public int getMaxChange() {
-				return max_change;
+		return max_change;
 	}
 
 	public NaturePokeathlonStatAffect setMaxChange(int max_change) {
@@ -51,7 +57,6 @@ public class NaturePokeathlonStatAffect {
 		if(!nature.getIsFetched()) {
 			nature = nature.get();
 		}
-
 		return nature;
 	}
 
@@ -59,12 +64,6 @@ public class NaturePokeathlonStatAffect {
 		this.nature = nature;
 		return this;
 	}
-
-	// The maximum amount of change to the referenced Pokéathlon stat.
-	private int max_change;
-
-	// The nature causing the change.
-	private pokeapi.bittle.models.pokemon.Nature nature;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

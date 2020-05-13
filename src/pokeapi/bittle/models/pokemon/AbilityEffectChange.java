@@ -73,8 +73,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class AbilityEffectChange {
+	// The previous effect of this ability listed in different languages.
+	private java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries;
+
+	// The version group in which the previous effect of this ability originated.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
 	public java.util.ArrayList<pokeapi.bittle.models.utility.Effect> getEffectEntries() {
-				return effect_entries;
+		return effect_entries;
 	}
 
 	public AbilityEffectChange setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries) {
@@ -86,7 +92,6 @@ public class AbilityEffectChange {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -94,12 +99,6 @@ public class AbilityEffectChange {
 		this.version_group = version_group;
 		return this;
 	}
-
-	// The previous effect of this ability listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries;
-
-	// The version group in which the previous effect of this ability originated.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

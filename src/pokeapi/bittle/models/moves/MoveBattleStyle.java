@@ -18,8 +18,14 @@ package pokeapi.bittle.models.moves;
 */
 
 public class MoveBattleStyle extends pokeapi.bittle.models.utility.NamedAPIResource {
+	// The identifier for this resource.
+	private int id;
+
+	// The name of this resource listed in different languages.
+	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
 	public int getId() {
-				return id;
+		return id;
 	}
 
 	public MoveBattleStyle setId(int id) {
@@ -28,19 +34,13 @@ public class MoveBattleStyle extends pokeapi.bittle.models.utility.NamedAPIResou
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
+		return names;
 	}
 
 	public MoveBattleStyle setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
 		this.names = names;
 		return this;
 	}
-
-	// The identifier for this resource.
-	private int id;
-
-	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
 
 	private static MoveBattleStyle get(String url) {
 		MoveBattleStyle obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveBattleStyle.class);

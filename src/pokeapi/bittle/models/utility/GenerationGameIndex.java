@@ -1,8 +1,14 @@
 package pokeapi.bittle.models.utility;
 
 public class GenerationGameIndex {
+	// The internal id of an API resource within game data.
+	private int game_index;
+
+	// The generation relevent to this game index.
+	private pokeapi.bittle.models.games.Generation generation;
+
 	public int getGameIndex() {
-				return game_index;
+		return game_index;
 	}
 
 	public GenerationGameIndex setGameIndex(int game_index) {
@@ -14,7 +20,6 @@ public class GenerationGameIndex {
 		if(!generation.getIsFetched()) {
 			generation = generation.get();
 		}
-
 		return generation;
 	}
 
@@ -22,12 +27,6 @@ public class GenerationGameIndex {
 		this.generation = generation;
 		return this;
 	}
-
-	// The internal id of an API resource within game data.
-	private int game_index;
-
-	// The generation relevent to this game index.
-	private pokeapi.bittle.models.games.Generation generation;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

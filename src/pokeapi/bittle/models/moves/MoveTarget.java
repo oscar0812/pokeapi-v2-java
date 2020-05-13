@@ -33,42 +33,6 @@ package pokeapi.bittle.models.moves;
 */
 
 public class MoveTarget extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public MoveTarget setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
-				return descriptions;
-	}
-
-	public MoveTarget setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
-		this.descriptions = descriptions;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
-				return moves;
-	}
-
-	public MoveTarget setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
-		this.moves = moves;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public MoveTarget setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -80,6 +44,42 @@ public class MoveTarget extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// The name of this resource listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
+	public int getId() {
+		return id;
+	}
+
+	public MoveTarget setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+		return descriptions;
+	}
+
+	public MoveTarget setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+		this.descriptions = descriptions;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+		return moves;
+	}
+
+	public MoveTarget setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+		this.moves = moves;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public MoveTarget setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
 
 	private static MoveTarget get(String url) {
 		MoveTarget obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveTarget.class);

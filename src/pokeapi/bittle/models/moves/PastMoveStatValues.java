@@ -118,77 +118,6 @@ package pokeapi.bittle.models.moves;
 */
 
 public class PastMoveStatValues {
-	public int getAccuracy() {
-				return accuracy;
-	}
-
-	public PastMoveStatValues setAccuracy(int accuracy) {
-		this.accuracy = accuracy;
-		return this;
-	}
-
-	public int getEffectChance() {
-				return effect_chance;
-	}
-
-	public PastMoveStatValues setEffectChance(int effect_chance) {
-		this.effect_chance = effect_chance;
-		return this;
-	}
-
-	public int getPower() {
-				return power;
-	}
-
-	public PastMoveStatValues setPower(int power) {
-		this.power = power;
-		return this;
-	}
-
-	public int getPp() {
-				return pp;
-	}
-
-	public PastMoveStatValues setPp(int pp) {
-		this.pp = pp;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
-				return effect_entries;
-	}
-
-	public PastMoveStatValues setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
-		this.effect_entries = effect_entries;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.Type getType() {
-		if(!type.getIsFetched()) {
-			type = type.get();
-		}
-
-		return type;
-	}
-
-	public PastMoveStatValues setType(pokeapi.bittle.models.pokemon.Type type) {
-		this.type = type;
-		return this;
-	}
-
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
-		if(!version_group.getIsFetched()) {
-			version_group = version_group.get();
-		}
-
-		return version_group;
-	}
-
-	public PastMoveStatValues setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
-		this.version_group = version_group;
-		return this;
-	}
-
 	// The percent value of how likely this move is to be successful.
 	private int accuracy;
 
@@ -209,6 +138,75 @@ public class PastMoveStatValues {
 
 	// The version group in which these move stat values were in effect.
 	private pokeapi.bittle.models.games.VersionGroup version_group;
+
+	public int getAccuracy() {
+		return accuracy;
+	}
+
+	public PastMoveStatValues setAccuracy(int accuracy) {
+		this.accuracy = accuracy;
+		return this;
+	}
+
+	public int getEffectChance() {
+		return effect_chance;
+	}
+
+	public PastMoveStatValues setEffectChance(int effect_chance) {
+		this.effect_chance = effect_chance;
+		return this;
+	}
+
+	public int getPower() {
+		return power;
+	}
+
+	public PastMoveStatValues setPower(int power) {
+		this.power = power;
+		return this;
+	}
+
+	public int getPp() {
+		return pp;
+	}
+
+	public PastMoveStatValues setPp(int pp) {
+		this.pp = pp;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
+		return effect_entries;
+	}
+
+	public PastMoveStatValues setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
+		this.effect_entries = effect_entries;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.Type getType() {
+		if(!type.getIsFetched()) {
+			type = type.get();
+		}
+		return type;
+	}
+
+	public PastMoveStatValues setType(pokeapi.bittle.models.pokemon.Type type) {
+		this.type = type;
+		return this;
+	}
+
+	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+		if(!version_group.getIsFetched()) {
+			version_group = version_group.get();
+		}
+		return version_group;
+	}
+
+	public PastMoveStatValues setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+		this.version_group = version_group;
+		return this;
+	}
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

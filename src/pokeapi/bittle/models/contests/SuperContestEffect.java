@@ -24,42 +24,6 @@ package pokeapi.bittle.models.contests;
 */
 
 public class SuperContestEffect extends pokeapi.bittle.models.utility.APIResource {
-	public int getId() {
-				return id;
-	}
-
-	public SuperContestEffect setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getAppeal() {
-				return appeal;
-	}
-
-	public SuperContestEffect setAppeal(int appeal) {
-		this.appeal = appeal;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> getFlavorTextEntries() {
-				return flavor_text_entries;
-	}
-
-	public SuperContestEffect setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries) {
-		this.flavor_text_entries = flavor_text_entries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
-				return moves;
-	}
-
-	public SuperContestEffect setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
-		this.moves = moves;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -71,6 +35,42 @@ public class SuperContestEffect extends pokeapi.bittle.models.utility.APIResourc
 
 	// A list of moves that have the effect when used in super contests.
 	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+
+	public int getId() {
+		return id;
+	}
+
+	public SuperContestEffect setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getAppeal() {
+		return appeal;
+	}
+
+	public SuperContestEffect setAppeal(int appeal) {
+		this.appeal = appeal;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> getFlavorTextEntries() {
+		return flavor_text_entries;
+	}
+
+	public SuperContestEffect setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries) {
+		this.flavor_text_entries = flavor_text_entries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+		return moves;
+	}
+
+	public SuperContestEffect setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+		this.moves = moves;
+		return this;
+	}
 
 	private static SuperContestEffect get(String url) {
 		SuperContestEffect obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), SuperContestEffect.class);

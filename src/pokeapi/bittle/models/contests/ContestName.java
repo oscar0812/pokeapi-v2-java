@@ -23,8 +23,17 @@ package pokeapi.bittle.models.contests;
 */
 
 public class ContestName {
+	// The name for this contest.
+	private String name;
+
+	// The color associated with this contest's name.
+	private String color;
+
+	// The language that this name is in.
+	private pokeapi.bittle.models.utility.Language language;
+
 	public String getName() {
-				return name;
+		return name;
 	}
 
 	public ContestName setName(String name) {
@@ -33,7 +42,7 @@ public class ContestName {
 	}
 
 	public String getColor() {
-				return color;
+		return color;
 	}
 
 	public ContestName setColor(String color) {
@@ -45,7 +54,6 @@ public class ContestName {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -53,15 +61,6 @@ public class ContestName {
 		this.language = language;
 		return this;
 	}
-
-	// The name for this contest.
-	private String name;
-
-	// The color associated with this contest's name.
-	private String color;
-
-	// The language that this name is in.
-	private pokeapi.bittle.models.utility.Language language;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

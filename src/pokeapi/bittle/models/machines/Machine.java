@@ -20,8 +20,20 @@ package pokeapi.bittle.models.machines;
 */
 
 public class Machine extends pokeapi.bittle.models.utility.APIResource {
+	// The identifier for this resource.
+	private int id;
+
+	// The TM or HM item that corresponds to this machine.
+	private pokeapi.bittle.models.items.Item item;
+
+	// The move that is taught by this machine.
+	private pokeapi.bittle.models.moves.Move move;
+
+	// The version group that this machine applies to.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
 	public int getId() {
-				return id;
+		return id;
 	}
 
 	public Machine setId(int id) {
@@ -33,7 +45,6 @@ public class Machine extends pokeapi.bittle.models.utility.APIResource {
 		if(!item.getIsFetched()) {
 			item = item.get();
 		}
-
 		return item;
 	}
 
@@ -46,7 +57,6 @@ public class Machine extends pokeapi.bittle.models.utility.APIResource {
 		if(!move.getIsFetched()) {
 			move = move.get();
 		}
-
 		return move;
 	}
 
@@ -59,7 +69,6 @@ public class Machine extends pokeapi.bittle.models.utility.APIResource {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -67,18 +76,6 @@ public class Machine extends pokeapi.bittle.models.utility.APIResource {
 		this.version_group = version_group;
 		return this;
 	}
-
-	// The identifier for this resource.
-	private int id;
-
-	// The TM or HM item that corresponds to this machine.
-	private pokeapi.bittle.models.items.Item item;
-
-	// The move that is taught by this machine.
-	private pokeapi.bittle.models.moves.Move move;
-
-	// The version group that this machine applies to.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
 
 	private static Machine get(String url) {
 		Machine obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Machine.class);

@@ -21,51 +21,6 @@ package pokeapi.bittle.models.utility;
 */
 
 public class Language extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Language setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public boolean getOfficial() {
-				return official;
-	}
-
-	public Language setOfficial(boolean official) {
-		this.official = official;
-		return this;
-	}
-
-	public String getIso639() {
-				return iso639;
-	}
-
-	public Language setIso639(String iso639) {
-		this.iso639 = iso639;
-		return this;
-	}
-
-	public String getIso3166() {
-				return iso3166;
-	}
-
-	public Language setIso3166(String iso3166) {
-		this.iso3166 = iso3166;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public Language setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -80,6 +35,51 @@ public class Language extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// The name of this resource listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
+	public int getId() {
+		return id;
+	}
+
+	public Language setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public boolean getOfficial() {
+		return official;
+	}
+
+	public Language setOfficial(boolean official) {
+		this.official = official;
+		return this;
+	}
+
+	public String getIso639() {
+		return iso639;
+	}
+
+	public Language setIso639(String iso639) {
+		this.iso639 = iso639;
+		return this;
+	}
+
+	public String getIso3166() {
+		return iso3166;
+	}
+
+	public Language setIso3166(String iso3166) {
+		this.iso3166 = iso3166;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public Language setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
 
 	private static Language get(String url) {
 		Language obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Language.class);

@@ -1,8 +1,17 @@
 package pokeapi.bittle.models.utility;
 
 public class VersionGroupFlavorText {
+	// The localized name for an API resource in a specific language.
+	private String text;
+
+	// The language this name is in.
+	private pokeapi.bittle.models.utility.Language language;
+
+	// The version group which uses this flavor text.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
 	public String getText() {
-				return text;
+		return text;
 	}
 
 	public VersionGroupFlavorText setText(String text) {
@@ -14,7 +23,6 @@ public class VersionGroupFlavorText {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -27,7 +35,6 @@ public class VersionGroupFlavorText {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -35,15 +42,6 @@ public class VersionGroupFlavorText {
 		this.version_group = version_group;
 		return this;
 	}
-
-	// The localized name for an API resource in a specific language.
-	private String text;
-
-	// The language this name is in.
-	private pokeapi.bittle.models.utility.Language language;
-
-	// The version group which uses this flavor text.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

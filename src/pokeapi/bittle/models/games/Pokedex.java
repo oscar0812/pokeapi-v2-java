@@ -47,73 +47,6 @@ package pokeapi.bittle.models.games;
 */
 
 public class Pokedex extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Pokedex setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public boolean getIsMainSeries() {
-				return is_main_series;
-	}
-
-	public Pokedex setIsMainSeries(boolean is_main_series) {
-		this.is_main_series = is_main_series;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
-				return descriptions;
-	}
-
-	public Pokedex setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
-		this.descriptions = descriptions;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public Pokedex setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.games.PokemonEntry> getPokemonEntries() {
-				return pokemon_entries;
-	}
-
-	public Pokedex setPokemonEntries(java.util.ArrayList<pokeapi.bittle.models.games.PokemonEntry> pokemon_entries) {
-		this.pokemon_entries = pokemon_entries;
-		return this;
-	}
-
-	public pokeapi.bittle.models.locations.Region getRegion() {
-		if(!region.getIsFetched()) {
-			region = region.get();
-		}
-
-		return region;
-	}
-
-	public Pokedex setRegion(pokeapi.bittle.models.locations.Region region) {
-		this.region = region;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> getVersionGroups() {
-				return version_groups;
-	}
-
-	public Pokedex setVersionGroups(java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups) {
-		this.version_groups = version_groups;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -134,6 +67,72 @@ public class Pokedex extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// A list of version groups this Pokédex is relevant to.
 	private java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups;
+
+	public int getId() {
+		return id;
+	}
+
+	public Pokedex setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public boolean getIsMainSeries() {
+		return is_main_series;
+	}
+
+	public Pokedex setIsMainSeries(boolean is_main_series) {
+		this.is_main_series = is_main_series;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+		return descriptions;
+	}
+
+	public Pokedex setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+		this.descriptions = descriptions;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public Pokedex setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.games.PokemonEntry> getPokemonEntries() {
+		return pokemon_entries;
+	}
+
+	public Pokedex setPokemonEntries(java.util.ArrayList<pokeapi.bittle.models.games.PokemonEntry> pokemon_entries) {
+		this.pokemon_entries = pokemon_entries;
+		return this;
+	}
+
+	public pokeapi.bittle.models.locations.Region getRegion() {
+		if(!region.getIsFetched()) {
+			region = region.get();
+		}
+		return region;
+	}
+
+	public Pokedex setRegion(pokeapi.bittle.models.locations.Region region) {
+		this.region = region;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> getVersionGroups() {
+		return version_groups;
+	}
+
+	public Pokedex setVersionGroups(java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups) {
+		this.version_groups = version_groups;
+		return this;
+	}
 
 	private static Pokedex get(String url) {
 		Pokedex obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Pokedex.class);

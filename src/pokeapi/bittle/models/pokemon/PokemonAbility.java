@@ -144,8 +144,17 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonAbility {
+	// Whether or not this is a hidden ability.
+	private boolean is_hidden;
+
+	// The slot this ability occupies in this Pokémon species.
+	private int slot;
+
+	// The ability the Pokémon may have.
+	private pokeapi.bittle.models.pokemon.Ability ability;
+
 	public boolean getIsHidden() {
-				return is_hidden;
+		return is_hidden;
 	}
 
 	public PokemonAbility setIsHidden(boolean is_hidden) {
@@ -154,7 +163,7 @@ public class PokemonAbility {
 	}
 
 	public int getSlot() {
-				return slot;
+		return slot;
 	}
 
 	public PokemonAbility setSlot(int slot) {
@@ -166,7 +175,6 @@ public class PokemonAbility {
 		if(!ability.getIsFetched()) {
 			ability = ability.get();
 		}
-
 		return ability;
 	}
 
@@ -174,15 +182,6 @@ public class PokemonAbility {
 		this.ability = ability;
 		return this;
 	}
-
-	// Whether or not this is a hidden ability.
-	private boolean is_hidden;
-
-	// The slot this ability occupies in this Pokémon species.
-	private int slot;
-
-	// The ability the Pokémon may have.
-	private pokeapi.bittle.models.pokemon.Ability ability;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

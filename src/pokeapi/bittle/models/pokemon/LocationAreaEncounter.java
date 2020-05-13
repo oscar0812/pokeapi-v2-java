@@ -144,11 +144,16 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class LocationAreaEncounter {
+	// The location area the referenced Pokémon can be encountered in.
+	private pokeapi.bittle.models.locations.LocationArea location_area;
+
+	// A list of versions and encounters with the referenced Pokémon that might happen.
+	private java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details;
+
 	public pokeapi.bittle.models.locations.LocationArea getLocationArea() {
 		if(!location_area.getIsFetched()) {
 			location_area = location_area.get();
 		}
-
 		return location_area;
 	}
 
@@ -158,19 +163,13 @@ public class LocationAreaEncounter {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> getVersionDetails() {
-				return version_details;
+		return version_details;
 	}
 
 	public LocationAreaEncounter setVersionDetails(java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details) {
 		this.version_details = version_details;
 		return this;
 	}
-
-	// The location area the referenced Pokémon can be encountered in.
-	private pokeapi.bittle.models.locations.LocationArea location_area;
-
-	// A list of versions and encounters with the referenced Pokémon that might happen.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

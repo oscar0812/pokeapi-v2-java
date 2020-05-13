@@ -105,8 +105,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonSpeciesVariety {
+	// Whether this variety is the default variety.
+	private boolean is_default;
+
+	// The Pokémon variety.
+	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
+
 	public boolean getIsDefault() {
-				return is_default;
+		return is_default;
 	}
 
 	public PokemonSpeciesVariety setIsDefault(boolean is_default) {
@@ -118,7 +124,6 @@ public class PokemonSpeciesVariety {
 		if(!pokemon.getIsFetched()) {
 			pokemon = pokemon.get();
 		}
-
 		return pokemon;
 	}
 
@@ -126,12 +131,6 @@ public class PokemonSpeciesVariety {
 		this.pokemon = pokemon;
 		return this;
 	}
-
-	// Whether this variety is the default variety.
-	private boolean is_default;
-
-	// The Pokémon variety.
-	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

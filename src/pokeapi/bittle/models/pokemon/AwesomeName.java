@@ -33,8 +33,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class AwesomeName {
+	// The localized "scientific" name for an API resource in a specific language.
+	private String awesome_name;
+
+	// The language this "scientific" name is in.
+	private pokeapi.bittle.models.utility.Language language;
+
 	public String getAwesomeName() {
-				return awesome_name;
+		return awesome_name;
 	}
 
 	public AwesomeName setAwesomeName(String awesome_name) {
@@ -46,7 +52,6 @@ public class AwesomeName {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -54,12 +59,6 @@ public class AwesomeName {
 		this.language = language;
 		return this;
 	}
-
-	// The localized "scientific" name for an API resource in a specific language.
-	private String awesome_name;
-
-	// The language this "scientific" name is in.
-	private pokeapi.bittle.models.utility.Language language;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

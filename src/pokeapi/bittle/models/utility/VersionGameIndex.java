@@ -1,8 +1,14 @@
 package pokeapi.bittle.models.utility;
 
 public class VersionGameIndex {
+	// The internal id of an API resource within game data.
+	private int game_index;
+
+	// The version relevent to this game index.
+	private pokeapi.bittle.models.games.Version version;
+
 	public int getGameIndex() {
-				return game_index;
+		return game_index;
 	}
 
 	public VersionGameIndex setGameIndex(int game_index) {
@@ -14,7 +20,6 @@ public class VersionGameIndex {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
-
 		return version;
 	}
 
@@ -22,12 +27,6 @@ public class VersionGameIndex {
 		this.version = version;
 		return this;
 	}
-
-	// The internal id of an API resource within game data.
-	private int game_index;
-
-	// The version relevent to this game index.
-	private pokeapi.bittle.models.games.Version version;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

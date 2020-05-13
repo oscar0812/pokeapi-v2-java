@@ -69,11 +69,16 @@ package pokeapi.bittle.models.locations;
 */
 
 public class EncounterMethodRate {
+	// The method in which Pokémon may be encountered in an area..
+	private pokeapi.bittle.models.encounters.EncounterMethod encounter_method;
+
+	// The chance of the encounter to occur on a version of the game.
+	private java.util.ArrayList<pokeapi.bittle.models.locations.EncounterVersionDetails> version_details;
+
 	public pokeapi.bittle.models.encounters.EncounterMethod getEncounterMethod() {
 		if(!encounter_method.getIsFetched()) {
 			encounter_method = encounter_method.get();
 		}
-
 		return encounter_method;
 	}
 
@@ -83,19 +88,13 @@ public class EncounterMethodRate {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.locations.EncounterVersionDetails> getVersionDetails() {
-				return version_details;
+		return version_details;
 	}
 
 	public EncounterMethodRate setVersionDetails(java.util.ArrayList<pokeapi.bittle.models.locations.EncounterVersionDetails> version_details) {
 		this.version_details = version_details;
 		return this;
 	}
-
-	// The method in which Pokémon may be encountered in an area..
-	private pokeapi.bittle.models.encounters.EncounterMethod encounter_method;
-
-	// The chance of the encounter to occur on a version of the game.
-	private java.util.ArrayList<pokeapi.bittle.models.locations.EncounterVersionDetails> version_details;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

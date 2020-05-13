@@ -144,8 +144,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonType {
+	// The order the Pokémon's types are listed in.
+	private int slot;
+
+	// The type the referenced Pokémon has.
+	private pokeapi.bittle.models.pokemon.Type type;
+
 	public int getSlot() {
-				return slot;
+		return slot;
 	}
 
 	public PokemonType setSlot(int slot) {
@@ -157,7 +163,6 @@ public class PokemonType {
 		if(!type.getIsFetched()) {
 			type = type.get();
 		}
-
 		return type;
 	}
 
@@ -165,12 +170,6 @@ public class PokemonType {
 		this.type = type;
 		return this;
 	}
-
-	// The order the Pokémon's types are listed in.
-	private int slot;
-
-	// The type the referenced Pokémon has.
-	private pokeapi.bittle.models.pokemon.Type type;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

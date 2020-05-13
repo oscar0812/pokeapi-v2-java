@@ -144,11 +144,16 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonHeldItem {
+	// The item the referenced Pokémon holds.
+	private pokeapi.bittle.models.items.Item item;
+
+	// The details of the different versions in which the item is held.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItemVersion> version_details;
+
 	public pokeapi.bittle.models.items.Item getItem() {
 		if(!item.getIsFetched()) {
 			item = item.get();
 		}
-
 		return item;
 	}
 
@@ -158,19 +163,13 @@ public class PokemonHeldItem {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItemVersion> getVersionDetails() {
-				return version_details;
+		return version_details;
 	}
 
 	public PokemonHeldItem setVersionDetails(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItemVersion> version_details) {
 		this.version_details = version_details;
 		return this;
 	}
-
-	// The item the referenced Pokémon holds.
-	private pokeapi.bittle.models.items.Item item;
-
-	// The details of the different versions in which the item is held.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItemVersion> version_details;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

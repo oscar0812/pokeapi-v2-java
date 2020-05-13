@@ -28,8 +28,17 @@ package pokeapi.bittle.models.locations;
 */
 
 public class PalParkEncounterSpecies {
+	// The base score given to the player when this Pokémon is caught during a pal park run.
+	private int base_score;
+
+	// The base rate for encountering this Pokémon in this pal park area.
+	private int rate;
+
+	// The Pokémon species being encountered.
+	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
+
 	public int getBaseScore() {
-				return base_score;
+		return base_score;
 	}
 
 	public PalParkEncounterSpecies setBaseScore(int base_score) {
@@ -38,7 +47,7 @@ public class PalParkEncounterSpecies {
 	}
 
 	public int getRate() {
-				return rate;
+		return rate;
 	}
 
 	public PalParkEncounterSpecies setRate(int rate) {
@@ -50,7 +59,6 @@ public class PalParkEncounterSpecies {
 		if(!pokemon_species.getIsFetched()) {
 			pokemon_species = pokemon_species.get();
 		}
-
 		return pokemon_species;
 	}
 
@@ -58,15 +66,6 @@ public class PalParkEncounterSpecies {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}
-
-	// The base score given to the player when this Pokémon is caught during a pal park run.
-	private int base_score;
-
-	// The base rate for encountering this Pokémon in this pal park area.
-	private int rate;
-
-	// The Pokémon species being encountered.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

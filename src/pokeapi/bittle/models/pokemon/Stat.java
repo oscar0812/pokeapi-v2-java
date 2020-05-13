@@ -63,82 +63,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class Stat extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Stat setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getGameIndex() {
-				return game_index;
-	}
-
-	public Stat setGameIndex(int game_index) {
-		this.game_index = game_index;
-		return this;
-	}
-
-	public boolean getIsBattleOnly() {
-				return is_battle_only;
-	}
-
-	public Stat setIsBattleOnly(boolean is_battle_only) {
-		this.is_battle_only = is_battle_only;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.MoveStatAffectSets getAffectingMoves() {
-				return affecting_moves;
-	}
-
-	public Stat setAffectingMoves(pokeapi.bittle.models.pokemon.MoveStatAffectSets affecting_moves) {
-		this.affecting_moves = affecting_moves;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.NatureStatAffectSets getAffectingNatures() {
-				return affecting_natures;
-	}
-
-	public Stat setAffectingNatures(pokeapi.bittle.models.pokemon.NatureStatAffectSets affecting_natures) {
-		this.affecting_natures = affecting_natures;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.Characteristic> getCharacteristics() {
-				return characteristics;
-	}
-
-	public Stat setCharacteristics(java.util.ArrayList<pokeapi.bittle.models.pokemon.Characteristic> characteristics) {
-		this.characteristics = characteristics;
-		return this;
-	}
-
-	public pokeapi.bittle.models.moves.MoveDamageClass getMoveDamageClass() {
-		if(!move_damage_class.getIsFetched()) {
-			move_damage_class = move_damage_class.get();
-		}
-
-		return move_damage_class;
-	}
-
-	public Stat setMoveDamageClass(pokeapi.bittle.models.moves.MoveDamageClass move_damage_class) {
-		this.move_damage_class = move_damage_class;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public Stat setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -162,6 +86,81 @@ public class Stat extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// The name of this resource listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
+	public int getId() {
+		return id;
+	}
+
+	public Stat setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getGameIndex() {
+		return game_index;
+	}
+
+	public Stat setGameIndex(int game_index) {
+		this.game_index = game_index;
+		return this;
+	}
+
+	public boolean getIsBattleOnly() {
+		return is_battle_only;
+	}
+
+	public Stat setIsBattleOnly(boolean is_battle_only) {
+		this.is_battle_only = is_battle_only;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.MoveStatAffectSets getAffectingMoves() {
+		return affecting_moves;
+	}
+
+	public Stat setAffectingMoves(pokeapi.bittle.models.pokemon.MoveStatAffectSets affecting_moves) {
+		this.affecting_moves = affecting_moves;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.NatureStatAffectSets getAffectingNatures() {
+		return affecting_natures;
+	}
+
+	public Stat setAffectingNatures(pokeapi.bittle.models.pokemon.NatureStatAffectSets affecting_natures) {
+		this.affecting_natures = affecting_natures;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.Characteristic> getCharacteristics() {
+		return characteristics;
+	}
+
+	public Stat setCharacteristics(java.util.ArrayList<pokeapi.bittle.models.pokemon.Characteristic> characteristics) {
+		this.characteristics = characteristics;
+		return this;
+	}
+
+	public pokeapi.bittle.models.moves.MoveDamageClass getMoveDamageClass() {
+		if(!move_damage_class.getIsFetched()) {
+			move_damage_class = move_damage_class.get();
+		}
+		return move_damage_class;
+	}
+
+	public Stat setMoveDamageClass(pokeapi.bittle.models.moves.MoveDamageClass move_damage_class) {
+		this.move_damage_class = move_damage_class;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public Stat setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
 
 	private static Stat get(String url) {
 		Stat obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Stat.class);

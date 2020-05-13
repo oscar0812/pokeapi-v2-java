@@ -28,46 +28,6 @@ package pokeapi.bittle.models.items;
 */
 
 public class ItemCategory extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public ItemCategory setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.items.Item> getItems() {
-				return items;
-	}
-
-	public ItemCategory setItems(java.util.ArrayList<pokeapi.bittle.models.items.Item> items) {
-		this.items = items;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public ItemCategory setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public pokeapi.bittle.models.items.ItemPocket getPocket() {
-		if(!pocket.getIsFetched()) {
-			pocket = pocket.get();
-		}
-
-		return pocket;
-	}
-
-	public ItemCategory setPocket(pokeapi.bittle.models.items.ItemPocket pocket) {
-		this.pocket = pocket;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -79,6 +39,45 @@ public class ItemCategory extends pokeapi.bittle.models.utility.NamedAPIResource
 
 	// The pocket items in this category would be put in.
 	private pokeapi.bittle.models.items.ItemPocket pocket;
+
+	public int getId() {
+		return id;
+	}
+
+	public ItemCategory setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.items.Item> getItems() {
+		return items;
+	}
+
+	public ItemCategory setItems(java.util.ArrayList<pokeapi.bittle.models.items.Item> items) {
+		this.items = items;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public ItemCategory setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public pokeapi.bittle.models.items.ItemPocket getPocket() {
+		if(!pocket.getIsFetched()) {
+			pocket = pocket.get();
+		}
+		return pocket;
+	}
+
+	public ItemCategory setPocket(pokeapi.bittle.models.items.ItemPocket pocket) {
+		this.pocket = pocket;
+		return this;
+	}
 
 	private static ItemCategory get(String url) {
 		ItemCategory obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), ItemCategory.class);

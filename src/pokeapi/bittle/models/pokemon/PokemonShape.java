@@ -33,42 +33,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonShape extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public PokemonShape setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AwesomeName> getAwesomeNames() {
-				return awesome_names;
-	}
-
-	public PokemonShape setAwesomeNames(java.util.ArrayList<pokeapi.bittle.models.pokemon.AwesomeName> awesome_names) {
-		this.awesome_names = awesome_names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public PokemonShape setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
-				return pokemon_species;
-	}
-
-	public PokemonShape setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
-		this.pokemon_species = pokemon_species;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -80,6 +44,42 @@ public class PokemonShape extends pokeapi.bittle.models.utility.NamedAPIResource
 
 	// A list of the Pokémon species that have this shape.
 	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species;
+
+	public int getId() {
+		return id;
+	}
+
+	public PokemonShape setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AwesomeName> getAwesomeNames() {
+		return awesome_names;
+	}
+
+	public PokemonShape setAwesomeNames(java.util.ArrayList<pokeapi.bittle.models.pokemon.AwesomeName> awesome_names) {
+		this.awesome_names = awesome_names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public PokemonShape setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
+		return pokemon_species;
+	}
+
+	public PokemonShape setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
+		this.pokemon_species = pokemon_species;
+		return this;
+	}
 
 	private static PokemonShape get(String url) {
 		PokemonShape obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PokemonShape.class);

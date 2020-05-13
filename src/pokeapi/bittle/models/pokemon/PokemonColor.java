@@ -24,33 +24,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonColor extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public PokemonColor setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public PokemonColor setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
-				return pokemon_species;
-	}
-
-	public PokemonColor setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
-		this.pokemon_species = pokemon_species;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -59,6 +32,33 @@ public class PokemonColor extends pokeapi.bittle.models.utility.NamedAPIResource
 
 	// A list of the Pokémon species that have this color.
 	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species;
+
+	public int getId() {
+		return id;
+	}
+
+	public PokemonColor setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public PokemonColor setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
+		return pokemon_species;
+	}
+
+	public PokemonColor setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
+		this.pokemon_species = pokemon_species;
+		return this;
+	}
 
 	private static PokemonColor get(String url) {
 		PokemonColor obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PokemonColor.class);

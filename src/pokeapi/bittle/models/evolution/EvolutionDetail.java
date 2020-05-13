@@ -52,204 +52,6 @@ package pokeapi.bittle.models.evolution;
 */
 
 public class EvolutionDetail {
-	public pokeapi.bittle.models.items.Item getItem() {
-		if(!item.getIsFetched()) {
-			item = item.get();
-		}
-
-		return item;
-	}
-
-	public EvolutionDetail setItem(pokeapi.bittle.models.items.Item item) {
-		this.item = item;
-		return this;
-	}
-
-	public pokeapi.bittle.models.evolution.EvolutionTrigger getTrigger() {
-		if(!trigger.getIsFetched()) {
-			trigger = trigger.get();
-		}
-
-		return trigger;
-	}
-
-	public EvolutionDetail setTrigger(pokeapi.bittle.models.evolution.EvolutionTrigger trigger) {
-		this.trigger = trigger;
-		return this;
-	}
-
-	public int getGender() {
-				return gender;
-	}
-
-	public EvolutionDetail setGender(int gender) {
-		this.gender = gender;
-		return this;
-	}
-
-	public pokeapi.bittle.models.items.Item getHeldItem() {
-		if(!held_item.getIsFetched()) {
-			held_item = held_item.get();
-		}
-
-		return held_item;
-	}
-
-	public EvolutionDetail setHeldItem(pokeapi.bittle.models.items.Item held_item) {
-		this.held_item = held_item;
-		return this;
-	}
-
-	public pokeapi.bittle.models.moves.Move getKnownMove() {
-		if(!known_move.getIsFetched()) {
-			known_move = known_move.get();
-		}
-
-		return known_move;
-	}
-
-	public EvolutionDetail setKnownMove(pokeapi.bittle.models.moves.Move known_move) {
-		this.known_move = known_move;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.Type getKnownMoveType() {
-		if(!known_move_type.getIsFetched()) {
-			known_move_type = known_move_type.get();
-		}
-
-		return known_move_type;
-	}
-
-	public EvolutionDetail setKnownMoveType(pokeapi.bittle.models.pokemon.Type known_move_type) {
-		this.known_move_type = known_move_type;
-		return this;
-	}
-
-	public pokeapi.bittle.models.locations.Location getLocation() {
-		if(!location.getIsFetched()) {
-			location = location.get();
-		}
-
-		return location;
-	}
-
-	public EvolutionDetail setLocation(pokeapi.bittle.models.locations.Location location) {
-		this.location = location;
-		return this;
-	}
-
-	public int getMinLevel() {
-				return min_level;
-	}
-
-	public EvolutionDetail setMinLevel(int min_level) {
-		this.min_level = min_level;
-		return this;
-	}
-
-	public int getMinHappiness() {
-				return min_happiness;
-	}
-
-	public EvolutionDetail setMinHappiness(int min_happiness) {
-		this.min_happiness = min_happiness;
-		return this;
-	}
-
-	public int getMinBeauty() {
-				return min_beauty;
-	}
-
-	public EvolutionDetail setMinBeauty(int min_beauty) {
-		this.min_beauty = min_beauty;
-		return this;
-	}
-
-	public int getMinAffection() {
-				return min_affection;
-	}
-
-	public EvolutionDetail setMinAffection(int min_affection) {
-		this.min_affection = min_affection;
-		return this;
-	}
-
-	public boolean getNeedsOverworldRain() {
-				return needs_overworld_rain;
-	}
-
-	public EvolutionDetail setNeedsOverworldRain(boolean needs_overworld_rain) {
-		this.needs_overworld_rain = needs_overworld_rain;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getPartySpecies() {
-		if(!party_species.getIsFetched()) {
-			party_species = party_species.get();
-		}
-
-		return party_species;
-	}
-
-	public EvolutionDetail setPartySpecies(pokeapi.bittle.models.pokemon.PokemonSpecies party_species) {
-		this.party_species = party_species;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.Type getPartyType() {
-		if(!party_type.getIsFetched()) {
-			party_type = party_type.get();
-		}
-
-		return party_type;
-	}
-
-	public EvolutionDetail setPartyType(pokeapi.bittle.models.pokemon.Type party_type) {
-		this.party_type = party_type;
-		return this;
-	}
-
-	public int getRelativePhysicalStats() {
-				return relative_physical_stats;
-	}
-
-	public EvolutionDetail setRelativePhysicalStats(int relative_physical_stats) {
-		this.relative_physical_stats = relative_physical_stats;
-		return this;
-	}
-
-	public String getTimeOfDay() {
-				return time_of_day;
-	}
-
-	public EvolutionDetail setTimeOfDay(String time_of_day) {
-		this.time_of_day = time_of_day;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getTradeSpecies() {
-		if(!trade_species.getIsFetched()) {
-			trade_species = trade_species.get();
-		}
-
-		return trade_species;
-	}
-
-	public EvolutionDetail setTradeSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies trade_species) {
-		this.trade_species = trade_species;
-		return this;
-	}
-
-	public boolean getTurnUpsideDown() {
-				return turn_upside_down;
-	}
-
-	public EvolutionDetail setTurnUpsideDown(boolean turn_upside_down) {
-		this.turn_upside_down = turn_upside_down;
-		return this;
-	}
-
 	// The item required to cause evolution this into Pokémon species.
 	private pokeapi.bittle.models.items.Item item;
 
@@ -303,6 +105,195 @@ public class EvolutionDetail {
 
 	// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
 	private boolean turn_upside_down;
+
+	public pokeapi.bittle.models.items.Item getItem() {
+		if(!item.getIsFetched()) {
+			item = item.get();
+		}
+		return item;
+	}
+
+	public EvolutionDetail setItem(pokeapi.bittle.models.items.Item item) {
+		this.item = item;
+		return this;
+	}
+
+	public pokeapi.bittle.models.evolution.EvolutionTrigger getTrigger() {
+		if(!trigger.getIsFetched()) {
+			trigger = trigger.get();
+		}
+		return trigger;
+	}
+
+	public EvolutionDetail setTrigger(pokeapi.bittle.models.evolution.EvolutionTrigger trigger) {
+		this.trigger = trigger;
+		return this;
+	}
+
+	public int getGender() {
+		return gender;
+	}
+
+	public EvolutionDetail setGender(int gender) {
+		this.gender = gender;
+		return this;
+	}
+
+	public pokeapi.bittle.models.items.Item getHeldItem() {
+		if(!held_item.getIsFetched()) {
+			held_item = held_item.get();
+		}
+		return held_item;
+	}
+
+	public EvolutionDetail setHeldItem(pokeapi.bittle.models.items.Item held_item) {
+		this.held_item = held_item;
+		return this;
+	}
+
+	public pokeapi.bittle.models.moves.Move getKnownMove() {
+		if(!known_move.getIsFetched()) {
+			known_move = known_move.get();
+		}
+		return known_move;
+	}
+
+	public EvolutionDetail setKnownMove(pokeapi.bittle.models.moves.Move known_move) {
+		this.known_move = known_move;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.Type getKnownMoveType() {
+		if(!known_move_type.getIsFetched()) {
+			known_move_type = known_move_type.get();
+		}
+		return known_move_type;
+	}
+
+	public EvolutionDetail setKnownMoveType(pokeapi.bittle.models.pokemon.Type known_move_type) {
+		this.known_move_type = known_move_type;
+		return this;
+	}
+
+	public pokeapi.bittle.models.locations.Location getLocation() {
+		if(!location.getIsFetched()) {
+			location = location.get();
+		}
+		return location;
+	}
+
+	public EvolutionDetail setLocation(pokeapi.bittle.models.locations.Location location) {
+		this.location = location;
+		return this;
+	}
+
+	public int getMinLevel() {
+		return min_level;
+	}
+
+	public EvolutionDetail setMinLevel(int min_level) {
+		this.min_level = min_level;
+		return this;
+	}
+
+	public int getMinHappiness() {
+		return min_happiness;
+	}
+
+	public EvolutionDetail setMinHappiness(int min_happiness) {
+		this.min_happiness = min_happiness;
+		return this;
+	}
+
+	public int getMinBeauty() {
+		return min_beauty;
+	}
+
+	public EvolutionDetail setMinBeauty(int min_beauty) {
+		this.min_beauty = min_beauty;
+		return this;
+	}
+
+	public int getMinAffection() {
+		return min_affection;
+	}
+
+	public EvolutionDetail setMinAffection(int min_affection) {
+		this.min_affection = min_affection;
+		return this;
+	}
+
+	public boolean getNeedsOverworldRain() {
+		return needs_overworld_rain;
+	}
+
+	public EvolutionDetail setNeedsOverworldRain(boolean needs_overworld_rain) {
+		this.needs_overworld_rain = needs_overworld_rain;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.PokemonSpecies getPartySpecies() {
+		if(!party_species.getIsFetched()) {
+			party_species = party_species.get();
+		}
+		return party_species;
+	}
+
+	public EvolutionDetail setPartySpecies(pokeapi.bittle.models.pokemon.PokemonSpecies party_species) {
+		this.party_species = party_species;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.Type getPartyType() {
+		if(!party_type.getIsFetched()) {
+			party_type = party_type.get();
+		}
+		return party_type;
+	}
+
+	public EvolutionDetail setPartyType(pokeapi.bittle.models.pokemon.Type party_type) {
+		this.party_type = party_type;
+		return this;
+	}
+
+	public int getRelativePhysicalStats() {
+		return relative_physical_stats;
+	}
+
+	public EvolutionDetail setRelativePhysicalStats(int relative_physical_stats) {
+		this.relative_physical_stats = relative_physical_stats;
+		return this;
+	}
+
+	public String getTimeOfDay() {
+		return time_of_day;
+	}
+
+	public EvolutionDetail setTimeOfDay(String time_of_day) {
+		this.time_of_day = time_of_day;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.PokemonSpecies getTradeSpecies() {
+		if(!trade_species.getIsFetched()) {
+			trade_species = trade_species.get();
+		}
+		return trade_species;
+	}
+
+	public EvolutionDetail setTradeSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies trade_species) {
+		this.trade_species = trade_species;
+		return this;
+	}
+
+	public boolean getTurnUpsideDown() {
+		return turn_upside_down;
+	}
+
+	public EvolutionDetail setTurnUpsideDown(boolean turn_upside_down) {
+		this.turn_upside_down = turn_upside_down;
+		return this;
+	}
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

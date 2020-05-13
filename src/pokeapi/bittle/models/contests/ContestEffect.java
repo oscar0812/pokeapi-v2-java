@@ -28,51 +28,6 @@ package pokeapi.bittle.models.contests;
 */
 
 public class ContestEffect extends pokeapi.bittle.models.utility.APIResource {
-	public int getId() {
-				return id;
-	}
-
-	public ContestEffect setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getAppeal() {
-				return appeal;
-	}
-
-	public ContestEffect setAppeal(int appeal) {
-		this.appeal = appeal;
-		return this;
-	}
-
-	public int getJam() {
-				return jam;
-	}
-
-	public ContestEffect setJam(int jam) {
-		this.jam = jam;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Effect> getEffectEntries() {
-				return effect_entries;
-	}
-
-	public ContestEffect setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries) {
-		this.effect_entries = effect_entries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> getFlavorTextEntries() {
-				return flavor_text_entries;
-	}
-
-	public ContestEffect setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries) {
-		this.flavor_text_entries = flavor_text_entries;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -87,6 +42,51 @@ public class ContestEffect extends pokeapi.bittle.models.utility.APIResource {
 
 	// The flavor text of this contest effect listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries;
+
+	public int getId() {
+		return id;
+	}
+
+	public ContestEffect setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getAppeal() {
+		return appeal;
+	}
+
+	public ContestEffect setAppeal(int appeal) {
+		this.appeal = appeal;
+		return this;
+	}
+
+	public int getJam() {
+		return jam;
+	}
+
+	public ContestEffect setJam(int jam) {
+		this.jam = jam;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Effect> getEffectEntries() {
+		return effect_entries;
+	}
+
+	public ContestEffect setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries) {
+		this.effect_entries = effect_entries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> getFlavorTextEntries() {
+		return flavor_text_entries;
+	}
+
+	public ContestEffect setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries) {
+		this.flavor_text_entries = flavor_text_entries;
+		return this;
+	}
 
 	private static ContestEffect get(String url) {
 		ContestEffect obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), ContestEffect.class);

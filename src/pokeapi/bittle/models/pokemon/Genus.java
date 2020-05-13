@@ -105,8 +105,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class Genus {
+	// The localized genus for the referenced Pokémon species
+	private String genus;
+
+	// The language this genus is in.
+	private pokeapi.bittle.models.utility.Language language;
+
 	public String getGenus() {
-				return genus;
+		return genus;
 	}
 
 	public Genus setGenus(String genus) {
@@ -118,7 +124,6 @@ public class Genus {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -126,12 +131,6 @@ public class Genus {
 		this.language = language;
 		return this;
 	}
-
-	// The localized genus for the referenced Pokémon species
-	private String genus;
-
-	// The language this genus is in.
-	private pokeapi.bittle.models.utility.Language language;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

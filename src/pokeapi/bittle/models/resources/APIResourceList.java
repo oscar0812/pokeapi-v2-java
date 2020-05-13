@@ -13,42 +13,6 @@ package pokeapi.bittle.models.resources;
 */
 
 public class APIResourceList {
-	public int getCount() {
-				return count;
-	}
-
-	public APIResourceList setCount(int count) {
-		this.count = count;
-		return this;
-	}
-
-	public String getNext() {
-				return next;
-	}
-
-	public APIResourceList setNext(String next) {
-		this.next = next;
-		return this;
-	}
-
-	public boolean getPrevious() {
-				return previous;
-	}
-
-	public APIResourceList setPrevious(boolean previous) {
-		this.previous = previous;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> getResults() {
-				return results;
-	}
-
-	public APIResourceList setResults(java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> results) {
-		this.results = results;
-		return this;
-	}
-
 	// The total number of resources available from this API.
 	private int count;
 
@@ -60,6 +24,42 @@ public class APIResourceList {
 
 	// A list of un-named API resources.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> results;
+
+	public int getCount() {
+		return count;
+	}
+
+	public APIResourceList setCount(int count) {
+		this.count = count;
+		return this;
+	}
+
+	public String getNext() {
+		return next;
+	}
+
+	public APIResourceList setNext(String next) {
+		this.next = next;
+		return this;
+	}
+
+	public boolean getPrevious() {
+		return previous;
+	}
+
+	public APIResourceList setPrevious(boolean previous) {
+		this.previous = previous;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> getResults() {
+		return results;
+	}
+
+	public APIResourceList setResults(java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> results) {
+		this.results = results;
+		return this;
+	}
 
 	private static APIResourceList get(String url) {
 		return new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), APIResourceList.class);

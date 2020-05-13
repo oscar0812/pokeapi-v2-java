@@ -38,73 +38,6 @@ package pokeapi.bittle.models.games;
 */
 
 public class VersionGroup extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public VersionGroup setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getOrder() {
-				return order;
-	}
-
-	public VersionGroup setOrder(int order) {
-		this.order = order;
-		return this;
-	}
-
-	public pokeapi.bittle.models.games.Generation getGeneration() {
-		if(!generation.getIsFetched()) {
-			generation = generation.get();
-		}
-
-		return generation;
-	}
-
-	public VersionGroup setGeneration(pokeapi.bittle.models.games.Generation generation) {
-		this.generation = generation;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.moves.MoveLearnMethod> getMoveLearnMethods() {
-				return move_learn_methods;
-	}
-
-	public VersionGroup setMoveLearnMethods(java.util.ArrayList<pokeapi.bittle.models.moves.MoveLearnMethod> move_learn_methods) {
-		this.move_learn_methods = move_learn_methods;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.games.Pokedex> getPokedexes() {
-				return pokedexes;
-	}
-
-	public VersionGroup setPokedexes(java.util.ArrayList<pokeapi.bittle.models.games.Pokedex> pokedexes) {
-		this.pokedexes = pokedexes;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.locations.Region> getRegions() {
-				return regions;
-	}
-
-	public VersionGroup setRegions(java.util.ArrayList<pokeapi.bittle.models.locations.Region> regions) {
-		this.regions = regions;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.games.Version> getVersions() {
-				return versions;
-	}
-
-	public VersionGroup setVersions(java.util.ArrayList<pokeapi.bittle.models.games.Version> versions) {
-		this.versions = versions;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -125,6 +58,72 @@ public class VersionGroup extends pokeapi.bittle.models.utility.NamedAPIResource
 
 	// The versions this version group owns.
 	private java.util.ArrayList<pokeapi.bittle.models.games.Version> versions;
+
+	public int getId() {
+		return id;
+	}
+
+	public VersionGroup setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getOrder() {
+		return order;
+	}
+
+	public VersionGroup setOrder(int order) {
+		this.order = order;
+		return this;
+	}
+
+	public pokeapi.bittle.models.games.Generation getGeneration() {
+		if(!generation.getIsFetched()) {
+			generation = generation.get();
+		}
+		return generation;
+	}
+
+	public VersionGroup setGeneration(pokeapi.bittle.models.games.Generation generation) {
+		this.generation = generation;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.moves.MoveLearnMethod> getMoveLearnMethods() {
+		return move_learn_methods;
+	}
+
+	public VersionGroup setMoveLearnMethods(java.util.ArrayList<pokeapi.bittle.models.moves.MoveLearnMethod> move_learn_methods) {
+		this.move_learn_methods = move_learn_methods;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.games.Pokedex> getPokedexes() {
+		return pokedexes;
+	}
+
+	public VersionGroup setPokedexes(java.util.ArrayList<pokeapi.bittle.models.games.Pokedex> pokedexes) {
+		this.pokedexes = pokedexes;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.locations.Region> getRegions() {
+		return regions;
+	}
+
+	public VersionGroup setRegions(java.util.ArrayList<pokeapi.bittle.models.locations.Region> regions) {
+		this.regions = regions;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.games.Version> getVersions() {
+		return versions;
+	}
+
+	public VersionGroup setVersions(java.util.ArrayList<pokeapi.bittle.models.games.Version> versions) {
+		this.versions = versions;
+		return this;
+	}
 
 	private static VersionGroup get(String url) {
 		VersionGroup obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), VersionGroup.class);

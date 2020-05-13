@@ -144,11 +144,16 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonMove {
+	// The move the Pokémon can learn.
+	private pokeapi.bittle.models.moves.Move move;
+
+	// The details of the version in which the Pokémon can learn the move.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMoveVersion> version_group_details;
+
 	public pokeapi.bittle.models.moves.Move getMove() {
 		if(!move.getIsFetched()) {
 			move = move.get();
 		}
-
 		return move;
 	}
 
@@ -158,19 +163,13 @@ public class PokemonMove {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMoveVersion> getVersionGroupDetails() {
-				return version_group_details;
+		return version_group_details;
 	}
 
 	public PokemonMove setVersionGroupDetails(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMoveVersion> version_group_details) {
 		this.version_group_details = version_group_details;
 		return this;
 	}
-
-	// The move the Pokémon can learn.
-	private pokeapi.bittle.models.moves.Move move;
-
-	// The details of the version in which the Pokémon can learn the move.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMoveVersion> version_group_details;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

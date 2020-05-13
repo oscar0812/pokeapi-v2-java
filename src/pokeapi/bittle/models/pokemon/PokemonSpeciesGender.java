@@ -24,8 +24,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonSpeciesGender {
+	// The chance of this Pokémon being female, in eighths; or -1 for genderless.
+	private int rate;
+
+	// A Pokémon species that can be the referenced gender.
+	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
+
 	public int getRate() {
-				return rate;
+		return rate;
 	}
 
 	public PokemonSpeciesGender setRate(int rate) {
@@ -37,7 +43,6 @@ public class PokemonSpeciesGender {
 		if(!pokemon_species.getIsFetched()) {
 			pokemon_species = pokemon_species.get();
 		}
-
 		return pokemon_species;
 	}
 
@@ -45,12 +50,6 @@ public class PokemonSpeciesGender {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}
-
-	// The chance of this Pokémon being female, in eighths; or -1 for genderless.
-	private int rate;
-
-	// A Pokémon species that can be the referenced gender.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

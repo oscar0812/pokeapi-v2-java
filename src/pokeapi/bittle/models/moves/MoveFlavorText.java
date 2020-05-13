@@ -118,8 +118,17 @@ package pokeapi.bittle.models.moves;
 */
 
 public class MoveFlavorText {
+	// The localized flavor text for an api resource in a specific language.
+	private String flavor_text;
+
+	// The language this name is in.
+	private pokeapi.bittle.models.utility.Language language;
+
+	// The version group that uses this flavor text.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
 	public String getFlavorText() {
-				return flavor_text;
+		return flavor_text;
 	}
 
 	public MoveFlavorText setFlavorText(String flavor_text) {
@@ -131,7 +140,6 @@ public class MoveFlavorText {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -144,7 +152,6 @@ public class MoveFlavorText {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -152,15 +159,6 @@ public class MoveFlavorText {
 		this.version_group = version_group;
 		return this;
 	}
-
-	// The localized flavor text for an api resource in a specific language.
-	private String flavor_text;
-
-	// The language this name is in.
-	private pokeapi.bittle.models.utility.Language language;
-
-	// The version group that uses this flavor text.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

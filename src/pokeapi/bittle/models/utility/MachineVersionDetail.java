@@ -1,11 +1,16 @@
 package pokeapi.bittle.models.utility;
 
 public class MachineVersionDetail {
+	// The machine that teaches a move from an item.
+	private pokeapi.bittle.models.machines.Machine machine;
+
+	// The version group of this specific machine.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
 	public pokeapi.bittle.models.machines.Machine getMachine() {
 		if(!machine.getIsFetched()) {
 			machine = machine.get();
 		}
-
 		return machine;
 	}
 
@@ -18,7 +23,6 @@ public class MachineVersionDetail {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -26,12 +30,6 @@ public class MachineVersionDetail {
 		this.version_group = version_group;
 		return this;
 	}
-
-	// The machine that teaches a move from an item.
-	private pokeapi.bittle.models.machines.Machine machine;
-
-	// The version group of this specific machine.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

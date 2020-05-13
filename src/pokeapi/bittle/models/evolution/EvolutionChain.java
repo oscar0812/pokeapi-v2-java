@@ -52,8 +52,17 @@ package pokeapi.bittle.models.evolution;
 */
 
 public class EvolutionChain extends pokeapi.bittle.models.utility.APIResource {
+	// The identifier for this resource.
+	private int id;
+
+	// The item that a Pokémon would be holding when mating that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
+	private pokeapi.bittle.models.items.Item baby_trigger_item;
+
+	// The base chain link object. Each link contains evolution details for a Pokémon in the chain. Each link references the next Pokémon in the natural evolution order.
+	private pokeapi.bittle.models.evolution.ChainLink chain;
+
 	public int getId() {
-				return id;
+		return id;
 	}
 
 	public EvolutionChain setId(int id) {
@@ -65,7 +74,6 @@ public class EvolutionChain extends pokeapi.bittle.models.utility.APIResource {
 		if(!baby_trigger_item.getIsFetched()) {
 			baby_trigger_item = baby_trigger_item.get();
 		}
-
 		return baby_trigger_item;
 	}
 
@@ -75,22 +83,13 @@ public class EvolutionChain extends pokeapi.bittle.models.utility.APIResource {
 	}
 
 	public pokeapi.bittle.models.evolution.ChainLink getChain() {
-				return chain;
+		return chain;
 	}
 
 	public EvolutionChain setChain(pokeapi.bittle.models.evolution.ChainLink chain) {
 		this.chain = chain;
 		return this;
 	}
-
-	// The identifier for this resource.
-	private int id;
-
-	// The item that a Pokémon would be holding when mating that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
-	private pokeapi.bittle.models.items.Item baby_trigger_item;
-
-	// The base chain link object. Each link contains evolution details for a Pokémon in the chain. Each link references the next Pokémon in the natural evolution order.
-	private pokeapi.bittle.models.evolution.ChainLink chain;
 
 	private static EvolutionChain get(String url) {
 		EvolutionChain obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EvolutionChain.class);

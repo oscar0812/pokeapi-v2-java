@@ -19,33 +19,6 @@ package pokeapi.bittle.models.encounters;
 */
 
 public class EncounterMethod extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public EncounterMethod setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getOrder() {
-				return order;
-	}
-
-	public EncounterMethod setOrder(int order) {
-		this.order = order;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public EncounterMethod setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -54,6 +27,33 @@ public class EncounterMethod extends pokeapi.bittle.models.utility.NamedAPIResou
 
 	// The name of this resource listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
+	public int getId() {
+		return id;
+	}
+
+	public EncounterMethod setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getOrder() {
+		return order;
+	}
+
+	public EncounterMethod setOrder(int order) {
+		this.order = order;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public EncounterMethod setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
 
 	private static EncounterMethod get(String url) {
 		EncounterMethod obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EncounterMethod.class);

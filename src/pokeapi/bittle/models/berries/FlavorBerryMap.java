@@ -31,8 +31,14 @@ package pokeapi.bittle.models.berries;
 */
 
 public class FlavorBerryMap {
+	// How powerful the referenced flavor is for this berry.
+	private int potency;
+
+	// The berry with the referenced flavor.
+	private pokeapi.bittle.models.berries.Berry berry;
+
 	public int getPotency() {
-				return potency;
+		return potency;
 	}
 
 	public FlavorBerryMap setPotency(int potency) {
@@ -44,7 +50,6 @@ public class FlavorBerryMap {
 		if(!berry.getIsFetched()) {
 			berry = berry.get();
 		}
-
 		return berry;
 	}
 
@@ -52,12 +57,6 @@ public class FlavorBerryMap {
 		this.berry = berry;
 		return this;
 	}
-
-	// How powerful the referenced flavor is for this berry.
-	private int potency;
-
-	// The berry with the referenced flavor.
-	private pokeapi.bittle.models.berries.Berry berry;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

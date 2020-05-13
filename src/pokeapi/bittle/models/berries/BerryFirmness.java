@@ -24,33 +24,6 @@ package pokeapi.bittle.models.berries;
 */
 
 public class BerryFirmness extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public BerryFirmness setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.berries.Berry> getBerries() {
-				return berries;
-	}
-
-	public BerryFirmness setBerries(java.util.ArrayList<pokeapi.bittle.models.berries.Berry> berries) {
-		this.berries = berries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public BerryFirmness setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -59,6 +32,33 @@ public class BerryFirmness extends pokeapi.bittle.models.utility.NamedAPIResourc
 
 	// The name of this resource listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
+	public int getId() {
+		return id;
+	}
+
+	public BerryFirmness setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.berries.Berry> getBerries() {
+		return berries;
+	}
+
+	public BerryFirmness setBerries(java.util.ArrayList<pokeapi.bittle.models.berries.Berry> berries) {
+		this.berries = berries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public BerryFirmness setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
 
 	private static BerryFirmness get(String url) {
 		BerryFirmness obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), BerryFirmness.class);

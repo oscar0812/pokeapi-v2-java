@@ -1,8 +1,17 @@
 package pokeapi.bittle.models.utility;
 
 public class FlavorText {
+	// The localized flavor text for an API resource in a specific language.
+	private String flavor_text;
+
+	// The language this name is in.
+	private pokeapi.bittle.models.utility.Language language;
+
+	// The game version this flavor text is extracted from.
+	private pokeapi.bittle.models.games.Version version;
+
 	public String getFlavorText() {
-				return flavor_text;
+		return flavor_text;
 	}
 
 	public FlavorText setFlavorText(String flavor_text) {
@@ -14,7 +23,6 @@ public class FlavorText {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -27,7 +35,6 @@ public class FlavorText {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
-
 		return version;
 	}
 
@@ -35,15 +42,6 @@ public class FlavorText {
 		this.version = version;
 		return this;
 	}
-
-	// The localized flavor text for an API resource in a specific language.
-	private String flavor_text;
-
-	// The language this name is in.
-	private pokeapi.bittle.models.utility.Language language;
-
-	// The game version this flavor text is extracted from.
-	private pokeapi.bittle.models.games.Version version;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

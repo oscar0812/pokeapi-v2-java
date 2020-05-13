@@ -89,144 +89,6 @@ package pokeapi.bittle.models.items;
 */
 
 public class Item extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Item setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getCost() {
-				return cost;
-	}
-
-	public Item setCost(int cost) {
-		this.cost = cost;
-		return this;
-	}
-
-	public int getFlingPower() {
-				return fling_power;
-	}
-
-	public Item setFlingPower(int fling_power) {
-		this.fling_power = fling_power;
-		return this;
-	}
-
-	public pokeapi.bittle.models.items.ItemFlingEffect getFlingEffect() {
-		if(!fling_effect.getIsFetched()) {
-			fling_effect = fling_effect.get();
-		}
-
-		return fling_effect;
-	}
-
-	public Item setFlingEffect(pokeapi.bittle.models.items.ItemFlingEffect fling_effect) {
-		this.fling_effect = fling_effect;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.items.ItemAttribute> getAttributes() {
-				return attributes;
-	}
-
-	public Item setAttributes(java.util.ArrayList<pokeapi.bittle.models.items.ItemAttribute> attributes) {
-		this.attributes = attributes;
-		return this;
-	}
-
-	public pokeapi.bittle.models.items.ItemCategory getCategory() {
-		if(!category.getIsFetched()) {
-			category = category.get();
-		}
-
-		return category;
-	}
-
-	public Item setCategory(pokeapi.bittle.models.items.ItemCategory category) {
-		this.category = category;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
-				return effect_entries;
-	}
-
-	public Item setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
-		this.effect_entries = effect_entries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionGroupFlavorText> getFlavorTextEntries() {
-				return flavor_text_entries;
-	}
-
-	public Item setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VersionGroupFlavorText> flavor_text_entries) {
-		this.flavor_text_entries = flavor_text_entries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> getGameIndices() {
-				return game_indices;
-	}
-
-	public Item setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices) {
-		this.game_indices = game_indices;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public Item setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public pokeapi.bittle.models.items.ItemSprites getSprites() {
-				return sprites;
-	}
-
-	public Item setSprites(pokeapi.bittle.models.items.ItemSprites sprites) {
-		this.sprites = sprites;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemon> getHeldByPokemon() {
-				return held_by_pokemon;
-	}
-
-	public Item setHeldByPokemon(java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemon> held_by_pokemon) {
-		this.held_by_pokemon = held_by_pokemon;
-		return this;
-	}
-
-	public pokeapi.bittle.models.evolution.EvolutionChain getBabyTriggerFor() {
-		if(!baby_trigger_for.getIsFetched()) {
-			baby_trigger_for = baby_trigger_for.get();
-		}
-
-		return baby_trigger_for;
-	}
-
-	public Item setBabyTriggerFor(pokeapi.bittle.models.evolution.EvolutionChain baby_trigger_for) {
-		this.baby_trigger_for = baby_trigger_for;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> getMachines() {
-				return machines;
-	}
-
-	public Item setMachines(java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> machines) {
-		this.machines = machines;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -268,6 +130,141 @@ public class Item extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// A list of the machines related to this item.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> machines;
+
+	public int getId() {
+		return id;
+	}
+
+	public Item setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getCost() {
+		return cost;
+	}
+
+	public Item setCost(int cost) {
+		this.cost = cost;
+		return this;
+	}
+
+	public int getFlingPower() {
+		return fling_power;
+	}
+
+	public Item setFlingPower(int fling_power) {
+		this.fling_power = fling_power;
+		return this;
+	}
+
+	public pokeapi.bittle.models.items.ItemFlingEffect getFlingEffect() {
+		if(!fling_effect.getIsFetched()) {
+			fling_effect = fling_effect.get();
+		}
+		return fling_effect;
+	}
+
+	public Item setFlingEffect(pokeapi.bittle.models.items.ItemFlingEffect fling_effect) {
+		this.fling_effect = fling_effect;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.items.ItemAttribute> getAttributes() {
+		return attributes;
+	}
+
+	public Item setAttributes(java.util.ArrayList<pokeapi.bittle.models.items.ItemAttribute> attributes) {
+		this.attributes = attributes;
+		return this;
+	}
+
+	public pokeapi.bittle.models.items.ItemCategory getCategory() {
+		if(!category.getIsFetched()) {
+			category = category.get();
+		}
+		return category;
+	}
+
+	public Item setCategory(pokeapi.bittle.models.items.ItemCategory category) {
+		this.category = category;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
+		return effect_entries;
+	}
+
+	public Item setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
+		this.effect_entries = effect_entries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionGroupFlavorText> getFlavorTextEntries() {
+		return flavor_text_entries;
+	}
+
+	public Item setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VersionGroupFlavorText> flavor_text_entries) {
+		this.flavor_text_entries = flavor_text_entries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> getGameIndices() {
+		return game_indices;
+	}
+
+	public Item setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices) {
+		this.game_indices = game_indices;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public Item setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public pokeapi.bittle.models.items.ItemSprites getSprites() {
+		return sprites;
+	}
+
+	public Item setSprites(pokeapi.bittle.models.items.ItemSprites sprites) {
+		this.sprites = sprites;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemon> getHeldByPokemon() {
+		return held_by_pokemon;
+	}
+
+	public Item setHeldByPokemon(java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemon> held_by_pokemon) {
+		this.held_by_pokemon = held_by_pokemon;
+		return this;
+	}
+
+	public pokeapi.bittle.models.evolution.EvolutionChain getBabyTriggerFor() {
+		if(!baby_trigger_for.getIsFetched()) {
+			baby_trigger_for = baby_trigger_for.get();
+		}
+		return baby_trigger_for;
+	}
+
+	public Item setBabyTriggerFor(pokeapi.bittle.models.evolution.EvolutionChain baby_trigger_for) {
+		this.baby_trigger_for = baby_trigger_for;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> getMachines() {
+		return machines;
+	}
+
+	public Item setMachines(java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> machines) {
+		this.machines = machines;
+		return this;
+	}
 
 	private static Item get(String url) {
 		Item obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Item.class);

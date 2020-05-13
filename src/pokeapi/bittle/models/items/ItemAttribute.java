@@ -33,42 +33,6 @@ package pokeapi.bittle.models.items;
 */
 
 public class ItemAttribute extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public ItemAttribute setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.items.Item> getItems() {
-				return items;
-	}
-
-	public ItemAttribute setItems(java.util.ArrayList<pokeapi.bittle.models.items.Item> items) {
-		this.items = items;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public ItemAttribute setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
-				return descriptions;
-	}
-
-	public ItemAttribute setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
-		this.descriptions = descriptions;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -80,6 +44,42 @@ public class ItemAttribute extends pokeapi.bittle.models.utility.NamedAPIResourc
 
 	// The description of this item attribute listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+
+	public int getId() {
+		return id;
+	}
+
+	public ItemAttribute setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.items.Item> getItems() {
+		return items;
+	}
+
+	public ItemAttribute setItems(java.util.ArrayList<pokeapi.bittle.models.items.Item> items) {
+		this.items = items;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public ItemAttribute setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+		return descriptions;
+	}
+
+	public ItemAttribute setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+		this.descriptions = descriptions;
+		return this;
+	}
 
 	private static ItemAttribute get(String url) {
 		ItemAttribute obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), ItemAttribute.class);

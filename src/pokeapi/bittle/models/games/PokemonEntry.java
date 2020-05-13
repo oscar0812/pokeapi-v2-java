@@ -47,8 +47,14 @@ package pokeapi.bittle.models.games;
 */
 
 public class PokemonEntry {
+	// The index of this Pokémon species entry within the Pokédex.
+	private int entry_number;
+
+	// The Pokémon species being encountered.
+	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
+
 	public int getEntryNumber() {
-				return entry_number;
+		return entry_number;
 	}
 
 	public PokemonEntry setEntryNumber(int entry_number) {
@@ -60,7 +66,6 @@ public class PokemonEntry {
 		if(!pokemon_species.getIsFetched()) {
 			pokemon_species = pokemon_species.get();
 		}
-
 		return pokemon_species;
 	}
 
@@ -68,12 +73,6 @@ public class PokemonEntry {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}
-
-	// The index of this Pokémon species entry within the Pokédex.
-	private int entry_number;
-
-	// The Pokémon species being encountered.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

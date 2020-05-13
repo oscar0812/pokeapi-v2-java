@@ -24,42 +24,6 @@ package pokeapi.bittle.models.moves;
 */
 
 public class ModelName {
-	public int getId() {
-				return id;
-	}
-
-	public ModelName setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public String getName() {
-				return name;
-	}
-
-	public ModelName setName(String name) {
-		this.name = name;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
-				return moves;
-	}
-
-	public ModelName setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
-		this.moves = moves;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
-				return descriptions;
-	}
-
-	public ModelName setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
-		this.descriptions = descriptions;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -71,6 +35,42 @@ public class ModelName {
 
 	// The description of this resource listed in different languages.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+
+	public int getId() {
+		return id;
+	}
+
+	public ModelName setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public ModelName setName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+		return moves;
+	}
+
+	public ModelName setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+		this.moves = moves;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+		return descriptions;
+	}
+
+	public ModelName setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+		this.descriptions = descriptions;
+		return this;
+	}
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

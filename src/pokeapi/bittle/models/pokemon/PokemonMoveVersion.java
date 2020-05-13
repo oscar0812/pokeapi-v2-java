@@ -144,11 +144,19 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonMoveVersion {
+	// The method by which the move is learned.
+	private pokeapi.bittle.models.moves.MoveLearnMethod move_learn_method;
+
+	// The version group in which the move is learned.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
+	// The minimum level to learn the move.
+	private int level_learned_at;
+
 	public pokeapi.bittle.models.moves.MoveLearnMethod getMoveLearnMethod() {
 		if(!move_learn_method.getIsFetched()) {
 			move_learn_method = move_learn_method.get();
 		}
-
 		return move_learn_method;
 	}
 
@@ -161,7 +169,6 @@ public class PokemonMoveVersion {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -171,22 +178,13 @@ public class PokemonMoveVersion {
 	}
 
 	public int getLevelLearnedAt() {
-				return level_learned_at;
+		return level_learned_at;
 	}
 
 	public PokemonMoveVersion setLevelLearnedAt(int level_learned_at) {
 		this.level_learned_at = level_learned_at;
 		return this;
 	}
-
-	// The method by which the move is learned.
-	private pokeapi.bittle.models.moves.MoveLearnMethod move_learn_method;
-
-	// The version group in which the move is learned.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
-
-	// The minimum level to learn the move.
-	private int level_learned_at;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

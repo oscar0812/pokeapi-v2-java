@@ -63,8 +63,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class MoveStatAffectSets {
+	// A list of moves and how they change the referenced stat.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> increase;
+
+	// A list of moves and how they change the referenced stat.
+	private java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> decrease;
+
 	public java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> getIncrease() {
-				return increase;
+		return increase;
 	}
 
 	public MoveStatAffectSets setIncrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> increase) {
@@ -73,19 +79,13 @@ public class MoveStatAffectSets {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> getDecrease() {
-				return decrease;
+		return decrease;
 	}
 
 	public MoveStatAffectSets setDecrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> decrease) {
 		this.decrease = decrease;
 		return this;
 	}
-
-	// A list of moves and how they change the referenced stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> increase;
-
-	// A list of moves and how they change the referenced stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> decrease;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

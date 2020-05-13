@@ -36,117 +36,6 @@ package pokeapi.bittle.models.berries;
 */
 
 public class Berry extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Berry setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getGrowthTime() {
-				return growth_time;
-	}
-
-	public Berry setGrowthTime(int growth_time) {
-		this.growth_time = growth_time;
-		return this;
-	}
-
-	public int getMaxHarvest() {
-				return max_harvest;
-	}
-
-	public Berry setMaxHarvest(int max_harvest) {
-		this.max_harvest = max_harvest;
-		return this;
-	}
-
-	public int getNaturalGiftPower() {
-				return natural_gift_power;
-	}
-
-	public Berry setNaturalGiftPower(int natural_gift_power) {
-		this.natural_gift_power = natural_gift_power;
-		return this;
-	}
-
-	public int getSize() {
-				return size;
-	}
-
-	public Berry setSize(int size) {
-		this.size = size;
-		return this;
-	}
-
-	public int getSmoothness() {
-				return smoothness;
-	}
-
-	public Berry setSmoothness(int smoothness) {
-		this.smoothness = smoothness;
-		return this;
-	}
-
-	public int getSoilDryness() {
-				return soil_dryness;
-	}
-
-	public Berry setSoilDryness(int soil_dryness) {
-		this.soil_dryness = soil_dryness;
-		return this;
-	}
-
-	public pokeapi.bittle.models.berries.BerryFirmness getFirmness() {
-		if(!firmness.getIsFetched()) {
-			firmness = firmness.get();
-		}
-
-		return firmness;
-	}
-
-	public Berry setFirmness(pokeapi.bittle.models.berries.BerryFirmness firmness) {
-		this.firmness = firmness;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.berries.BerryFlavorMap> getFlavors() {
-				return flavors;
-	}
-
-	public Berry setFlavors(java.util.ArrayList<pokeapi.bittle.models.berries.BerryFlavorMap> flavors) {
-		this.flavors = flavors;
-		return this;
-	}
-
-	public pokeapi.bittle.models.items.Item getItem() {
-		if(!item.getIsFetched()) {
-			item = item.get();
-		}
-
-		return item;
-	}
-
-	public Berry setItem(pokeapi.bittle.models.items.Item item) {
-		this.item = item;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.Type getNaturalGiftType() {
-		if(!natural_gift_type.getIsFetched()) {
-			natural_gift_type = natural_gift_type.get();
-		}
-
-		return natural_gift_type;
-	}
-
-	public Berry setNaturalGiftType(pokeapi.bittle.models.pokemon.Type natural_gift_type) {
-		this.natural_gift_type = natural_gift_type;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -179,6 +68,114 @@ public class Berry extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// The type inherited by "Natural Gift" when used with this Berry.
 	private pokeapi.bittle.models.pokemon.Type natural_gift_type;
+
+	public int getId() {
+		return id;
+	}
+
+	public Berry setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getGrowthTime() {
+		return growth_time;
+	}
+
+	public Berry setGrowthTime(int growth_time) {
+		this.growth_time = growth_time;
+		return this;
+	}
+
+	public int getMaxHarvest() {
+		return max_harvest;
+	}
+
+	public Berry setMaxHarvest(int max_harvest) {
+		this.max_harvest = max_harvest;
+		return this;
+	}
+
+	public int getNaturalGiftPower() {
+		return natural_gift_power;
+	}
+
+	public Berry setNaturalGiftPower(int natural_gift_power) {
+		this.natural_gift_power = natural_gift_power;
+		return this;
+	}
+
+	public int getSize() {
+		return size;
+	}
+
+	public Berry setSize(int size) {
+		this.size = size;
+		return this;
+	}
+
+	public int getSmoothness() {
+		return smoothness;
+	}
+
+	public Berry setSmoothness(int smoothness) {
+		this.smoothness = smoothness;
+		return this;
+	}
+
+	public int getSoilDryness() {
+		return soil_dryness;
+	}
+
+	public Berry setSoilDryness(int soil_dryness) {
+		this.soil_dryness = soil_dryness;
+		return this;
+	}
+
+	public pokeapi.bittle.models.berries.BerryFirmness getFirmness() {
+		if(!firmness.getIsFetched()) {
+			firmness = firmness.get();
+		}
+		return firmness;
+	}
+
+	public Berry setFirmness(pokeapi.bittle.models.berries.BerryFirmness firmness) {
+		this.firmness = firmness;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.berries.BerryFlavorMap> getFlavors() {
+		return flavors;
+	}
+
+	public Berry setFlavors(java.util.ArrayList<pokeapi.bittle.models.berries.BerryFlavorMap> flavors) {
+		this.flavors = flavors;
+		return this;
+	}
+
+	public pokeapi.bittle.models.items.Item getItem() {
+		if(!item.getIsFetched()) {
+			item = item.get();
+		}
+		return item;
+	}
+
+	public Berry setItem(pokeapi.bittle.models.items.Item item) {
+		this.item = item;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.Type getNaturalGiftType() {
+		if(!natural_gift_type.getIsFetched()) {
+			natural_gift_type = natural_gift_type.get();
+		}
+		return natural_gift_type;
+	}
+
+	public Berry setNaturalGiftType(pokeapi.bittle.models.pokemon.Type natural_gift_type) {
+		this.natural_gift_type = natural_gift_type;
+		return this;
+	}
 
 	private static Berry get(String url) {
 		Berry obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Berry.class);

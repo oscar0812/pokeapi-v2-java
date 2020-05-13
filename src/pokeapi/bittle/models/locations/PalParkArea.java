@@ -28,33 +28,6 @@ package pokeapi.bittle.models.locations;
 */
 
 public class PalParkArea extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public PalParkArea setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public PalParkArea setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> getPokemonEncounters() {
-				return pokemon_encounters;
-	}
-
-	public PalParkArea setPokemonEncounters(java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> pokemon_encounters) {
-		this.pokemon_encounters = pokemon_encounters;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -63,6 +36,33 @@ public class PalParkArea extends pokeapi.bittle.models.utility.NamedAPIResource 
 
 	// A list of Pokémon encountered in thi pal park area along with details.
 	private java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> pokemon_encounters;
+
+	public int getId() {
+		return id;
+	}
+
+	public PalParkArea setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public PalParkArea setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> getPokemonEncounters() {
+		return pokemon_encounters;
+	}
+
+	public PalParkArea setPokemonEncounters(java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> pokemon_encounters) {
+		this.pokemon_encounters = pokemon_encounters;
+		return this;
+	}
 
 	private static PalParkArea get(String url) {
 		PalParkArea obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PalParkArea.class);

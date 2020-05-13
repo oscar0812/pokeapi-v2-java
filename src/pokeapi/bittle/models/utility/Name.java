@@ -1,8 +1,14 @@
 package pokeapi.bittle.models.utility;
 
 public class Name {
+	// The localized name for an API resource in a specific language.
+	private String name;
+
+	// The language this name is in.
+	private pokeapi.bittle.models.utility.Language language;
+
 	public String getName() {
-				return name;
+		return name;
 	}
 
 	public Name setName(String name) {
@@ -14,7 +20,6 @@ public class Name {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -22,12 +27,6 @@ public class Name {
 		this.language = language;
 		return this;
 	}
-
-	// The localized name for an API resource in a specific language.
-	private String name;
-
-	// The language this name is in.
-	private pokeapi.bittle.models.utility.Language language;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

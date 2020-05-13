@@ -14,42 +14,6 @@ package pokeapi.bittle.models.resources;
 */
 
 public class NamedAPIResourceList {
-	public int getCount() {
-				return count;
-	}
-
-	public NamedAPIResourceList setCount(int count) {
-		this.count = count;
-		return this;
-	}
-
-	public String getNext() {
-				return next;
-	}
-
-	public NamedAPIResourceList setNext(String next) {
-		this.next = next;
-		return this;
-	}
-
-	public boolean getPrevious() {
-				return previous;
-	}
-
-	public NamedAPIResourceList setPrevious(boolean previous) {
-		this.previous = previous;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.NamedAPIResource> getResults() {
-				return results;
-	}
-
-	public NamedAPIResourceList setResults(java.util.ArrayList<pokeapi.bittle.models.utility.NamedAPIResource> results) {
-		this.results = results;
-		return this;
-	}
-
 	// The total number of resources available from this API.
 	private int count;
 
@@ -61,6 +25,42 @@ public class NamedAPIResourceList {
 
 	// A list of named API resources.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.NamedAPIResource> results;
+
+	public int getCount() {
+		return count;
+	}
+
+	public NamedAPIResourceList setCount(int count) {
+		this.count = count;
+		return this;
+	}
+
+	public String getNext() {
+		return next;
+	}
+
+	public NamedAPIResourceList setNext(String next) {
+		this.next = next;
+		return this;
+	}
+
+	public boolean getPrevious() {
+		return previous;
+	}
+
+	public NamedAPIResourceList setPrevious(boolean previous) {
+		this.previous = previous;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.NamedAPIResource> getResults() {
+		return results;
+	}
+
+	public NamedAPIResourceList setResults(java.util.ArrayList<pokeapi.bittle.models.utility.NamedAPIResource> results) {
+		this.results = results;
+		return this;
+	}
 
 	private static NamedAPIResourceList get(String url) {
 		return new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), NamedAPIResourceList.class);

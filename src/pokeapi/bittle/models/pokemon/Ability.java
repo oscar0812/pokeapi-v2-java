@@ -73,82 +73,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class Ability extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Ability setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public boolean getIsMainSeries() {
-				return is_main_series;
-	}
-
-	public Ability setIsMainSeries(boolean is_main_series) {
-		this.is_main_series = is_main_series;
-		return this;
-	}
-
-	public pokeapi.bittle.models.games.Generation getGeneration() {
-		if(!generation.getIsFetched()) {
-			generation = generation.get();
-		}
-
-		return generation;
-	}
-
-	public Ability setGeneration(pokeapi.bittle.models.games.Generation generation) {
-		this.generation = generation;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public Ability setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
-				return effect_entries;
-	}
-
-	public Ability setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
-		this.effect_entries = effect_entries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityEffectChange> getEffectChanges() {
-				return effect_changes;
-	}
-
-	public Ability setEffectChanges(java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityEffectChange> effect_changes) {
-		this.effect_changes = effect_changes;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityFlavorText> getFlavorTextEntries() {
-				return flavor_text_entries;
-	}
-
-	public Ability setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityFlavorText> flavor_text_entries) {
-		this.flavor_text_entries = flavor_text_entries;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityPokemon> getPokemon() {
-				return pokemon;
-	}
-
-	public Ability setPokemon(java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityPokemon> pokemon) {
-		this.pokemon = pokemon;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -172,6 +96,81 @@ public class Ability extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// A list of Pokémon that could potentially have this ability.
 	private java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityPokemon> pokemon;
+
+	public int getId() {
+		return id;
+	}
+
+	public Ability setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public boolean getIsMainSeries() {
+		return is_main_series;
+	}
+
+	public Ability setIsMainSeries(boolean is_main_series) {
+		this.is_main_series = is_main_series;
+		return this;
+	}
+
+	public pokeapi.bittle.models.games.Generation getGeneration() {
+		if(!generation.getIsFetched()) {
+			generation = generation.get();
+		}
+		return generation;
+	}
+
+	public Ability setGeneration(pokeapi.bittle.models.games.Generation generation) {
+		this.generation = generation;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public Ability setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
+		return effect_entries;
+	}
+
+	public Ability setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
+		this.effect_entries = effect_entries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityEffectChange> getEffectChanges() {
+		return effect_changes;
+	}
+
+	public Ability setEffectChanges(java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityEffectChange> effect_changes) {
+		this.effect_changes = effect_changes;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityFlavorText> getFlavorTextEntries() {
+		return flavor_text_entries;
+	}
+
+	public Ability setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityFlavorText> flavor_text_entries) {
+		this.flavor_text_entries = flavor_text_entries;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityPokemon> getPokemon() {
+		return pokemon;
+	}
+
+	public Ability setPokemon(java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityPokemon> pokemon) {
+		this.pokemon = pokemon;
+		return this;
+	}
 
 	private static Ability get(String url) {
 		Ability obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Ability.class);

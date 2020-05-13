@@ -118,8 +118,14 @@ package pokeapi.bittle.models.moves;
 */
 
 public class MoveStatChange {
+	// The amount of change.
+	private int change;
+
+	// The stat being affected.
+	private pokeapi.bittle.models.pokemon.Stat stat;
+
 	public int getChange() {
-				return change;
+		return change;
 	}
 
 	public MoveStatChange setChange(int change) {
@@ -131,7 +137,6 @@ public class MoveStatChange {
 		if(!stat.getIsFetched()) {
 			stat = stat.get();
 		}
-
 		return stat;
 	}
 
@@ -139,12 +144,6 @@ public class MoveStatChange {
 		this.stat = stat;
 		return this;
 	}
-
-	// The amount of change.
-	private int change;
-
-	// The stat being affected.
-	private pokeapi.bittle.models.pokemon.Stat stat;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

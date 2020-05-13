@@ -144,11 +144,16 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonHeldItemVersion {
+	// The version in which the item is held.
+	private pokeapi.bittle.models.games.Version version;
+
+	// How often the item is held.
+	private int rarity;
+
 	public pokeapi.bittle.models.games.Version getVersion() {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
-
 		return version;
 	}
 
@@ -158,19 +163,13 @@ public class PokemonHeldItemVersion {
 	}
 
 	public int getRarity() {
-				return rarity;
+		return rarity;
 	}
 
 	public PokemonHeldItemVersion setRarity(int rarity) {
 		this.rarity = rarity;
 		return this;
 	}
-
-	// The version in which the item is held.
-	private pokeapi.bittle.models.games.Version version;
-
-	// How often the item is held.
-	private int rarity;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

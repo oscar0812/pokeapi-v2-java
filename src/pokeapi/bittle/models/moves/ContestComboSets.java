@@ -118,8 +118,15 @@ package pokeapi.bittle.models.moves;
 */
 
 public class ContestComboSets {
+	// A detail of moves this move can be used before or after, granting additional appeal points in contests.
+	private pokeapi.bittle.models.moves.ContestComboDetail normal;
+
+	// A detail of moves this move can be used before or after, granting additional appeal points in super contests.
+	@com.fasterxml.jackson.annotation.JsonProperty("super")
+	private pokeapi.bittle.models.moves.ContestComboDetail super_val;
+
 	public pokeapi.bittle.models.moves.ContestComboDetail getNormal() {
-				return normal;
+		return normal;
 	}
 
 	public ContestComboSets setNormal(pokeapi.bittle.models.moves.ContestComboDetail normal) {
@@ -128,20 +135,13 @@ public class ContestComboSets {
 	}
 
 	public pokeapi.bittle.models.moves.ContestComboDetail getSuper() {
-				return super_val;
+		return super_val;
 	}
 
 	public ContestComboSets setSuper(pokeapi.bittle.models.moves.ContestComboDetail super_val) {
 		this.super_val = super_val;
 		return this;
 	}
-
-	// A detail of moves this move can be used before or after, granting additional appeal points in contests.
-	private pokeapi.bittle.models.moves.ContestComboDetail normal;
-
-	// A detail of moves this move can be used before or after, granting additional appeal points in super contests.
-	@com.fasterxml.jackson.annotation.JsonProperty("super")
-	private pokeapi.bittle.models.moves.ContestComboDetail super_val;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

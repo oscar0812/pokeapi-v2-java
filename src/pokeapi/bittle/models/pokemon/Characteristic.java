@@ -31,33 +31,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class Characteristic extends pokeapi.bittle.models.utility.APIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Characteristic setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getGeneModulo() {
-				return gene_modulo;
-	}
-
-	public Characteristic setGeneModulo(int gene_modulo) {
-		this.gene_modulo = gene_modulo;
-		return this;
-	}
-
-	public int getPossibleValues() {
-				return possible_values;
-	}
-
-	public Characteristic setPossibleValues(int possible_values) {
-		this.possible_values = possible_values;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -66,6 +39,33 @@ public class Characteristic extends pokeapi.bittle.models.utility.APIResource {
 
 	// The possible values of the highest stat that would result in a Pokémon recieving this characteristic when divided by 5.
 	private int possible_values;
+
+	public int getId() {
+		return id;
+	}
+
+	public Characteristic setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getGeneModulo() {
+		return gene_modulo;
+	}
+
+	public Characteristic setGeneModulo(int gene_modulo) {
+		this.gene_modulo = gene_modulo;
+		return this;
+	}
+
+	public int getPossibleValues() {
+		return possible_values;
+	}
+
+	public Characteristic setPossibleValues(int possible_values) {
+		this.possible_values = possible_values;
+		return this;
+	}
 
 	private static Characteristic get(String url) {
 		Characteristic obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Characteristic.class);

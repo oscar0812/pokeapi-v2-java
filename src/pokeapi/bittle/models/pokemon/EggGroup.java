@@ -24,33 +24,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class EggGroup extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public EggGroup setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public EggGroup setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
-				return pokemon_species;
-	}
-
-	public EggGroup setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
-		this.pokemon_species = pokemon_species;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -59,6 +32,33 @@ public class EggGroup extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// A list of all Pokémon species that are members of this egg group.
 	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species;
+
+	public int getId() {
+		return id;
+	}
+
+	public EggGroup setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public EggGroup setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
+		return pokemon_species;
+	}
+
+	public EggGroup setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
+		this.pokemon_species = pokemon_species;
+		return this;
+	}
 
 	private static EggGroup get(String url) {
 		EggGroup obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EggGroup.class);

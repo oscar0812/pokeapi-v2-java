@@ -29,122 +29,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonForm extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public PokemonForm setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public int getOrder() {
-				return order;
-	}
-
-	public PokemonForm setOrder(int order) {
-		this.order = order;
-		return this;
-	}
-
-	public int getFormOrder() {
-				return form_order;
-	}
-
-	public PokemonForm setFormOrder(int form_order) {
-		this.form_order = form_order;
-		return this;
-	}
-
-	public boolean getIsDefault() {
-				return is_default;
-	}
-
-	public PokemonForm setIsDefault(boolean is_default) {
-		this.is_default = is_default;
-		return this;
-	}
-
-	public boolean getIsBattleOnly() {
-				return is_battle_only;
-	}
-
-	public PokemonForm setIsBattleOnly(boolean is_battle_only) {
-		this.is_battle_only = is_battle_only;
-		return this;
-	}
-
-	public boolean getIsMega() {
-				return is_mega;
-	}
-
-	public PokemonForm setIsMega(boolean is_mega) {
-		this.is_mega = is_mega;
-		return this;
-	}
-
-	public String getFormName() {
-				return form_name;
-	}
-
-	public PokemonForm setFormName(String form_name) {
-		this.form_name = form_name;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
-		if(!pokemon.getIsFetched()) {
-			pokemon = pokemon.get();
-		}
-
-		return pokemon;
-	}
-
-	public PokemonForm setPokemon(pokeapi.bittle.models.pokemon.Pokemon pokemon) {
-		this.pokemon = pokemon;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.PokemonFormSprites getSprites() {
-				return sprites;
-	}
-
-	public PokemonForm setSprites(pokeapi.bittle.models.pokemon.PokemonFormSprites sprites) {
-		this.sprites = sprites;
-		return this;
-	}
-
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
-		if(!version_group.getIsFetched()) {
-			version_group = version_group.get();
-		}
-
-		return version_group;
-	}
-
-	public PokemonForm setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
-		this.version_group = version_group;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public PokemonForm setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getFormNames() {
-				return form_names;
-	}
-
-	public PokemonForm setFormNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> form_names) {
-		this.form_names = form_names;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -180,6 +64,120 @@ public class PokemonForm extends pokeapi.bittle.models.utility.NamedAPIResource 
 
 	// The form specific form name of this Pokémon form, or empty if the form does not have a specific name.
 	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> form_names;
+
+	public int getId() {
+		return id;
+	}
+
+	public PokemonForm setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public int getOrder() {
+		return order;
+	}
+
+	public PokemonForm setOrder(int order) {
+		this.order = order;
+		return this;
+	}
+
+	public int getFormOrder() {
+		return form_order;
+	}
+
+	public PokemonForm setFormOrder(int form_order) {
+		this.form_order = form_order;
+		return this;
+	}
+
+	public boolean getIsDefault() {
+		return is_default;
+	}
+
+	public PokemonForm setIsDefault(boolean is_default) {
+		this.is_default = is_default;
+		return this;
+	}
+
+	public boolean getIsBattleOnly() {
+		return is_battle_only;
+	}
+
+	public PokemonForm setIsBattleOnly(boolean is_battle_only) {
+		this.is_battle_only = is_battle_only;
+		return this;
+	}
+
+	public boolean getIsMega() {
+		return is_mega;
+	}
+
+	public PokemonForm setIsMega(boolean is_mega) {
+		this.is_mega = is_mega;
+		return this;
+	}
+
+	public String getFormName() {
+		return form_name;
+	}
+
+	public PokemonForm setFormName(String form_name) {
+		this.form_name = form_name;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
+		if(!pokemon.getIsFetched()) {
+			pokemon = pokemon.get();
+		}
+		return pokemon;
+	}
+
+	public PokemonForm setPokemon(pokeapi.bittle.models.pokemon.Pokemon pokemon) {
+		this.pokemon = pokemon;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.PokemonFormSprites getSprites() {
+		return sprites;
+	}
+
+	public PokemonForm setSprites(pokeapi.bittle.models.pokemon.PokemonFormSprites sprites) {
+		this.sprites = sprites;
+		return this;
+	}
+
+	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+		if(!version_group.getIsFetched()) {
+			version_group = version_group.get();
+		}
+		return version_group;
+	}
+
+	public PokemonForm setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+		this.version_group = version_group;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public PokemonForm setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getFormNames() {
+		return form_names;
+	}
+
+	public PokemonForm setFormNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> form_names) {
+		this.form_names = form_names;
+		return this;
+	}
 
 	private static PokemonForm get(String url) {
 		PokemonForm obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PokemonForm.class);

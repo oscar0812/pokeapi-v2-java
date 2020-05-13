@@ -24,33 +24,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class Gender extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Gender setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> getPokemonSpeciesDetails() {
-				return pokemon_species_details;
-	}
-
-	public Gender setPokemonSpeciesDetails(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> pokemon_species_details) {
-		this.pokemon_species_details = pokemon_species_details;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getRequiredForEvolution() {
-				return required_for_evolution;
-	}
-
-	public Gender setRequiredForEvolution(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> required_for_evolution) {
-		this.required_for_evolution = required_for_evolution;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -59,6 +32,33 @@ public class Gender extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// A list of Pokémon species that required this gender in order for a Pokémon to evolve into them.
 	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> required_for_evolution;
+
+	public int getId() {
+		return id;
+	}
+
+	public Gender setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> getPokemonSpeciesDetails() {
+		return pokemon_species_details;
+	}
+
+	public Gender setPokemonSpeciesDetails(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> pokemon_species_details) {
+		this.pokemon_species_details = pokemon_species_details;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getRequiredForEvolution() {
+		return required_for_evolution;
+	}
+
+	public Gender setRequiredForEvolution(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> required_for_evolution) {
+		this.required_for_evolution = required_for_evolution;
+		return this;
+	}
 
 	private static Gender get(String url) {
 		Gender obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Gender.class);

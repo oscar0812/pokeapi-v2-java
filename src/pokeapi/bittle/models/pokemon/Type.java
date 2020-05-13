@@ -88,86 +88,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class Type extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public Type setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.TypeRelations getDamageRelations() {
-				return damage_relations;
-	}
-
-	public Type setDamageRelations(pokeapi.bittle.models.pokemon.TypeRelations damage_relations) {
-		this.damage_relations = damage_relations;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> getGameIndices() {
-				return game_indices;
-	}
-
-	public Type setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices) {
-		this.game_indices = game_indices;
-		return this;
-	}
-
-	public pokeapi.bittle.models.games.Generation getGeneration() {
-		if(!generation.getIsFetched()) {
-			generation = generation.get();
-		}
-
-		return generation;
-	}
-
-	public Type setGeneration(pokeapi.bittle.models.games.Generation generation) {
-		this.generation = generation;
-		return this;
-	}
-
-	public pokeapi.bittle.models.moves.MoveDamageClass getMoveDamageClass() {
-		if(!move_damage_class.getIsFetched()) {
-			move_damage_class = move_damage_class.get();
-		}
-
-		return move_damage_class;
-	}
-
-	public Type setMoveDamageClass(pokeapi.bittle.models.moves.MoveDamageClass move_damage_class) {
-		this.move_damage_class = move_damage_class;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public Type setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.TypePokemon> getPokemon() {
-				return pokemon;
-	}
-
-	public Type setPokemon(java.util.ArrayList<pokeapi.bittle.models.pokemon.TypePokemon> pokemon) {
-		this.pokemon = pokemon;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
-				return moves;
-	}
-
-	public Type setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
-		this.moves = moves;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -191,6 +111,84 @@ public class Type extends pokeapi.bittle.models.utility.NamedAPIResource {
 
 	// A list of moves that have this type.
 	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+
+	public int getId() {
+		return id;
+	}
+
+	public Type setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.TypeRelations getDamageRelations() {
+		return damage_relations;
+	}
+
+	public Type setDamageRelations(pokeapi.bittle.models.pokemon.TypeRelations damage_relations) {
+		this.damage_relations = damage_relations;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> getGameIndices() {
+		return game_indices;
+	}
+
+	public Type setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices) {
+		this.game_indices = game_indices;
+		return this;
+	}
+
+	public pokeapi.bittle.models.games.Generation getGeneration() {
+		if(!generation.getIsFetched()) {
+			generation = generation.get();
+		}
+		return generation;
+	}
+
+	public Type setGeneration(pokeapi.bittle.models.games.Generation generation) {
+		this.generation = generation;
+		return this;
+	}
+
+	public pokeapi.bittle.models.moves.MoveDamageClass getMoveDamageClass() {
+		if(!move_damage_class.getIsFetched()) {
+			move_damage_class = move_damage_class.get();
+		}
+		return move_damage_class;
+	}
+
+	public Type setMoveDamageClass(pokeapi.bittle.models.moves.MoveDamageClass move_damage_class) {
+		this.move_damage_class = move_damage_class;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public Type setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.pokemon.TypePokemon> getPokemon() {
+		return pokemon;
+	}
+
+	public Type setPokemon(java.util.ArrayList<pokeapi.bittle.models.pokemon.TypePokemon> pokemon) {
+		this.pokemon = pokemon;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+		return moves;
+	}
+
+	public Type setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+		this.moves = moves;
+		return this;
+	}
 
 	private static Type get(String url) {
 		Type obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Type.class);

@@ -38,33 +38,6 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokeathlonStat extends pokeapi.bittle.models.utility.NamedAPIResource {
-	public int getId() {
-				return id;
-	}
-
-	public PokeathlonStat setId(int id) {
-		this.id = id;
-		return this;
-	}
-
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
-	}
-
-	public PokeathlonStat setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
-		this.names = names;
-		return this;
-	}
-
-	public pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffectSets getAffectingNatures() {
-				return affecting_natures;
-	}
-
-	public PokeathlonStat setAffectingNatures(pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffectSets affecting_natures) {
-		this.affecting_natures = affecting_natures;
-		return this;
-	}
-
 	// The identifier for this resource.
 	private int id;
 
@@ -73,6 +46,33 @@ public class PokeathlonStat extends pokeapi.bittle.models.utility.NamedAPIResour
 
 	// A detail of natures which affect this Pokéathlon stat positively or negatively.
 	private pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffectSets affecting_natures;
+
+	public int getId() {
+		return id;
+	}
+
+	public PokeathlonStat setId(int id) {
+		this.id = id;
+		return this;
+	}
+
+	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+		return names;
+	}
+
+	public PokeathlonStat setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+		this.names = names;
+		return this;
+	}
+
+	public pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffectSets getAffectingNatures() {
+		return affecting_natures;
+	}
+
+	public PokeathlonStat setAffectingNatures(pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffectSets affecting_natures) {
+		this.affecting_natures = affecting_natures;
+		return this;
+	}
 
 	private static PokeathlonStat get(String url) {
 		PokeathlonStat obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PokeathlonStat.class);

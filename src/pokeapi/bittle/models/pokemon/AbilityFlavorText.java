@@ -73,8 +73,17 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class AbilityFlavorText {
+	// The localized name for an API resource in a specific language.
+	private String flavor_text;
+
+	// The language this text resource is in.
+	private pokeapi.bittle.models.utility.Language language;
+
+	// The version group that uses this flavor text.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
 	public String getFlavorText() {
-				return flavor_text;
+		return flavor_text;
 	}
 
 	public AbilityFlavorText setFlavorText(String flavor_text) {
@@ -86,7 +95,6 @@ public class AbilityFlavorText {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
-
 		return language;
 	}
 
@@ -99,7 +107,6 @@ public class AbilityFlavorText {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -107,15 +114,6 @@ public class AbilityFlavorText {
 		this.version_group = version_group;
 		return this;
 	}
-
-	// The localized name for an API resource in a specific language.
-	private String flavor_text;
-
-	// The language this text resource is in.
-	private pokeapi.bittle.models.utility.Language language;
-
-	// The version group that uses this flavor text.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);

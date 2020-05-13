@@ -22,8 +22,17 @@ package pokeapi.bittle.models.games;
 */
 
 public class Version extends pokeapi.bittle.models.utility.NamedAPIResource {
+	// The identifier for this resource.
+	private int id;
+
+	// The name of this resource listed in different languages.
+	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+
+	// The version group this version belongs to.
+	private pokeapi.bittle.models.games.VersionGroup version_group;
+
 	public int getId() {
-				return id;
+		return id;
 	}
 
 	public Version setId(int id) {
@@ -32,7 +41,7 @@ public class Version extends pokeapi.bittle.models.utility.NamedAPIResource {
 	}
 
 	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
-				return names;
+		return names;
 	}
 
 	public Version setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
@@ -44,7 +53,6 @@ public class Version extends pokeapi.bittle.models.utility.NamedAPIResource {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
-
 		return version_group;
 	}
 
@@ -52,15 +60,6 @@ public class Version extends pokeapi.bittle.models.utility.NamedAPIResource {
 		this.version_group = version_group;
 		return this;
 	}
-
-	// The identifier for this resource.
-	private int id;
-
-	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
-
-	// The version group this version belongs to.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
 
 	private static Version get(String url) {
 		Version obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Version.class);

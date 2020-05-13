@@ -105,8 +105,14 @@ package pokeapi.bittle.models.pokemon;
 */
 
 public class PokemonSpeciesDexEntry {
+	// The index number within the Pokédex.
+	private int entry_number;
+
+	// The Pokédex the referenced Pokémon species can be found in.
+	private pokeapi.bittle.models.games.Pokedex pokedex;
+
 	public int getEntryNumber() {
-				return entry_number;
+		return entry_number;
 	}
 
 	public PokemonSpeciesDexEntry setEntryNumber(int entry_number) {
@@ -118,7 +124,6 @@ public class PokemonSpeciesDexEntry {
 		if(!pokedex.getIsFetched()) {
 			pokedex = pokedex.get();
 		}
-
 		return pokedex;
 	}
 
@@ -126,12 +131,6 @@ public class PokemonSpeciesDexEntry {
 		this.pokedex = pokedex;
 		return this;
 	}
-
-	// The index number within the Pokédex.
-	private int entry_number;
-
-	// The Pokédex the referenced Pokémon species can be found in.
-	private pokeapi.bittle.models.games.Pokedex pokedex;
 
 	@Override public String toString() {
 		return new com.google.gson.Gson().toJson(this);
