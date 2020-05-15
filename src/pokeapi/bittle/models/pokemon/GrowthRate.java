@@ -30,7 +30,13 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
-public class GrowthRate extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Description;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class GrowthRate extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -38,13 +44,13 @@ public class GrowthRate extends pokeapi.bittle.models.utility.NamedAPIResource {
 	private String formula;
 
 	// The descriptions of this characteristic listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+	private ArrayList<Description> descriptions;
 
 	// A list of levels and the amount of experienced needed to atain them based on this growth rate.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.GrowthRateExperienceLevel> levels;
+	private ArrayList<GrowthRateExperienceLevel> levels;
 
 	// A list of Pokémon species that gain levels at this growth rate.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species;
+	private ArrayList<PokemonSpecies> pokemon_species;
 
 	public int getId() {
 		return id;
@@ -64,35 +70,35 @@ public class GrowthRate extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+	public ArrayList<Description> getDescriptions() {
 		return descriptions;
 	}
 
-	public GrowthRate setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+	public GrowthRate setDescriptions(ArrayList<Description> descriptions) {
 		this.descriptions = descriptions;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.GrowthRateExperienceLevel> getLevels() {
+	public ArrayList<GrowthRateExperienceLevel> getLevels() {
 		return levels;
 	}
 
-	public GrowthRate setLevels(java.util.ArrayList<pokeapi.bittle.models.pokemon.GrowthRateExperienceLevel> levels) {
+	public GrowthRate setLevels(ArrayList<GrowthRateExperienceLevel> levels) {
 		this.levels = levels;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
+	public ArrayList<PokemonSpecies> getPokemonSpecies() {
 		return pokemon_species;
 	}
 
-	public GrowthRate setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
+	public GrowthRate setPokemonSpecies(ArrayList<PokemonSpecies> pokemon_species) {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}
 
 	private static GrowthRate get(String url) {
-		GrowthRate obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), GrowthRate.class);
+		GrowthRate obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), GrowthRate.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -101,8 +107,8 @@ public class GrowthRate extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return GrowthRate.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("growth-rate", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("growth-rate", limit, offset);
 	}
 
 	public static GrowthRate getById(int id) {

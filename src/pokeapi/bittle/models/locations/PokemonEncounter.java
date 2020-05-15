@@ -68,30 +68,34 @@ package pokeapi.bittle.models.locations;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.pokemon.Pokemon;
+import pokeapi.bittle.models.utility.VersionEncounterDetail;
+
 public class PokemonEncounter {
 	// The Pokémon being encountered.
-	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
+	private Pokemon pokemon;
 
 	// A list of versions and encounters with Pokémon that might happen in the referenced location area.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details;
+	private ArrayList<VersionEncounterDetail> version_details;
 
-	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
+	public Pokemon getPokemon() {
 		if(!pokemon.getIsFetched()) {
 			pokemon = pokemon.get();
 		}
 		return pokemon;
 	}
 
-	public PokemonEncounter setPokemon(pokeapi.bittle.models.pokemon.Pokemon pokemon) {
+	public PokemonEncounter setPokemon(Pokemon pokemon) {
 		this.pokemon = pokemon;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> getVersionDetails() {
+	public ArrayList<VersionEncounterDetail> getVersionDetails() {
 		return version_details;
 	}
 
-	public PokemonEncounter setVersionDetails(java.util.ArrayList<pokeapi.bittle.models.utility.VersionEncounterDetail> version_details) {
+	public PokemonEncounter setVersionDetails(ArrayList<VersionEncounterDetail> version_details) {
 		this.version_details = version_details;
 		return this;
 	}

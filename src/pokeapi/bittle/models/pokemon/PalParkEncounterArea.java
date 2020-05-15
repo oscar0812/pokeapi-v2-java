@@ -104,6 +104,8 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.locations.PalParkArea;
+
 public class PalParkEncounterArea {
 	// The base score given to the player when the referenced Pokémon is caught during a pal park run.
 	private int base_score;
@@ -112,7 +114,7 @@ public class PalParkEncounterArea {
 	private int rate;
 
 	// The pal park area where this encounter happens.
-	private pokeapi.bittle.models.locations.PalParkArea area;
+	private PalParkArea area;
 
 	public int getBaseScore() {
 		return base_score;
@@ -132,14 +134,14 @@ public class PalParkEncounterArea {
 		return this;
 	}
 
-	public pokeapi.bittle.models.locations.PalParkArea getArea() {
+	public PalParkArea getArea() {
 		if(!area.getIsFetched()) {
 			area = area.get();
 		}
 		return area;
 	}
 
-	public PalParkEncounterArea setArea(pokeapi.bittle.models.locations.PalParkArea area) {
+	public PalParkEncounterArea setArea(PalParkArea area) {
 		this.area = area;
 		return this;
 	}

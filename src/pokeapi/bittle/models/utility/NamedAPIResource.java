@@ -1,6 +1,9 @@
 package pokeapi.bittle.models.utility;
 
-public class NamedAPIResource extends pokeapi.bittle.models.utility.APIResource {
+import pokeapi.bittle.models.resources.APIResourceList;
+import pokeapi.bittle.models.utility.APIResource;
+
+public class NamedAPIResource extends APIResource {
 	// The name of the referenced resource.
 	private String name;
 

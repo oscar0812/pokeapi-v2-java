@@ -27,15 +27,21 @@ package pokeapi.bittle.models.locations;
 }
 */
 
-public class PalParkArea extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class PalParkArea extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A list of Pokémon encountered in thi pal park area along with details.
-	private java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> pokemon_encounters;
+	private ArrayList<PalParkEncounterSpecies> pokemon_encounters;
 
 	public int getId() {
 		return id;
@@ -46,26 +52,26 @@ public class PalParkArea extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public PalParkArea setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public PalParkArea setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> getPokemonEncounters() {
+	public ArrayList<PalParkEncounterSpecies> getPokemonEncounters() {
 		return pokemon_encounters;
 	}
 
-	public PalParkArea setPokemonEncounters(java.util.ArrayList<pokeapi.bittle.models.locations.PalParkEncounterSpecies> pokemon_encounters) {
+	public PalParkArea setPokemonEncounters(ArrayList<PalParkEncounterSpecies> pokemon_encounters) {
 		this.pokemon_encounters = pokemon_encounters;
 		return this;
 	}
 
 	private static PalParkArea get(String url) {
-		PalParkArea obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PalParkArea.class);
+		PalParkArea obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), PalParkArea.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -74,8 +80,8 @@ public class PalParkArea extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return PalParkArea.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("pal-park-area", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("pal-park-area", limit, offset);
 	}
 
 	public static PalParkArea getById(int id) {

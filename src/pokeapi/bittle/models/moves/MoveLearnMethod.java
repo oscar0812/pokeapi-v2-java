@@ -32,18 +32,26 @@ package pokeapi.bittle.models.moves;
 }
 */
 
-public class MoveLearnMethod extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Description;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class MoveLearnMethod extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The description of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+	private ArrayList<Description> descriptions;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A list of version groups where moves can be learned through this method.
-	private java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups;
+	private ArrayList<VersionGroup> version_groups;
 
 	public int getId() {
 		return id;
@@ -54,35 +62,35 @@ public class MoveLearnMethod extends pokeapi.bittle.models.utility.NamedAPIResou
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+	public ArrayList<Description> getDescriptions() {
 		return descriptions;
 	}
 
-	public MoveLearnMethod setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+	public MoveLearnMethod setDescriptions(ArrayList<Description> descriptions) {
 		this.descriptions = descriptions;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public MoveLearnMethod setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public MoveLearnMethod setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> getVersionGroups() {
+	public ArrayList<VersionGroup> getVersionGroups() {
 		return version_groups;
 	}
 
-	public MoveLearnMethod setVersionGroups(java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups) {
+	public MoveLearnMethod setVersionGroups(ArrayList<VersionGroup> version_groups) {
 		this.version_groups = version_groups;
 		return this;
 	}
 
 	private static MoveLearnMethod get(String url) {
-		MoveLearnMethod obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveLearnMethod.class);
+		MoveLearnMethod obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), MoveLearnMethod.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -91,8 +99,8 @@ public class MoveLearnMethod extends pokeapi.bittle.models.utility.NamedAPIResou
 		return MoveLearnMethod.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("move-learn-method", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("move-learn-method", limit, offset);
 	}
 
 	public static MoveLearnMethod getById(int id) {

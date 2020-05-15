@@ -109,7 +109,7 @@ public class PokemonSpeciesVariety {
 	private boolean is_default;
 
 	// The Pokémon variety.
-	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
+	private Pokemon pokemon;
 
 	public boolean getIsDefault() {
 		return is_default;
@@ -120,14 +120,14 @@ public class PokemonSpeciesVariety {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
+	public Pokemon getPokemon() {
 		if(!pokemon.getIsFetched()) {
 			pokemon = pokemon.get();
 		}
 		return pokemon;
 	}
 
-	public PokemonSpeciesVariety setPokemon(pokeapi.bittle.models.pokemon.Pokemon pokemon) {
+	public PokemonSpeciesVariety setPokemon(Pokemon pokemon) {
 		this.pokemon = pokemon;
 		return this;
 	}

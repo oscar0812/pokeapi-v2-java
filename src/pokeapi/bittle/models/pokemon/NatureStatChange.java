@@ -57,7 +57,7 @@ public class NatureStatChange {
 	private int max_change;
 
 	// The stat being affected.
-	private pokeapi.bittle.models.pokemon.PokeathlonStat pokeathlon_stat;
+	private PokeathlonStat pokeathlon_stat;
 
 	public int getMaxChange() {
 		return max_change;
@@ -68,14 +68,14 @@ public class NatureStatChange {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokeathlonStat getPokeathlonStat() {
+	public PokeathlonStat getPokeathlonStat() {
 		if(!pokeathlon_stat.getIsFetched()) {
 			pokeathlon_stat = pokeathlon_stat.get();
 		}
 		return pokeathlon_stat;
 	}
 
-	public NatureStatChange setPokeathlonStat(pokeapi.bittle.models.pokemon.PokeathlonStat pokeathlon_stat) {
+	public NatureStatChange setPokeathlonStat(PokeathlonStat pokeathlon_stat) {
 		this.pokeathlon_stat = pokeathlon_stat;
 		return this;
 	}

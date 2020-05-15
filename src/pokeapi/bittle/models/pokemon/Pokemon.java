@@ -143,7 +143,13 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
-public class Pokemon extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.models.utility.VersionGameIndex;
+import pokeapi.bittle.utils.Information;
+
+public class Pokemon extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -163,34 +169,34 @@ public class Pokemon extends pokeapi.bittle.models.utility.NamedAPIResource {
 	private int weight;
 
 	// A list of abilities this Pokémon could potentially have.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonAbility> abilities;
+	private ArrayList<PokemonAbility> abilities;
 
 	// A list of forms this Pokémon can take on.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonForm> forms;
+	private ArrayList<PokemonForm> forms;
 
 	// A list of game indices relevent to Pokémon item by generation.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VersionGameIndex> game_indices;
+	private ArrayList<VersionGameIndex> game_indices;
 
 	// A list of items this Pokémon may be holding when encountered.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItem> held_items;
+	private ArrayList<PokemonHeldItem> held_items;
 
 	// A link to a list of location areas, as well as encounter details pertaining to specific versions.
 	private String location_area_encounters;
 
 	// A list of moves along with learn methods and level details pertaining to specific version groups.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMove> moves;
+	private ArrayList<PokemonMove> moves;
 
 	// A set of sprites used to depict this Pokémon in the game.
-	private pokeapi.bittle.models.pokemon.PokemonSprites sprites;
+	private PokemonSprites sprites;
 
 	// The species this Pokémon belongs to.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies species;
+	private PokemonSpecies species;
 
 	// A list of base stat values for this Pokémon.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonStat> stats;
+	private ArrayList<PokemonStat> stats;
 
 	// A list of details showing types this Pokémon has.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> types;
+	private ArrayList<PokemonType> types;
 
 	public int getId() {
 		return id;
@@ -246,38 +252,38 @@ public class Pokemon extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonAbility> getAbilities() {
+	public ArrayList<PokemonAbility> getAbilities() {
 		return abilities;
 	}
 
-	public Pokemon setAbilities(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonAbility> abilities) {
+	public Pokemon setAbilities(ArrayList<PokemonAbility> abilities) {
 		this.abilities = abilities;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonForm> getForms() {
+	public ArrayList<PokemonForm> getForms() {
 		return forms;
 	}
 
-	public Pokemon setForms(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonForm> forms) {
+	public Pokemon setForms(ArrayList<PokemonForm> forms) {
 		this.forms = forms;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionGameIndex> getGameIndices() {
+	public ArrayList<VersionGameIndex> getGameIndices() {
 		return game_indices;
 	}
 
-	public Pokemon setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.VersionGameIndex> game_indices) {
+	public Pokemon setGameIndices(ArrayList<VersionGameIndex> game_indices) {
 		this.game_indices = game_indices;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItem> getHeldItems() {
+	public ArrayList<PokemonHeldItem> getHeldItems() {
 		return held_items;
 	}
 
-	public Pokemon setHeldItems(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonHeldItem> held_items) {
+	public Pokemon setHeldItems(ArrayList<PokemonHeldItem> held_items) {
 		this.held_items = held_items;
 		return this;
 	}
@@ -291,56 +297,56 @@ public class Pokemon extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMove> getMoves() {
+	public ArrayList<PokemonMove> getMoves() {
 		return moves;
 	}
 
-	public Pokemon setMoves(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonMove> moves) {
+	public Pokemon setMoves(ArrayList<PokemonMove> moves) {
 		this.moves = moves;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSprites getSprites() {
+	public PokemonSprites getSprites() {
 		return sprites;
 	}
 
-	public Pokemon setSprites(pokeapi.bittle.models.pokemon.PokemonSprites sprites) {
+	public Pokemon setSprites(PokemonSprites sprites) {
 		this.sprites = sprites;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getSpecies() {
+	public PokemonSpecies getSpecies() {
 		if(!species.getIsFetched()) {
 			species = species.get();
 		}
 		return species;
 	}
 
-	public Pokemon setSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies species) {
+	public Pokemon setSpecies(PokemonSpecies species) {
 		this.species = species;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonStat> getStats() {
+	public ArrayList<PokemonStat> getStats() {
 		return stats;
 	}
 
-	public Pokemon setStats(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonStat> stats) {
+	public Pokemon setStats(ArrayList<PokemonStat> stats) {
 		this.stats = stats;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> getTypes() {
+	public ArrayList<PokemonType> getTypes() {
 		return types;
 	}
 
-	public Pokemon setTypes(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonType> types) {
+	public Pokemon setTypes(ArrayList<PokemonType> types) {
 		this.types = types;
 		return this;
 	}
 
 	private static Pokemon get(String url) {
-		Pokemon obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Pokemon.class);
+		Pokemon obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Pokemon.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -349,8 +355,8 @@ public class Pokemon extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Pokemon.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("pokemon", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("pokemon", limit, offset);
 	}
 
 	public static Pokemon getById(int id) {

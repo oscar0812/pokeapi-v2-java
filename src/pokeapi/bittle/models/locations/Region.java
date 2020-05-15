@@ -39,24 +39,33 @@ package pokeapi.bittle.models.locations;
 }
 */
 
-public class Region extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.games.Generation;
+import pokeapi.bittle.models.games.Pokedex;
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Region extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// A list of locations that can be found in this region.
-	private java.util.ArrayList<pokeapi.bittle.models.locations.Location> locations;
+	private ArrayList<Location> locations;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// The generation this region was introduced in.
-	private pokeapi.bittle.models.games.Generation main_generation;
+	private Generation main_generation;
 
 	// A list of pokédexes that catalogue Pokémon in this region.
-	private java.util.ArrayList<pokeapi.bittle.models.games.Pokedex> pokedexes;
+	private ArrayList<Pokedex> pokedexes;
 
 	// A list of version groups where this region can be visited.
-	private java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups;
+	private ArrayList<VersionGroup> version_groups;
 
 	public int getId() {
 		return id;
@@ -67,56 +76,56 @@ public class Region extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.locations.Location> getLocations() {
+	public ArrayList<Location> getLocations() {
 		return locations;
 	}
 
-	public Region setLocations(java.util.ArrayList<pokeapi.bittle.models.locations.Location> locations) {
+	public Region setLocations(ArrayList<Location> locations) {
 		this.locations = locations;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Region setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Region setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.Generation getMainGeneration() {
+	public Generation getMainGeneration() {
 		if(!main_generation.getIsFetched()) {
 			main_generation = main_generation.get();
 		}
 		return main_generation;
 	}
 
-	public Region setMainGeneration(pokeapi.bittle.models.games.Generation main_generation) {
+	public Region setMainGeneration(Generation main_generation) {
 		this.main_generation = main_generation;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.games.Pokedex> getPokedexes() {
+	public ArrayList<Pokedex> getPokedexes() {
 		return pokedexes;
 	}
 
-	public Region setPokedexes(java.util.ArrayList<pokeapi.bittle.models.games.Pokedex> pokedexes) {
+	public Region setPokedexes(ArrayList<Pokedex> pokedexes) {
 		this.pokedexes = pokedexes;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> getVersionGroups() {
+	public ArrayList<VersionGroup> getVersionGroups() {
 		return version_groups;
 	}
 
-	public Region setVersionGroups(java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups) {
+	public Region setVersionGroups(ArrayList<VersionGroup> version_groups) {
 		this.version_groups = version_groups;
 		return this;
 	}
 
 	private static Region get(String url) {
-		Region obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Region.class);
+		Region obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Region.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -125,8 +134,8 @@ public class Region extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Region.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("region", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("region", limit, offset);
 	}
 
 	public static Region getById(int id) {

@@ -22,15 +22,21 @@ package pokeapi.bittle.models.contests;
 }
 */
 
-public class ContestType extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.berries.BerryFlavor;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class ContestType extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The berry flavor that correlates with this contest type.
-	private pokeapi.bittle.models.berries.BerryFlavor berry_flavor;
+	private BerryFlavor berry_flavor;
 
 	// The name of this contest type listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.contests.ContestName> names;
+	private ArrayList<ContestName> names;
 
 	public int getId() {
 		return id;
@@ -41,29 +47,29 @@ public class ContestType extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return this;
 	}
 
-	public pokeapi.bittle.models.berries.BerryFlavor getBerryFlavor() {
+	public BerryFlavor getBerryFlavor() {
 		if(!berry_flavor.getIsFetched()) {
 			berry_flavor = berry_flavor.get();
 		}
 		return berry_flavor;
 	}
 
-	public ContestType setBerryFlavor(pokeapi.bittle.models.berries.BerryFlavor berry_flavor) {
+	public ContestType setBerryFlavor(BerryFlavor berry_flavor) {
 		this.berry_flavor = berry_flavor;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.contests.ContestName> getNames() {
+	public ArrayList<ContestName> getNames() {
 		return names;
 	}
 
-	public ContestType setNames(java.util.ArrayList<pokeapi.bittle.models.contests.ContestName> names) {
+	public ContestType setNames(ArrayList<ContestName> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static ContestType get(String url) {
-		ContestType obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), ContestType.class);
+		ContestType obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), ContestType.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -72,8 +78,8 @@ public class ContestType extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return ContestType.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("contest-type", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("contest-type", limit, offset);
 	}
 
 	public static ContestType getById(int id) {

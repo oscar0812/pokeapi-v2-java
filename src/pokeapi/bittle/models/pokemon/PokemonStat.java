@@ -145,7 +145,7 @@ package pokeapi.bittle.models.pokemon;
 
 public class PokemonStat {
 	// The stat the Pokémon has.
-	private pokeapi.bittle.models.pokemon.Stat stat;
+	private Stat stat;
 
 	// The effort points (EV) the Pokémon has in the stat.
 	private int effort;
@@ -153,14 +153,14 @@ public class PokemonStat {
 	// The base value of the stat.
 	private int base_stat;
 
-	public pokeapi.bittle.models.pokemon.Stat getStat() {
+	public Stat getStat() {
 		if(!stat.getIsFetched()) {
 			stat = stat.get();
 		}
 		return stat;
 	}
 
-	public PokemonStat setStat(pokeapi.bittle.models.pokemon.Stat stat) {
+	public PokemonStat setStat(Stat stat) {
 		this.stat = stat;
 		return this;
 	}

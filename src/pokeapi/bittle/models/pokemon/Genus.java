@@ -104,12 +104,14 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.utility.Language;
+
 public class Genus {
 	// The localized genus for the referenced Pokémon species
 	private String genus;
 
 	// The language this genus is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	public String getGenus() {
 		return genus;
@@ -120,14 +122,14 @@ public class Genus {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public Genus setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public Genus setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}

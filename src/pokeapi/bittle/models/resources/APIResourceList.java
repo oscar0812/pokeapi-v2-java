@@ -12,6 +12,10 @@ package pokeapi.bittle.models.resources;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.utility.APIResource;
+import pokeapi.bittle.utils.Information;
+
 public class APIResourceList {
 	// The total number of resources available from this API.
 	private int count;
@@ -23,7 +27,7 @@ public class APIResourceList {
 	private boolean previous;
 
 	// A list of un-named API resources.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> results;
+	private ArrayList<APIResource> results;
 
 	public int getCount() {
 		return count;
@@ -52,21 +56,21 @@ public class APIResourceList {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> getResults() {
+	public ArrayList<APIResource> getResults() {
 		return results;
 	}
 
-	public APIResourceList setResults(java.util.ArrayList<pokeapi.bittle.models.utility.APIResource> results) {
+	public APIResourceList setResults(ArrayList<APIResource> results) {
 		this.results = results;
 		return this;
 	}
 
 	private static APIResourceList get(String url) {
-		return new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), APIResourceList.class);
+		return new com.google.gson.Gson().fromJson(Information.fromInternet(url), APIResourceList.class);
 	}
 
 	public static APIResourceList getList(String endpoint, int limit, int offset) {
-		String json = pokeapi.bittle.utils.Information.fromInternet("https://pokeapi.co/api/v2/" + endpoint + "/?limit=" + Math.abs(limit) + "&offset=" + Math.abs(offset));
+		String json = Information.fromInternet("https://pokeapi.co/api/v2/" + endpoint + "/?limit=" + Math.abs(limit) + "&offset=" + Math.abs(offset));
 		return (new com.google.gson.Gson()).fromJson(json, APIResourceList.class);
 	}
 

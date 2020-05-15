@@ -117,27 +117,29 @@ package pokeapi.bittle.models.moves;
 }
 */
 
+import java.util.ArrayList;
+
 public class ContestComboDetail {
 	// A list of moves to use before this move.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> use_before;
+	private ArrayList<Move> use_before;
 
 	// A list of moves to use after this move.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> use_after;
+	private ArrayList<Move> use_after;
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getUseBefore() {
+	public ArrayList<Move> getUseBefore() {
 		return use_before;
 	}
 
-	public ContestComboDetail setUseBefore(java.util.ArrayList<pokeapi.bittle.models.moves.Move> use_before) {
+	public ContestComboDetail setUseBefore(ArrayList<Move> use_before) {
 		this.use_before = use_before;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getUseAfter() {
+	public ArrayList<Move> getUseAfter() {
 		return use_after;
 	}
 
-	public ContestComboDetail setUseAfter(java.util.ArrayList<pokeapi.bittle.models.moves.Move> use_after) {
+	public ContestComboDetail setUseAfter(ArrayList<Move> use_after) {
 		this.use_after = use_after;
 		return this;
 	}

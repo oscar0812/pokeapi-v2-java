@@ -88,7 +88,18 @@ package pokeapi.bittle.models.items;
 }
 */
 
-public class Item extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.evolution.EvolutionChain;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.GenerationGameIndex;
+import pokeapi.bittle.models.utility.MachineVersionDetail;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.models.utility.VerboseEffect;
+import pokeapi.bittle.models.utility.VersionGroupFlavorText;
+import pokeapi.bittle.utils.Information;
+
+public class Item extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -99,37 +110,37 @@ public class Item extends pokeapi.bittle.models.utility.NamedAPIResource {
 	private int fling_power;
 
 	// The effect of the move Fling when used with this item.
-	private pokeapi.bittle.models.items.ItemFlingEffect fling_effect;
+	private ItemFlingEffect fling_effect;
 
 	// A list of attributes this item has.
-	private java.util.ArrayList<pokeapi.bittle.models.items.ItemAttribute> attributes;
+	private ArrayList<ItemAttribute> attributes;
 
 	// The category of items this item falls into.
-	private pokeapi.bittle.models.items.ItemCategory category;
+	private ItemCategory category;
 
 	// The effect of this ability listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries;
+	private ArrayList<VerboseEffect> effect_entries;
 
 	// The flavor text of this ability listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VersionGroupFlavorText> flavor_text_entries;
+	private ArrayList<VersionGroupFlavorText> flavor_text_entries;
 
 	// A list of game indices relevent to this item by generation.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices;
+	private ArrayList<GenerationGameIndex> game_indices;
 
 	// The name of this item listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A set of sprites used to depict this item in the game.
-	private pokeapi.bittle.models.items.ItemSprites sprites;
+	private ItemSprites sprites;
 
 	// A list of Pokémon that might be found in the wild holding this item.
-	private java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemon> held_by_pokemon;
+	private ArrayList<ItemHolderPokemon> held_by_pokemon;
 
 	// An evolution chain this item requires to produce a bay during mating.
-	private pokeapi.bittle.models.evolution.EvolutionChain baby_trigger_for;
+	private EvolutionChain baby_trigger_for;
 
 	// A list of the machines related to this item.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> machines;
+	private ArrayList<MachineVersionDetail> machines;
 
 	public int getId() {
 		return id;
@@ -158,116 +169,116 @@ public class Item extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public pokeapi.bittle.models.items.ItemFlingEffect getFlingEffect() {
+	public ItemFlingEffect getFlingEffect() {
 		if(!fling_effect.getIsFetched()) {
 			fling_effect = fling_effect.get();
 		}
 		return fling_effect;
 	}
 
-	public Item setFlingEffect(pokeapi.bittle.models.items.ItemFlingEffect fling_effect) {
+	public Item setFlingEffect(ItemFlingEffect fling_effect) {
 		this.fling_effect = fling_effect;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.items.ItemAttribute> getAttributes() {
+	public ArrayList<ItemAttribute> getAttributes() {
 		return attributes;
 	}
 
-	public Item setAttributes(java.util.ArrayList<pokeapi.bittle.models.items.ItemAttribute> attributes) {
+	public Item setAttributes(ArrayList<ItemAttribute> attributes) {
 		this.attributes = attributes;
 		return this;
 	}
 
-	public pokeapi.bittle.models.items.ItemCategory getCategory() {
+	public ItemCategory getCategory() {
 		if(!category.getIsFetched()) {
 			category = category.get();
 		}
 		return category;
 	}
 
-	public Item setCategory(pokeapi.bittle.models.items.ItemCategory category) {
+	public Item setCategory(ItemCategory category) {
 		this.category = category;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
+	public ArrayList<VerboseEffect> getEffectEntries() {
 		return effect_entries;
 	}
 
-	public Item setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
+	public Item setEffectEntries(ArrayList<VerboseEffect> effect_entries) {
 		this.effect_entries = effect_entries;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VersionGroupFlavorText> getFlavorTextEntries() {
+	public ArrayList<VersionGroupFlavorText> getFlavorTextEntries() {
 		return flavor_text_entries;
 	}
 
-	public Item setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VersionGroupFlavorText> flavor_text_entries) {
+	public Item setFlavorTextEntries(ArrayList<VersionGroupFlavorText> flavor_text_entries) {
 		this.flavor_text_entries = flavor_text_entries;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> getGameIndices() {
+	public ArrayList<GenerationGameIndex> getGameIndices() {
 		return game_indices;
 	}
 
-	public Item setGameIndices(java.util.ArrayList<pokeapi.bittle.models.utility.GenerationGameIndex> game_indices) {
+	public Item setGameIndices(ArrayList<GenerationGameIndex> game_indices) {
 		this.game_indices = game_indices;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Item setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Item setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public pokeapi.bittle.models.items.ItemSprites getSprites() {
+	public ItemSprites getSprites() {
 		return sprites;
 	}
 
-	public Item setSprites(pokeapi.bittle.models.items.ItemSprites sprites) {
+	public Item setSprites(ItemSprites sprites) {
 		this.sprites = sprites;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemon> getHeldByPokemon() {
+	public ArrayList<ItemHolderPokemon> getHeldByPokemon() {
 		return held_by_pokemon;
 	}
 
-	public Item setHeldByPokemon(java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemon> held_by_pokemon) {
+	public Item setHeldByPokemon(ArrayList<ItemHolderPokemon> held_by_pokemon) {
 		this.held_by_pokemon = held_by_pokemon;
 		return this;
 	}
 
-	public pokeapi.bittle.models.evolution.EvolutionChain getBabyTriggerFor() {
+	public EvolutionChain getBabyTriggerFor() {
 		if(!baby_trigger_for.getIsFetched()) {
 			baby_trigger_for = baby_trigger_for.get();
 		}
 		return baby_trigger_for;
 	}
 
-	public Item setBabyTriggerFor(pokeapi.bittle.models.evolution.EvolutionChain baby_trigger_for) {
+	public Item setBabyTriggerFor(EvolutionChain baby_trigger_for) {
 		this.baby_trigger_for = baby_trigger_for;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> getMachines() {
+	public ArrayList<MachineVersionDetail> getMachines() {
 		return machines;
 	}
 
-	public Item setMachines(java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> machines) {
+	public Item setMachines(ArrayList<MachineVersionDetail> machines) {
 		this.machines = machines;
 		return this;
 	}
 
 	private static Item get(String url) {
-		Item obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Item.class);
+		Item obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Item.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -276,8 +287,8 @@ public class Item extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Item.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("item", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("item", limit, offset);
 	}
 
 	public static Item getById(int id) {

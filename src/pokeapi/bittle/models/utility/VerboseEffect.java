@@ -8,7 +8,7 @@ public class VerboseEffect {
 	private String short_effect;
 
 	// The language this effect is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	public String getEffect() {
 		return effect;
@@ -28,14 +28,14 @@ public class VerboseEffect {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public VerboseEffect setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public VerboseEffect setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}

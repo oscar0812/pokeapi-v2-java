@@ -35,7 +35,14 @@ package pokeapi.bittle.models.berries;
 }
 */
 
-public class Berry extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.items.Item;
+import pokeapi.bittle.models.pokemon.Type;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Berry extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -58,16 +65,16 @@ public class Berry extends pokeapi.bittle.models.utility.NamedAPIResource {
 	private int soil_dryness;
 
 	// The firmness of this berry, used in making Pokéblocks or Poffins.
-	private pokeapi.bittle.models.berries.BerryFirmness firmness;
+	private BerryFirmness firmness;
 
 	// A list of references to each flavor a berry can have and the potency of each of those flavors in regard to this berry.
-	private java.util.ArrayList<pokeapi.bittle.models.berries.BerryFlavorMap> flavors;
+	private ArrayList<BerryFlavorMap> flavors;
 
 	// Berries are actually items. This is a reference to the item specific data for this berry.
-	private pokeapi.bittle.models.items.Item item;
+	private Item item;
 
 	// The type inherited by "Natural Gift" when used with this Berry.
-	private pokeapi.bittle.models.pokemon.Type natural_gift_type;
+	private Type natural_gift_type;
 
 	public int getId() {
 		return id;
@@ -132,53 +139,53 @@ public class Berry extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public pokeapi.bittle.models.berries.BerryFirmness getFirmness() {
+	public BerryFirmness getFirmness() {
 		if(!firmness.getIsFetched()) {
 			firmness = firmness.get();
 		}
 		return firmness;
 	}
 
-	public Berry setFirmness(pokeapi.bittle.models.berries.BerryFirmness firmness) {
+	public Berry setFirmness(BerryFirmness firmness) {
 		this.firmness = firmness;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.berries.BerryFlavorMap> getFlavors() {
+	public ArrayList<BerryFlavorMap> getFlavors() {
 		return flavors;
 	}
 
-	public Berry setFlavors(java.util.ArrayList<pokeapi.bittle.models.berries.BerryFlavorMap> flavors) {
+	public Berry setFlavors(ArrayList<BerryFlavorMap> flavors) {
 		this.flavors = flavors;
 		return this;
 	}
 
-	public pokeapi.bittle.models.items.Item getItem() {
+	public Item getItem() {
 		if(!item.getIsFetched()) {
 			item = item.get();
 		}
 		return item;
 	}
 
-	public Berry setItem(pokeapi.bittle.models.items.Item item) {
+	public Berry setItem(Item item) {
 		this.item = item;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Type getNaturalGiftType() {
+	public Type getNaturalGiftType() {
 		if(!natural_gift_type.getIsFetched()) {
 			natural_gift_type = natural_gift_type.get();
 		}
 		return natural_gift_type;
 	}
 
-	public Berry setNaturalGiftType(pokeapi.bittle.models.pokemon.Type natural_gift_type) {
+	public Berry setNaturalGiftType(Type natural_gift_type) {
 		this.natural_gift_type = natural_gift_type;
 		return this;
 	}
 
 	private static Berry get(String url) {
-		Berry obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Berry.class);
+		Berry obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Berry.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -187,8 +194,8 @@ public class Berry extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Berry.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("berry", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("berry", limit, offset);
 	}
 
 	public static Berry getById(int id) {

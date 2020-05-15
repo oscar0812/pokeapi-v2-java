@@ -27,15 +27,21 @@ package pokeapi.bittle.models.encounters;
 }
 */
 
-public class EncounterCondition extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class EncounterCondition extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A list of possible values for this encounter condition.
-	private java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> values;
+	private ArrayList<EncounterConditionValue> values;
 
 	public int getId() {
 		return id;
@@ -46,26 +52,26 @@ public class EncounterCondition extends pokeapi.bittle.models.utility.NamedAPIRe
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public EncounterCondition setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public EncounterCondition setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> getValues() {
+	public ArrayList<EncounterConditionValue> getValues() {
 		return values;
 	}
 
-	public EncounterCondition setValues(java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> values) {
+	public EncounterCondition setValues(ArrayList<EncounterConditionValue> values) {
 		this.values = values;
 		return this;
 	}
 
 	private static EncounterCondition get(String url) {
-		EncounterCondition obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EncounterCondition.class);
+		EncounterCondition obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), EncounterCondition.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -74,8 +80,8 @@ public class EncounterCondition extends pokeapi.bittle.models.utility.NamedAPIRe
 		return EncounterCondition.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("encounter-condition", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("encounter-condition", limit, offset);
 	}
 
 	public static EncounterCondition getById(int id) {

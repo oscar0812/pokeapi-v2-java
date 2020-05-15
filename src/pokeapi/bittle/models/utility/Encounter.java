@@ -1,5 +1,9 @@
 package pokeapi.bittle.models.utility;
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.encounters.EncounterConditionValue;
+import pokeapi.bittle.models.encounters.EncounterMethod;
+
 public class Encounter {
 	// The lowest level the Pokémon could be encountered at.
 	private int min_level;
@@ -8,13 +12,13 @@ public class Encounter {
 	private int max_level;
 
 	// A list of condition values that must be in effect for this encounter to occur.
-	private java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> condition_values;
+	private ArrayList<EncounterConditionValue> condition_values;
 
 	// Percent chance that this encounter will occur.
 	private int chance;
 
 	// The method by which this encounter happens.
-	private pokeapi.bittle.models.encounters.EncounterMethod method;
+	private EncounterMethod method;
 
 	public int getMinLevel() {
 		return min_level;
@@ -34,11 +38,11 @@ public class Encounter {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> getConditionValues() {
+	public ArrayList<EncounterConditionValue> getConditionValues() {
 		return condition_values;
 	}
 
-	public Encounter setConditionValues(java.util.ArrayList<pokeapi.bittle.models.encounters.EncounterConditionValue> condition_values) {
+	public Encounter setConditionValues(ArrayList<EncounterConditionValue> condition_values) {
 		this.condition_values = condition_values;
 		return this;
 	}
@@ -52,14 +56,14 @@ public class Encounter {
 		return this;
 	}
 
-	public pokeapi.bittle.models.encounters.EncounterMethod getMethod() {
+	public EncounterMethod getMethod() {
 		if(!method.getIsFetched()) {
 			method = method.get();
 		}
 		return method;
 	}
 
-	public Encounter setMethod(pokeapi.bittle.models.encounters.EncounterMethod method) {
+	public Encounter setMethod(EncounterMethod method) {
 		this.method = method;
 		return this;
 	}

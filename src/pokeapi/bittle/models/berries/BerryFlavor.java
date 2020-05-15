@@ -30,18 +30,25 @@ package pokeapi.bittle.models.berries;
 }
 */
 
-public class BerryFlavor extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.contests.ContestType;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class BerryFlavor extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// A list of the berries with this flavor.
-	private java.util.ArrayList<pokeapi.bittle.models.berries.FlavorBerryMap> berries;
+	private ArrayList<FlavorBerryMap> berries;
 
 	// The contest type that correlates with this berry flavor.
-	private pokeapi.bittle.models.contests.ContestType contest_type;
+	private ContestType contest_type;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -52,38 +59,38 @@ public class BerryFlavor extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.berries.FlavorBerryMap> getBerries() {
+	public ArrayList<FlavorBerryMap> getBerries() {
 		return berries;
 	}
 
-	public BerryFlavor setBerries(java.util.ArrayList<pokeapi.bittle.models.berries.FlavorBerryMap> berries) {
+	public BerryFlavor setBerries(ArrayList<FlavorBerryMap> berries) {
 		this.berries = berries;
 		return this;
 	}
 
-	public pokeapi.bittle.models.contests.ContestType getContestType() {
+	public ContestType getContestType() {
 		if(!contest_type.getIsFetched()) {
 			contest_type = contest_type.get();
 		}
 		return contest_type;
 	}
 
-	public BerryFlavor setContestType(pokeapi.bittle.models.contests.ContestType contest_type) {
+	public BerryFlavor setContestType(ContestType contest_type) {
 		this.contest_type = contest_type;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public BerryFlavor setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public BerryFlavor setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static BerryFlavor get(String url) {
-		BerryFlavor obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), BerryFlavor.class);
+		BerryFlavor obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), BerryFlavor.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -92,8 +99,8 @@ public class BerryFlavor extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return BerryFlavor.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("berry-flavor", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("berry-flavor", limit, offset);
 	}
 
 	public static BerryFlavor getById(int id) {

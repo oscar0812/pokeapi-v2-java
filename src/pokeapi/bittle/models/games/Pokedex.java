@@ -46,7 +46,15 @@ package pokeapi.bittle.models.games;
 }
 */
 
-public class Pokedex extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.locations.Region;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Description;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Pokedex extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -54,19 +62,19 @@ public class Pokedex extends pokeapi.bittle.models.utility.NamedAPIResource {
 	private boolean is_main_series;
 
 	// The description of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+	private ArrayList<Description> descriptions;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A list of Pokémon catalogued in this Pokédex and their indexes.
-	private java.util.ArrayList<pokeapi.bittle.models.games.PokemonEntry> pokemon_entries;
+	private ArrayList<PokemonEntry> pokemon_entries;
 
 	// The region this Pokédex catalogues Pokémon for.
-	private pokeapi.bittle.models.locations.Region region;
+	private Region region;
 
 	// A list of version groups this Pokédex is relevant to.
-	private java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups;
+	private ArrayList<VersionGroup> version_groups;
 
 	public int getId() {
 		return id;
@@ -86,56 +94,56 @@ public class Pokedex extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+	public ArrayList<Description> getDescriptions() {
 		return descriptions;
 	}
 
-	public Pokedex setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+	public Pokedex setDescriptions(ArrayList<Description> descriptions) {
 		this.descriptions = descriptions;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Pokedex setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Pokedex setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.games.PokemonEntry> getPokemonEntries() {
+	public ArrayList<PokemonEntry> getPokemonEntries() {
 		return pokemon_entries;
 	}
 
-	public Pokedex setPokemonEntries(java.util.ArrayList<pokeapi.bittle.models.games.PokemonEntry> pokemon_entries) {
+	public Pokedex setPokemonEntries(ArrayList<PokemonEntry> pokemon_entries) {
 		this.pokemon_entries = pokemon_entries;
 		return this;
 	}
 
-	public pokeapi.bittle.models.locations.Region getRegion() {
+	public Region getRegion() {
 		if(!region.getIsFetched()) {
 			region = region.get();
 		}
 		return region;
 	}
 
-	public Pokedex setRegion(pokeapi.bittle.models.locations.Region region) {
+	public Pokedex setRegion(Region region) {
 		this.region = region;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> getVersionGroups() {
+	public ArrayList<VersionGroup> getVersionGroups() {
 		return version_groups;
 	}
 
-	public Pokedex setVersionGroups(java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups) {
+	public Pokedex setVersionGroups(ArrayList<VersionGroup> version_groups) {
 		this.version_groups = version_groups;
 		return this;
 	}
 
 	private static Pokedex get(String url) {
-		Pokedex obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Pokedex.class);
+		Pokedex obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Pokedex.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -144,8 +152,8 @@ public class Pokedex extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Pokedex.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("pokedex", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("pokedex", limit, offset);
 	}
 
 	public static Pokedex getById(int id) {

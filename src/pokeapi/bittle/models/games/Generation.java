@@ -46,30 +46,41 @@ package pokeapi.bittle.models.games;
 }
 */
 
-public class Generation extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.locations.Region;
+import pokeapi.bittle.models.moves.Move;
+import pokeapi.bittle.models.pokemon.Ability;
+import pokeapi.bittle.models.pokemon.PokemonSpecies;
+import pokeapi.bittle.models.pokemon.Type;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Generation extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// A list of abilities that were introduced in this generation.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.Ability> abilities;
+	private ArrayList<Ability> abilities;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// The main region travelled in this generation.
-	private pokeapi.bittle.models.locations.Region main_region;
+	private Region main_region;
 
 	// A list of moves that were introduced in this generation.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+	private ArrayList<Move> moves;
 
 	// A list of Pokémon species that were introduced in this generation.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species;
+	private ArrayList<PokemonSpecies> pokemon_species;
 
 	// A list of types that were introduced in this generation.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.Type> types;
+	private ArrayList<Type> types;
 
 	// A list of version groups that were introduced in this generation.
-	private java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups;
+	private ArrayList<VersionGroup> version_groups;
 
 	public int getId() {
 		return id;
@@ -80,74 +91,74 @@ public class Generation extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.Ability> getAbilities() {
+	public ArrayList<Ability> getAbilities() {
 		return abilities;
 	}
 
-	public Generation setAbilities(java.util.ArrayList<pokeapi.bittle.models.pokemon.Ability> abilities) {
+	public Generation setAbilities(ArrayList<Ability> abilities) {
 		this.abilities = abilities;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Generation setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Generation setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public pokeapi.bittle.models.locations.Region getMainRegion() {
+	public Region getMainRegion() {
 		if(!main_region.getIsFetched()) {
 			main_region = main_region.get();
 		}
 		return main_region;
 	}
 
-	public Generation setMainRegion(pokeapi.bittle.models.locations.Region main_region) {
+	public Generation setMainRegion(Region main_region) {
 		this.main_region = main_region;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+	public ArrayList<Move> getMoves() {
 		return moves;
 	}
 
-	public Generation setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+	public Generation setMoves(ArrayList<Move> moves) {
 		this.moves = moves;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
+	public ArrayList<PokemonSpecies> getPokemonSpecies() {
 		return pokemon_species;
 	}
 
-	public Generation setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
+	public Generation setPokemonSpecies(ArrayList<PokemonSpecies> pokemon_species) {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.Type> getTypes() {
+	public ArrayList<Type> getTypes() {
 		return types;
 	}
 
-	public Generation setTypes(java.util.ArrayList<pokeapi.bittle.models.pokemon.Type> types) {
+	public Generation setTypes(ArrayList<Type> types) {
 		this.types = types;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> getVersionGroups() {
+	public ArrayList<VersionGroup> getVersionGroups() {
 		return version_groups;
 	}
 
-	public Generation setVersionGroups(java.util.ArrayList<pokeapi.bittle.models.games.VersionGroup> version_groups) {
+	public Generation setVersionGroups(ArrayList<VersionGroup> version_groups) {
 		this.version_groups = version_groups;
 		return this;
 	}
 
 	private static Generation get(String url) {
-		Generation obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Generation.class);
+		Generation obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Generation.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -156,8 +167,8 @@ public class Generation extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Generation.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("generation", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("generation", limit, offset);
 	}
 
 	public static Generation getById(int id) {

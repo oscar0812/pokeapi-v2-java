@@ -80,7 +80,7 @@ public class AbilityPokemon {
 	private int slot;
 
 	// The Pokémon this ability could belong to.
-	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
+	private Pokemon pokemon;
 
 	public boolean getIsHidden() {
 		return is_hidden;
@@ -100,14 +100,14 @@ public class AbilityPokemon {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
+	public Pokemon getPokemon() {
 		if(!pokemon.getIsFetched()) {
 			pokemon = pokemon.get();
 		}
 		return pokemon;
 	}
 
-	public AbilityPokemon setPokemon(pokeapi.bittle.models.pokemon.Pokemon pokemon) {
+	public AbilityPokemon setPokemon(Pokemon pokemon) {
 		this.pokemon = pokemon;
 		return this;
 	}

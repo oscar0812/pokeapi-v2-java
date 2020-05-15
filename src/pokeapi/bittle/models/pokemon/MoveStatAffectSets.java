@@ -62,27 +62,29 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import java.util.ArrayList;
+
 public class MoveStatAffectSets {
 	// A list of moves and how they change the referenced stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> increase;
+	private ArrayList<MoveStatAffect> increase;
 
 	// A list of moves and how they change the referenced stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> decrease;
+	private ArrayList<MoveStatAffect> decrease;
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> getIncrease() {
+	public ArrayList<MoveStatAffect> getIncrease() {
 		return increase;
 	}
 
-	public MoveStatAffectSets setIncrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> increase) {
+	public MoveStatAffectSets setIncrease(ArrayList<MoveStatAffect> increase) {
 		this.increase = increase;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> getDecrease() {
+	public ArrayList<MoveStatAffect> getDecrease() {
 		return decrease;
 	}
 
-	public MoveStatAffectSets setDecrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveStatAffect> decrease) {
+	public MoveStatAffectSets setDecrease(ArrayList<MoveStatAffect> decrease) {
 		this.decrease = decrease;
 		return this;
 	}

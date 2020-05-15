@@ -23,6 +23,9 @@ package pokeapi.bittle.models.moves;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.utility.Description;
+
 public class ModelName {
 	// The identifier for this resource.
 	private int id;
@@ -31,10 +34,10 @@ public class ModelName {
 	private String name;
 
 	// A list of moves that fall into this category.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+	private ArrayList<Move> moves;
 
 	// The description of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+	private ArrayList<Description> descriptions;
 
 	public int getId() {
 		return id;
@@ -54,20 +57,20 @@ public class ModelName {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+	public ArrayList<Move> getMoves() {
 		return moves;
 	}
 
-	public ModelName setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+	public ModelName setMoves(ArrayList<Move> moves) {
 		this.moves = moves;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+	public ArrayList<Description> getDescriptions() {
 		return descriptions;
 	}
 
-	public ModelName setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+	public ModelName setDescriptions(ArrayList<Description> descriptions) {
 		this.descriptions = descriptions;
 		return this;
 	}

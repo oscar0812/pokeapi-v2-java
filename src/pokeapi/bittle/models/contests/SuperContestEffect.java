@@ -23,7 +23,14 @@ package pokeapi.bittle.models.contests;
 }
 */
 
-public class SuperContestEffect extends pokeapi.bittle.models.utility.APIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.moves.Move;
+import pokeapi.bittle.models.resources.APIResourceList;
+import pokeapi.bittle.models.utility.APIResource;
+import pokeapi.bittle.models.utility.FlavorText;
+import pokeapi.bittle.utils.Information;
+
+public class SuperContestEffect extends APIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -31,10 +38,10 @@ public class SuperContestEffect extends pokeapi.bittle.models.utility.APIResourc
 	private int appeal;
 
 	// The flavor text of this super contest effect listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries;
+	private ArrayList<FlavorText> flavor_text_entries;
 
 	// A list of moves that have the effect when used in super contests.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+	private ArrayList<Move> moves;
 
 	public int getId() {
 		return id;
@@ -54,26 +61,26 @@ public class SuperContestEffect extends pokeapi.bittle.models.utility.APIResourc
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> getFlavorTextEntries() {
+	public ArrayList<FlavorText> getFlavorTextEntries() {
 		return flavor_text_entries;
 	}
 
-	public SuperContestEffect setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries) {
+	public SuperContestEffect setFlavorTextEntries(ArrayList<FlavorText> flavor_text_entries) {
 		this.flavor_text_entries = flavor_text_entries;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+	public ArrayList<Move> getMoves() {
 		return moves;
 	}
 
-	public SuperContestEffect setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+	public SuperContestEffect setMoves(ArrayList<Move> moves) {
 		this.moves = moves;
 		return this;
 	}
 
 	private static SuperContestEffect get(String url) {
-		SuperContestEffect obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), SuperContestEffect.class);
+		SuperContestEffect obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), SuperContestEffect.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -82,8 +89,8 @@ public class SuperContestEffect extends pokeapi.bittle.models.utility.APIResourc
 		return SuperContestEffect.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.APIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.APIResourceList.getList("super-contest-effect", limit, offset);
+	public static APIResourceList getList(int limit, int offset) {
+		 return APIResourceList.getList("super-contest-effect", limit, offset);
 	}
 
 	public static SuperContestEffect getById(int id) {

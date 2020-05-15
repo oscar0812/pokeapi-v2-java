@@ -88,12 +88,14 @@ package pokeapi.bittle.models.items;
 }
 */
 
+import pokeapi.bittle.models.games.Version;
+
 public class ItemHolderPokemonVersionDetail {
 	// How often this Pokémon holds this item in this version.
 	private int rarity;
 
 	// The version that this item is held in by the Pokémon.
-	private pokeapi.bittle.models.games.Version version;
+	private Version version;
 
 	public int getRarity() {
 		return rarity;
@@ -104,14 +106,14 @@ public class ItemHolderPokemonVersionDetail {
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.Version getVersion() {
+	public Version getVersion() {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
 		return version;
 	}
 
-	public ItemHolderPokemonVersionDetail setVersion(pokeapi.bittle.models.games.Version version) {
+	public ItemHolderPokemonVersionDetail setVersion(Version version) {
 		this.version = version;
 		return this;
 	}

@@ -143,21 +143,23 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.games.Version;
+
 public class PokemonHeldItemVersion {
 	// The version in which the item is held.
-	private pokeapi.bittle.models.games.Version version;
+	private Version version;
 
 	// How often the item is held.
 	private int rarity;
 
-	public pokeapi.bittle.models.games.Version getVersion() {
+	public Version getVersion() {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
 		return version;
 	}
 
-	public PokemonHeldItemVersion setVersion(pokeapi.bittle.models.games.Version version) {
+	public PokemonHeldItemVersion setVersion(Version version) {
 		this.version = version;
 		return this;
 	}

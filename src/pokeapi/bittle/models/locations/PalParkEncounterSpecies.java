@@ -27,6 +27,8 @@ package pokeapi.bittle.models.locations;
 }
 */
 
+import pokeapi.bittle.models.pokemon.PokemonSpecies;
+
 public class PalParkEncounterSpecies {
 	// The base score given to the player when this Pokémon is caught during a pal park run.
 	private int base_score;
@@ -35,7 +37,7 @@ public class PalParkEncounterSpecies {
 	private int rate;
 
 	// The Pokémon species being encountered.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
+	private PokemonSpecies pokemon_species;
 
 	public int getBaseScore() {
 		return base_score;
@@ -55,14 +57,14 @@ public class PalParkEncounterSpecies {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getPokemonSpecies() {
+	public PokemonSpecies getPokemonSpecies() {
 		if(!pokemon_species.getIsFetched()) {
 			pokemon_species = pokemon_species.get();
 		}
 		return pokemon_species;
 	}
 
-	public PalParkEncounterSpecies setPokemonSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species) {
+	public PalParkEncounterSpecies setPokemonSpecies(PokemonSpecies pokemon_species) {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}

@@ -1,14 +1,16 @@
 package pokeapi.bittle.models.utility;
 
+import pokeapi.bittle.models.games.VersionGroup;
+
 public class VersionGroupFlavorText {
 	// The localized name for an API resource in a specific language.
 	private String text;
 
 	// The language this name is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	// The version group which uses this flavor text.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
 	public String getText() {
 		return text;
@@ -19,26 +21,26 @@ public class VersionGroupFlavorText {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public VersionGroupFlavorText setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public VersionGroupFlavorText setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public VersionGroupFlavorText setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public VersionGroupFlavorText setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}

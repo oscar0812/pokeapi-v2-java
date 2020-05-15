@@ -72,30 +72,34 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.utility.Effect;
+
 public class AbilityEffectChange {
 	// The previous effect of this ability listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries;
+	private ArrayList<Effect> effect_entries;
 
 	// The version group in which the previous effect of this ability originated.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Effect> getEffectEntries() {
+	public ArrayList<Effect> getEffectEntries() {
 		return effect_entries;
 	}
 
-	public AbilityEffectChange setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.Effect> effect_entries) {
+	public AbilityEffectChange setEffectEntries(ArrayList<Effect> effect_entries) {
 		this.effect_entries = effect_entries;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public AbilityEffectChange setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public AbilityEffectChange setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}

@@ -23,15 +23,21 @@ package pokeapi.bittle.models.berries;
 }
 */
 
-public class BerryFirmness extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class BerryFirmness extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// A list of the berries with this firmness.
-	private java.util.ArrayList<pokeapi.bittle.models.berries.Berry> berries;
+	private ArrayList<Berry> berries;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -42,26 +48,26 @@ public class BerryFirmness extends pokeapi.bittle.models.utility.NamedAPIResourc
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.berries.Berry> getBerries() {
+	public ArrayList<Berry> getBerries() {
 		return berries;
 	}
 
-	public BerryFirmness setBerries(java.util.ArrayList<pokeapi.bittle.models.berries.Berry> berries) {
+	public BerryFirmness setBerries(ArrayList<Berry> berries) {
 		this.berries = berries;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public BerryFirmness setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public BerryFirmness setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static BerryFirmness get(String url) {
-		BerryFirmness obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), BerryFirmness.class);
+		BerryFirmness obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), BerryFirmness.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -70,8 +76,8 @@ public class BerryFirmness extends pokeapi.bittle.models.utility.NamedAPIResourc
 		return BerryFirmness.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("berry-firmness", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("berry-firmness", limit, offset);
 	}
 
 	public static BerryFirmness getById(int id) {

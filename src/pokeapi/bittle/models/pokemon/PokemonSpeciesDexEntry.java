@@ -104,12 +104,14 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.games.Pokedex;
+
 public class PokemonSpeciesDexEntry {
 	// The index number within the Pokédex.
 	private int entry_number;
 
 	// The Pokédex the referenced Pokémon species can be found in.
-	private pokeapi.bittle.models.games.Pokedex pokedex;
+	private Pokedex pokedex;
 
 	public int getEntryNumber() {
 		return entry_number;
@@ -120,14 +122,14 @@ public class PokemonSpeciesDexEntry {
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.Pokedex getPokedex() {
+	public Pokedex getPokedex() {
 		if(!pokedex.getIsFetched()) {
 			pokedex = pokedex.get();
 		}
 		return pokedex;
 	}
 
-	public PokemonSpeciesDexEntry setPokedex(pokeapi.bittle.models.games.Pokedex pokedex) {
+	public PokemonSpeciesDexEntry setPokedex(Pokedex pokedex) {
 		this.pokedex = pokedex;
 		return this;
 	}

@@ -32,12 +32,14 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.utility.Language;
+
 public class AwesomeName {
 	// The localized "scientific" name for an API resource in a specific language.
 	private String awesome_name;
 
 	// The language this "scientific" name is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	public String getAwesomeName() {
 		return awesome_name;
@@ -48,14 +50,14 @@ public class AwesomeName {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public AwesomeName setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public AwesomeName setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}

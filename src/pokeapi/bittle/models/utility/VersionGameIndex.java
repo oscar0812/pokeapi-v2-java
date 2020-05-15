@@ -1,11 +1,13 @@
 package pokeapi.bittle.models.utility;
 
+import pokeapi.bittle.models.games.Version;
+
 public class VersionGameIndex {
 	// The internal id of an API resource within game data.
 	private int game_index;
 
 	// The version relevent to this game index.
-	private pokeapi.bittle.models.games.Version version;
+	private Version version;
 
 	public int getGameIndex() {
 		return game_index;
@@ -16,14 +18,14 @@ public class VersionGameIndex {
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.Version getVersion() {
+	public Version getVersion() {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
 		return version;
 	}
 
-	public VersionGameIndex setVersion(pokeapi.bittle.models.games.Version version) {
+	public VersionGameIndex setVersion(Version version) {
 		this.version = version;
 		return this;
 	}

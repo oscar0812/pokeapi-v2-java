@@ -23,15 +23,22 @@ package pokeapi.bittle.models.evolution;
 }
 */
 
-public class EvolutionTrigger extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.pokemon.PokemonSpecies;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class EvolutionTrigger extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A list of pokemon species that result from this evolution trigger.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species;
+	private ArrayList<PokemonSpecies> pokemon_species;
 
 	public int getId() {
 		return id;
@@ -42,26 +49,26 @@ public class EvolutionTrigger extends pokeapi.bittle.models.utility.NamedAPIReso
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public EvolutionTrigger setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public EvolutionTrigger setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getPokemonSpecies() {
+	public ArrayList<PokemonSpecies> getPokemonSpecies() {
 		return pokemon_species;
 	}
 
-	public EvolutionTrigger setPokemonSpecies(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> pokemon_species) {
+	public EvolutionTrigger setPokemonSpecies(ArrayList<PokemonSpecies> pokemon_species) {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}
 
 	private static EvolutionTrigger get(String url) {
-		EvolutionTrigger obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EvolutionTrigger.class);
+		EvolutionTrigger obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), EvolutionTrigger.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -70,8 +77,8 @@ public class EvolutionTrigger extends pokeapi.bittle.models.utility.NamedAPIReso
 		return EvolutionTrigger.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("evolution-trigger", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("evolution-trigger", limit, offset);
 	}
 
 	public static EvolutionTrigger getById(int id) {

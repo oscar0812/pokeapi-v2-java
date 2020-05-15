@@ -62,12 +62,14 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.moves.Move;
+
 public class MoveStatAffect {
 	// The maximum amount of change to the referenced stat.
 	private int change;
 
 	// The move causing the change.
-	private pokeapi.bittle.models.moves.Move move;
+	private Move move;
 
 	public int getChange() {
 		return change;
@@ -78,14 +80,14 @@ public class MoveStatAffect {
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.Move getMove() {
+	public Move getMove() {
 		if(!move.getIsFetched()) {
 			move = move.get();
 		}
 		return move;
 	}
 
-	public MoveStatAffect setMove(pokeapi.bittle.models.moves.Move move) {
+	public MoveStatAffect setMove(Move move) {
 		this.move = move;
 		return this;
 	}

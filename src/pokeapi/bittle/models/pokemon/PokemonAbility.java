@@ -151,7 +151,7 @@ public class PokemonAbility {
 	private int slot;
 
 	// The ability the Pokémon may have.
-	private pokeapi.bittle.models.pokemon.Ability ability;
+	private Ability ability;
 
 	public boolean getIsHidden() {
 		return is_hidden;
@@ -171,14 +171,14 @@ public class PokemonAbility {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Ability getAbility() {
+	public Ability getAbility() {
 		if(!ability.getIsFetched()) {
 			ability = ability.get();
 		}
 		return ability;
 	}
 
-	public PokemonAbility setAbility(pokeapi.bittle.models.pokemon.Ability ability) {
+	public PokemonAbility setAbility(Ability ability) {
 		this.ability = ability;
 		return this;
 	}

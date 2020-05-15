@@ -52,6 +52,8 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.moves.MoveBattleStyle;
+
 public class MoveBattleStylePreference {
 	// Chance of using the move, in percent, if HP is under one half.
 	private int low_hp_preference;
@@ -60,7 +62,7 @@ public class MoveBattleStylePreference {
 	private int high_hp_preference;
 
 	// The move battle style.
-	private pokeapi.bittle.models.moves.MoveBattleStyle move_battle_style;
+	private MoveBattleStyle move_battle_style;
 
 	public int getLowHpPreference() {
 		return low_hp_preference;
@@ -80,14 +82,14 @@ public class MoveBattleStylePreference {
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.MoveBattleStyle getMoveBattleStyle() {
+	public MoveBattleStyle getMoveBattleStyle() {
 		if(!move_battle_style.getIsFetched()) {
 			move_battle_style = move_battle_style.get();
 		}
 		return move_battle_style;
 	}
 
-	public MoveBattleStylePreference setMoveBattleStyle(pokeapi.bittle.models.moves.MoveBattleStyle move_battle_style) {
+	public MoveBattleStylePreference setMoveBattleStyle(MoveBattleStyle move_battle_style) {
 		this.move_battle_style = move_battle_style;
 		return this;
 	}

@@ -117,6 +117,11 @@ package pokeapi.bittle.models.moves;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.pokemon.Type;
+import pokeapi.bittle.models.utility.VerboseEffect;
+
 public class PastMoveStatValues {
 	// The percent value of how likely this move is to be successful.
 	private int accuracy;
@@ -131,13 +136,13 @@ public class PastMoveStatValues {
 	private int pp;
 
 	// The effect of this move listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries;
+	private ArrayList<VerboseEffect> effect_entries;
 
 	// The elemental type of this move.
-	private pokeapi.bittle.models.pokemon.Type type;
+	private Type type;
 
 	// The version group in which these move stat values were in effect.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
 	public int getAccuracy() {
 		return accuracy;
@@ -175,35 +180,35 @@ public class PastMoveStatValues {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
+	public ArrayList<VerboseEffect> getEffectEntries() {
 		return effect_entries;
 	}
 
-	public PastMoveStatValues setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
+	public PastMoveStatValues setEffectEntries(ArrayList<VerboseEffect> effect_entries) {
 		this.effect_entries = effect_entries;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Type getType() {
+	public Type getType() {
 		if(!type.getIsFetched()) {
 			type = type.get();
 		}
 		return type;
 	}
 
-	public PastMoveStatValues setType(pokeapi.bittle.models.pokemon.Type type) {
+	public PastMoveStatValues setType(Type type) {
 		this.type = type;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public PastMoveStatValues setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public PastMoveStatValues setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}

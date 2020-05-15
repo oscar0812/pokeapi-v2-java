@@ -51,27 +51,33 @@ package pokeapi.bittle.models.evolution;
 }
 */
 
+import pokeapi.bittle.models.items.Item;
+import pokeapi.bittle.models.locations.Location;
+import pokeapi.bittle.models.moves.Move;
+import pokeapi.bittle.models.pokemon.PokemonSpecies;
+import pokeapi.bittle.models.pokemon.Type;
+
 public class EvolutionDetail {
 	// The item required to cause evolution this into Pokémon species.
-	private pokeapi.bittle.models.items.Item item;
+	private Item item;
 
 	// The type of event that triggers evolution into this Pokémon species.
-	private pokeapi.bittle.models.evolution.EvolutionTrigger trigger;
+	private EvolutionTrigger trigger;
 
 	// The id of the gender of the evolving Pokémon species must be in order to evolve into this Pokémon species.
 	private int gender;
 
 	// The item the evolving Pokémon species must be holding during the evolution trigger event to evolve into this Pokémon species.
-	private pokeapi.bittle.models.items.Item held_item;
+	private Item held_item;
 
 	// The move that must be known by the evolving Pokémon species during the evolution trigger event in order to evolve into this Pokémon species.
-	private pokeapi.bittle.models.moves.Move known_move;
+	private Move known_move;
 
 	// The evolving Pokémon species must know a move with this type during the evolution trigger event in order to evolve into this Pokémon species.
-	private pokeapi.bittle.models.pokemon.Type known_move_type;
+	private Type known_move_type;
 
 	// The location the evolution must be triggered at.
-	private pokeapi.bittle.models.locations.Location location;
+	private Location location;
 
 	// The minimum required level of the evolving Pokémon species to evolve into this Pokémon species.
 	private int min_level;
@@ -89,10 +95,10 @@ public class EvolutionDetail {
 	private boolean needs_overworld_rain;
 
 	// The Pokémon species that must be in the players party in order for the evolving Pokémon species to evolve into this Pokémon species.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies party_species;
+	private PokemonSpecies party_species;
 
 	// The player must have a Pokémon of this type in their party during the evolution trigger event in order for the evolving Pokémon species to evolve into this Pokémon species.
-	private pokeapi.bittle.models.pokemon.Type party_type;
+	private Type party_type;
 
 	// The required relation between the Pokémon's Attack and Defense stats. 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
 	private int relative_physical_stats;
@@ -101,31 +107,31 @@ public class EvolutionDetail {
 	private String time_of_day;
 
 	// Pokémon species for which this one must be traded.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies trade_species;
+	private PokemonSpecies trade_species;
 
 	// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
 	private boolean turn_upside_down;
 
-	public pokeapi.bittle.models.items.Item getItem() {
+	public Item getItem() {
 		if(!item.getIsFetched()) {
 			item = item.get();
 		}
 		return item;
 	}
 
-	public EvolutionDetail setItem(pokeapi.bittle.models.items.Item item) {
+	public EvolutionDetail setItem(Item item) {
 		this.item = item;
 		return this;
 	}
 
-	public pokeapi.bittle.models.evolution.EvolutionTrigger getTrigger() {
+	public EvolutionTrigger getTrigger() {
 		if(!trigger.getIsFetched()) {
 			trigger = trigger.get();
 		}
 		return trigger;
 	}
 
-	public EvolutionDetail setTrigger(pokeapi.bittle.models.evolution.EvolutionTrigger trigger) {
+	public EvolutionDetail setTrigger(EvolutionTrigger trigger) {
 		this.trigger = trigger;
 		return this;
 	}
@@ -139,50 +145,50 @@ public class EvolutionDetail {
 		return this;
 	}
 
-	public pokeapi.bittle.models.items.Item getHeldItem() {
+	public Item getHeldItem() {
 		if(!held_item.getIsFetched()) {
 			held_item = held_item.get();
 		}
 		return held_item;
 	}
 
-	public EvolutionDetail setHeldItem(pokeapi.bittle.models.items.Item held_item) {
+	public EvolutionDetail setHeldItem(Item held_item) {
 		this.held_item = held_item;
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.Move getKnownMove() {
+	public Move getKnownMove() {
 		if(!known_move.getIsFetched()) {
 			known_move = known_move.get();
 		}
 		return known_move;
 	}
 
-	public EvolutionDetail setKnownMove(pokeapi.bittle.models.moves.Move known_move) {
+	public EvolutionDetail setKnownMove(Move known_move) {
 		this.known_move = known_move;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Type getKnownMoveType() {
+	public Type getKnownMoveType() {
 		if(!known_move_type.getIsFetched()) {
 			known_move_type = known_move_type.get();
 		}
 		return known_move_type;
 	}
 
-	public EvolutionDetail setKnownMoveType(pokeapi.bittle.models.pokemon.Type known_move_type) {
+	public EvolutionDetail setKnownMoveType(Type known_move_type) {
 		this.known_move_type = known_move_type;
 		return this;
 	}
 
-	public pokeapi.bittle.models.locations.Location getLocation() {
+	public Location getLocation() {
 		if(!location.getIsFetched()) {
 			location = location.get();
 		}
 		return location;
 	}
 
-	public EvolutionDetail setLocation(pokeapi.bittle.models.locations.Location location) {
+	public EvolutionDetail setLocation(Location location) {
 		this.location = location;
 		return this;
 	}
@@ -232,26 +238,26 @@ public class EvolutionDetail {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getPartySpecies() {
+	public PokemonSpecies getPartySpecies() {
 		if(!party_species.getIsFetched()) {
 			party_species = party_species.get();
 		}
 		return party_species;
 	}
 
-	public EvolutionDetail setPartySpecies(pokeapi.bittle.models.pokemon.PokemonSpecies party_species) {
+	public EvolutionDetail setPartySpecies(PokemonSpecies party_species) {
 		this.party_species = party_species;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Type getPartyType() {
+	public Type getPartyType() {
 		if(!party_type.getIsFetched()) {
 			party_type = party_type.get();
 		}
 		return party_type;
 	}
 
-	public EvolutionDetail setPartyType(pokeapi.bittle.models.pokemon.Type party_type) {
+	public EvolutionDetail setPartyType(Type party_type) {
 		this.party_type = party_type;
 		return this;
 	}
@@ -274,14 +280,14 @@ public class EvolutionDetail {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getTradeSpecies() {
+	public PokemonSpecies getTradeSpecies() {
 		if(!trade_species.getIsFetched()) {
 			trade_species = trade_species.get();
 		}
 		return trade_species;
 	}
 
-	public EvolutionDetail setTradeSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies trade_species) {
+	public EvolutionDetail setTradeSpecies(PokemonSpecies trade_species) {
 		this.trade_species = trade_species;
 		return this;
 	}

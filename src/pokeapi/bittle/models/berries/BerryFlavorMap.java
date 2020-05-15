@@ -40,7 +40,7 @@ public class BerryFlavorMap {
 	private int potency;
 
 	// The referenced berry flavor.
-	private pokeapi.bittle.models.berries.BerryFlavor flavor;
+	private BerryFlavor flavor;
 
 	public int getPotency() {
 		return potency;
@@ -51,14 +51,14 @@ public class BerryFlavorMap {
 		return this;
 	}
 
-	public pokeapi.bittle.models.berries.BerryFlavor getFlavor() {
+	public BerryFlavor getFlavor() {
 		if(!flavor.getIsFetched()) {
 			flavor = flavor.get();
 		}
 		return flavor;
 	}
 
-	public BerryFlavorMap setFlavor(pokeapi.bittle.models.berries.BerryFlavor flavor) {
+	public BerryFlavorMap setFlavor(BerryFlavor flavor) {
 		this.flavor = flavor;
 		return this;
 	}

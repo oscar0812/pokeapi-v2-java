@@ -72,15 +72,18 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.utility.Language;
+
 public class AbilityFlavorText {
 	// The localized name for an API resource in a specific language.
 	private String flavor_text;
 
 	// The language this text resource is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	// The version group that uses this flavor text.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
 	public String getFlavorText() {
 		return flavor_text;
@@ -91,26 +94,26 @@ public class AbilityFlavorText {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public AbilityFlavorText setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public AbilityFlavorText setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public AbilityFlavorText setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public AbilityFlavorText setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}

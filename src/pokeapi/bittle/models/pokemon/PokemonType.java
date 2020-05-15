@@ -148,7 +148,7 @@ public class PokemonType {
 	private int slot;
 
 	// The type the referenced Pokémon has.
-	private pokeapi.bittle.models.pokemon.Type type;
+	private Type type;
 
 	public int getSlot() {
 		return slot;
@@ -159,14 +159,14 @@ public class PokemonType {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Type getType() {
+	public Type getType() {
 		if(!type.getIsFetched()) {
 			type = type.get();
 		}
 		return type;
 	}
 
-	public PokemonType setType(pokeapi.bittle.models.pokemon.Type type) {
+	public PokemonType setType(Type type) {
 		this.type = type;
 		return this;
 	}

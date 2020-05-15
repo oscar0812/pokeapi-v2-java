@@ -23,15 +23,21 @@ package pokeapi.bittle.models.moves;
 }
 */
 
-public class MoveAilment extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class MoveAilment extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// A list of moves that cause this ailment.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+	private ArrayList<Move> moves;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -42,26 +48,26 @@ public class MoveAilment extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+	public ArrayList<Move> getMoves() {
 		return moves;
 	}
 
-	public MoveAilment setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+	public MoveAilment setMoves(ArrayList<Move> moves) {
 		this.moves = moves;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public MoveAilment setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public MoveAilment setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static MoveAilment get(String url) {
-		MoveAilment obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveAilment.class);
+		MoveAilment obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), MoveAilment.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -70,8 +76,8 @@ public class MoveAilment extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return MoveAilment.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("move-ailment", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("move-ailment", limit, offset);
 	}
 
 	public static MoveAilment getById(int id) {

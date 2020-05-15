@@ -23,15 +23,20 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
-public class Gender extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Gender extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// A list of Pokémon species that can be this gender and how likely it is that they will be.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> pokemon_species_details;
+	private ArrayList<PokemonSpeciesGender> pokemon_species_details;
 
 	// A list of Pokémon species that required this gender in order for a Pokémon to evolve into them.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> required_for_evolution;
+	private ArrayList<PokemonSpecies> required_for_evolution;
 
 	public int getId() {
 		return id;
@@ -42,26 +47,26 @@ public class Gender extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> getPokemonSpeciesDetails() {
+	public ArrayList<PokemonSpeciesGender> getPokemonSpeciesDetails() {
 		return pokemon_species_details;
 	}
 
-	public Gender setPokemonSpeciesDetails(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesGender> pokemon_species_details) {
+	public Gender setPokemonSpeciesDetails(ArrayList<PokemonSpeciesGender> pokemon_species_details) {
 		this.pokemon_species_details = pokemon_species_details;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> getRequiredForEvolution() {
+	public ArrayList<PokemonSpecies> getRequiredForEvolution() {
 		return required_for_evolution;
 	}
 
-	public Gender setRequiredForEvolution(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpecies> required_for_evolution) {
+	public Gender setRequiredForEvolution(ArrayList<PokemonSpecies> required_for_evolution) {
 		this.required_for_evolution = required_for_evolution;
 		return this;
 	}
 
 	private static Gender get(String url) {
-		Gender obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Gender.class);
+		Gender obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Gender.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -70,8 +75,8 @@ public class Gender extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Gender.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("gender", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("gender", limit, offset);
 	}
 
 	public static Gender getById(int id) {

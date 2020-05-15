@@ -68,30 +68,33 @@ package pokeapi.bittle.models.locations;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.encounters.EncounterMethod;
+
 public class EncounterMethodRate {
 	// The method in which Pokémon may be encountered in an area..
-	private pokeapi.bittle.models.encounters.EncounterMethod encounter_method;
+	private EncounterMethod encounter_method;
 
 	// The chance of the encounter to occur on a version of the game.
-	private java.util.ArrayList<pokeapi.bittle.models.locations.EncounterVersionDetails> version_details;
+	private ArrayList<EncounterVersionDetails> version_details;
 
-	public pokeapi.bittle.models.encounters.EncounterMethod getEncounterMethod() {
+	public EncounterMethod getEncounterMethod() {
 		if(!encounter_method.getIsFetched()) {
 			encounter_method = encounter_method.get();
 		}
 		return encounter_method;
 	}
 
-	public EncounterMethodRate setEncounterMethod(pokeapi.bittle.models.encounters.EncounterMethod encounter_method) {
+	public EncounterMethodRate setEncounterMethod(EncounterMethod encounter_method) {
 		this.encounter_method = encounter_method;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.locations.EncounterVersionDetails> getVersionDetails() {
+	public ArrayList<EncounterVersionDetails> getVersionDetails() {
 		return version_details;
 	}
 
-	public EncounterMethodRate setVersionDetails(java.util.ArrayList<pokeapi.bittle.models.locations.EncounterVersionDetails> version_details) {
+	public EncounterMethodRate setVersionDetails(ArrayList<EncounterVersionDetails> version_details) {
 		this.version_details = version_details;
 		return this;
 	}

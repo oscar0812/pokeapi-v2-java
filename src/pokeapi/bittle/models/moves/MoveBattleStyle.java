@@ -17,12 +17,18 @@ package pokeapi.bittle.models.moves;
 }
 */
 
-public class MoveBattleStyle extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class MoveBattleStyle extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -33,17 +39,17 @@ public class MoveBattleStyle extends pokeapi.bittle.models.utility.NamedAPIResou
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public MoveBattleStyle setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public MoveBattleStyle setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static MoveBattleStyle get(String url) {
-		MoveBattleStyle obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveBattleStyle.class);
+		MoveBattleStyle obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), MoveBattleStyle.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -52,8 +58,8 @@ public class MoveBattleStyle extends pokeapi.bittle.models.utility.NamedAPIResou
 		return MoveBattleStyle.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("move-battle-style", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("move-battle-style", limit, offset);
 	}
 
 	public static MoveBattleStyle getById(int id) {

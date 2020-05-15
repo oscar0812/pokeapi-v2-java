@@ -19,18 +19,25 @@ package pokeapi.bittle.models.machines;
 }
 */
 
-public class Machine extends pokeapi.bittle.models.utility.APIResource {
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.items.Item;
+import pokeapi.bittle.models.moves.Move;
+import pokeapi.bittle.models.resources.APIResourceList;
+import pokeapi.bittle.models.utility.APIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Machine extends APIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The TM or HM item that corresponds to this machine.
-	private pokeapi.bittle.models.items.Item item;
+	private Item item;
 
 	// The move that is taught by this machine.
-	private pokeapi.bittle.models.moves.Move move;
+	private Move move;
 
 	// The version group that this machine applies to.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
 	public int getId() {
 		return id;
@@ -41,44 +48,44 @@ public class Machine extends pokeapi.bittle.models.utility.APIResource {
 		return this;
 	}
 
-	public pokeapi.bittle.models.items.Item getItem() {
+	public Item getItem() {
 		if(!item.getIsFetched()) {
 			item = item.get();
 		}
 		return item;
 	}
 
-	public Machine setItem(pokeapi.bittle.models.items.Item item) {
+	public Machine setItem(Item item) {
 		this.item = item;
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.Move getMove() {
+	public Move getMove() {
 		if(!move.getIsFetched()) {
 			move = move.get();
 		}
 		return move;
 	}
 
-	public Machine setMove(pokeapi.bittle.models.moves.Move move) {
+	public Machine setMove(Move move) {
 		this.move = move;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public Machine setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public Machine setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}
 
 	private static Machine get(String url) {
-		Machine obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Machine.class);
+		Machine obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Machine.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -87,8 +94,8 @@ public class Machine extends pokeapi.bittle.models.utility.APIResource {
 		return Machine.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.APIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.APIResourceList.getList("machine", limit, offset);
+	public static APIResourceList getList(int limit, int offset) {
+		 return APIResourceList.getList("machine", limit, offset);
 	}
 
 	public static Machine getById(int id) {

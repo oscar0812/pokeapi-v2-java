@@ -5,7 +5,7 @@ public class Effect {
 	private String effect;
 
 	// The language this effect is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	public String getEffect() {
 		return effect;
@@ -16,14 +16,14 @@ public class Effect {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public Effect setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public Effect setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}

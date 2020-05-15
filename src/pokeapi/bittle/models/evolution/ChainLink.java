@@ -51,18 +51,21 @@ package pokeapi.bittle.models.evolution;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.pokemon.PokemonSpecies;
+
 public class ChainLink {
 	// Whether or not this link is for a baby Pokémon. This would only ever be true on the base link.
 	private boolean is_baby;
 
 	// The Pokémon species at this point in the evolution chain.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies species;
+	private PokemonSpecies species;
 
 	// All details regarding the specific details of the referenced Pokémon species evolution.
-	private java.util.ArrayList<pokeapi.bittle.models.evolution.EvolutionDetail> evolution_details;
+	private ArrayList<EvolutionDetail> evolution_details;
 
 	// A List of chain objects.
-	private java.util.ArrayList<pokeapi.bittle.models.evolution.ChainLink> evolves_to;
+	private ArrayList<ChainLink> evolves_to;
 
 	public boolean getIsBaby() {
 		return is_baby;
@@ -73,32 +76,32 @@ public class ChainLink {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getSpecies() {
+	public PokemonSpecies getSpecies() {
 		if(!species.getIsFetched()) {
 			species = species.get();
 		}
 		return species;
 	}
 
-	public ChainLink setSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies species) {
+	public ChainLink setSpecies(PokemonSpecies species) {
 		this.species = species;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.evolution.EvolutionDetail> getEvolutionDetails() {
+	public ArrayList<EvolutionDetail> getEvolutionDetails() {
 		return evolution_details;
 	}
 
-	public ChainLink setEvolutionDetails(java.util.ArrayList<pokeapi.bittle.models.evolution.EvolutionDetail> evolution_details) {
+	public ChainLink setEvolutionDetails(ArrayList<EvolutionDetail> evolution_details) {
 		this.evolution_details = evolution_details;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.evolution.ChainLink> getEvolvesTo() {
+	public ArrayList<ChainLink> getEvolvesTo() {
 		return evolves_to;
 	}
 
-	public ChainLink setEvolvesTo(java.util.ArrayList<pokeapi.bittle.models.evolution.ChainLink> evolves_to) {
+	public ChainLink setEvolvesTo(ArrayList<ChainLink> evolves_to) {
 		this.evolves_to = evolves_to;
 		return this;
 	}

@@ -28,7 +28,7 @@ public class PokemonSpeciesGender {
 	private int rate;
 
 	// A Pokémon species that can be the referenced gender.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species;
+	private PokemonSpecies pokemon_species;
 
 	public int getRate() {
 		return rate;
@@ -39,14 +39,14 @@ public class PokemonSpeciesGender {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getPokemonSpecies() {
+	public PokemonSpecies getPokemonSpecies() {
 		if(!pokemon_species.getIsFetched()) {
 			pokemon_species = pokemon_species.get();
 		}
 		return pokemon_species;
 	}
 
-	public PokemonSpeciesGender setPokemonSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies pokemon_species) {
+	public PokemonSpeciesGender setPokemonSpecies(PokemonSpecies pokemon_species) {
 		this.pokemon_species = pokemon_species;
 		return this;
 	}

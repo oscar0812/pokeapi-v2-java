@@ -22,6 +22,8 @@ package pokeapi.bittle.models.contests;
 }
 */
 
+import pokeapi.bittle.models.utility.Language;
+
 public class ContestName {
 	// The name for this contest.
 	private String name;
@@ -30,7 +32,7 @@ public class ContestName {
 	private String color;
 
 	// The language that this name is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	public String getName() {
 		return name;
@@ -50,14 +52,14 @@ public class ContestName {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public ContestName setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public ContestName setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}

@@ -32,18 +32,25 @@ package pokeapi.bittle.models.moves;
 }
 */
 
-public class MoveTarget extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Description;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class MoveTarget extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The description of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+	private ArrayList<Description> descriptions;
 
 	// A list of moves that that are directed at this target.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+	private ArrayList<Move> moves;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -54,35 +61,35 @@ public class MoveTarget extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+	public ArrayList<Description> getDescriptions() {
 		return descriptions;
 	}
 
-	public MoveTarget setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+	public MoveTarget setDescriptions(ArrayList<Description> descriptions) {
 		this.descriptions = descriptions;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+	public ArrayList<Move> getMoves() {
 		return moves;
 	}
 
-	public MoveTarget setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+	public MoveTarget setMoves(ArrayList<Move> moves) {
 		this.moves = moves;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public MoveTarget setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public MoveTarget setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static MoveTarget get(String url) {
-		MoveTarget obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveTarget.class);
+		MoveTarget obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), MoveTarget.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -91,8 +98,8 @@ public class MoveTarget extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return MoveTarget.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("move-target", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("move-target", limit, offset);
 	}
 
 	public static MoveTarget getById(int id) {

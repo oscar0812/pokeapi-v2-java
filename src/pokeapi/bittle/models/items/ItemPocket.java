@@ -23,15 +23,21 @@ package pokeapi.bittle.models.items;
 }
 */
 
-public class ItemPocket extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class ItemPocket extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// A list of item categories that are relevant to this item pocket.
-	private java.util.ArrayList<pokeapi.bittle.models.items.ItemCategory> categories;
+	private ArrayList<ItemCategory> categories;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -42,26 +48,26 @@ public class ItemPocket extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.items.ItemCategory> getCategories() {
+	public ArrayList<ItemCategory> getCategories() {
 		return categories;
 	}
 
-	public ItemPocket setCategories(java.util.ArrayList<pokeapi.bittle.models.items.ItemCategory> categories) {
+	public ItemPocket setCategories(ArrayList<ItemCategory> categories) {
 		this.categories = categories;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public ItemPocket setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public ItemPocket setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static ItemPocket get(String url) {
-		ItemPocket obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), ItemPocket.class);
+		ItemPocket obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), ItemPocket.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -70,8 +76,8 @@ public class ItemPocket extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return ItemPocket.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("item-pocket", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("item-pocket", limit, offset);
 	}
 
 	public static ItemPocket getById(int id) {

@@ -5,7 +5,7 @@ public class Name {
 	private String name;
 
 	// The language this name is in.
-	private pokeapi.bittle.models.utility.Language language;
+	private Language language;
 
 	public String getName() {
 		return name;
@@ -16,14 +16,14 @@ public class Name {
 		return this;
 	}
 
-	public pokeapi.bittle.models.utility.Language getLanguage() {
+	public Language getLanguage() {
 		if(!language.getIsFetched()) {
 			language = language.get();
 		}
 		return language;
 	}
 
-	public Name setLanguage(pokeapi.bittle.models.utility.Language language) {
+	public Name setLanguage(Language language) {
 		this.language = language;
 		return this;
 	}

@@ -143,36 +143,39 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.moves.MoveLearnMethod;
+
 public class PokemonMoveVersion {
 	// The method by which the move is learned.
-	private pokeapi.bittle.models.moves.MoveLearnMethod move_learn_method;
+	private MoveLearnMethod move_learn_method;
 
 	// The version group in which the move is learned.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
 	// The minimum level to learn the move.
 	private int level_learned_at;
 
-	public pokeapi.bittle.models.moves.MoveLearnMethod getMoveLearnMethod() {
+	public MoveLearnMethod getMoveLearnMethod() {
 		if(!move_learn_method.getIsFetched()) {
 			move_learn_method = move_learn_method.get();
 		}
 		return move_learn_method;
 	}
 
-	public PokemonMoveVersion setMoveLearnMethod(pokeapi.bittle.models.moves.MoveLearnMethod move_learn_method) {
+	public PokemonMoveVersion setMoveLearnMethod(MoveLearnMethod move_learn_method) {
 		this.move_learn_method = move_learn_method;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public PokemonMoveVersion setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public PokemonMoveVersion setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}

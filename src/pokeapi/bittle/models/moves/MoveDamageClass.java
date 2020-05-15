@@ -23,18 +23,25 @@ package pokeapi.bittle.models.moves;
 }
 */
 
-public class MoveDamageClass extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Description;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class MoveDamageClass extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The description of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions;
+	private ArrayList<Description> descriptions;
 
 	// A list of moves that fall into this damage class.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves;
+	private ArrayList<Move> moves;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -45,35 +52,35 @@ public class MoveDamageClass extends pokeapi.bittle.models.utility.NamedAPIResou
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getDescriptions() {
+	public ArrayList<Description> getDescriptions() {
 		return descriptions;
 	}
 
-	public MoveDamageClass setDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> descriptions) {
+	public MoveDamageClass setDescriptions(ArrayList<Description> descriptions) {
 		this.descriptions = descriptions;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.Move> getMoves() {
+	public ArrayList<Move> getMoves() {
 		return moves;
 	}
 
-	public MoveDamageClass setMoves(java.util.ArrayList<pokeapi.bittle.models.moves.Move> moves) {
+	public MoveDamageClass setMoves(ArrayList<Move> moves) {
 		this.moves = moves;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public MoveDamageClass setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public MoveDamageClass setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static MoveDamageClass get(String url) {
-		MoveDamageClass obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), MoveDamageClass.class);
+		MoveDamageClass obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), MoveDamageClass.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -82,8 +89,8 @@ public class MoveDamageClass extends pokeapi.bittle.models.utility.NamedAPIResou
 		return MoveDamageClass.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("move-damage-class", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("move-damage-class", limit, offset);
 	}
 
 	public static MoveDamageClass getById(int id) {

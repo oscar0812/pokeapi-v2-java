@@ -117,7 +117,21 @@ package pokeapi.bittle.models.moves;
 }
 */
 
-public class Move extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.contests.ContestEffect;
+import pokeapi.bittle.models.contests.ContestType;
+import pokeapi.bittle.models.contests.SuperContestEffect;
+import pokeapi.bittle.models.games.Generation;
+import pokeapi.bittle.models.pokemon.AbilityEffectChange;
+import pokeapi.bittle.models.pokemon.Type;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.MachineVersionDetail;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.models.utility.VerboseEffect;
+import pokeapi.bittle.utils.Information;
+
+public class Move extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -137,52 +151,52 @@ public class Move extends pokeapi.bittle.models.utility.NamedAPIResource {
 	private int power;
 
 	// A detail of normal and super contest combos that require this move.
-	private pokeapi.bittle.models.moves.ContestComboSets contest_combos;
+	private ContestComboSets contest_combos;
 
 	// The type of appeal this move gives a Pokémon when used in a contest.
-	private pokeapi.bittle.models.contests.ContestType contest_type;
+	private ContestType contest_type;
 
 	// The effect the move has when used in a contest.
-	private pokeapi.bittle.models.contests.ContestEffect contest_effect;
+	private ContestEffect contest_effect;
 
 	// The type of damage the move inflicts on the target, e.g. physical.
-	private pokeapi.bittle.models.moves.MoveDamageClass damage_class;
+	private MoveDamageClass damage_class;
 
 	// The effect of this move listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries;
+	private ArrayList<VerboseEffect> effect_entries;
 
 	// The list of previous effects this move has had across version groups of the games.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityEffectChange> effect_changes;
+	private ArrayList<AbilityEffectChange> effect_changes;
 
 	// The flavor text of this move listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.MoveFlavorText> flavor_text_entries;
+	private ArrayList<MoveFlavorText> flavor_text_entries;
 
 	// The generation in which this move was introduced.
-	private pokeapi.bittle.models.games.Generation generation;
+	private Generation generation;
 
 	// A list of the machines that teach this move.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> machines;
+	private ArrayList<MachineVersionDetail> machines;
 
 	// Metadata about this move
-	private pokeapi.bittle.models.moves.MoveMetaData meta;
+	private MoveMetaData meta;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A list of move resource value changes across version groups of the game.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.PastMoveStatValues> past_values;
+	private ArrayList<PastMoveStatValues> past_values;
 
 	// A list of stats this moves effects and how much it effects them.
-	private java.util.ArrayList<pokeapi.bittle.models.moves.MoveStatChange> stat_changes;
+	private ArrayList<MoveStatChange> stat_changes;
 
 	// The effect the move has when used in a super contest.
-	private pokeapi.bittle.models.contests.SuperContestEffect super_contest_effect;
+	private SuperContestEffect super_contest_effect;
 
 	// The type of target that will receive the effects of the attack.
-	private pokeapi.bittle.models.moves.MoveTarget target;
+	private MoveTarget target;
 
 	// The elemental type of this move.
-	private pokeapi.bittle.models.pokemon.Type type;
+	private Type type;
 
 	public int getId() {
 		return id;
@@ -238,173 +252,173 @@ public class Move extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.ContestComboSets getContestCombos() {
+	public ContestComboSets getContestCombos() {
 		return contest_combos;
 	}
 
-	public Move setContestCombos(pokeapi.bittle.models.moves.ContestComboSets contest_combos) {
+	public Move setContestCombos(ContestComboSets contest_combos) {
 		this.contest_combos = contest_combos;
 		return this;
 	}
 
-	public pokeapi.bittle.models.contests.ContestType getContestType() {
+	public ContestType getContestType() {
 		if(!contest_type.getIsFetched()) {
 			contest_type = contest_type.get();
 		}
 		return contest_type;
 	}
 
-	public Move setContestType(pokeapi.bittle.models.contests.ContestType contest_type) {
+	public Move setContestType(ContestType contest_type) {
 		this.contest_type = contest_type;
 		return this;
 	}
 
-	public pokeapi.bittle.models.contests.ContestEffect getContestEffect() {
+	public ContestEffect getContestEffect() {
 		if(!contest_effect.getIsFetched()) {
 			contest_effect = contest_effect.get();
 		}
 		return contest_effect;
 	}
 
-	public Move setContestEffect(pokeapi.bittle.models.contests.ContestEffect contest_effect) {
+	public Move setContestEffect(ContestEffect contest_effect) {
 		this.contest_effect = contest_effect;
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.MoveDamageClass getDamageClass() {
+	public MoveDamageClass getDamageClass() {
 		if(!damage_class.getIsFetched()) {
 			damage_class = damage_class.get();
 		}
 		return damage_class;
 	}
 
-	public Move setDamageClass(pokeapi.bittle.models.moves.MoveDamageClass damage_class) {
+	public Move setDamageClass(MoveDamageClass damage_class) {
 		this.damage_class = damage_class;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> getEffectEntries() {
+	public ArrayList<VerboseEffect> getEffectEntries() {
 		return effect_entries;
 	}
 
-	public Move setEffectEntries(java.util.ArrayList<pokeapi.bittle.models.utility.VerboseEffect> effect_entries) {
+	public Move setEffectEntries(ArrayList<VerboseEffect> effect_entries) {
 		this.effect_entries = effect_entries;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityEffectChange> getEffectChanges() {
+	public ArrayList<AbilityEffectChange> getEffectChanges() {
 		return effect_changes;
 	}
 
-	public Move setEffectChanges(java.util.ArrayList<pokeapi.bittle.models.pokemon.AbilityEffectChange> effect_changes) {
+	public Move setEffectChanges(ArrayList<AbilityEffectChange> effect_changes) {
 		this.effect_changes = effect_changes;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.MoveFlavorText> getFlavorTextEntries() {
+	public ArrayList<MoveFlavorText> getFlavorTextEntries() {
 		return flavor_text_entries;
 	}
 
-	public Move setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.moves.MoveFlavorText> flavor_text_entries) {
+	public Move setFlavorTextEntries(ArrayList<MoveFlavorText> flavor_text_entries) {
 		this.flavor_text_entries = flavor_text_entries;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.Generation getGeneration() {
+	public Generation getGeneration() {
 		if(!generation.getIsFetched()) {
 			generation = generation.get();
 		}
 		return generation;
 	}
 
-	public Move setGeneration(pokeapi.bittle.models.games.Generation generation) {
+	public Move setGeneration(Generation generation) {
 		this.generation = generation;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> getMachines() {
+	public ArrayList<MachineVersionDetail> getMachines() {
 		return machines;
 	}
 
-	public Move setMachines(java.util.ArrayList<pokeapi.bittle.models.utility.MachineVersionDetail> machines) {
+	public Move setMachines(ArrayList<MachineVersionDetail> machines) {
 		this.machines = machines;
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.MoveMetaData getMeta() {
+	public MoveMetaData getMeta() {
 		return meta;
 	}
 
-	public Move setMeta(pokeapi.bittle.models.moves.MoveMetaData meta) {
+	public Move setMeta(MoveMetaData meta) {
 		this.meta = meta;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Move setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Move setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.PastMoveStatValues> getPastValues() {
+	public ArrayList<PastMoveStatValues> getPastValues() {
 		return past_values;
 	}
 
-	public Move setPastValues(java.util.ArrayList<pokeapi.bittle.models.moves.PastMoveStatValues> past_values) {
+	public Move setPastValues(ArrayList<PastMoveStatValues> past_values) {
 		this.past_values = past_values;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.moves.MoveStatChange> getStatChanges() {
+	public ArrayList<MoveStatChange> getStatChanges() {
 		return stat_changes;
 	}
 
-	public Move setStatChanges(java.util.ArrayList<pokeapi.bittle.models.moves.MoveStatChange> stat_changes) {
+	public Move setStatChanges(ArrayList<MoveStatChange> stat_changes) {
 		this.stat_changes = stat_changes;
 		return this;
 	}
 
-	public pokeapi.bittle.models.contests.SuperContestEffect getSuperContestEffect() {
+	public SuperContestEffect getSuperContestEffect() {
 		if(!super_contest_effect.getIsFetched()) {
 			super_contest_effect = super_contest_effect.get();
 		}
 		return super_contest_effect;
 	}
 
-	public Move setSuperContestEffect(pokeapi.bittle.models.contests.SuperContestEffect super_contest_effect) {
+	public Move setSuperContestEffect(SuperContestEffect super_contest_effect) {
 		this.super_contest_effect = super_contest_effect;
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.MoveTarget getTarget() {
+	public MoveTarget getTarget() {
 		if(!target.getIsFetched()) {
 			target = target.get();
 		}
 		return target;
 	}
 
-	public Move setTarget(pokeapi.bittle.models.moves.MoveTarget target) {
+	public Move setTarget(MoveTarget target) {
 		this.target = target;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Type getType() {
+	public Type getType() {
 		if(!type.getIsFetched()) {
 			type = type.get();
 		}
 		return type;
 	}
 
-	public Move setType(pokeapi.bittle.models.pokemon.Type type) {
+	public Move setType(Type type) {
 		this.type = type;
 		return this;
 	}
 
 	private static Move get(String url) {
-		Move obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Move.class);
+		Move obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Move.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -413,8 +427,8 @@ public class Move extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Move.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("move", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("move", limit, offset);
 	}
 
 	public static Move getById(int id) {

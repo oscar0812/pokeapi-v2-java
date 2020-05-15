@@ -51,15 +51,20 @@ package pokeapi.bittle.models.evolution;
 }
 */
 
-public class EvolutionChain extends pokeapi.bittle.models.utility.APIResource {
+import pokeapi.bittle.models.items.Item;
+import pokeapi.bittle.models.resources.APIResourceList;
+import pokeapi.bittle.models.utility.APIResource;
+import pokeapi.bittle.utils.Information;
+
+public class EvolutionChain extends APIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The item that a Pokémon would be holding when mating that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
-	private pokeapi.bittle.models.items.Item baby_trigger_item;
+	private Item baby_trigger_item;
 
 	// The base chain link object. Each link contains evolution details for a Pokémon in the chain. Each link references the next Pokémon in the natural evolution order.
-	private pokeapi.bittle.models.evolution.ChainLink chain;
+	private ChainLink chain;
 
 	public int getId() {
 		return id;
@@ -70,29 +75,29 @@ public class EvolutionChain extends pokeapi.bittle.models.utility.APIResource {
 		return this;
 	}
 
-	public pokeapi.bittle.models.items.Item getBabyTriggerItem() {
+	public Item getBabyTriggerItem() {
 		if(!baby_trigger_item.getIsFetched()) {
 			baby_trigger_item = baby_trigger_item.get();
 		}
 		return baby_trigger_item;
 	}
 
-	public EvolutionChain setBabyTriggerItem(pokeapi.bittle.models.items.Item baby_trigger_item) {
+	public EvolutionChain setBabyTriggerItem(Item baby_trigger_item) {
 		this.baby_trigger_item = baby_trigger_item;
 		return this;
 	}
 
-	public pokeapi.bittle.models.evolution.ChainLink getChain() {
+	public ChainLink getChain() {
 		return chain;
 	}
 
-	public EvolutionChain setChain(pokeapi.bittle.models.evolution.ChainLink chain) {
+	public EvolutionChain setChain(ChainLink chain) {
 		this.chain = chain;
 		return this;
 	}
 
 	private static EvolutionChain get(String url) {
-		EvolutionChain obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EvolutionChain.class);
+		EvolutionChain obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), EvolutionChain.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -101,8 +106,8 @@ public class EvolutionChain extends pokeapi.bittle.models.utility.APIResource {
 		return EvolutionChain.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.APIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.APIResourceList.getList("evolution-chain", limit, offset);
+	public static APIResourceList getList(int limit, int offset) {
+		 return APIResourceList.getList("evolution-chain", limit, offset);
 	}
 
 	public static EvolutionChain getById(int id) {

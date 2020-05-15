@@ -1,11 +1,13 @@
 package pokeapi.bittle.models.utility;
 
+import pokeapi.bittle.models.games.Generation;
+
 public class GenerationGameIndex {
 	// The internal id of an API resource within game data.
 	private int game_index;
 
 	// The generation relevent to this game index.
-	private pokeapi.bittle.models.games.Generation generation;
+	private Generation generation;
 
 	public int getGameIndex() {
 		return game_index;
@@ -16,14 +18,14 @@ public class GenerationGameIndex {
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.Generation getGeneration() {
+	public Generation getGeneration() {
 		if(!generation.getIsFetched()) {
 			generation = generation.get();
 		}
 		return generation;
 	}
 
-	public GenerationGameIndex setGeneration(pokeapi.bittle.models.games.Generation generation) {
+	public GenerationGameIndex setGeneration(Generation generation) {
 		this.generation = generation;
 		return this;
 	}

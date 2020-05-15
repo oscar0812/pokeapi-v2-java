@@ -104,7 +104,17 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
-public class PokemonSpecies extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.evolution.EvolutionChain;
+import pokeapi.bittle.models.games.Generation;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Description;
+import pokeapi.bittle.models.utility.FlavorText;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class PokemonSpecies extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -133,49 +143,49 @@ public class PokemonSpecies extends pokeapi.bittle.models.utility.NamedAPIResour
 	private boolean forms_switchable;
 
 	// The rate at which this Pokémon species gains levels.
-	private pokeapi.bittle.models.pokemon.GrowthRate growth_rate;
+	private GrowthRate growth_rate;
 
 	// A list of Pokedexes and the indexes reserved within them for this Pokémon species.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesDexEntry> pokedex_numbers;
+	private ArrayList<PokemonSpeciesDexEntry> pokedex_numbers;
 
 	// A list of egg groups this Pokémon species is a member of.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.EggGroup> egg_groups;
+	private ArrayList<EggGroup> egg_groups;
 
 	// The color of this Pokémon for Pokédex search.
-	private pokeapi.bittle.models.pokemon.PokemonColor color;
+	private PokemonColor color;
 
 	// The shape of this Pokémon for Pokédex search.
-	private pokeapi.bittle.models.pokemon.PokemonShape shape;
+	private PokemonShape shape;
 
 	// The Pokémon species that evolves into this Pokemon_species.
-	private pokeapi.bittle.models.pokemon.PokemonSpecies evolves_from_species;
+	private PokemonSpecies evolves_from_species;
 
 	// The evolution chain this Pokémon species is a member of.
-	private pokeapi.bittle.models.evolution.EvolutionChain evolution_chain;
+	private EvolutionChain evolution_chain;
 
 	// The habitat this Pokémon species can be encountered in.
-	private pokeapi.bittle.models.pokemon.PokemonHabitat habitat;
+	private PokemonHabitat habitat;
 
 	// The generation this Pokémon species was introduced in.
-	private pokeapi.bittle.models.games.Generation generation;
+	private Generation generation;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// A list of encounters that can be had with this Pokémon species in pal park.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PalParkEncounterArea> pal_park_encounters;
+	private ArrayList<PalParkEncounterArea> pal_park_encounters;
 
 	// A list of flavor text entries for this Pokémon species.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries;
+	private ArrayList<FlavorText> flavor_text_entries;
 
 	// Descriptions of different forms Pokémon take on within the Pokémon species.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Description> form_descriptions;
+	private ArrayList<Description> form_descriptions;
 
 	// The genus of this Pokémon species listed in multiple languages.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.Genus> genera;
+	private ArrayList<Genus> genera;
 
 	// A list of the Pokémon that exist within this Pokémon species.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesVariety> varieties;
+	private ArrayList<PokemonSpeciesVariety> varieties;
 
 	public int getId() {
 		return id;
@@ -258,164 +268,164 @@ public class PokemonSpecies extends pokeapi.bittle.models.utility.NamedAPIResour
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.GrowthRate getGrowthRate() {
+	public GrowthRate getGrowthRate() {
 		if(!growth_rate.getIsFetched()) {
 			growth_rate = growth_rate.get();
 		}
 		return growth_rate;
 	}
 
-	public PokemonSpecies setGrowthRate(pokeapi.bittle.models.pokemon.GrowthRate growth_rate) {
+	public PokemonSpecies setGrowthRate(GrowthRate growth_rate) {
 		this.growth_rate = growth_rate;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesDexEntry> getPokedexNumbers() {
+	public ArrayList<PokemonSpeciesDexEntry> getPokedexNumbers() {
 		return pokedex_numbers;
 	}
 
-	public PokemonSpecies setPokedexNumbers(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesDexEntry> pokedex_numbers) {
+	public PokemonSpecies setPokedexNumbers(ArrayList<PokemonSpeciesDexEntry> pokedex_numbers) {
 		this.pokedex_numbers = pokedex_numbers;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.EggGroup> getEggGroups() {
+	public ArrayList<EggGroup> getEggGroups() {
 		return egg_groups;
 	}
 
-	public PokemonSpecies setEggGroups(java.util.ArrayList<pokeapi.bittle.models.pokemon.EggGroup> egg_groups) {
+	public PokemonSpecies setEggGroups(ArrayList<EggGroup> egg_groups) {
 		this.egg_groups = egg_groups;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonColor getColor() {
+	public PokemonColor getColor() {
 		if(!color.getIsFetched()) {
 			color = color.get();
 		}
 		return color;
 	}
 
-	public PokemonSpecies setColor(pokeapi.bittle.models.pokemon.PokemonColor color) {
+	public PokemonSpecies setColor(PokemonColor color) {
 		this.color = color;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonShape getShape() {
+	public PokemonShape getShape() {
 		if(!shape.getIsFetched()) {
 			shape = shape.get();
 		}
 		return shape;
 	}
 
-	public PokemonSpecies setShape(pokeapi.bittle.models.pokemon.PokemonShape shape) {
+	public PokemonSpecies setShape(PokemonShape shape) {
 		this.shape = shape;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonSpecies getEvolvesFromSpecies() {
+	public PokemonSpecies getEvolvesFromSpecies() {
 		if(!evolves_from_species.getIsFetched()) {
 			evolves_from_species = evolves_from_species.get();
 		}
 		return evolves_from_species;
 	}
 
-	public PokemonSpecies setEvolvesFromSpecies(pokeapi.bittle.models.pokemon.PokemonSpecies evolves_from_species) {
+	public PokemonSpecies setEvolvesFromSpecies(PokemonSpecies evolves_from_species) {
 		this.evolves_from_species = evolves_from_species;
 		return this;
 	}
 
-	public pokeapi.bittle.models.evolution.EvolutionChain getEvolutionChain() {
+	public EvolutionChain getEvolutionChain() {
 		if(!evolution_chain.getIsFetched()) {
 			evolution_chain = evolution_chain.get();
 		}
 		return evolution_chain;
 	}
 
-	public PokemonSpecies setEvolutionChain(pokeapi.bittle.models.evolution.EvolutionChain evolution_chain) {
+	public PokemonSpecies setEvolutionChain(EvolutionChain evolution_chain) {
 		this.evolution_chain = evolution_chain;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonHabitat getHabitat() {
+	public PokemonHabitat getHabitat() {
 		if(!habitat.getIsFetched()) {
 			habitat = habitat.get();
 		}
 		return habitat;
 	}
 
-	public PokemonSpecies setHabitat(pokeapi.bittle.models.pokemon.PokemonHabitat habitat) {
+	public PokemonSpecies setHabitat(PokemonHabitat habitat) {
 		this.habitat = habitat;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.Generation getGeneration() {
+	public Generation getGeneration() {
 		if(!generation.getIsFetched()) {
 			generation = generation.get();
 		}
 		return generation;
 	}
 
-	public PokemonSpecies setGeneration(pokeapi.bittle.models.games.Generation generation) {
+	public PokemonSpecies setGeneration(Generation generation) {
 		this.generation = generation;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public PokemonSpecies setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public PokemonSpecies setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PalParkEncounterArea> getPalParkEncounters() {
+	public ArrayList<PalParkEncounterArea> getPalParkEncounters() {
 		return pal_park_encounters;
 	}
 
-	public PokemonSpecies setPalParkEncounters(java.util.ArrayList<pokeapi.bittle.models.pokemon.PalParkEncounterArea> pal_park_encounters) {
+	public PokemonSpecies setPalParkEncounters(ArrayList<PalParkEncounterArea> pal_park_encounters) {
 		this.pal_park_encounters = pal_park_encounters;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> getFlavorTextEntries() {
+	public ArrayList<FlavorText> getFlavorTextEntries() {
 		return flavor_text_entries;
 	}
 
-	public PokemonSpecies setFlavorTextEntries(java.util.ArrayList<pokeapi.bittle.models.utility.FlavorText> flavor_text_entries) {
+	public PokemonSpecies setFlavorTextEntries(ArrayList<FlavorText> flavor_text_entries) {
 		this.flavor_text_entries = flavor_text_entries;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Description> getFormDescriptions() {
+	public ArrayList<Description> getFormDescriptions() {
 		return form_descriptions;
 	}
 
-	public PokemonSpecies setFormDescriptions(java.util.ArrayList<pokeapi.bittle.models.utility.Description> form_descriptions) {
+	public PokemonSpecies setFormDescriptions(ArrayList<Description> form_descriptions) {
 		this.form_descriptions = form_descriptions;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.Genus> getGenera() {
+	public ArrayList<Genus> getGenera() {
 		return genera;
 	}
 
-	public PokemonSpecies setGenera(java.util.ArrayList<pokeapi.bittle.models.pokemon.Genus> genera) {
+	public PokemonSpecies setGenera(ArrayList<Genus> genera) {
 		this.genera = genera;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesVariety> getVarieties() {
+	public ArrayList<PokemonSpeciesVariety> getVarieties() {
 		return varieties;
 	}
 
-	public PokemonSpecies setVarieties(java.util.ArrayList<pokeapi.bittle.models.pokemon.PokemonSpeciesVariety> varieties) {
+	public PokemonSpecies setVarieties(ArrayList<PokemonSpeciesVariety> varieties) {
 		this.varieties = varieties;
 		return this;
 	}
 
 	private static PokemonSpecies get(String url) {
-		PokemonSpecies obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PokemonSpecies.class);
+		PokemonSpecies obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), PokemonSpecies.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -424,8 +434,8 @@ public class PokemonSpecies extends pokeapi.bittle.models.utility.NamedAPIResour
 		return PokemonSpecies.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("pokemon-species", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("pokemon-species", limit, offset);
 	}
 
 	public static PokemonSpecies getById(int id) {

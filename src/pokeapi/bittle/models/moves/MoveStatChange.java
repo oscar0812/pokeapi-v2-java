@@ -117,12 +117,14 @@ package pokeapi.bittle.models.moves;
 }
 */
 
+import pokeapi.bittle.models.pokemon.Stat;
+
 public class MoveStatChange {
 	// The amount of change.
 	private int change;
 
 	// The stat being affected.
-	private pokeapi.bittle.models.pokemon.Stat stat;
+	private Stat stat;
 
 	public int getChange() {
 		return change;
@@ -133,14 +135,14 @@ public class MoveStatChange {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Stat getStat() {
+	public Stat getStat() {
 		if(!stat.getIsFetched()) {
 			stat = stat.get();
 		}
 		return stat;
 	}
 
-	public MoveStatChange setStat(pokeapi.bittle.models.pokemon.Stat stat) {
+	public MoveStatChange setStat(Stat stat) {
 		this.stat = stat;
 		return this;
 	}

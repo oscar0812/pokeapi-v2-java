@@ -1,32 +1,35 @@
 package pokeapi.bittle.models.utility;
 
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.machines.Machine;
+
 public class MachineVersionDetail {
 	// The machine that teaches a move from an item.
-	private pokeapi.bittle.models.machines.Machine machine;
+	private Machine machine;
 
 	// The version group of this specific machine.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
-	public pokeapi.bittle.models.machines.Machine getMachine() {
+	public Machine getMachine() {
 		if(!machine.getIsFetched()) {
 			machine = machine.get();
 		}
 		return machine;
 	}
 
-	public MachineVersionDetail setMachine(pokeapi.bittle.models.machines.Machine machine) {
+	public MachineVersionDetail setMachine(Machine machine) {
 		this.machine = machine;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public MachineVersionDetail setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public MachineVersionDetail setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}

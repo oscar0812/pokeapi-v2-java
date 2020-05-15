@@ -28,7 +28,14 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
-public class PokemonForm extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.games.VersionGroup;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class PokemonForm extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -51,19 +58,19 @@ public class PokemonForm extends pokeapi.bittle.models.utility.NamedAPIResource 
 	private String form_name;
 
 	// The Pokémon that can take on this form.
-	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
+	private Pokemon pokemon;
 
 	// A set of sprites used to depict this Pokémon form in the game.
-	private pokeapi.bittle.models.pokemon.PokemonFormSprites sprites;
+	private PokemonFormSprites sprites;
 
 	// The version group this Pokémon form was introduced in.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
 	// The form specific full name of this Pokémon form, or empty if the form does not have a specific name.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// The form specific form name of this Pokémon form, or empty if the form does not have a specific name.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> form_names;
+	private ArrayList<Name> form_names;
 
 	public int getId() {
 		return id;
@@ -128,59 +135,59 @@ public class PokemonForm extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
+	public Pokemon getPokemon() {
 		if(!pokemon.getIsFetched()) {
 			pokemon = pokemon.get();
 		}
 		return pokemon;
 	}
 
-	public PokemonForm setPokemon(pokeapi.bittle.models.pokemon.Pokemon pokemon) {
+	public PokemonForm setPokemon(Pokemon pokemon) {
 		this.pokemon = pokemon;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.PokemonFormSprites getSprites() {
+	public PokemonFormSprites getSprites() {
 		return sprites;
 	}
 
-	public PokemonForm setSprites(pokeapi.bittle.models.pokemon.PokemonFormSprites sprites) {
+	public PokemonForm setSprites(PokemonFormSprites sprites) {
 		this.sprites = sprites;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public PokemonForm setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public PokemonForm setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public PokemonForm setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public PokemonForm setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getFormNames() {
+	public ArrayList<Name> getFormNames() {
 		return form_names;
 	}
 
-	public PokemonForm setFormNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> form_names) {
+	public PokemonForm setFormNames(ArrayList<Name> form_names) {
 		this.form_names = form_names;
 		return this;
 	}
 
 	private static PokemonForm get(String url) {
-		PokemonForm obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), PokemonForm.class);
+		PokemonForm obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), PokemonForm.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -189,8 +196,8 @@ public class PokemonForm extends pokeapi.bittle.models.utility.NamedAPIResource 
 		return PokemonForm.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("pokemon-form", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("pokemon-form", limit, offset);
 	}
 
 	public static PokemonForm getById(int id) {

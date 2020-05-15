@@ -1,23 +1,26 @@
 package pokeapi.bittle.models.utility;
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.games.Version;
+
 public class VersionEncounterDetail {
 	// The game version this encounter happens in.
-	private pokeapi.bittle.models.games.Version version;
+	private Version version;
 
 	// The total percentage of all encounter potential.
 	private int max_chance;
 
 	// A list of encounters and their specifics.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Encounter> encounter_details;
+	private ArrayList<Encounter> encounter_details;
 
-	public pokeapi.bittle.models.games.Version getVersion() {
+	public Version getVersion() {
 		if(!version.getIsFetched()) {
 			version = version.get();
 		}
 		return version;
 	}
 
-	public VersionEncounterDetail setVersion(pokeapi.bittle.models.games.Version version) {
+	public VersionEncounterDetail setVersion(Version version) {
 		this.version = version;
 		return this;
 	}
@@ -31,11 +34,11 @@ public class VersionEncounterDetail {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Encounter> getEncounterDetails() {
+	public ArrayList<Encounter> getEncounterDetails() {
 		return encounter_details;
 	}
 
-	public VersionEncounterDetail setEncounterDetails(java.util.ArrayList<pokeapi.bittle.models.utility.Encounter> encounter_details) {
+	public VersionEncounterDetail setEncounterDetails(ArrayList<Encounter> encounter_details) {
 		this.encounter_details = encounter_details;
 		return this;
 	}

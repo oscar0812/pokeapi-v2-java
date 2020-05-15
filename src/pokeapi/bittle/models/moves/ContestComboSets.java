@@ -119,26 +119,26 @@ package pokeapi.bittle.models.moves;
 
 public class ContestComboSets {
 	// A detail of moves this move can be used before or after, granting additional appeal points in contests.
-	private pokeapi.bittle.models.moves.ContestComboDetail normal;
+	private ContestComboDetail normal;
 
 	// A detail of moves this move can be used before or after, granting additional appeal points in super contests.
 	@com.fasterxml.jackson.annotation.JsonProperty("super")
-	private pokeapi.bittle.models.moves.ContestComboDetail super_val;
+	private ContestComboDetail super_val;
 
-	public pokeapi.bittle.models.moves.ContestComboDetail getNormal() {
+	public ContestComboDetail getNormal() {
 		return normal;
 	}
 
-	public ContestComboSets setNormal(pokeapi.bittle.models.moves.ContestComboDetail normal) {
+	public ContestComboSets setNormal(ContestComboDetail normal) {
 		this.normal = normal;
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.ContestComboDetail getSuper() {
+	public ContestComboDetail getSuper() {
 		return super_val;
 	}
 
-	public ContestComboSets setSuper(pokeapi.bittle.models.moves.ContestComboDetail super_val) {
+	public ContestComboSets setSuper(ContestComboDetail super_val) {
 		this.super_val = super_val;
 		return this;
 	}

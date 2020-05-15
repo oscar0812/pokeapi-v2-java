@@ -117,12 +117,14 @@ package pokeapi.bittle.models.moves;
 }
 */
 
+import pokeapi.bittle.models.moves.MoveCategory;
+
 public class MoveMetaData {
 	// The status ailment this move inflicts on its target.
-	private pokeapi.bittle.models.moves.MoveAilment ailment;
+	private MoveAilment ailment;
 
 	// The category of move this move falls under, e.g. damage or ailment.
-	private pokeapi.bittle.models.moves.MoveCategory category;
+	private MoveCategory category;
 
 	// The minimum number of times this move hits. Null if it always only hits once.
 	private int min_hits;
@@ -154,26 +156,26 @@ public class MoveMetaData {
 	// The likelihood this attack will cause a stat change in the target Pokémon.
 	private int stat_chance;
 
-	public pokeapi.bittle.models.moves.MoveAilment getAilment() {
+	public MoveAilment getAilment() {
 		if(!ailment.getIsFetched()) {
 			ailment = ailment.get();
 		}
 		return ailment;
 	}
 
-	public MoveMetaData setAilment(pokeapi.bittle.models.moves.MoveAilment ailment) {
+	public MoveMetaData setAilment(MoveAilment ailment) {
 		this.ailment = ailment;
 		return this;
 	}
 
-	public pokeapi.bittle.models.moves.MoveCategory getCategory() {
+	public MoveCategory getCategory() {
 		if(!category.getIsFetched()) {
 			category = category.get();
 		}
 		return category;
 	}
 
-	public MoveMetaData setCategory(pokeapi.bittle.models.moves.MoveCategory category) {
+	public MoveMetaData setCategory(MoveCategory category) {
 		this.category = category;
 		return this;
 	}

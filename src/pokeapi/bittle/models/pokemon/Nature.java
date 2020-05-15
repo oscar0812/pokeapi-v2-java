@@ -52,30 +52,37 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
-public class Nature extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.berries.BerryFlavor;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Nature extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The stat decreased by 10% in Pokémon with this nature.
-	private pokeapi.bittle.models.pokemon.Stat decreased_stat;
+	private Stat decreased_stat;
 
 	// The stat increased by 10% in Pokémon with this nature.
-	private pokeapi.bittle.models.pokemon.Stat increased_stat;
+	private Stat increased_stat;
 
 	// The flavor hated by Pokémon with this nature.
-	private pokeapi.bittle.models.berries.BerryFlavor hates_flavor;
+	private BerryFlavor hates_flavor;
 
 	// The flavor liked by Pokémon with this nature.
-	private pokeapi.bittle.models.berries.BerryFlavor likes_flavor;
+	private BerryFlavor likes_flavor;
 
 	// A list of Pokéathlon stats this nature effects and how much it effects them.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.NatureStatChange> pokeathlon_stat_changes;
+	private ArrayList<NatureStatChange> pokeathlon_stat_changes;
 
 	// A list of battle styles and how likely a Pokémon with this nature is to use them in the Battle Palace or Battle Tent.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveBattleStylePreference> move_battle_style_preferences;
+	private ArrayList<MoveBattleStylePreference> move_battle_style_preferences;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -86,83 +93,83 @@ public class Nature extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Stat getDecreasedStat() {
+	public Stat getDecreasedStat() {
 		if(!decreased_stat.getIsFetched()) {
 			decreased_stat = decreased_stat.get();
 		}
 		return decreased_stat;
 	}
 
-	public Nature setDecreasedStat(pokeapi.bittle.models.pokemon.Stat decreased_stat) {
+	public Nature setDecreasedStat(Stat decreased_stat) {
 		this.decreased_stat = decreased_stat;
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Stat getIncreasedStat() {
+	public Stat getIncreasedStat() {
 		if(!increased_stat.getIsFetched()) {
 			increased_stat = increased_stat.get();
 		}
 		return increased_stat;
 	}
 
-	public Nature setIncreasedStat(pokeapi.bittle.models.pokemon.Stat increased_stat) {
+	public Nature setIncreasedStat(Stat increased_stat) {
 		this.increased_stat = increased_stat;
 		return this;
 	}
 
-	public pokeapi.bittle.models.berries.BerryFlavor getHatesFlavor() {
+	public BerryFlavor getHatesFlavor() {
 		if(!hates_flavor.getIsFetched()) {
 			hates_flavor = hates_flavor.get();
 		}
 		return hates_flavor;
 	}
 
-	public Nature setHatesFlavor(pokeapi.bittle.models.berries.BerryFlavor hates_flavor) {
+	public Nature setHatesFlavor(BerryFlavor hates_flavor) {
 		this.hates_flavor = hates_flavor;
 		return this;
 	}
 
-	public pokeapi.bittle.models.berries.BerryFlavor getLikesFlavor() {
+	public BerryFlavor getLikesFlavor() {
 		if(!likes_flavor.getIsFetched()) {
 			likes_flavor = likes_flavor.get();
 		}
 		return likes_flavor;
 	}
 
-	public Nature setLikesFlavor(pokeapi.bittle.models.berries.BerryFlavor likes_flavor) {
+	public Nature setLikesFlavor(BerryFlavor likes_flavor) {
 		this.likes_flavor = likes_flavor;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.NatureStatChange> getPokeathlonStatChanges() {
+	public ArrayList<NatureStatChange> getPokeathlonStatChanges() {
 		return pokeathlon_stat_changes;
 	}
 
-	public Nature setPokeathlonStatChanges(java.util.ArrayList<pokeapi.bittle.models.pokemon.NatureStatChange> pokeathlon_stat_changes) {
+	public Nature setPokeathlonStatChanges(ArrayList<NatureStatChange> pokeathlon_stat_changes) {
 		this.pokeathlon_stat_changes = pokeathlon_stat_changes;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveBattleStylePreference> getMoveBattleStylePreferences() {
+	public ArrayList<MoveBattleStylePreference> getMoveBattleStylePreferences() {
 		return move_battle_style_preferences;
 	}
 
-	public Nature setMoveBattleStylePreferences(java.util.ArrayList<pokeapi.bittle.models.pokemon.MoveBattleStylePreference> move_battle_style_preferences) {
+	public Nature setMoveBattleStylePreferences(ArrayList<MoveBattleStylePreference> move_battle_style_preferences) {
 		this.move_battle_style_preferences = move_battle_style_preferences;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Nature setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Nature setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static Nature get(String url) {
-		Nature obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Nature.class);
+		Nature obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Nature.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -171,8 +178,8 @@ public class Nature extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Nature.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("nature", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("nature", limit, offset);
 	}
 
 	public static Nature getById(int id) {

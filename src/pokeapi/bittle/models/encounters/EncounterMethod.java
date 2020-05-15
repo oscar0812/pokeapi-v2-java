@@ -18,7 +18,13 @@ package pokeapi.bittle.models.encounters;
 }
 */
 
-public class EncounterMethod extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class EncounterMethod extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -26,7 +32,7 @@ public class EncounterMethod extends pokeapi.bittle.models.utility.NamedAPIResou
 	private int order;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -46,17 +52,17 @@ public class EncounterMethod extends pokeapi.bittle.models.utility.NamedAPIResou
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public EncounterMethod setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public EncounterMethod setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static EncounterMethod get(String url) {
-		EncounterMethod obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), EncounterMethod.class);
+		EncounterMethod obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), EncounterMethod.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -65,8 +71,8 @@ public class EncounterMethod extends pokeapi.bittle.models.utility.NamedAPIResou
 		return EncounterMethod.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("encounter-method", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("encounter-method", limit, offset);
 	}
 
 	public static EncounterMethod getById(int id) {

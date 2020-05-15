@@ -37,27 +37,29 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
+import java.util.ArrayList;
+
 public class NaturePokeathlonStatAffectSets {
 	// A list of natures and how they change the referenced Pokéathlon stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffect> increase;
+	private ArrayList<NaturePokeathlonStatAffect> increase;
 
 	// A list of natures and how they change the referenced Pokéathlon stat.
-	private java.util.ArrayList<pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffect> decrease;
+	private ArrayList<NaturePokeathlonStatAffect> decrease;
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffect> getIncrease() {
+	public ArrayList<NaturePokeathlonStatAffect> getIncrease() {
 		return increase;
 	}
 
-	public NaturePokeathlonStatAffectSets setIncrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffect> increase) {
+	public NaturePokeathlonStatAffectSets setIncrease(ArrayList<NaturePokeathlonStatAffect> increase) {
 		this.increase = increase;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffect> getDecrease() {
+	public ArrayList<NaturePokeathlonStatAffect> getDecrease() {
 		return decrease;
 	}
 
-	public NaturePokeathlonStatAffectSets setDecrease(java.util.ArrayList<pokeapi.bittle.models.pokemon.NaturePokeathlonStatAffect> decrease) {
+	public NaturePokeathlonStatAffectSets setDecrease(ArrayList<NaturePokeathlonStatAffect> decrease) {
 		this.decrease = decrease;
 		return this;
 	}

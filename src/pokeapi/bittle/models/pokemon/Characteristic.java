@@ -30,7 +30,12 @@ package pokeapi.bittle.models.pokemon;
 }
 */
 
-public class Characteristic extends pokeapi.bittle.models.utility.APIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.APIResourceList;
+import pokeapi.bittle.models.utility.APIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Characteristic extends APIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -68,7 +73,7 @@ public class Characteristic extends pokeapi.bittle.models.utility.APIResource {
 	}
 
 	private static Characteristic get(String url) {
-		Characteristic obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Characteristic.class);
+		Characteristic obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Characteristic.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -77,8 +82,8 @@ public class Characteristic extends pokeapi.bittle.models.utility.APIResource {
 		return Characteristic.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.APIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.APIResourceList.getList("characteristic", limit, offset);
+	public static APIResourceList getList(int limit, int offset) {
+		 return APIResourceList.getList("characteristic", limit, offset);
 	}
 
 	public static Characteristic getById(int id) {

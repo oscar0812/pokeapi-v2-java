@@ -21,15 +21,21 @@ package pokeapi.bittle.models.games;
 }
 */
 
-public class Version extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.Name;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Version extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	// The version group this version belongs to.
-	private pokeapi.bittle.models.games.VersionGroup version_group;
+	private VersionGroup version_group;
 
 	public int getId() {
 		return id;
@@ -40,29 +46,29 @@ public class Version extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Version setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Version setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
-	public pokeapi.bittle.models.games.VersionGroup getVersionGroup() {
+	public VersionGroup getVersionGroup() {
 		if(!version_group.getIsFetched()) {
 			version_group = version_group.get();
 		}
 		return version_group;
 	}
 
-	public Version setVersionGroup(pokeapi.bittle.models.games.VersionGroup version_group) {
+	public Version setVersionGroup(VersionGroup version_group) {
 		this.version_group = version_group;
 		return this;
 	}
 
 	private static Version get(String url) {
-		Version obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Version.class);
+		Version obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Version.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -71,8 +77,8 @@ public class Version extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Version.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("version", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("version", limit, offset);
 	}
 
 	public static Version getById(int id) {

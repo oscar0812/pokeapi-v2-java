@@ -20,7 +20,12 @@ package pokeapi.bittle.models.utility;
 }
 */
 
-public class Language extends pokeapi.bittle.models.utility.NamedAPIResource {
+import java.util.ArrayList;
+import pokeapi.bittle.models.resources.NamedAPIResourceList;
+import pokeapi.bittle.models.utility.NamedAPIResource;
+import pokeapi.bittle.utils.Information;
+
+public class Language extends NamedAPIResource {
 	// The identifier for this resource.
 	private int id;
 
@@ -34,7 +39,7 @@ public class Language extends pokeapi.bittle.models.utility.NamedAPIResource {
 	private String iso3166;
 
 	// The name of this resource listed in different languages.
-	private java.util.ArrayList<pokeapi.bittle.models.utility.Name> names;
+	private ArrayList<Name> names;
 
 	public int getId() {
 		return id;
@@ -72,17 +77,17 @@ public class Language extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.utility.Name> getNames() {
+	public ArrayList<Name> getNames() {
 		return names;
 	}
 
-	public Language setNames(java.util.ArrayList<pokeapi.bittle.models.utility.Name> names) {
+	public Language setNames(ArrayList<Name> names) {
 		this.names = names;
 		return this;
 	}
 
 	private static Language get(String url) {
-		Language obj = new com.google.gson.Gson().fromJson(pokeapi.bittle.utils.Information.fromInternet(url), Language.class);
+		Language obj = new com.google.gson.Gson().fromJson(Information.fromInternet(url), Language.class);
 		obj.setIsFetched(true);
 		return obj;
 	}
@@ -91,8 +96,8 @@ public class Language extends pokeapi.bittle.models.utility.NamedAPIResource {
 		return Language.get(this.getUrl());
 	}
 
-	public static pokeapi.bittle.models.resources.NamedAPIResourceList getList(int limit, int offset) {
-		 return pokeapi.bittle.models.resources.NamedAPIResourceList.getList("language", limit, offset);
+	public static NamedAPIResourceList getList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("language", limit, offset);
 	}
 
 	public static Language getById(int id) {

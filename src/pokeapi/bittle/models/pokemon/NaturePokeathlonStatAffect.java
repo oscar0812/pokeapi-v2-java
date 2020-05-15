@@ -42,7 +42,7 @@ public class NaturePokeathlonStatAffect {
 	private int max_change;
 
 	// The nature causing the change.
-	private pokeapi.bittle.models.pokemon.Nature nature;
+	private Nature nature;
 
 	public int getMaxChange() {
 		return max_change;
@@ -53,14 +53,14 @@ public class NaturePokeathlonStatAffect {
 		return this;
 	}
 
-	public pokeapi.bittle.models.pokemon.Nature getNature() {
+	public Nature getNature() {
 		if(!nature.getIsFetched()) {
 			nature = nature.get();
 		}
 		return nature;
 	}
 
-	public NaturePokeathlonStatAffect setNature(pokeapi.bittle.models.pokemon.Nature nature) {
+	public NaturePokeathlonStatAffect setNature(Nature nature) {
 		this.nature = nature;
 		return this;
 	}

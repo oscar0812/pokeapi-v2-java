@@ -88,30 +88,33 @@ package pokeapi.bittle.models.items;
 }
 */
 
+import java.util.ArrayList;
+import pokeapi.bittle.models.pokemon.Pokemon;
+
 public class ItemHolderPokemon {
 	// The Pokémon that holds this item.
-	private pokeapi.bittle.models.pokemon.Pokemon pokemon;
+	private Pokemon pokemon;
 
 	// The details for the version that this item is held in by the Pokémon.
-	private java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemonVersionDetail> version_details;
+	private ArrayList<ItemHolderPokemonVersionDetail> version_details;
 
-	public pokeapi.bittle.models.pokemon.Pokemon getPokemon() {
+	public Pokemon getPokemon() {
 		if(!pokemon.getIsFetched()) {
 			pokemon = pokemon.get();
 		}
 		return pokemon;
 	}
 
-	public ItemHolderPokemon setPokemon(pokeapi.bittle.models.pokemon.Pokemon pokemon) {
+	public ItemHolderPokemon setPokemon(Pokemon pokemon) {
 		this.pokemon = pokemon;
 		return this;
 	}
 
-	public java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemonVersionDetail> getVersionDetails() {
+	public ArrayList<ItemHolderPokemonVersionDetail> getVersionDetails() {
 		return version_details;
 	}
 
-	public ItemHolderPokemon setVersionDetails(java.util.ArrayList<pokeapi.bittle.models.items.ItemHolderPokemonVersionDetail> version_details) {
+	public ItemHolderPokemon setVersionDetails(ArrayList<ItemHolderPokemonVersionDetail> version_details) {
 		this.version_details = version_details;
 		return this;
 	}
