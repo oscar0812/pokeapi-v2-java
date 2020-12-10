@@ -43,7 +43,7 @@ API for each object.
 ```java
 NamedAPIResourceList list = Client.getMoveCategoryList(10, 0);
 for (NamedAPIResource nar:list.getResults()) {
-    // get the oject information from API
+    // get the object information from API
     MoveCategory mc = MoveCategory.getByName(nar.getName());
     
     // getMoves() returns an ArrayList. The api does not return the complete 
