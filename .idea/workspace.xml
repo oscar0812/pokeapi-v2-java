@@ -5,13 +5,136 @@
       <artifact name="PokeApi-V2-Wrapper:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e9624a-e42c-4aed-8d58-2673af7c441a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/utils/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PokeApi-V2-Wrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PokeApi-V2-Wrapper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/META-INF/PokeApi-V2-Wrapper.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/api/Information.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/berries/Berry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/berries/BerryFirmness.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/berries/BerryFlavor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/berries/BerryFlavorMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/berries/FlavorBerryMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/APIResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/Description.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/Effect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/Encounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/FlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/GenerationGameIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/MachineVersionDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/Name.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/NamedAPIResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/VerboseEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/VersionEncounterDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/VersionGameIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/common/VersionGroupFlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/contests/ContestEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/contests/ContestName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/contests/ContestType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/contests/SuperContestEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/encounters/EncounterCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/encounters/EncounterConditionValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/encounters/EncounterMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/evolution/ChainLink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/evolution/EvolutionChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/evolution/EvolutionDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/evolution/EvolutionTrigger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/games/Generation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/games/Pokedex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/games/PokemonEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/games/Version.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/games/VersionGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/ItemAttribute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/ItemCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/ItemFlingEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/ItemHolderPokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/ItemHolderPokemonVersionDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/ItemPocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/items/ItemSprites.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/EncounterMethodRate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/EncounterVersionDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/LocationArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/PalParkArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/PalParkEncounterSpecies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/PokemonEncounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/locations/Region.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/machines/Machine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/ContestComboDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/ContestComboSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveAilment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveBattleStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveDamageClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveFlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveLearnMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveMetaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveStatChange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/MoveTarget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/moves/PastMoveStatValues.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Ability.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/AbilityEffectChange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/AbilityFlavorText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/AbilityPokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/AwesomeName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Characteristic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/EggGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Genus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/GrowthRate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/GrowthRateExperienceLevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/LocationAreaEncounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/MoveBattleStylePreference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/MoveStatAffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/MoveStatAffectSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Nature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/NaturePokeathlonStatAffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/NaturePokeathlonStatAffectSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/NatureStatAffectSets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/NatureStatChange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PalParkEncounterArea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokeathlonStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Pokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonAbility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonColor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonFormSprites.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonHabitat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonHeldItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonHeldItemVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonMove.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonMoveVersion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonShape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonSpecies.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonSpeciesDexEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonSpeciesGender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonSpeciesVariety.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonSprites.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/PokemonType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Stat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/TypePokemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/pokemon/TypeRelations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/resource/APIResourceList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/resource/NamedAPIResourceList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/models/utility/Language.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/Berry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/Berry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/BerryFirmness.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/BerryFirmness.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/BerryFlavor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/BerryFlavor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/BerryFlavorMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/BerryFlavorMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/FlavorBerryMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/berries/FlavorBerryMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/contests/ContestEffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/contests/ContestEffect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/contests/ContestName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/contests/ContestName.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/contests/ContestType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/contests/ContestType.class" afterDir="false" />
@@ -35,6 +158,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemHolderPokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemHolderPokemon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemHolderPokemonVersionDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemHolderPokemonVersionDetail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemPocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemPocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemSprites.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/items/ItemSprites.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/EncounterMethodRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/EncounterMethodRate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/EncounterVersionDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/EncounterVersionDetails.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/Location.class" afterDir="false" />
@@ -45,6 +169,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/Region.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/locations/Region.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/machines/Machine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/machines/Machine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/ContestComboDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/ContestComboDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/ContestComboSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/ContestComboSets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/ModelName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/ModelName.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/Move.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/MoveAilment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/moves/MoveAilment.class" afterDir="false" />
@@ -60,24 +185,30 @@
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Ability.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Ability.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AbilityEffectChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AbilityEffectChange.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AbilityFlavorText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AbilityFlavorText.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AbilityPokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AbilityPokemon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AwesomeName.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/AwesomeName.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Characteristic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Characteristic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/EggGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/EggGroup.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Gender.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Genus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Genus.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/GrowthRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/GrowthRate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/GrowthRateExperienceLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/GrowthRateExperienceLevel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/LocationAreaEncounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/LocationAreaEncounter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/MoveBattleStylePreference.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/MoveBattleStylePreference.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/MoveStatAffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/MoveStatAffect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/MoveStatAffectSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/MoveStatAffectSets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Nature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Nature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffectSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffectSets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NatureStatAffectSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NatureStatAffectSets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NatureStatChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/NatureStatChange.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PalParkEncounterArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PalParkEncounterArea.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokeathlonStat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokeathlonStat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Pokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Pokemon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonAbility.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonAbility.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonColor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonFormSprites.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonFormSprites.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonHabitat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonHabitat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonHeldItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonHeldItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonHeldItemVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonHeldItemVersion.class" afterDir="false" />
@@ -86,131 +217,150 @@
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonShape.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpecies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpecies.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpeciesDexEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpeciesDexEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpeciesGender.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpeciesGender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpeciesVariety.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSpeciesVariety.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSprites.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonSprites.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonStat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonStat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/PokemonType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Stat.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/TypePokemon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/TypePokemon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/TypeRelations.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/pokemon/TypeRelations.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/resources/APIResourceList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/resources/APIResourceList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/resources/NamedAPIResourceList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/resources/NamedAPIResourceList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/APIResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/APIResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Description.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Description.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Effect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Effect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Encounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Encounter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/FlavorText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/FlavorText.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/GenerationGameIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/GenerationGameIndex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Language.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/MachineVersionDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/MachineVersionDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/Name.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/NamedAPIResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/NamedAPIResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VerboseEffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VerboseEffect.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VersionEncounterDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VersionEncounterDetail.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VersionGameIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VersionGameIndex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VersionGroupFlavorText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/models/utility/VersionGroupFlavorText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/Berry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/Berry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFirmness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFirmness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavorMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavorMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/FlavorBerryMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/FlavorBerryMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/SuperContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/SuperContestEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterConditionValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterConditionValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/ChainLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/ChainLink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionTrigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Generation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Generation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Pokedex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/PokemonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/PokemonEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Version.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/VersionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/VersionGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemFlingEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemFlingEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemHolderPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemHolderPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemHolderPokemonVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemHolderPokemonVersionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemPocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemPocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/EncounterMethodRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/EncounterMethodRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/EncounterVersionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/EncounterVersionDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/LocationArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/LocationArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PalParkArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PalParkArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PalParkEncounterSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PalParkEncounterSpecies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PokemonEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PokemonEncounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/machines/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/machines/Machine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ContestComboDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ContestComboDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ContestComboSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ContestComboSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ModelName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ModelName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveAilment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveAilment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveBattleStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveBattleStyle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveDamageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveDamageClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveFlavorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveLearnMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveLearnMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveMetaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveStatChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveTarget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/PastMoveStatValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/PastMoveStatValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Ability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Ability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityEffectChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityEffectChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityFlavorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityPokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AwesomeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AwesomeName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Characteristic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Characteristic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/EggGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/EggGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Genus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Genus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/GrowthRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/GrowthRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/LocationAreaEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/LocationAreaEncounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveBattleStylePreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveBattleStylePreference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveStatAffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveStatAffectSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Nature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Nature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffectSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NatureStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NatureStatAffectSets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NatureStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NatureStatChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PalParkEncounterArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PalParkEncounterArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokeathlonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokeathlonStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonAbility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonAbility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHabitat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHabitat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHeldItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHeldItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHeldItemVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHeldItemVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonMoveVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonMoveVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpecies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesDexEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesDexEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesGender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesGender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesVariety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesVariety.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/TypePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/TypePokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/TypeRelations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/TypeRelations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/resources/APIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/resources/APIResourceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/resources/NamedAPIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/resources/NamedAPIResourceList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Description.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Effect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Encounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/FlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/FlavorText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/GenerationGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/GenerationGameIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Language.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/MachineVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/MachineVersionDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/NamedAPIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/NamedAPIResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VerboseEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VerboseEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionEncounterDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionEncounterDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionGameIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionGroupFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionGroupFlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/utils/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/utils/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/utils/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/utils/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/utils/Information.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PokeApi-V2-Wrapper/pokeapi/bittle/utils/Information.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/Berry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/berries/Berry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFirmness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/berries/BerryFirmness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/berries/BerryFlavor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavorMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/berries/BerryFlavorMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/berries/FlavorBerryMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/berries/FlavorBerryMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/contests/ContestEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/contests/ContestName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/ContestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/contests/ContestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/contests/SuperContestEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/contests/SuperContestEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/encounters/EncounterCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterConditionValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/encounters/EncounterConditionValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/encounters/EncounterMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/encounters/EncounterMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/ChainLink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/evolution/ChainLink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/evolution/EvolutionChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/evolution/EvolutionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/evolution/EvolutionTrigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/evolution/EvolutionTrigger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Generation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/games/Generation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/games/Pokedex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/PokemonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/games/PokemonEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/games/Version.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/games/VersionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/games/VersionGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/ItemAttribute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/ItemCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemFlingEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/ItemFlingEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemHolderPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/ItemHolderPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemHolderPokemonVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/ItemHolderPokemonVersionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemPocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/ItemPocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/items/ItemSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/items/ItemSprites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/EncounterMethodRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/EncounterMethodRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/EncounterVersionDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/EncounterVersionDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/LocationArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/LocationArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PalParkArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/PalParkArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PalParkEncounterSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/PalParkEncounterSpecies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/PokemonEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/PokemonEncounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/locations/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/locations/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/machines/Machine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/machines/Machine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ContestComboDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/ContestComboDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ContestComboSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/ContestComboSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/ModelName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/ModelName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveAilment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveAilment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveBattleStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveBattleStyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveDamageClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveDamageClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveFlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveLearnMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveLearnMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveMetaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveStatChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/MoveTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/MoveTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/moves/PastMoveStatValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/moves/PastMoveStatValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Ability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Ability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityEffectChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/AbilityEffectChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/AbilityFlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AbilityPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/AbilityPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/AwesomeName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/AwesomeName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Characteristic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Characteristic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/EggGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/EggGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Genus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Genus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/GrowthRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/GrowthRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/GrowthRateExperienceLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/GrowthRateExperienceLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/LocationAreaEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/LocationAreaEncounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveBattleStylePreference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/MoveBattleStylePreference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/MoveStatAffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/MoveStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/MoveStatAffectSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Nature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Nature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/NaturePokeathlonStatAffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NaturePokeathlonStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/NaturePokeathlonStatAffectSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NatureStatAffectSets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/NatureStatAffectSets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/NatureStatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/NatureStatChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PalParkEncounterArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PalParkEncounterArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokeathlonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokeathlonStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonAbility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonAbility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonFormSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonFormSprites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHabitat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonHabitat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHeldItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonHeldItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonHeldItemVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonHeldItemVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonMoveVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonMoveVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonSpecies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesDexEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonSpeciesDexEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesGender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonSpeciesGender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSpeciesVariety.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonSpeciesVariety.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonSprites.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonSprites.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonStat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/PokemonType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/PokemonType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/TypePokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/TypePokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/TypeRelations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/pokemon/TypeRelations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/resources/APIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/resources/APIResourceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/resources/NamedAPIResourceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/resources/NamedAPIResourceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/APIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/APIResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/Description.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/Effect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Encounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/Encounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/FlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/FlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/GenerationGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/GenerationGameIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/MachineVersionDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/MachineVersionDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/NamedAPIResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/NamedAPIResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VerboseEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/VerboseEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionEncounterDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/VersionEncounterDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionGameIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/VersionGameIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/models/utility/VersionGroupFlavorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/models/utility/VersionGroupFlavorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/utils/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/utils/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/utils/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokeapi/bittle/utils/Information.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bittle/pokeapi/utils/Information.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,118 +382,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/utils/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1239">
-              <caret line="554" selection-start-line="554" selection-end-line="554" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/models/berries/Berry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1576">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2408#2409#0" expanded="true" />
-                <element signature="e#2424#2425#0" expanded="true" />
-                <element signature="e#2520#2521#0" expanded="true" />
-                <element signature="e#2545#2546#0" expanded="true" />
-                <element signature="e#2676#2677#0" expanded="true" />
-                <element signature="e#2701#2702#0" expanded="true" />
-                <element signature="e#2838#2839#0" expanded="true" />
-                <element signature="e#2870#2871#0" expanded="true" />
-                <element signature="e#3022#3023#0" expanded="true" />
-                <element signature="e#3040#3041#0" expanded="true" />
-                <element signature="e#3144#3145#0" expanded="true" />
-                <element signature="e#3168#3169#0" expanded="true" />
-                <element signature="e#3297#3298#0" expanded="true" />
-                <element signature="e#3323#3324#0" expanded="true" />
-                <element signature="e#3704#3705#0" expanded="true" />
-                <element signature="e#3725#3726#0" expanded="true" />
-                <element signature="e#4493#4494#0" expanded="true" />
-                <element signature="e#4531#4532#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFirmness.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/models/pokemon/Characteristic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="37" column="27" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/models/machines/Machine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-749">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/models/berries/BerryFlavorMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokeapi/bittle/models/items/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2290">
-              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -376,6 +414,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -451,6 +497,7 @@
     <option name="width" value="1280" />
     <option name="height" value="721" />
   </component>
+  <component name="ProjectId" id="1pdp2n6VQdbtMxsdPcbf6DheaXy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -474,6 +521,10 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -495,19 +546,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestClass">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -516,6 +555,14 @@
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="PokeApi-V2-Wrapper" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
       <module name="PokeApi-V2-Wrapper" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -555,10 +602,12 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestClass" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -971,6 +1020,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MoveDamageClass Model complete?" />
     <MESSAGE value="MoveLearnMethod Model complete" />
@@ -998,6 +1058,17 @@
     <MESSAGE value="moved CACHE var to Client" />
     <MESSAGE value="Models auto generation update" />
     <option name="LAST_COMMIT_MESSAGE" value="Models auto generation update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TestClass.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/models/moves/Move.java" />
