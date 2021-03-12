@@ -20,8 +20,8 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="jackson-annotations-2.9.0" level="project" />
-    <orderEntry type="library" name="gson-2.8.2" level="project" />
-    <orderEntry type="library" name="sqlite-jdbc-3.21.0" level="project" />
+    <orderEntry type="library" name="com.google.code.gson:gson:2.8.6" level="project" />
+    <orderEntry type="library" name="com.fasterxml.jackson.core:jackson-annotations:2.12.2" level="project" />
+    <orderEntry type="library" name="org.xerial:sqlite-jdbc:3.34.0" level="project" />
   </component>
 </module>
