@@ -1,22 +1,8 @@
 package com.github.oscar0812.pokeapi.models.resources;
-/*
-{
-  "count": 248,
-  "next": "https://pokeapi.co/api/v2/ability/?limit=20&offset=20",
-  "previous": null,
-  "results": [
-    {
-      "name": "stench",
-      "url": "https://pokeapi.co/api/v2/ability/1/"
-    }
-  ]
-}
-*/
-
-import java.util.ArrayList;
 
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class NamedAPIResourceList {
 	// The total number of resources available from this API.
@@ -80,7 +66,8 @@ public class NamedAPIResourceList {
 		return get("https://pokeapi.co/api/v2/" + endpoint);
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

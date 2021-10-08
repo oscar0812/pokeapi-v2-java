@@ -1,34 +1,12 @@
 /* Move Ailments are status conditions caused by moves used during battle. See Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.moves;
-/*
-{
-  "id": 1,
-  "name": "paralysis",
-  "moves": [
-    {
-      "name": "thunder-punch",
-      "url": "https://pokeapi.co/api/v2/move/9/"
-    }
-  ],
-  "names": [
-    {
-      "name": "Paralysis",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class MoveAilment extends NamedAPIResource {
 	// The identifier for this resource.

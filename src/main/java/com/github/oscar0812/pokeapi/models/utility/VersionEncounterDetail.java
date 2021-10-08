@@ -1,8 +1,7 @@
 package com.github.oscar0812.pokeapi.models.utility;
 
-import java.util.ArrayList;
-
 import com.github.oscar0812.pokeapi.models.games.Version;
+import java.util.ArrayList;
 
 public class VersionEncounterDetail {
 	// The game version this encounter happens in.
@@ -44,7 +43,8 @@ public class VersionEncounterDetail {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

@@ -1,34 +1,12 @@
 /* Habitats are generally different terrain Pokémon can be found in but can also be areas designated for rare or legendary Pokémon. */
 
 package com.github.oscar0812.pokeapi.models.pokemon;
-/*
-{
-  "id": 1,
-  "name": "cave",
-  "names": [
-    {
-      "name": "grottes",
-      "language": {
-        "name": "fr",
-        "url": "https://pokeapi.co/api/v2/language/5/"
-      }
-    }
-  ],
-  "pokemon_species": [
-    {
-      "name": "zubat",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/41/"
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class PokemonHabitat extends NamedAPIResource {
 	// The identifier for this resource.

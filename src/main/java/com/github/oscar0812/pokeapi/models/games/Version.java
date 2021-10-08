@@ -1,32 +1,12 @@
 /* Versions of the games, e.g., Red, Blue or Yellow. */
 
 package com.github.oscar0812.pokeapi.models.games;
-/*
-{
-  "id": 1,
-  "name": "red",
-  "names": [
-    {
-      "name": "Rot",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ],
-  "version_group": {
-    "name": "red-blue",
-    "url": "https://pokeapi.co/api/v2/version-group/1/"
-  }
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Version extends NamedAPIResource {
 	// The identifier for this resource.

@@ -44,7 +44,8 @@ public class MoveBattleStylePreference {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

@@ -1,28 +1,11 @@
 /* Machines are the representation of items that teach moves to Pokémon. They vary from version to version, so it is not certain that one specific TM or HM corresponds to a single Machine. */
 
 package com.github.oscar0812.pokeapi.models.machines;
-/*
-{
-  "id": 1,
-  "item": {
-    "name": "tm01",
-    "url": "https://pokeapi.co/api/v2/item/305/"
-  },
-  "move": {
-    "name": "mega-punch",
-    "url": "https://pokeapi.co/api/v2/move/5/"
-  },
-  "version_group": {
-    "name": "red-blue",
-    "url": "https://pokeapi.co/api/v2/version/1/"
-  }
-}
-*/
 
 import com.github.oscar0812.pokeapi.models.games.VersionGroup;
 import com.github.oscar0812.pokeapi.models.items.Item;
 import com.github.oscar0812.pokeapi.models.moves.Move;
-import com.github.oscar0812.pokeapi.models.resources.APIResourceList;
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.APIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
 
@@ -92,10 +75,6 @@ public class Machine extends APIResource {
 
 	public Machine get() {
 		return Machine.get(this.getUrl());
-	}
-
-	public static APIResourceList getList(int limit, int offset) {
-		 return APIResourceList.getList("machine", limit, offset);
 	}
 
 	public static Machine getById(int id) {

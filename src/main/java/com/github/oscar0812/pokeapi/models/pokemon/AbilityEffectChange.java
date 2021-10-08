@@ -2,10 +2,9 @@
 
 package com.github.oscar0812.pokeapi.models.pokemon;
 
-import java.util.ArrayList;
-
 import com.github.oscar0812.pokeapi.models.games.VersionGroup;
 import com.github.oscar0812.pokeapi.models.utility.Effect;
+import java.util.ArrayList;
 
 public class AbilityEffectChange {
 	// The previous effect of this ability listed in different languages.
@@ -35,7 +34,8 @@ public class AbilityEffectChange {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

@@ -1,35 +1,13 @@
 /* Super contest effects refer to the effects of moves when used in super contests. */
 
 package com.github.oscar0812.pokeapi.models.contests;
-/*
-{
-  "id": 1,
-  "appeal": 2,
-  "flavor_text_entries": [
-    {
-      "flavor_text": "Enables the user to perform first in the next turn.",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "moves": [
-    {
-      "name": "agility",
-      "url": "https://pokeapi.co/api/v2/move/97/"
-    }
-  ]
-}
-*/
-
-import java.util.ArrayList;
 
 import com.github.oscar0812.pokeapi.models.moves.Move;
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.APIResource;
 import com.github.oscar0812.pokeapi.models.utility.FlavorText;
 import com.github.oscar0812.pokeapi.utils.Information;
-import com.github.oscar0812.pokeapi.models.resources.APIResourceList;
+import java.util.ArrayList;
 
 public class SuperContestEffect extends APIResource {
 	// The identifier for this resource.
@@ -88,10 +66,6 @@ public class SuperContestEffect extends APIResource {
 
 	public SuperContestEffect get() {
 		return SuperContestEffect.get(this.getUrl());
-	}
-
-	public static APIResourceList getList(int limit, int offset) {
-		 return APIResourceList.getList("super-contest-effect", limit, offset);
 	}
 
 	public static SuperContestEffect getById(int id) {

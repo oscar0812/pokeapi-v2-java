@@ -1,29 +1,11 @@
 /* Languages for translations of API resource information. */
 
 package com.github.oscar0812.pokeapi.models.utility;
-/*
-{
-  "id": 1,
-  "name": "ja",
-  "official": true,
-  "iso639": "ja",
-  "iso3166": "jp",
-  "names": [
-    {
-      "name": "Japanese",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
+import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Language extends NamedAPIResource {
 	// The identifier for this resource.

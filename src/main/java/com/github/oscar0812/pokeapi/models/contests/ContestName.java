@@ -1,26 +1,6 @@
 /* Contest types are categories judges used to weigh a Pokémon's condition in Pokémon contests. Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.contests;
-/*
-{
-  "id": 1,
-  "name": "cool",
-  "berry_flavor": {
-    "name": "spicy",
-    "url": "https://pokeapi.co/api/v2/berry-flavor/1/"
-  },
-  "names": [
-    {
-      "name": "Cool",
-      "color": "Red",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
 import com.github.oscar0812.pokeapi.models.utility.Language;
 
@@ -64,7 +44,8 @@ public class ContestName {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

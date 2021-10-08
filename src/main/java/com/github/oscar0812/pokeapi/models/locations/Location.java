@@ -1,48 +1,13 @@
 /* Locations that can be visited within the games. Locations make up sizable portions of regions, like cities or routes. */
 
 package com.github.oscar0812.pokeapi.models.locations;
-/*
-{
-  "id": 1,
-  "name": "canalave-city",
-  "region": {
-    "name": "sinnoh",
-    "url": "https://pokeapi.co/api/v2/region/4/"
-  },
-  "names": [
-    {
-      "name": "Canalave City",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "game_indices": [
-    {
-      "game_index": 7,
-      "generation": {
-        "name": "generation-iv",
-        "url": "https://pokeapi.co/api/v2/generation/4/"
-      }
-    }
-  ],
-  "areas": [
-    {
-      "name": "canalave-city-area",
-      "url": "https://pokeapi.co/api/v2/location-area/1/"
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.GenerationGameIndex;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
-import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
+import java.util.ArrayList;
 
 public class Location extends NamedAPIResource {
 	// The identifier for this resource.

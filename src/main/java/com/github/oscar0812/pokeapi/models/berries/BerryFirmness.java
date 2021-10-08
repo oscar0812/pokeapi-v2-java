@@ -1,33 +1,12 @@
 /* Berries can be soft or hard. Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.berries;
-/*
-{
-  "id": 1,
-  "name": "very-soft",
-  "berries": [
-    {
-      "name": "pecha",
-      "url": "https://pokeapi.co/api/v2/berry/3/"
-    }
-  ],
-  "names": [
-    {
-      "name": "Very Soft",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class BerryFirmness extends NamedAPIResource {
 	// The identifier for this resource.

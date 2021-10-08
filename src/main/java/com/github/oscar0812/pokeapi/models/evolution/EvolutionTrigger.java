@@ -1,35 +1,13 @@
 /* Evolution triggers are the events and conditions that cause a Pokémon to evolve. Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.evolution;
-/*
-{
-  "id": 1,
-  "name": "level-up",
-  "names": [
-    {
-      "name": "Level up",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "pokemon_species": [
-    {
-      "name": "ivysaur",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/2/"
-    }
-  ]
-}
-*/
-
-import java.util.ArrayList;
 
 import com.github.oscar0812.pokeapi.models.pokemon.PokemonSpecies;
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
-import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
+import java.util.ArrayList;
 
 public class EvolutionTrigger extends NamedAPIResource {
 	// The identifier for this resource.

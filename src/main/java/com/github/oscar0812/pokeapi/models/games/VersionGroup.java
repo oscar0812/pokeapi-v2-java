@@ -1,49 +1,13 @@
 /* Version groups categorize highly similar versions of the games. */
 
 package com.github.oscar0812.pokeapi.models.games;
-/*
-{
-  "id": 1,
-  "name": "red-blue",
-  "order": 1,
-  "generation": {
-    "name": "generation-i",
-    "url": "https://pokeapi.co/api/v2/generation/1/"
-  },
-  "move_learn_methods": [
-    {
-      "name": "level-up",
-      "url": "https://pokeapi.co/api/v2/move-learn-method/1/"
-    }
-  ],
-  "pokedexes": [
-    {
-      "name": "kanto",
-      "url": "https://pokeapi.co/api/v2/pokedex/2/"
-    }
-  ],
-  "regions": [
-    {
-      "name": "kanto",
-      "url": "https://pokeapi.co/api/v2/region/1/"
-    }
-  ],
-  "versions": [
-    {
-      "name": "red",
-      "url": "https://pokeapi.co/api/v2/version/1/"
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.locations.Region;
 import com.github.oscar0812.pokeapi.models.moves.MoveLearnMethod;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class VersionGroup extends NamedAPIResource {
 	// The identifier for this resource.

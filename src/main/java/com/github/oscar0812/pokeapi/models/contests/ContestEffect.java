@@ -1,39 +1,13 @@
 /* Contest effects refer to the effects of moves when used in contests. */
 
 package com.github.oscar0812.pokeapi.models.contests;
-/*
-{
-  "id": 1,
-  "appeal": 4,
-  "jam": 0,
-  "effect_entries": [
-    {
-      "effect": "Gives a high number of appeal points wth no other effects.",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "flavor_text_entries": [
-    {
-      "flavor_text": "A highly appealing move.",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.APIResource;
 import com.github.oscar0812.pokeapi.models.utility.Effect;
 import com.github.oscar0812.pokeapi.models.utility.FlavorText;
 import com.github.oscar0812.pokeapi.utils.Information;
-import com.github.oscar0812.pokeapi.models.resources.APIResourceList;
+import java.util.ArrayList;
 
 public class ContestEffect extends APIResource {
 	// The identifier for this resource.
@@ -104,10 +78,6 @@ public class ContestEffect extends APIResource {
 
 	public ContestEffect get() {
 		return ContestEffect.get(this.getUrl());
-	}
-
-	public static APIResourceList getList(int limit, int offset) {
-		 return APIResourceList.getList("contest-effect", limit, offset);
 	}
 
 	public static ContestEffect getById(int id) {

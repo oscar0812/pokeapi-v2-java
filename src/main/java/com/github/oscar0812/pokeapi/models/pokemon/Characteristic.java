@@ -1,38 +1,11 @@
 /* Characteristics indicate which stat contains a Pokémon's highest IV. A Pokémon's Characteristic is determined by the remainder of its highest IV divided by 5 (gene_modulo). Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.pokemon;
-/*
-{
-  "id": 1,
-  "gene_modulo": 0,
-  "possible_values": [
-    0,
-    5,
-    10,
-    15,
-    20,
-    25,
-    30
-  ],
-  "highest_stat": {
-    "name": "hp",
-    "url": "https://pokeapi.co/api/v2/stat/1/"
-  },
-  "descriptions": [
-    {
-      "description": "Loves to eat",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
-import com.github.oscar0812.pokeapi.models.resources.APIResourceList;
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.APIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Characteristic extends APIResource {
 	// The identifier for this resource.
@@ -79,10 +52,6 @@ public class Characteristic extends APIResource {
 
 	public Characteristic get() {
 		return Characteristic.get(this.getUrl());
-	}
-
-	public static APIResourceList getList(int limit, int offset) {
-		 return APIResourceList.getList("characteristic", limit, offset);
 	}
 
 	public static Characteristic getById(int id) {

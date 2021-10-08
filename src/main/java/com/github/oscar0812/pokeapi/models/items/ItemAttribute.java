@@ -1,44 +1,13 @@
 /* Item attributes define particular aspects of items, e.g. "usable in battle" or "consumable". */
 
 package com.github.oscar0812.pokeapi.models.items;
-/*
-{
-  "id": 1,
-  "name": "countable",
-  "descriptions": [
-    {
-      "description": "Has a count in the bag",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "items": [
-    {
-      "name": "master-ball",
-      "url": "https://pokeapi.co/api/v2/item/1/"
-    }
-  ],
-  "names": [
-    {
-      "name": "Countable",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Description;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class ItemAttribute extends NamedAPIResource {
 	// The identifier for this resource.

@@ -1,36 +1,6 @@
 /* Shapes used for sorting Pokémon in a Pokédex. */
 
 package com.github.oscar0812.pokeapi.models.pokemon;
-/*
-{
-  "id": 1,
-  "name": "ball",
-  "awesome_names": [
-    {
-      "awesome_name": "Pomaceous",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "names": [
-    {
-      "name": "Ball",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "pokemon_species": [
-    {
-      "name": "shellder",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/90/"
-    }
-  ]
-}
-*/
 
 import com.github.oscar0812.pokeapi.models.utility.Language;
 
@@ -62,7 +32,8 @@ public class AwesomeName {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

@@ -2,13 +2,12 @@
 
 package com.github.oscar0812.pokeapi.models.pokemon;
 
-import java.util.ArrayList;
-
 import com.github.oscar0812.pokeapi.models.berries.BerryFlavor;
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Nature extends NamedAPIResource {
 	// The identifier for this resource.

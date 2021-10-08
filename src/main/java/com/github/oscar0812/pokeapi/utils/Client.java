@@ -24,17 +24,12 @@ import com.github.oscar0812.pokeapi.models.locations.Region;
 import com.github.oscar0812.pokeapi.models.machines.Machine;
 import com.github.oscar0812.pokeapi.models.moves.*;
 import com.github.oscar0812.pokeapi.models.pokemon.*;
-import com.github.oscar0812.pokeapi.models.resources.APIResourceList;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Language;
 
 public class Client {
 	// if true, save api response to local database for speed and api call limit help
 	public static boolean CACHE = true;
-
-	public static APIResourceList getAPIResourceListByEndpoint(String endpoint) {
-		return APIResourceList.getByEndpoint(endpoint);
-	}
 
 	public static NamedAPIResourceList getNamedAPIResourceListByEndpoint(String endpoint) {
 		return NamedAPIResourceList.getByEndpoint(endpoint);
@@ -92,16 +87,16 @@ public class Client {
 		return ContestEffect.getById(id);
 	}
 
-	public static APIResourceList getContestEffectList(int limit, int offset) {
-		 return APIResourceList.getList("contest-effect", limit, offset);
+	public static NamedAPIResourceList getContestEffectList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("contest-effect", limit, offset);
 	}
 
 	public static SuperContestEffect getSuperContestEffectById(int id) {
 		return SuperContestEffect.getById(id);
 	}
 
-	public static APIResourceList getSuperContestEffectList(int limit, int offset) {
-		 return APIResourceList.getList("super-contest-effect", limit, offset);
+	public static NamedAPIResourceList getSuperContestEffectList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("super-contest-effect", limit, offset);
 	}
 
 	public static EncounterMethod getEncounterMethodById(int id) {
@@ -144,8 +139,8 @@ public class Client {
 		return EvolutionChain.getById(id);
 	}
 
-	public static APIResourceList getEvolutionChainList(int limit, int offset) {
-		 return APIResourceList.getList("evolution-chain", limit, offset);
+	public static NamedAPIResourceList getEvolutionChainList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("evolution-chain", limit, offset);
 	}
 
 	public static EvolutionTrigger getEvolutionTriggerById(int id) {
@@ -320,8 +315,8 @@ public class Client {
 		return Machine.getById(id);
 	}
 
-	public static APIResourceList getMachineList(int limit, int offset) {
-		 return APIResourceList.getList("machine", limit, offset);
+	public static NamedAPIResourceList getMachineList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("machine", limit, offset);
 	}
 
 	public static Move getMoveById(int id) {
@@ -412,8 +407,8 @@ public class Client {
 		return Characteristic.getById(id);
 	}
 
-	public static APIResourceList getCharacteristicList(int limit, int offset) {
-		 return APIResourceList.getList("characteristic", limit, offset);
+	public static NamedAPIResourceList getCharacteristicList(int limit, int offset) {
+		 return NamedAPIResourceList.getList("characteristic", limit, offset);
 	}
 
 	public static EggGroup getEggGroupById(int id) {

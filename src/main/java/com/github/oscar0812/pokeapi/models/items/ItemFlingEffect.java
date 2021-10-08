@@ -1,34 +1,12 @@
 /* The various effects of the move "Fling" when used with different items. */
 
 package com.github.oscar0812.pokeapi.models.items;
-/*
-{
-  "id": 1,
-  "name": "badly-poison",
-  "effect_entries": [
-    {
-      "effect": "Badly poisons the target.",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "items": [
-    {
-      "name": "toxic-orb",
-      "url": "https://pokeapi.co/api/v2/item/249/"
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Effect;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class ItemFlingEffect extends NamedAPIResource {
 	// The identifier for this resource.

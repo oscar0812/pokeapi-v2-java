@@ -1,31 +1,6 @@
-/* Areas used for grouping Pokémon encounters in Pal Park. They're like habitats that are specific to Pal Park. */
+/* Areas used for grouping Pokémon encounters in Pal Park. They're like habitats that are specific to Pal Park . */
 
 package com.github.oscar0812.pokeapi.models.locations;
-/*
-{
-  "id": 1,
-  "name": "forest",
-  "names": [
-    {
-      "name": "Forest",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "pokemon_encounters": [
-    {
-      "base_score": 30,
-      "rate": 50,
-      "pokemon_species": {
-        "name": "caterpie",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/10/"
-      }
-    }
-  ]
-}
-*/
 
 import com.github.oscar0812.pokeapi.models.pokemon.PokemonSpecies;
 
@@ -69,7 +44,8 @@ public class PalParkEncounterSpecies {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

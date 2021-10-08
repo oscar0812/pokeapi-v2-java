@@ -1,29 +1,12 @@
 /* Methods by which the player might can encounter Pokémon in the wild, e.g., walking in tall grass. Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.encounters;
-/*
-{
-  "id": 1,
-  "name": "walk",
-  "order": 1,
-  "names": [
-    {
-      "name": "Walking in tall grass or a cave",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
-
-import java.util.ArrayList;
 
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class EncounterMethod extends NamedAPIResource {
 	// The identifier for this resource.

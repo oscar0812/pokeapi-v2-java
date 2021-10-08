@@ -1,33 +1,11 @@
 /* Genders were introduced in Generation II for the purposes of breeding Pokémon but can also result in visual differences or even different evolutionary lines. Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.pokemon;
-/*
-{
-  "id": 1,
-  "name": "female",
-  "pokemon_species_details": [
-    {
-      "rate": 1,
-      "pokemon_species": {
-        "name": "bulbasaur",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
-      }
-    }
-  ],
-  "required_for_evolution": [
-    {
-      "name": "wormadam",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/413/"
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Gender extends NamedAPIResource {
 	// The identifier for this resource.

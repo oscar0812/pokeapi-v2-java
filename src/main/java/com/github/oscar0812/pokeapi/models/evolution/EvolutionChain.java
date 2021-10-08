@@ -1,60 +1,11 @@
 /* Evolution chains are essentially family trees. They start with the lowest stage within a family and detail evolution conditions for each as well as Pokémon they can evolve into up through the hierarchy. */
 
 package com.github.oscar0812.pokeapi.models.evolution;
-/*
-{
-  "id": 7,
-  "baby_trigger_item": null,
-  "chain": {
-    "is_baby": false,
-    "species": {
-      "name": "rattata",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/19/"
-    },
-    "evolution_details": null,
-    "evolves_to": [
-      {
-        "is_baby": false,
-        "species": {
-          "name": "raticate",
-          "url": "https://pokeapi.co/api/v2/pokemon-species/20/"
-        },
-        "evolution_details": [
-          {
-            "item": null,
-            "trigger": {
-              "name": "level-up",
-              "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
-            },
-            "gender": null,
-            "held_item": null,
-            "known_move": null,
-            "known_move_type": null,
-            "location": null,
-            "min_level": 20,
-            "min_happiness": null,
-            "min_beauty": null,
-            "min_affection": null,
-            "needs_overworld_rain": false,
-            "party_species": null,
-            "party_type": null,
-            "relative_physical_stats": null,
-            "time_of_day": "",
-            "trade_species": null,
-            "turn_upside_down": false
-          }
-        ],
-        "evolves_to": []
-      }
-    ]
-  }
-}
-*/
 
 import com.github.oscar0812.pokeapi.models.items.Item;
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.APIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
-import com.github.oscar0812.pokeapi.models.resources.APIResourceList;
 
 public class EvolutionChain extends APIResource {
 	// The identifier for this resource.
@@ -104,10 +55,6 @@ public class EvolutionChain extends APIResource {
 
 	public EvolutionChain get() {
 		return EvolutionChain.get(this.getUrl());
-	}
-
-	public static APIResourceList getList(int limit, int offset) {
-		 return APIResourceList.getList("evolution-chain", limit, offset);
 	}
 
 	public static EvolutionChain getById(int id) {

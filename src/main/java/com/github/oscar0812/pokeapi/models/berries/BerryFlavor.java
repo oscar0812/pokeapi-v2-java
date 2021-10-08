@@ -1,41 +1,13 @@
-/* Flavors determine whether a Pokémon will benefit or suffer from eating a berry based on their nature. Check out Bulbapedia for greater detail. */
+/* Flavors determine whether a Pokémon will benefit or suffer from eating a berry based on their nature . Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.berries;
-/*
-{
-  "id": 1,
-  "name": "spicy",
-  "berries": [
-    {
-      "potency": 10,
-      "berry": {
-        "name": "rowap",
-        "url": "https://pokeapi.co/api/v2/berry/64/"
-      }
-    }
-  ],
-  "contest_type": {
-    "name": "cool",
-    "url": "https://pokeapi.co/api/v2/contest-type/1/"
-  },
-  "names": [
-    {
-      "name": "Spicy",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
 import com.github.oscar0812.pokeapi.models.contests.ContestType;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class BerryFlavor extends NamedAPIResource {
 	// The identifier for this resource.

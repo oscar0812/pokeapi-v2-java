@@ -1,27 +1,6 @@
 /* Genders were introduced in Generation II for the purposes of breeding Pokémon but can also result in visual differences or even different evolutionary lines. Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.pokemon;
-/*
-{
-  "id": 1,
-  "name": "female",
-  "pokemon_species_details": [
-    {
-      "rate": 1,
-      "pokemon_species": {
-        "name": "bulbasaur",
-        "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
-      }
-    }
-  ],
-  "required_for_evolution": [
-    {
-      "name": "wormadam",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/413/"
-    }
-  ]
-}
-*/
 
 public class PokemonSpeciesGender {
 	// The chance of this Pokémon being female, in eighths; or -1 for genderless.
@@ -51,7 +30,8 @@ public class PokemonSpeciesGender {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

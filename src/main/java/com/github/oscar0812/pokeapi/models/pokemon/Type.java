@@ -2,16 +2,15 @@
 
 package com.github.oscar0812.pokeapi.models.pokemon;
 
-import java.util.ArrayList;
-
 import com.github.oscar0812.pokeapi.models.games.Generation;
 import com.github.oscar0812.pokeapi.models.moves.Move;
 import com.github.oscar0812.pokeapi.models.moves.MoveDamageClass;
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.GenerationGameIndex;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Type extends NamedAPIResource {
 	// The identifier for this resource.

@@ -1,32 +1,12 @@
 /* Encounter condition values are the various states that an encounter condition can have, i.e., time of day can be either day or night. */
 
 package com.github.oscar0812.pokeapi.models.encounters;
-/*
-{
-  "id": 1,
-  "name": "swarm-yes",
-  "condition": {
-    "name": "swarm",
-    "url": "https://pokeapi.co/api/v2/encounter-condition/1/"
-  },
-  "names": [
-    {
-      "name": "WÃ¤hrend eines Schwarms",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ]
-}
-*/
-
-import java.util.ArrayList;
 
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class EncounterConditionValue extends NamedAPIResource {
 	// The identifier for this resource.

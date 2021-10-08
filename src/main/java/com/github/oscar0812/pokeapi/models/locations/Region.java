@@ -1,53 +1,15 @@
 /* A region is an organized area of the Pokémon world. Most often, the main difference between regions is the species of Pokémon that can be encountered within them. */
 
 package com.github.oscar0812.pokeapi.models.locations;
-/*
-{
-  "id": 1,
-  "name": "kanto",
-  "locations": [
-    {
-      "name": "celadon-city",
-      "url": "https://pokeapi.co/api/v2/location/67/"
-    }
-  ],
-  "main_generation": {
-    "name": "generation-i",
-    "url": "https://pokeapi.co/api/v2/generation/1/"
-  },
-  "names": [
-    {
-      "name": "Kanto",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ],
-  "pokedexes": [
-    {
-      "name": "kanto",
-      "url": "https://pokeapi.co/api/v2/pokedex/2/"
-    }
-  ],
-  "version_groups": [
-    {
-      "name": "red-blue",
-      "url": "https://pokeapi.co/api/v2/version-group/1/"
-    }
-  ]
-}
-*/
-
-import java.util.ArrayList;
 
 import com.github.oscar0812.pokeapi.models.games.Generation;
 import com.github.oscar0812.pokeapi.models.games.Pokedex;
 import com.github.oscar0812.pokeapi.models.games.VersionGroup;
+import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
-import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
+import java.util.ArrayList;
 
 public class Region extends NamedAPIResource {
 	// The identifier for this resource.

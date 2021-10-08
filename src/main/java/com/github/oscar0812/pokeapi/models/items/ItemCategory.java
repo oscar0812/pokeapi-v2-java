@@ -1,38 +1,12 @@
 /* Item categories determine where items will be placed in the players bag. */
 
 package com.github.oscar0812.pokeapi.models.items;
-/*
-{
-  "id": 1,
-  "name": "stat-boosts",
-  "items": [
-    {
-      "name": "guard-spec",
-      "url": "https://pokeapi.co/api/v2/item/55/"
-    }
-  ],
-  "names": [
-    {
-      "name": "Stat boosts",
-      "language": {
-        "name": "en",
-        "url": "https://pokeapi.co/api/v2/language/9/"
-      }
-    }
-  ],
-  "pocket": {
-    "name": "battle",
-    "url": "https://pokeapi.co/api/v2/item-pocket/7/"
-  }
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class ItemCategory extends NamedAPIResource {
 	// The identifier for this resource.

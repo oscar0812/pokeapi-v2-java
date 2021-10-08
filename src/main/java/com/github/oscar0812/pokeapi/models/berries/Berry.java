@@ -1,46 +1,13 @@
 /* Berries are small fruits that can provide HP and status condition restoration, stat enhancement, and even damage negation when eaten by Pokémon. Check out Bulbapedia for greater detail. */
 
 package com.github.oscar0812.pokeapi.models.berries;
-/*
-{
-  "id": 1,
-  "name": "cheri",
-  "growth_time": 3,
-  "max_harvest": 5,
-  "natural_gift_power": 60,
-  "size": 20,
-  "smoothness": 25,
-  "soil_dryness": 15,
-  "firmness": {
-    "name": "soft",
-    "url": "https://pokeapi.co/api/v2/berry-firmness/2/"
-  },
-  "flavors": [
-    {
-      "potency": 10,
-      "flavor": {
-        "name": "spicy",
-        "url": "https://pokeapi.co/api/v2/berry-flavor/1/"
-      }
-    }
-  ],
-  "item": {
-    "name": "cheri-berry",
-    "url": "https://pokeapi.co/api/v2/item/126/"
-  },
-  "natural_gift_type": {
-    "name": "fire",
-    "url": "https://pokeapi.co/api/v2/type/10/"
-  }
-}
-*/
 
-import java.util.ArrayList;
 import com.github.oscar0812.pokeapi.models.items.Item;
 import com.github.oscar0812.pokeapi.models.pokemon.Type;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
 import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Berry extends NamedAPIResource {
 	// The identifier for this resource.

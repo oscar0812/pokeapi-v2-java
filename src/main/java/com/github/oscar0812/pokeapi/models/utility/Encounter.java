@@ -1,8 +1,8 @@
 package com.github.oscar0812.pokeapi.models.utility;
 
-import java.util.ArrayList;
 import com.github.oscar0812.pokeapi.models.encounters.EncounterConditionValue;
 import com.github.oscar0812.pokeapi.models.encounters.EncounterMethod;
+import java.util.ArrayList;
 
 public class Encounter {
 	// The lowest level the Pokémon could be encountered at.
@@ -68,7 +68,8 @@ public class Encounter {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

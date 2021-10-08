@@ -1,61 +1,12 @@
 /* Evolution chains are essentially family trees. They start with the lowest stage within a family and detail evolution conditions for each as well as Pokémon they can evolve into up through the hierarchy. */
 
 package com.github.oscar0812.pokeapi.models.evolution;
-/*
-{
-  "id": 7,
-  "baby_trigger_item": null,
-  "chain": {
-    "is_baby": false,
-    "species": {
-      "name": "rattata",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/19/"
-    },
-    "evolution_details": null,
-    "evolves_to": [
-      {
-        "is_baby": false,
-        "species": {
-          "name": "raticate",
-          "url": "https://pokeapi.co/api/v2/pokemon-species/20/"
-        },
-        "evolution_details": [
-          {
-            "item": null,
-            "trigger": {
-              "name": "level-up",
-              "url": "https://pokeapi.co/api/v2/evolution-trigger/1/"
-            },
-            "gender": null,
-            "held_item": null,
-            "known_move": null,
-            "known_move_type": null,
-            "location": null,
-            "min_level": 20,
-            "min_happiness": null,
-            "min_beauty": null,
-            "min_affection": null,
-            "needs_overworld_rain": false,
-            "party_species": null,
-            "party_type": null,
-            "relative_physical_stats": null,
-            "time_of_day": "",
-            "trade_species": null,
-            "turn_upside_down": false
-          }
-        ],
-        "evolves_to": []
-      }
-    ]
-  }
-}
-*/
 
 import com.github.oscar0812.pokeapi.models.items.Item;
+import com.github.oscar0812.pokeapi.models.locations.Location;
 import com.github.oscar0812.pokeapi.models.moves.Move;
 import com.github.oscar0812.pokeapi.models.pokemon.PokemonSpecies;
 import com.github.oscar0812.pokeapi.models.pokemon.Type;
-import com.github.oscar0812.pokeapi.models.locations.Location;
 
 public class EvolutionDetail {
 	// The item required to cause evolution this into Pokémon species.
@@ -301,7 +252,8 @@ public class EvolutionDetail {
 		return this;
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return new com.google.gson.Gson().toJson(this);
 	}
 }

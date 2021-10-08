@@ -1,45 +1,14 @@
 /* Methods by which Pokémon can learn moves. */
 
 package com.github.oscar0812.pokeapi.models.moves;
-/*
-{
-  "id": 1,
-  "name": "level-up",
-  "names": [
-    {
-      "name": "Level up",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ],
-  "descriptions": [
-    {
-      "description": "Wird gelernt, wenn ein Pokémon ein bestimmtes Level erreicht.",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ],
-  "version_groups": [
-    {
-      "name": "red-blue",
-      "url": "https://pokeapi.co/api/v2/version-group/1/"
-    }
-  ]
-}
-*/
-
-import java.util.ArrayList;
 
 import com.github.oscar0812.pokeapi.models.games.VersionGroup;
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Description;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class MoveLearnMethod extends NamedAPIResource {
 	// The identifier for this resource.

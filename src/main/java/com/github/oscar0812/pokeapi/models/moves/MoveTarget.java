@@ -1,44 +1,13 @@
 /* Targets moves can be directed at during battle. Targets can be Pokémon, environments or even other moves. */
 
 package com.github.oscar0812.pokeapi.models.moves;
-/*
-{
-  "id": 1,
-  "name": "specific-move",
-  "descriptions": [
-    {
-      "description": "Eine spezifische Fähigkeit. Wie diese Fähigkeit genutzt wird, hängt von den genutzten Fähigkeiten ab.",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ],
-  "moves": [
-    {
-      "name": "counter",
-      "url": "https://pokeapi.co/api/v2/move/68/"
-    }
-  ],
-  "names": [
-    {
-      "name": "Spezifische Fähigkeit",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Description;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class MoveTarget extends NamedAPIResource {
 	// The identifier for this resource.

@@ -1,54 +1,7 @@
 /* A generation is a grouping of the Pokémon games that separates them based on the Pokémon they include. In each generation, a new set of Pokémon, Moves, Abilities and Types that did not exist in the previous generation are released. */
 
 package com.github.oscar0812.pokeapi.models.games;
-/*
-{
-  "id": 1,
-  "name": "generation-i",
-  "abilities": [],
-  "main_region": {
-    "name": "kanto",
-    "url": "https://pokeapi.co/api/v2/region/1/"
-  },
-  "moves": [
-    {
-      "name": "pound",
-      "url": "https://pokeapi.co/api/v2/move/1/"
-    }
-  ],
-  "names": [
-    {
-      "name": "Generation I",
-      "language": {
-        "name": "de",
-        "url": "https://pokeapi.co/api/v2/language/6/"
-      }
-    }
-  ],
-  "pokemon_species": [
-    {
-      "name": "bulbasaur",
-      "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
-    }
-  ],
-  "types": [
-    {
-      "name": "normal",
-      "url": "https://pokeapi.co/api/v2/type/1/"
-    }
-  ],
-  "version_groups": [
-    {
-      "name": "red-blue",
-      "url": "https://pokeapi.co/api/v2/version-group/1/"
-    }
-  ]
-}
-*/
 
-import java.util.ArrayList;
-
-import com.github.oscar0812.pokeapi.utils.Information;
 import com.github.oscar0812.pokeapi.models.locations.Region;
 import com.github.oscar0812.pokeapi.models.moves.Move;
 import com.github.oscar0812.pokeapi.models.pokemon.Ability;
@@ -57,6 +10,8 @@ import com.github.oscar0812.pokeapi.models.pokemon.Type;
 import com.github.oscar0812.pokeapi.models.resources.NamedAPIResourceList;
 import com.github.oscar0812.pokeapi.models.utility.Name;
 import com.github.oscar0812.pokeapi.models.utility.NamedAPIResource;
+import com.github.oscar0812.pokeapi.utils.Information;
+import java.util.ArrayList;
 
 public class Generation extends NamedAPIResource {
 	// The identifier for this resource.
