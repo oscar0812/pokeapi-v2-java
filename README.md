@@ -1,5 +1,17 @@
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.oscar0812/pokeapi.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.oscar0812%22%20AND%20a:%22pokeapi%22)
+
 # PokéApi V2 Java Wrapper <img heigth=50 width=50 src="https://cdn.bulbagarden.net/upload/thumb/3/36/350Milotic.png/250px-350Milotic.png">
 The most robust [PokéApi](https://www.pokeapi.co/) client. Written in Java with caching 🤖 and love 😍.
+
+## Install
+Maven:
+```xml
+<dependency>
+  <groupId>com.github.oscar0812</groupId>
+  <artifactId>pokeapi</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
 
 ## Examples
 A simple example to get information on beautiful milotic
